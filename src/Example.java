@@ -480,6 +480,7 @@ class Example
     }
     public static void createConf()
     {
+      System.out.println("Creating configuration");
       String batch_name = "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/heinrichLab_L.batch";
       String config_name = "mywords";
       ConfigCreator.createConfig(config_name, batch_name);
