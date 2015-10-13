@@ -360,8 +360,8 @@ class Example
     {
 
 //        createConf();
-        testLWandWIP();
-//        testSphinx();
+//        testLWandWIP();
+        testSphinx();
         if (true) return;
 
         // set verbose to false
@@ -434,10 +434,10 @@ class Example
         String configname = "config/mywords/mywords";
 
         // initialize some recognizers
-//        System.out.println("Starting Raw Google");
+        System.out.println("Starting Raw Google");
         RawGoogleRecognizer rawGoogle = new RawGoogleRecognizer(key);
 
-//        System.out.println("Starting Sphinx N-Gram");
+        System.out.println("Starting Sphinx N-Gram");
         final SphinxBasedPostProcessor sphinxPostProcessorTrigram = new SphinxBasedPostProcessor(
                 configname + ".pngram.xml", configname + ".words", 0, 0, 0);
         //        SphinxRecognizer sphinxNGram = new SphinxRecognizer(configname
@@ -458,14 +458,16 @@ class Example
             PhonemeCreator pc = new PhonemeCreator();
             ArrayList<PhonemeContainer> phonemesSpeech = pc.getPhonemes(r);
             //get best result
-            String[] phonemes = phonemesSpeech.get(0)
-                .getPhonemes();
-            System.out.print(phonemes.length+" Phoneme :");
-            for (int i = 0; i < phonemes.length; i++)
-            {
-                System.out.print(phonemes[i]+", ");  
-            }
-            System.out.println();
+            
+//            PRINTES OUT THE RESULT IN PHONEMEFORM
+//            String[] phonemes = phonemesSpeech.get(0)
+//                .getPhonemes();
+//            System.out.print(phonemes.length+" Phoneme :");
+//            for (int i = 0; i < phonemes.length; i++)
+//            {
+//                System.out.print(phonemes[i]+", ");  
+//            }
+//            System.out.println();
 
         }
         else

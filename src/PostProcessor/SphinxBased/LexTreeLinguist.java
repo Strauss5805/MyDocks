@@ -1414,12 +1414,11 @@ public class LexTreeLinguist implements Linguist
         @Override
         public SearchStateArc[] getSuccessors()
         {
-
-//      ACHTUNG HIER GEHÖRT IN DIE IF BEDINGUNG EIGENDLICH(if (hmmState.isExitState()))
+//      CLEAN UP THIS METHODE! THIS COULD LOOK SO NICE
             SearchStateArc[] nextStates = getCachedArcs();
             if (nextStates == null)
             {
-//              ACHTUNG HIER GEHÖRT IN DIE IF BEDINGUNG EIGENDLICH(if (hmmState.isExitState()))
+//              ACHTUNG HIER GEHÖRT IN DIE IF BEDINGUNG URSPRUENGLICH(if (hmmState.isExitState()))
 //              Hab ich geänder um die multiphonestates loszuwerden
                 if (true)
                 {
@@ -1432,45 +1431,46 @@ public class LexTreeLinguist implements Linguist
                         nextStates = super.getSuccessors(parentNode);
                     }
                 }
-                else
-                {
-                    // The current hmm state is not an exit state, so we
-                    // just go through the next set of successors
-
-                    HMMStateArc[] arcs = hmmState.getSuccessors();
-                    nextStates = new SearchStateArc[arcs.length];
-                    for (int i = 0; i < arcs.length; i++)
-                    {
-                        HMMStateArc arc = arcs[i];
-                        if (arc.getHMMState()
-                            .isEmitting())
-                        {
-                            // if its a self loop and the prob. matches
-                            // reuse the state
-                            if (arc.getHMMState() == hmmState
-                                    && logInsertionProbability == arc.getLogProbability())
-                            {
-                                nextStates[i] = this;
-                            }
-                            else
-                            {
-                                nextStates[i] = new LexTreeHMMState(
-                                        (HMMNode) getNode(), getWordHistory(),
-                                        getSmearTerm(), getSmearProb(),
-                                        arc.getHMMState(), logOne,
-                                        arc.getLogProbability(), parentNode);
-                            }
-                        }
-                        else
-                        {
-                            nextStates[i] = new LexTreeNonEmittingHMMState(
-                                    (HMMNode) getNode(), getWordHistory(),
-                                    getSmearTerm(), getSmearProb(),
-                                    arc.getHMMState(), arc.getLogProbability(),
-                                    parentNode);
-                        }
-                    }
-                }
+//                SO THIS IS UNREACHABLE CODE 
+//                else
+//                {
+//                    // The current hmm state is not an exit state, so we
+//                    // just go through the next set of successors
+//
+//                    HMMStateArc[] arcs = hmmState.getSuccessors();
+//                    nextStates = new SearchStateArc[arcs.length];
+//                    for (int i = 0; i < arcs.length; i++)
+//                    {
+//                        HMMStateArc arc = arcs[i];
+//                        if (arc.getHMMState()
+//                            .isEmitting())
+//                        {
+//                            // if its a self loop and the prob. matches
+//                            // reuse the state
+//                            if (arc.getHMMState() == hmmState
+//                                    && logInsertionProbability == arc.getLogProbability())
+//                            {
+//                                nextStates[i] = this;
+//                            }
+//                            else
+//                            {
+//                                nextStates[i] = new LexTreeHMMState(
+//                                        (HMMNode) getNode(), getWordHistory(),
+//                                        getSmearTerm(), getSmearProb(),
+//                                        arc.getHMMState(), logOne,
+//                                        arc.getLogProbability(), parentNode);
+//                            }
+//                        }
+//                        else
+//                        {
+//                            nextStates[i] = new LexTreeNonEmittingHMMState(
+//                                    (HMMNode) getNode(), getWordHistory(),
+//                                    getSmearTerm(), getSmearProb(),
+//                                    arc.getHMMState(), arc.getLogProbability(),
+//                                    parentNode);
+//                        }
+//                    }
+//                }
             }
             putCachedArcs(nextStates);
 
@@ -1497,7 +1497,7 @@ public class LexTreeLinguist implements Linguist
         }
 
         //	DIESE METHODE BRAUCH ICH WARSCHEINLICH / VIELLEICHT AUCH NICHT...
-
+//          EHER NICHT !!
         //    SearchStateArc[] getNextArcs()
         //    {
         //        SearchStateArc[] arcs;
@@ -1522,6 +1522,7 @@ public class LexTreeLinguist implements Linguist
 
         public float getScore(Data data)
         {
+//            I CHANGED THIS METHOD SO THE PHONESCORER SCORES THE BASEUNITS OF THE HMMS
             String name = hmmState.getHMM()
                 .getBaseUnit()
                 .getName();

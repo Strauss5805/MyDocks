@@ -10,8 +10,8 @@
     <property name="relativeBeamWidth"  value="1E-120"/>
     <property name="absoluteWordBeamWidth" value="200"/>
     <property name="relativeWordBeamWidth" value="1E-80"/>
-    <property name="wordInsertionProbability" value="5"/>
-    <property name="languageWeight" value="4"/>
+    <property name="wordInsertionProbability" value="20"/>
+    <property name="languageWeight" value="50"/>
     <property name="silenceInsertionProbability" value="0"/>
     <property name="frontend" value="frontend"/>
     <property name="recognizer" value="recognizer"/>
