@@ -67,8 +67,8 @@ public class PhoneFrontEnd extends FrontEnd {
 //		phones.add(new PhoneData("SIL",substitutionMethod));
 		for(String p: phonemes)
 		{
-//			phones.add(new PhoneData(p,substitutionMethod));
 			phones.add(new PhoneData(p,substitutionMethod));
+//			phones.add(new PhoneData(p,substitutionMethod));
 		}
 //		phones.add(new PhoneData("SIL",substitutionMethod));
 //		phones.add(new PhoneData("SIL",substitutionMethod));

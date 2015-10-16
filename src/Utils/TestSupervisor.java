@@ -3005,6 +3005,100 @@ public class TestSupervisor
 
     }
 
+    public static void myTestWER(String path, String refhyp, float wip, float lw)
+    {
+        class OneShotTask implements Runnable
+        {
+            float wip;
+            String path;
+            String refhyp;
+            float lw;
+
+            OneShotTask(float wip,float lw, String refhyp, String path)
+            {
+                this.refhyp = refhyp;
+                this.path = path;
+                this.wip = wip;
+                this.lw = lw;
+
+            }
+
+            public void run()
+            {
+
+                PerformanceFileWriter tableRows = new PerformanceFileWriter();
+
+                final NISTAlign alignerrefshyp = new NISTAlign(true, true);
+                String spath = "/informatik2/students/home/1strauss/workspace/MeinDocks/config/mywords/";
+
+                final SphinxBasedPostProcessor standard = new SphinxBasedPostProcessor(
+                        spath + "mywords.pngram.xml", spath + "mywords.words",
+                        lw, wip, 0);
+                //                        final SphinxBasedPostProcessor standard = new SphinxBasedPostProcessor(
+                //                                spath + "elpmaxe.pngram.xml", spath + "elpmaxe.words",
+                //                                4, wordInsertionProbability, 0);
+
+                String strLine;
+
+                try
+                {
+                    //                            PerformanceFileWriter tableRows = new PerformanceFileWriter();
+                    BufferedReader br = null;
+                    try
+                    {
+                        br = new BufferedReader(new InputStreamReader(
+                                new DataInputStream(new FileInputStream(path
+                                        + refhyp))));
+                    }
+                    catch (FileNotFoundException e1)
+                    {
+                        // TODO Auto-generated catch block
+                        e1.printStackTrace();
+                    }
+
+                    while ((strLine = br.readLine()) != null)
+                    {
+                        //                                System.out.println(strLine);
+                        String[] strLineSplit = strLine.split(";");
+                        String ref = strLineSplit[1];
+                        String hypGoogle = strLineSplit[0];
+                        Result r = new Result();
+                        r.addResult(hypGoogle);
+                        r = standard.recognizeFromResult(r);
+                        String hyps = r.getBestResult();
+                        alignerrefshyp.align(ref, hyps);
+
+                        //                                Printer.printColor(
+                        //                                        Printer.ANSI_BLUE,
+                        //                                        "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  LLR  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
+                        //                                alignerrefshyp.printSentenceSummary();
+                        //                                alignerrefshyp.printTotalSummary();        
+                    }
+
+                    tableRows.add("Standard", standard.getLanguageWeight(),
+                            standard.getWIP(), alignerrefshyp, 0);
+
+                }
+                catch (IOException e)
+                {
+                    e.printStackTrace();
+                }
+
+                tableRows.createPerformanceTable("MeinTest"
+                        + ".rounded_in_percent_with_empty_results", true, true,
+                        false);
+
+            }
+        }
+
+        //            System.out.println("start Thread WIP:"+wordInsertionProbability);
+        Thread t = new Thread(new OneShotTask(wip,lw, refhyp, path));
+        //            Thread t = new Thread(new OneShotTask(4,refhyp,
+        //                    path));
+        t.start();
+
+    }
+
     public static void findBestWIPandLW(String path, String refhyp)
     {
         class OneShotTask implements Runnable
@@ -3012,62 +3106,60 @@ public class TestSupervisor
             float wip;
             String path;
             String refhyp;
-            
 
-            OneShotTask(float wip,String refhyp, String path)
+            OneShotTask(float wip, String refhyp, String path)
             {
                 this.refhyp = refhyp;
                 this.path = path;
                 this.wip = wip;
 
             }
-            
-            
 
             public void run()
             {
-                
-                
 
                 PerformanceFileWriter tableRows = new PerformanceFileWriter();
 
-                for (float wordInsertionProbability = wip; wordInsertionProbability < wip + 1; wordInsertionProbability = wordInsertionProbability + 1f)
+                for (float wordInsertionProbability = wip; wordInsertionProbability <= wip + 5; wordInsertionProbability = wordInsertionProbability + 0.5f)
                 {
                     //darf nicht 0 sein, da wenn 0 wird die LW aus der config datei genommen (2.35) hab ich geändert auf -1 daher geht es jetzt
-                    for (float languageWeight = 3.0f; languageWeight <= 20; languageWeight = languageWeight + 0.1f)
+                    for (float languageWeight = 40f; languageWeight <= 90; languageWeight = languageWeight + 0.25f)
                     {
-                        
-                        
-                        final NISTAlign alignerrefshyp = new NISTAlign(true, true);
-                        String spath="/informatik2/students/home/1strauss/workspace/MeinDocks/config/mywords/";
-                        
+
+                        final NISTAlign alignerrefshyp = new NISTAlign(true,
+                                true);
+                        String spath = "/informatik2/students/home/1strauss/workspace/MeinDocks/config/mywords/";
+
                         final SphinxBasedPostProcessor standard = new SphinxBasedPostProcessor(
-                                spath + "mywords.pngram.xml", spath + "mywords.words",
-                                languageWeight, wordInsertionProbability, 0);
-//                        final SphinxBasedPostProcessor standard = new SphinxBasedPostProcessor(
-//                                spath + "elpmaxe.pngram.xml", spath + "elpmaxe.words",
-//                                4, wordInsertionProbability, 0);
+                                spath + "mywords.pngram.xml", spath
+                                        + "mywords.words", languageWeight,
+                                wordInsertionProbability, 0);
+                        //                        final SphinxBasedPostProcessor standard = new SphinxBasedPostProcessor(
+                        //                                spath + "elpmaxe.pngram.xml", spath + "elpmaxe.words",
+                        //                                4, wordInsertionProbability, 0);
 
                         String strLine;
 
                         try
                         {
-//                            PerformanceFileWriter tableRows = new PerformanceFileWriter();
+                            //                            PerformanceFileWriter tableRows = new PerformanceFileWriter();
                             BufferedReader br = null;
                             try
                             {
-                                br = new BufferedReader(new InputStreamReader(new DataInputStream(
-                                        new FileInputStream(path+refhyp))));
+                                br = new BufferedReader(new InputStreamReader(
+                                        new DataInputStream(
+                                                new FileInputStream(path
+                                                        + refhyp))));
                             }
                             catch (FileNotFoundException e1)
                             {
                                 // TODO Auto-generated catch block
                                 e1.printStackTrace();
                             }
-                            
+
                             while ((strLine = br.readLine()) != null)
                             {
-                                System.out.println(strLine);
+                                //                                System.out.println(strLine);
                                 String[] strLineSplit = strLine.split(";");
                                 String ref = strLineSplit[1];
                                 String hypGoogle = strLineSplit[0];
@@ -3077,44 +3169,40 @@ public class TestSupervisor
                                 String hyps = r.getBestResult();
                                 alignerrefshyp.align(ref, hyps);
 
-                                Printer.printColor(
-                                        Printer.ANSI_BLUE,
-                                        "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  LLR  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
-                                alignerrefshyp.printSentenceSummary();
-                                alignerrefshyp.printTotalSummary();        
+                                //                                Printer.printColor(
+                                //                                        Printer.ANSI_BLUE,
+                                //                                        "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  LLR  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
+                                //                                alignerrefshyp.printSentenceSummary();
+                                //                                alignerrefshyp.printTotalSummary();        
                             }
-                            
-                            
 
-                            tableRows.add("Standard", standard.getLanguageWeight(),
+                            tableRows.add("Standard",
+                                    standard.getLanguageWeight(),
                                     standard.getWIP(), alignerrefshyp, 0);
-                            
 
-                            
                         }
                         catch (IOException e)
                         {
                             e.printStackTrace();
                         }
 
-                        
-
                     }
-                    
+
                 }
                 tableRows.createPerformanceTable("MeinTable"
-                        + ".rounded_in_percent_with_empty_results", true, true, false);
+                        + ".rounded_in_percent_with_empty_results", true, true,
+                        false);
 
             }
         }
 
-        for (float wordInsertionProbability = 0.0f; wordInsertionProbability < 20.0f; wordInsertionProbability = wordInsertionProbability + 1f)
+        for (float wordInsertionProbability = 25.0f; wordInsertionProbability <= 75.0f; wordInsertionProbability = wordInsertionProbability + 5f)
         {
-//            System.out.println("start Thread WIP:"+wordInsertionProbability);
-            Thread t = new Thread(new OneShotTask(wordInsertionProbability,refhyp,
-                    path));
-//            Thread t = new Thread(new OneShotTask(4,refhyp,
-//                    path));
+            //            System.out.println("start Thread WIP:"+wordInsertionProbability);
+            Thread t = new Thread(new OneShotTask(wordInsertionProbability,
+                    refhyp, path));
+            //            Thread t = new Thread(new OneShotTask(4,refhyp,
+            //                    path));
             t.start();
         }
 
@@ -3168,17 +3256,17 @@ public class TestSupervisor
                 configname + ".pgrammar.xml", configname + ".words",
                 languageWeight, wordInsertionProbability, 0);
 
-                final SphinxBasedPostProcessor ipa = new SphinxBasedPostProcessor(
-                        configname + ".pgrammar.xml", configname + ".words",
-                        languageWeight, wordInsertionProbability, 1);
-        
-                final SphinxBasedPostProcessor googleReverse = new SphinxBasedPostProcessor(
-                        configname + ".pgrammar.xml", configname + ".words",
-                        languageWeight, wordInsertionProbability, 2);
+        final SphinxBasedPostProcessor ipa = new SphinxBasedPostProcessor(
+                configname + ".pgrammar.xml", configname + ".words",
+                languageWeight, wordInsertionProbability, 1);
+
+        final SphinxBasedPostProcessor googleReverse = new SphinxBasedPostProcessor(
+                configname + ".pgrammar.xml", configname + ".words",
+                languageWeight, wordInsertionProbability, 2);
 
         final NISTAlign alignerStandard = new NISTAlign(true, true);
-                final NISTAlign alignerIpa = new NISTAlign(true, true);
-                final NISTAlign alignerGoogleReverse = new NISTAlign(true, true);
+        final NISTAlign alignerIpa = new NISTAlign(true, true);
+        final NISTAlign alignerGoogleReverse = new NISTAlign(true, true);
 
         String strLine;
         String filename;
@@ -3195,23 +3283,23 @@ public class TestSupervisor
                         filename.length());
 
                 String standardResult = "";
-                                String ipaResult = "";
-                                String googleReverseResult = "";
+                String ipaResult = "";
+                String googleReverseResult = "";
                 Result googleResult = getCachedResult(batchfile, "Google", file);
                 if (googleResult != null)
                 {
                     Result r = standard.recognizeFromResult(googleResult);
                     if (r != null) standardResult = r.getBestResult();
-                                        r = ipa.recognizeFromResult(googleResult);
-                                        if (r != null) ipaResult = r.getBestResult();
-                                        r = googleReverse.recognizeFromResult(googleResult);
-                                        if (r != null) googleReverseResult = r.getBestResult();
+                    r = ipa.recognizeFromResult(googleResult);
+                    if (r != null) ipaResult = r.getBestResult();
+                    r = googleReverse.recognizeFromResult(googleResult);
+                    if (r != null) googleReverseResult = r.getBestResult();
                 }
                 alignerStandard.align(sentence, standardResult);
 
-                                alignerIpa.align(sentence, ipaResult);
-                
-                                alignerGoogleReverse.align(sentence, googleReverseResult);
+                alignerIpa.align(sentence, ipaResult);
+
+                alignerGoogleReverse.align(sentence, googleReverseResult);
 
                 Printer.printColor(
                         Printer.ANSI_BLUE,
@@ -3219,17 +3307,17 @@ public class TestSupervisor
                 alignerStandard.printSentenceSummary();
                 alignerStandard.printTotalSummary();
 
-                                Printer.printColor(
-                                        Printer.ANSI_BLUE,
-                                        "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  IPA  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
-                                alignerIpa.printSentenceSummary();
-                                alignerIpa.printTotalSummary();
-                
-                                Printer.printColor(
-                                        Printer.ANSI_BLUE,
-                                        "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  GoogleReverse  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
-                                alignerGoogleReverse.printSentenceSummary();
-                                alignerGoogleReverse.printTotalSummary();
+                Printer.printColor(
+                        Printer.ANSI_BLUE,
+                        "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  IPA  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
+                alignerIpa.printSentenceSummary();
+                alignerIpa.printTotalSummary();
+
+                Printer.printColor(
+                        Printer.ANSI_BLUE,
+                        "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  GoogleReverse  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
+                alignerGoogleReverse.printSentenceSummary();
+                alignerGoogleReverse.printTotalSummary();
 
             }
         }
@@ -3242,35 +3330,35 @@ public class TestSupervisor
                 Printer.ANSI_BLUE,
                 "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  Standard  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
         alignerStandard.printTotalSummary();
-                Printer.printColor(
-                        Printer.ANSI_BLUE,
-                        "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  IPA  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
-                alignerIpa.printTotalSummary();
-                Printer.printColor(
-                        Printer.ANSI_BLUE,
-                        "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  GoogleReverse  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
+        Printer.printColor(
+                Printer.ANSI_BLUE,
+                "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  IPA  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
+        alignerIpa.printTotalSummary();
+        Printer.printColor(
+                Printer.ANSI_BLUE,
+                "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  GoogleReverse  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
         //        alignerGoogleReverse.printTotalSummary();
         Printer.printColor(
                 Printer.ANSI_BLUE,
                 "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  Standard  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
         alignerStandard.printNISTTotalSummary();
-                Printer.printColor(
-                        Printer.ANSI_BLUE,
-                        "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  IPA  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
-                alignerIpa.printNISTTotalSummary();
-                Printer.printColor(
-                        Printer.ANSI_BLUE,
-                        "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  GoogleReverse  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
-                alignerGoogleReverse.printNISTTotalSummary();
+        Printer.printColor(
+                Printer.ANSI_BLUE,
+                "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  IPA  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
+        alignerIpa.printNISTTotalSummary();
+        Printer.printColor(
+                Printer.ANSI_BLUE,
+                "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  GoogleReverse  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
+        alignerGoogleReverse.printNISTTotalSummary();
 
         PerformanceFileWriter tableRows = new PerformanceFileWriter();
 
         tableRows.add("Standard", standard.getLanguageWeight(),
                 standard.getWIP(), alignerStandard, 0);
-                tableRows.add("IPA", ipa.getLanguageWeight(), ipa.getWIP(), alignerIpa,
-                        0);
-                tableRows.add("Google Reverse", googleReverse.getLanguageWeight(),
-                        googleReverse.getWIP(), alignerGoogleReverse, 0);
+        tableRows.add("IPA", ipa.getLanguageWeight(), ipa.getWIP(), alignerIpa,
+                0);
+        tableRows.add("Google Reverse", googleReverse.getLanguageWeight(),
+                googleReverse.getWIP(), alignerGoogleReverse, 0);
 
         tableRows.createPerformanceTable(title
                 + ".rounded_in_percent_with_empty_results", true, true, false);

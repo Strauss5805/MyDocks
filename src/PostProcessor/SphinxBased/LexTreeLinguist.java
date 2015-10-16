@@ -1529,9 +1529,9 @@ public class LexTreeLinguist implements Linguist
 
             // TODO: if numberOfTimesUsed != 0 then add a penalty to the score
             numberOfTimesUsed++;
+//            System.out.print("Score: " +data+" gegen "+name +" mit "+hmmState.getHMM().getUnit().getContext()+" als Vorgänger");
 
-            return ((PhoneData) data).getConfusionScore(name, numberOfTimesUsed);
-
+            return ((PhoneData) data).getConfusionScore(name, numberOfTimesUsed)*50;
 //            	    return hmmState.getScore(data);
         }
 

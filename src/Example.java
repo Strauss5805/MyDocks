@@ -23,7 +23,6 @@
 import java.io.Console;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioInputStream;
@@ -36,8 +35,6 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 import Data.Result;
 import Frontend.LocalMicrophone;
 import Frontend.VoiceActivityDetector;
-import Phoneme.PhonemeContainer;
-import Phoneme.PhonemeCreator;
 import PostProcessor.SentencelistPostProcessor;
 import PostProcessor.SphinxBasedPostProcessor;
 import PostProcessor.WordlistPostProcessor;
@@ -358,7 +355,7 @@ class Example
 
     public static void main(String[] args)
     {
-
+//        testWER(73, 35);
 //        createConf();
 //        testLWandWIP();
         testSphinx();
@@ -432,6 +429,7 @@ class Example
 
         //starts the simulation example
         String configname = "config/mywords/mywords";
+//        String configname = "config/elpmaxe/elpmaxe";
 
         // initialize some recognizers
         System.out.println("Starting Raw Google");
@@ -444,7 +442,7 @@ class Example
         //                + ".ngram.xml");
         // recognize from file
 //        String filename = "data/back_fs_1387386033021_m1.wav";
-        String filename = "data/nao_which_color_has_oximeter.wav";
+        String filename = "data/nao_ball_close_to_oximeter.wav";
         Result r;
         r = rawGoogle.recognizeFromFile(filename);
 
@@ -455,8 +453,8 @@ class Example
             String result = r.getBestResult();
             System.out.println("Final Result: " + result);
             
-            PhonemeCreator pc = new PhonemeCreator();
-            ArrayList<PhonemeContainer> phonemesSpeech = pc.getPhonemes(r);
+//            PhonemeCreator pc = new PhonemeCreator();
+//            ArrayList<PhonemeContainer> phonemesSpeech = pc.getPhonemes(r);
             //get best result
             
 //            PRINTES OUT THE RESULT IN PHONEMEFORM
@@ -479,6 +477,10 @@ class Example
     public static void testLWandWIP()
     {
         TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/", "heinrichLab.google.refhyp");
+    }
+    public static void testWER(float wip,float lw)
+    {
+        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/", "heinrichLab.google.refhyp", wip, lw);
     }
     public static void createConf()
     {

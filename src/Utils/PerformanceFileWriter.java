@@ -125,8 +125,17 @@ public class PerformanceFileWriter {
 			String dateAndTime = dateFormat.format(date);
 			filename = dateAndTime + "_" + title + ".csv";
 		}
+		float bestacc=0;
+		Entry best = new Entry(null, 0, 0, null, 0, 0);
 		writeToPerformanceFileHeader(title, filename);
 		for (Entry e : rows) {
+		    if (e.getAligner().getTotalWordAccuracy()>bestacc)  
+		    {
+		        bestacc = e.getAligner().getTotalWordAccuracy();
+		        best = e;
+		    }
+		    
+		    
 			if (inPercent && rounded)
 				writeToPerformanceFileRoundedInPercent(e.getMethod(),
 						e.getLanguageWeight(), e.getWordInsertionProbability(),
@@ -147,6 +156,10 @@ public class PerformanceFileWriter {
 						e.getWordInsertionProbability(), e.getAligner(),
 						filename, e.getEmptyResults(), e.getAvgTime());
 		}
+		writeToPerformanceFileRoundedInPercent(best.getMethod(),
+		        best.getLanguageWeight(), best.getWordInsertionProbability(),
+		        best.getAligner(), filename, best.getEmptyResults(),
+		        best.getAvgTime());
 
 	}
 
