@@ -1,5 +1,11 @@
-;;;;;;;;;;
-MeinTest.rounded_in_percent_with_empty_results;;;;;;;;;;
-Approach;Language Weight;Word Insertion Probability;Ratio;Accuracy;WER;Sentence Accuracy;Substitutions;Insertions;Deletions;Empty Results;SER;Average Time
-Standard;35.0;73.0;0.479;78.154;27.385;32.095;196;72;88;0;67.905;0
-Standard;35.0;73.0;0.479;78.154;27.385;32.095;196;72;88;0;67.905;0
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,,
+Standard,18,3,6,40,60.769,6.757,505,10,275,0,93.243,0,,Trigram,Uniweight 1
+,,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,,
+Standard,18,3,6,34.385,66.385,7.095,461,10,392,0,92.905,0,,Trigram,Uniweight 0.7
+,,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,Bigram,Uniweight 0.7
+Standard,18,3,6,30.077,70.462,4.054,474,7,435,0,95.946,0,,,

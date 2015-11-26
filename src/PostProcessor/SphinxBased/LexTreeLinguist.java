@@ -1294,6 +1294,7 @@ public class LexTreeLinguist implements Linguist
         private float logLanguageProbability;
         private float logInsertionProbability;
         private final Node parentNode;
+        private float scorefactor;
         int hashCode = -1;
         private int numberOfTimesUsed = 0;
 
@@ -1414,14 +1415,9 @@ public class LexTreeLinguist implements Linguist
         @Override
         public SearchStateArc[] getSuccessors()
         {
-//      CLEAN UP THIS METHODE! THIS COULD LOOK SO NICE
             SearchStateArc[] nextStates = getCachedArcs();
             if (nextStates == null)
             {
-//              ACHTUNG HIER GEHÖRT IN DIE IF BEDINGUNG URSPRUENGLICH(if (hmmState.isExitState()))
-//              Hab ich geänder um die multiphonestates loszuwerden
-                if (true)
-                {
                     if (parentNode == null)
                     {
                         nextStates = super.getSuccessors();
@@ -1430,47 +1426,6 @@ public class LexTreeLinguist implements Linguist
                     {
                         nextStates = super.getSuccessors(parentNode);
                     }
-                }
-//                SO THIS IS UNREACHABLE CODE 
-//                else
-//                {
-//                    // The current hmm state is not an exit state, so we
-//                    // just go through the next set of successors
-//
-//                    HMMStateArc[] arcs = hmmState.getSuccessors();
-//                    nextStates = new SearchStateArc[arcs.length];
-//                    for (int i = 0; i < arcs.length; i++)
-//                    {
-//                        HMMStateArc arc = arcs[i];
-//                        if (arc.getHMMState()
-//                            .isEmitting())
-//                        {
-//                            // if its a self loop and the prob. matches
-//                            // reuse the state
-//                            if (arc.getHMMState() == hmmState
-//                                    && logInsertionProbability == arc.getLogProbability())
-//                            {
-//                                nextStates[i] = this;
-//                            }
-//                            else
-//                            {
-//                                nextStates[i] = new LexTreeHMMState(
-//                                        (HMMNode) getNode(), getWordHistory(),
-//                                        getSmearTerm(), getSmearProb(),
-//                                        arc.getHMMState(), logOne,
-//                                        arc.getLogProbability(), parentNode);
-//                            }
-//                        }
-//                        else
-//                        {
-//                            nextStates[i] = new LexTreeNonEmittingHMMState(
-//                                    (HMMNode) getNode(), getWordHistory(),
-//                                    getSmearTerm(), getSmearProb(),
-//                                    arc.getHMMState(), arc.getLogProbability(),
-//                                    parentNode);
-//                        }
-//                    }
-//                }
             }
             putCachedArcs(nextStates);
 
@@ -1496,29 +1451,6 @@ public class LexTreeLinguist implements Linguist
             return 5;
         }
 
-        //	DIESE METHODE BRAUCH ICH WARSCHEINLICH / VIELLEICHT AUCH NICHT...
-//          EHER NICHT !!
-        //    SearchStateArc[] getNextArcs()
-        //    {
-        //        SearchStateArc[] arcs;
-        //        // this is the last state of the hmm
-        //        // so check to see if we are at the end
-        //        // of a word, if not get the next full hmm in the word
-        //        // otherwise generate arcs to the next set of words
-        //           
-        //        if (hmmState.getHMM().getPosition().name()=="BEGIN")
-        //        {                
-        //            arcs = (SearchStateArc[]) hmmState.getSuccessors();
-        //        }
-        //        else
-        //        {
-        //            // we are at the end of the word, so we transit to the
-        //            // next grammar nodes
-        //            GrammarState gs = pState.getGrammarState();             
-        //            arcs = gs.getNextGrammarStates(0, getRC());
-        //        }
-        //        return arcs;
-        //    }
 
         public float getScore(Data data)
         {
@@ -1530,8 +1462,9 @@ public class LexTreeLinguist implements Linguist
             // TODO: if numberOfTimesUsed != 0 then add a penalty to the score
             numberOfTimesUsed++;
 //            System.out.print("Score: " +data+" gegen "+name +" mit "+hmmState.getHMM().getUnit().getContext()+" als Vorgänger");
-
-            return ((PhoneData) data).getConfusionScore(name, numberOfTimesUsed)*50;
+        // DER FAKTOR AM ENDE DIENT DER HÖHEREN GEWICHTUNG DIESES SCORES IN DER WEITERVERARBEITUNG
+            return ((PhoneData) data).getConfusionScore(name, numberOfTimesUsed);  
+            //FAKTOR WAR AUF 19 AM BESTEN
 //            	    return hmmState.getScore(data);
         }
 
@@ -1563,7 +1496,6 @@ public class LexTreeLinguist implements Linguist
         {
             super(hmmNode, wordSequence, smearTerm, smearProb, hmmState,
                     logOne, probability, parentNode);
-//            System.out.println("LexTreeNonEmittingHMMState erstellt");
         }
 
         @Override

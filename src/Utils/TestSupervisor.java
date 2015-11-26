@@ -3004,7 +3004,89 @@ public class TestSupervisor
         }
 
     }
+    public static void myTestGoogleWER(String path, String refhyp)
+    {
+        class OneShotTask implements Runnable
+        {
+            String path;
+            String refhyp;
 
+            OneShotTask(String refhyp, String path)
+            {
+                this.refhyp = refhyp;
+                this.path = path;
+            }
+
+            public void run()
+            {
+
+                PerformanceFileWriter tableRows = new PerformanceFileWriter();
+
+                final NISTAlign alignerrefshyp = new NISTAlign(true, true);
+                String spath = "/informatik2/students/home/1strauss/workspace/MeinDocks/config/myexample/";
+
+                //                        final SphinxBasedPostProcessor standard = new SphinxBasedPostProcessor(
+                //                                spath + "elpmaxe.pngram.xml", spath + "elpmaxe.words",
+                //                                4, wordInsertionProbability, 0);
+
+                String strLine;
+
+                try
+                {
+                    //                            PerformanceFileWriter tableRows = new PerformanceFileWriter();
+                    BufferedReader br = null;
+                    try
+                    {
+                        br = new BufferedReader(new InputStreamReader(
+                                new DataInputStream(new FileInputStream(path
+                                        + refhyp))));
+                    }
+                    catch (FileNotFoundException e1)
+                    {
+                        // TODO Auto-generated catch block
+                        e1.printStackTrace();
+                    }
+
+                    while ((strLine = br.readLine()) != null)
+                    {
+                        //                                System.out.println(strLine);
+                        String[] strLineSplit = strLine.split(";");
+                        String ref = strLineSplit[1];
+                        String hypGoogle = strLineSplit[0];
+                        Result r = new Result();
+                        r.addResult(hypGoogle);
+                        String hyps = r.getBestResult();
+                        alignerrefshyp.align(ref, hyps);
+
+                        //                                Printer.printColor(
+                        //                                        Printer.ANSI_BLUE,
+                        //                                        "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  LLR  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
+                        //                                alignerrefshyp.printSentenceSummary();
+                        //                                alignerrefshyp.printTotalSummary();        
+                    }
+
+                    tableRows.add("GoogleWER", 0, 0, alignerrefshyp, 0);
+
+                }
+                catch (IOException e)
+                {
+                    e.printStackTrace();
+                }
+
+                tableRows.createPerformanceTable("GoogleWER"
+                        + ".rounded_in_percent_with_empty_results", true, true,
+                        false);
+
+            }
+        }
+
+        //            System.out.println("start Thread WIP:"+wordInsertionProbability);
+        Thread t = new Thread(new OneShotTask(refhyp, path));
+        //            Thread t = new Thread(new OneShotTask(4,refhyp,
+        //                    path));
+        t.start();
+
+    }
     public static void myTestWER(String path, String refhyp, float wip, float lw)
     {
         class OneShotTask implements Runnable
@@ -3078,6 +3160,7 @@ public class TestSupervisor
                     tableRows.add("Standard", standard.getLanguageWeight(),
                             standard.getWIP(), alignerrefshyp, 0);
 
+
                 }
                 catch (IOException e)
                 {
@@ -3120,10 +3203,10 @@ public class TestSupervisor
 
                 PerformanceFileWriter tableRows = new PerformanceFileWriter();
 
-                for (float wordInsertionProbability = wip; wordInsertionProbability <= wip + 5; wordInsertionProbability = wordInsertionProbability + 0.5f)
+                for (float wordInsertionProbability = wip; wordInsertionProbability < wip + 1; wordInsertionProbability = wordInsertionProbability + 0.1f)
                 {
                     //darf nicht 0 sein, da wenn 0 wird die LW aus der config datei genommen (2.35) hab ich geändert auf -1 daher geht es jetzt
-                    for (float languageWeight = 40f; languageWeight <= 90; languageWeight = languageWeight + 0.25f)
+                    for (float languageWeight = 0f; languageWeight <= 10; languageWeight = languageWeight + 0.1f)
                     {
 
                         final NISTAlign alignerrefshyp = new NISTAlign(true,
@@ -3196,7 +3279,7 @@ public class TestSupervisor
             }
         }
 
-        for (float wordInsertionProbability = 25.0f; wordInsertionProbability <= 75.0f; wordInsertionProbability = wordInsertionProbability + 5f)
+        for (float wordInsertionProbability = 0.0f; wordInsertionProbability <= 10.0f; wordInsertionProbability = wordInsertionProbability + 1f)
         {
             //            System.out.println("start Thread WIP:"+wordInsertionProbability);
             Thread t = new Thread(new OneShotTask(wordInsertionProbability,

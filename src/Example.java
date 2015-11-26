@@ -53,7 +53,6 @@ import Utils.TestSupervisor;
 class Example
 {
 
-
     // utility to test recognizers and postprocessors on an example audio file
     private static void testFile(String filename, String sentence,
             RawGoogleRecognizer rawGoogleRecognizer,
@@ -355,9 +354,11 @@ class Example
 
     public static void main(String[] args)
     {
-//        testWER(73, 35);
-//        createConf();
-//        testLWandWIP();
+//        testGoogleWER();
+//                testWER(18f, 3f);
+//                createConf();
+//                findLWandWIP();
+//        createRefHyp();
         testSphinx();
         if (true) return;
 
@@ -429,7 +430,7 @@ class Example
 
         //starts the simulation example
         String configname = "config/mywords/mywords";
-//        String configname = "config/elpmaxe/elpmaxe";
+        //        String configname = "config/elpmaxe/elpmaxe";
 
         // initialize some recognizers
         System.out.println("Starting Raw Google");
@@ -441,8 +442,8 @@ class Example
         //        SphinxRecognizer sphinxNGram = new SphinxRecognizer(configname
         //                + ".ngram.xml");
         // recognize from file
-//        String filename = "data/back_fs_1387386033021_m1.wav";
-        String filename = "data/nao_ball_close_to_oximeter.wav";
+        
+        String filename = "data/nao_dice_can_be_drop.wav";
         Result r;
         r = rawGoogle.recognizeFromFile(filename);
 
@@ -452,20 +453,20 @@ class Example
         {
             String result = r.getBestResult();
             System.out.println("Final Result: " + result);
-            
-//            PhonemeCreator pc = new PhonemeCreator();
-//            ArrayList<PhonemeContainer> phonemesSpeech = pc.getPhonemes(r);
+
+            //            PhonemeCreator pc = new PhonemeCreator();
+            //            ArrayList<PhonemeContainer> phonemesSpeech = pc.getPhonemes(r);
             //get best result
-            
-//            PRINTES OUT THE RESULT IN PHONEMEFORM
-//            String[] phonemes = phonemesSpeech.get(0)
-//                .getPhonemes();
-//            System.out.print(phonemes.length+" Phoneme :");
-//            for (int i = 0; i < phonemes.length; i++)
-//            {
-//                System.out.print(phonemes[i]+", ");  
-//            }
-//            System.out.println();
+
+            //            PRINTES OUT THE RESULT IN PHONEMEFORM
+            //            String[] phonemes = phonemesSpeech.get(0)
+            //                .getPhonemes();
+            //            System.out.print(phonemes.length+" Phoneme :");
+            //            for (int i = 0; i < phonemes.length; i++)
+            //            {
+            //                System.out.print(phonemes[i]+", ");  
+            //            }
+            //            System.out.println();
 
         }
         else
@@ -473,20 +474,38 @@ class Example
             System.out.println("result = null");
         }
     }
-    
-    public static void testLWandWIP()
+
+    public static void findLWandWIP()
     {
-        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/", "heinrichLab.google.refhyp");
+//        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/","heinrichLab.google.refhyp");
+        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/","heinrichLab.google.refhyp");
+
     }
-    public static void testWER(float wip,float lw)
+
+    public static void testWER(float wip, float lw)
     {
-        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/", "heinrichLab.google.refhyp", wip, lw);
+//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/", "heinrichLab.google.refhyp", lw, wip);
+        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/", "heinrichLab.google.refhyp", lw, wip);
     }
+
     public static void createConf()
     {
-      System.out.println("Creating configuration");
-      String batch_name = "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/heinrichLab_L.batch";
-      String config_name = "mywords";
-      ConfigCreator.createConfig(config_name, batch_name);
+        System.out.println("Creating configuration");
+        String batch_name = "/informatik2/students/home/1strauss/eclipse_workspace/txteditor/strauss_semevaltask.batch";
+        String config_name = "test";
+        ConfigCreator.createConfig(config_name, batch_name);
+    }    
+    public static void createRefHyp()
+    {
+        System.out.println("Creating RefHyp");
+        String path= "/informatik2/students/home/1strauss/Vorwerk/vorwerk_corpus/";
+        String batchfile = "strauss_semevaltask.batch";
+        TestSupervisor.testGoogleOOV(path, batchfile);
     }
+    public static void testGoogleWER()
+    {
+//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/", "heinrichLab.google.refhyp", lw, wip);
+        TestSupervisor.myTestGoogleWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/corpus/semevaltask6_evaldata/", "heinrichLab.google.refhyp");
+    }
+
 }

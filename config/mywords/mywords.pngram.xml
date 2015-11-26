@@ -10,8 +10,8 @@
     <property name="relativeBeamWidth"  value="1E-120"/>
     <property name="absoluteWordBeamWidth" value="200"/>
     <property name="relativeWordBeamWidth" value="1E-80"/>
-    <property name="wordInsertionProbability" value="73"/>
-    <property name="languageWeight" value="35"/>
+    <property name="wordInsertionProbability" value="8"/>
+    <property name="languageWeight" value="15"/>
     <property name="silenceInsertionProbability" value="0"/>
     <property name="frontend" value="frontend"/>
     <property name="recognizer" value="recognizer"/>
@@ -170,8 +170,8 @@
             value="${languagemodelfile}"/>
         <property name="logMath" value="logMath"/>
         <property name="dictionary" value="dictionary"/>
-        <property name="maxDepth" value="3"/>
-        <property name="unigramWeight" value=".7"/>
+        <property name="maxDepth" value="2"/>
+        <property name="unigramWeight" value="0.7"/>
     </component>
     
     
