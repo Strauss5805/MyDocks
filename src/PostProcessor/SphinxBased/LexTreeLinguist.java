@@ -250,13 +250,6 @@ public class LexTreeLinguist implements Linguist
     public final static String PROP_DICTIONARY = "dictionary";
 
     /**
-     * The property that defines the size of the arc cache (zero to disable the
-     * cache).
-     */
-    @S4Integer(defaultValue = 0)
-    public final static String PROP_CACHE_SIZE = "cacheSize";
-
-    /**
      * The property that controls whether filler words are automatically added
      * to the vocabulary
      */
@@ -317,9 +310,7 @@ public class LexTreeLinguist implements Linguist
     private boolean generateUnitStates;
     private boolean wantUnigramSmear = true;
     private float unigramSmearWeight = 1.0f;
-    private boolean cacheEnabled;
-    private int maxArcCacheSize;
-
+    
     protected float languageWeight;
     private float logWordInsertionProbability;
     private float logUnitInsertionProbability;
@@ -371,14 +362,7 @@ public class LexTreeLinguist implements Linguist
         this.addFillerWords = addFillerWords;
         this.generateUnitStates = generateUnitStates;
         this.unigramSmearWeight = unigramSmearWeight;
-        this.maxArcCacheSize = maxArcCacheSize;
 
-        cacheEnabled = maxArcCacheSize > 0;
-        if (cacheEnabled)
-        {
-            arcCache = new LRUCache<LexTreeState, SearchStateArc[]>(
-                    maxArcCacheSize);
-        }
     }
 
     public LexTreeLinguist()
@@ -412,14 +396,6 @@ public class LexTreeLinguist implements Linguist
         addFillerWords = (ps.getBoolean(PROP_ADD_FILLER_WORDS));
         generateUnitStates = (ps.getBoolean(PROP_GENERATE_UNIT_STATES));
         unigramSmearWeight = ps.getFloat(PROP_UNIGRAM_SMEAR_WEIGHT);
-        maxArcCacheSize = ps.getInt(PROP_CACHE_SIZE);
-
-        cacheEnabled = maxArcCacheSize > 0;
-        if (cacheEnabled)
-        {
-            arcCache = new LRUCache<LexTreeState, SearchStateArc[]>(
-                    maxArcCacheSize);
-        }
     }
 
     /*
@@ -766,14 +742,7 @@ public class LexTreeLinguist implements Linguist
          */
         public SearchStateArc[] getSuccessors()
         {
-            //	    System.out.println("LexTreeState, getSuccessors");
-            SearchStateArc[] arcs = getCachedArcs();
-            if (arcs == null)
-            {
-                arcs = getSuccessors(node);
-                putCachedArcs(arcs);
-            }
-            return arcs;
+            return getSuccessors(node);
         }
 
         /**
@@ -794,7 +763,7 @@ public class LexTreeLinguist implements Linguist
                 if (nextNode instanceof WordNode)
                 {
                     arcs[i] = createWordStateArc((WordNode) nextNode,
-                            (HMMNode) getNode(), this);
+                            (UnitNode) getNode(), this);
                 }
                 else if (nextNode instanceof EndNode)
                 {
@@ -802,7 +771,7 @@ public class LexTreeLinguist implements Linguist
                 }
                 else
                 {
-                    arcs[i] = createUnitStateArc((HMMNode) nextNode, this);
+                    arcs[i] = createUnitStateArc((UnitNode) nextNode, this);
                 }
                 i++;
             }
@@ -818,7 +787,7 @@ public class LexTreeLinguist implements Linguist
          * @return the search state for the wordNode
          */
         protected SearchStateArc createWordStateArc(WordNode wordNode,
-                HMMNode lastUnit, LexTreeState previous)
+                UnitNode lastUnit, LexTreeState previous)
         {
             // System.out.println("CWSA " + wordNode + " fup " + fixupProb);
             float languageProbability = logOne;
@@ -860,7 +829,7 @@ public class LexTreeLinguist implements Linguist
          * 
          * @return the search state
          */
-        SearchStateArc createUnitStateArc(HMMNode hmmNode, LexTreeState previous)
+        SearchStateArc createUnitStateArc(UnitNode hmmNode, LexTreeState previous)
         {
             SearchStateArc arc;
             // System.out.println("CUSA " + hmmNode);
@@ -881,10 +850,10 @@ public class LexTreeLinguist implements Linguist
             }
             else
             {
-                HMM hmm = hmmNode.getHMM();
+                Unit unit = hmmNode.getBaseUnit();
                 arc = new LexTreeHMMState(hmmNode, getWordHistory(),
                         previous.getSmearTerm(), smearProbability,
-                        hmm.getInitialState(), languageProbability,
+                        unit, languageProbability,
                         insertionProbability, null);
             }
             return arc;
@@ -929,48 +898,6 @@ public class LexTreeLinguist implements Linguist
         public String toPrettyString()
         {
             return toString();
-        }
-
-        /**
-         * Gets the successor arcs for this state from the cache
-         *
-         * @return the next set of arcs for this state, or null if none can be
-         *         found or if caching is disabled.
-         */
-        SearchStateArc[] getCachedArcs()
-        {
-            if (cacheEnabled)
-            {
-                SearchStateArc[] arcs = arcCache.get(this);
-                if (arcs != null)
-                {
-                    cacheHits++;
-                }
-                if (++cacheTrys % 1000000 == 0)
-                {
-                    System.out.println("Hits: " + cacheHits + " of "
-                            + cacheTrys + ' ' + ((float) cacheHits) / cacheTrys
-                            * 100f);
-                }
-                return arcs;
-            }
-            else
-            {
-                return null;
-            }
-        }
-
-        /**
-         * Puts the set of arcs into the cache
-         *
-         * @param arcs the arcs to cache.
-         */
-        void putCachedArcs(SearchStateArc[] arcs)
-        {
-            if (cacheEnabled)
-            {
-                arcCache.put(this, arcs);
-            }
         }
 
         abstract public int getOrder();
@@ -1078,33 +1005,29 @@ public class LexTreeLinguist implements Linguist
         public SearchStateArc[] getSuccessors()
         {
             //	    System.out.println("LexTreeEndUnitState, getSuccessors");
-            SearchStateArc[] arcs = getCachedArcs();
-            if (arcs == null)
-            {
-                HMMNode[] nodes = getHMMNodes(getEndNode());
-                arcs = new SearchStateArc[nodes.length];
+            SearchStateArc[] arcs;
+            UnitNode[] nodes = getHMMNodes(getEndNode());
+            arcs = new SearchStateArc[nodes.length];
 
-                if (generateUnitStates)
+            if (generateUnitStates)
+            {
+                for (int i = 0; i < nodes.length; i++)
                 {
-                    for (int i = 0; i < nodes.length; i++)
-                    {
-                        arcs[i] = new LexTreeUnitState(nodes[i],
-                                getWordHistory(), getSmearTerm(),
-                                getSmearProb(), logOne, logOne, this.getNode());
-                    }
+                    arcs[i] = new LexTreeUnitState(nodes[i],
+                            getWordHistory(), getSmearTerm(),
+                            getSmearProb(), logOne, logOne, this.getNode());
                 }
-                else
+            }
+            else
+            {
+                for (int i = 0; i < nodes.length; i++)
                 {
-                    for (int i = 0; i < nodes.length; i++)
-                    {
-                        HMM hmm = nodes[i].getHMM();
-                        arcs[i] = new LexTreeHMMState(nodes[i],
-                                getWordHistory(), getSmearTerm(),
-                                getSmearProb(), hmm.getInitialState(), logOne,
-                                logOne, this.getNode());
-                    }
+                    Unit unit = nodes[i].getBaseUnit();
+                    arcs[i] = new LexTreeHMMState(nodes[i],
+                            getWordHistory(), getSmearTerm(),
+                            getSmearProb(), unit, logOne,
+                            logOne, this.getNode());
                 }
-                putCachedArcs(arcs);
             }
             return arcs;
         }
@@ -1124,25 +1047,26 @@ public class LexTreeLinguist implements Linguist
 
     /** Represents a unit in the search space */
     public class LexTreeUnitState extends LexTreeState implements
-            UnitSearchState
+            UnitSearchState, ScoreProvider
     {
 
         private float logInsertionProbability;
         private float logLanguageProbability;
         private Node parentNode;
         private int hashCode = -1;
+        private int numberOfTimesUsed = 0;
 
         /**
          * Constructs a LexTreeUnitState
          *
          * @param wordSequence the history of words
          */
-        LexTreeUnitState(HMMNode hmmNode, WordSequence wordSequence,
+        LexTreeUnitState(UnitNode unitNode, WordSequence wordSequence,
                 float smearTerm, float smearProb, float languageProbability,
                 float insertionProbability)
         {
 
-            this(hmmNode, wordSequence, smearTerm, smearProb,
+            this(unitNode, wordSequence, smearTerm, smearProb,
                     languageProbability, insertionProbability, null);
 //            System.out.println("LexTreeUnitState erstellt");
 
@@ -1153,11 +1077,11 @@ public class LexTreeLinguist implements Linguist
          *
          * @param wordSequence the history of words
          */
-        LexTreeUnitState(HMMNode hmmNode, WordSequence wordSequence,
+        LexTreeUnitState(UnitNode unitNode, WordSequence wordSequence,
                 float smearTerm, float smearProb, float languageProbability,
                 float insertionProbability, Node parentNode)
         {
-            super(hmmNode, wordSequence, smearTerm, smearProb);
+            super(unitNode, wordSequence, smearTerm, smearProb);
             this.logInsertionProbability = insertionProbability;
             this.logLanguageProbability = languageProbability;
             this.parentNode = parentNode;
@@ -1171,7 +1095,7 @@ public class LexTreeLinguist implements Linguist
          */
         public Unit getUnit()
         {
-            return getHMMNode().getBaseUnit();
+            return getUnitNode().getBaseUnit();
         }
 
         /**
@@ -1223,9 +1147,9 @@ public class LexTreeLinguist implements Linguist
          *
          * @return the unit node
          */
-        private HMMNode getHMMNode()
+        private UnitNode getUnitNode()
         {
-            return (HMMNode) getNode();
+            return (UnitNode) getNode();
         }
 
         // Hier wichtig nochmal mit (ourDynamicFlatLinguist <-> FlatLinguist)
@@ -1243,9 +1167,9 @@ public class LexTreeLinguist implements Linguist
         {
 //            System.out.println("LexTreeUnitState, getSuccessors");
             SearchStateArc[] arcs = new SearchStateArc[1];
-            HMM hmm = getHMMNode().getHMM();
-            arcs[0] = new LexTreeHMMState(getHMMNode(), getWordHistory(),
-                    getSmearTerm(), getSmearProb(), hmm.getInitialState(),
+            Unit unit = getUnitNode().getBaseUnit();
+            arcs[0] = new LexTreeHMMState(getUnitNode(), getWordHistory(),
+                    getSmearTerm(), getSmearProb(), unit,
                     logOne, logOne, parentNode);
             return arcs;
         }
@@ -1283,14 +1207,32 @@ public class LexTreeLinguist implements Linguist
         {
             return 4;
         }
+
+        @Override
+        public float[] getComponentScore(Data arg0)
+        {
+            return null;
+        }
+
+        @Override
+        public float getScore(Data data)
+        {
+//          I CHANGED THIS METHOD SO THE PHONESCORER SCORES THE BASEUNITS OF THE HMMS
+          // TODO: if numberOfTimesUsed != 0 then add a penalty to the score
+          numberOfTimesUsed++;
+          System.out.print("Score: " +data+" gegen ");//+name +" mit "+hmmState.getHMM().getUnit().getContext()+" als Vorgänger");
+      // DER FAKTOR AM ENDE DIENT DER HÖHEREN GEWICHTUNG DIESES SCORES IN DER WEITERVERARBEITUNG
+          return ((PhoneData) data).getConfusionScore(getUnitNode().getBaseUnit().getName(), numberOfTimesUsed);  
+          //FAKTOR WAR AUF 19 AM BESTEN
+//                return hmmState.getScore(data);
+        }
     }
 
     /** Represents a HMM state in the search space */
     public class LexTreeHMMState extends LexTreeState implements
             HMMSearchState, ScoreProvider
     {
-
-        private final HMMState hmmState;
+        String name;
         private float logLanguageProbability;
         private float logInsertionProbability;
         private final Node parentNode;
@@ -1306,28 +1248,17 @@ public class LexTreeLinguist implements Linguist
          * @param languageProbability the probability of the transition
          * @param insertionProbability the probability of the transition
          */
-        LexTreeHMMState(HMMNode hmmNode, WordSequence wordSequence,
-                float smearTerm, float smearProb, HMMState hmmState,
+        LexTreeHMMState(UnitNode hmmNode, WordSequence wordSequence,
+                float smearTerm, float smearProb, Unit baseUnit,
                 float languageProbability, float insertionProbability,
                 Node parentNode)
         {
             super(hmmNode, wordSequence, smearTerm, smearProb);
 //            System.out.println("LexTreeHMMState erstellt");
-            this.hmmState = hmmState;
             this.parentNode = parentNode;
+            this.name = baseUnit.getName();
             this.logLanguageProbability = languageProbability;
             this.logInsertionProbability = insertionProbability;
-        }
-
-        /**
-         * Gets the ID for this state
-         *
-         * @return the ID
-         */
-        @Override
-        public String getSignature()
-        {
-            return super.getSignature() + "-HMM-" + hmmState.getState();
         }
 
         /**
@@ -1337,7 +1268,7 @@ public class LexTreeLinguist implements Linguist
          */
         public HMMState getHMMState()
         {
-            return hmmState;
+            return null;
         }
 
         /**
@@ -1350,7 +1281,7 @@ public class LexTreeLinguist implements Linguist
         {
             if (hashCode == -1)
             {
-                hashCode = super.hashCode() * 29 + (hmmState.getState() + 1);
+                hashCode = super.hashCode() * 30;
                 if (parentNode != null)
                 {
                     hashCode *= 377;
@@ -1376,8 +1307,7 @@ public class LexTreeLinguist implements Linguist
             else if (o instanceof LexTreeHMMState)
             {
                 LexTreeHMMState other = (LexTreeHMMState) o;
-                return hmmState == other.hmmState
-                        && parentNode == other.parentNode && super.equals(o);
+                return parentNode == other.parentNode && super.equals(o);
             }
             else
             {
@@ -1415,20 +1345,15 @@ public class LexTreeLinguist implements Linguist
         @Override
         public SearchStateArc[] getSuccessors()
         {
-            SearchStateArc[] nextStates = getCachedArcs();
-            if (nextStates == null)
+            SearchStateArc[] nextStates;
+            if (parentNode == null)
             {
-                    if (parentNode == null)
-                    {
-                        nextStates = super.getSuccessors();
-                    }
-                    else
-                    {
-                        nextStates = super.getSuccessors(parentNode);
-                    }
+                nextStates = super.getSuccessors();
             }
-            putCachedArcs(nextStates);
-
+            else
+            {
+                nextStates = super.getSuccessors(parentNode);
+            }
             return nextStates;
         }
 
@@ -1436,13 +1361,7 @@ public class LexTreeLinguist implements Linguist
         @Override
         public boolean isEmitting()
         {
-            return hmmState.isEmitting();
-        }
-
-        @Override
-        public String toString()
-        {
-            return super.toString() + " hmm:" + hmmState;
+            return true;
         }
 
         @Override
@@ -1455,10 +1374,6 @@ public class LexTreeLinguist implements Linguist
         public float getScore(Data data)
         {
 //            I CHANGED THIS METHOD SO THE PHONESCORER SCORES THE BASEUNITS OF THE HMMS
-            String name = hmmState.getHMM()
-                .getBaseUnit()
-                .getName();
-
             // TODO: if numberOfTimesUsed != 0 then add a penalty to the score
             numberOfTimesUsed++;
 //            System.out.print("Score: " +data+" gegen "+name +" mit "+hmmState.getHMM().getUnit().getContext()+" als Vorgänger");
@@ -1469,40 +1384,11 @@ public class LexTreeLinguist implements Linguist
         }
 
         @Override
-        public float[] getComponentScore(Data feature)
+        public float[] getComponentScore(Data arg0)
         {
-            return hmmState.calculateComponentScore(feature);
+            return null;
         }
 
-    }
-
-    /** Represents a non emitting hmm state */
-    public class LexTreeNonEmittingHMMState extends LexTreeHMMState
-    {
-
-        /**
-         * Constructs a NonEmittingLexTreeHMMState
-         *
-         * 
-         * 
-         * @param hmmState the hmm state associated with this unit
-         * 
-         * @param wordSequence the word history
-         * @param probability the probability of the transition occurring
-         */
-        LexTreeNonEmittingHMMState(HMMNode hmmNode, WordSequence wordSequence,
-                float smearTerm, float smearProb, HMMState hmmState,
-                float probability, Node parentNode)
-        {
-            super(hmmNode, wordSequence, smearTerm, smearProb, hmmState,
-                    logOne, probability, parentNode);
-        }
-
-        @Override
-        public int getOrder()
-        {
-            return 0;
-        }
     }
 
     /** Represents a word state in the search space */
@@ -1510,7 +1396,7 @@ public class LexTreeLinguist implements Linguist
             WordSearchState
     {
 
-        private HMMNode lastNode;
+        private UnitNode lastNode;
         private float logLanguageProbability;
 
         /**
@@ -1520,7 +1406,7 @@ public class LexTreeLinguist implements Linguist
          * @param wordSequence the sequence of words triphone context
          * @param languageProbability the probability of this word
          */
-        LexTreeWordState(WordNode wordNode, HMMNode lastNode,
+        LexTreeWordState(WordNode wordNode, UnitNode lastNode,
                 WordSequence wordSequence, float smearTerm, float smearProb,
                 float languageProbability)
         {
@@ -1622,45 +1508,41 @@ public class LexTreeLinguist implements Linguist
         public SearchStateArc[] getSuccessors()
         {
             //	    System.out.println("LexTreeWordState, getSuccessors");
-            SearchStateArc[] arcs = getCachedArcs();
-            if (arcs == null)
+            SearchStateArc[] arcs;
+            arcs = EMPTY_ARC;
+            WordNode wordNode = (WordNode) getNode();
+
+            if (wordNode.getWord() != sentenceEndWord)
             {
-                arcs = EMPTY_ARC;
-                WordNode wordNode = (WordNode) getNode();
+                int index = 0;
+                List<Node> list = new ArrayList<Node>();
+                Unit[] rc = lastNode.getRC();
+                Unit left = wordNode.getLastUnit();
 
-                if (wordNode.getWord() != sentenceEndWord)
+                for (Unit unit : rc)
                 {
-                    int index = 0;
-                    List<Node> list = new ArrayList<Node>();
-                    Unit[] rc = lastNode.getRC();
-                    Unit left = wordNode.getLastUnit();
-
-                    for (Unit unit : rc)
+                    Node[] epList = hmmTree.getEntryPoint(left, unit);
+                    for (Node n : epList)
                     {
-                        Node[] epList = hmmTree.getEntryPoint(left, unit);
-                        for (Node n : epList)
-                        {
-                            list.add(n);
-                        }
+                        list.add(n);
                     }
-
-                    // add a link to every possible entry point as well
-                    // as link to the </s> node
-                    arcs = new SearchStateArc[list.size() + 1];
-                    for (Node node : list)
-                    {
-                        arcs[index++] = createUnitStateArc((HMMNode) node, this);
-                    }
-
-                    // now add the link to the end of sentence arc:
-                    //		    System.out.println("createWordStateArc: " + createWordStateArc(
-                    //			    hmmTree.getSentenceEndWordNode(), lastNode, this));
-
-                    arcs[index++] = createWordStateArc(
-                            hmmTree.getSentenceEndWordNode(), lastNode, this);
-
                 }
-                putCachedArcs(arcs);
+
+                // add a link to every possible entry point as well
+                // as link to the </s> node
+                arcs = new SearchStateArc[list.size() + 1];
+                for (Node node : list)
+                {
+                    arcs[index++] = createUnitStateArc((UnitNode) node, this);
+                }
+
+                // now add the link to the end of sentence arc:
+                //		    System.out.println("createWordStateArc: " + createWordStateArc(
+                //			    hmmTree.getSentenceEndWordNode(), lastNode, this));
+
+                arcs[index++] = createWordStateArc(
+                        hmmTree.getSentenceEndWordNode(), lastNode, this);
+
             }
             return arcs;
         }
@@ -1699,7 +1581,7 @@ public class LexTreeLinguist implements Linguist
          * 
          * @param logProbability the probability of this word occurring
          */
-        LexTreeEndWordState(WordNode wordNode, HMMNode lastNode,
+        LexTreeEndWordState(WordNode wordNode, UnitNode lastNode,
                 WordSequence wordSequence, float smearTerm, float smearProb,
                 float logProbability)
         {
@@ -1716,253 +1598,25 @@ public class LexTreeLinguist implements Linguist
 
     }
     
-    class PronunciationState extends LexTreeState implements WordSearchState
-    {
-
-        private final LexTreeHMMState LTHMMstate;
-        private final Pronunciation pronunciation;
-
-        /**
-         * Creates a PronunciationState
-         *
-         * @param gs the associated grammar state
-         * @param p  the pronunciation
-         */
-        PronunciationState(LexTreeHMMState LTHMMstate, Pronunciation p,HMMNode node, WordSequence wordSequence,
-                float smearTerm, float smearProb)
-        {
-            super(node, wordSequence, smearTerm, smearProb);
-            this.LTHMMstate = LTHMMstate;
-            this.pronunciation = p;
-        }
-
-        /**
-         * Gets the insertion probability of entering this state
-         *
-         * @return the log probability
-         */
-        @Override
-        public float getInsertionProbability()
-        {
-            if (pronunciation.getWord()
-                .isFiller())
-            {
-                return LogMath.LOG_ONE;
-            }
-            else
-            {
-                return logWordInsertionProbability;
-            }
-        }
-
-        /**
-         * Generate a hashcode for an object
-         *
-         * @return the hashcode
-         */
-        @Override
-        public int hashCode()
-        {
-            return 13 * LTHMMstate.hashCode() + pronunciation.hashCode();
-        }
-
-        /**
-         * Determines if the given object is equal to this object
-         *
-         * @param o the object to test
-         * @return <code>true</code> if the object is equal to this
-         */
-        @Override
-        public boolean equals(Object o)
-        {
-            if (o == this)
-            {
-                return true;
-            }
-            else if (o instanceof PronunciationState)
-            {
-                PronunciationState other = (PronunciationState) o;
-                return other.LTHMMstate.equals(LTHMMstate)
-                        && other.pronunciation.equals(pronunciation);
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        /**
-         * Gets the successor states for this search graph
-         *
-         * @return the successor states
-         */
-        @Override
-        public SearchStateArc[] getSuccessors()
-        {
-            SearchStateArc[] arcs = getCachedArcs();
-
-            if (arcs == null)
-            {
-//                arcs = getSuccessors(gs.getLC(), 0);
-//                cacheSuccessors(arcs);
-            }     
-            return arcs;
-        }
-
-        /**
-         * Gets the successor states for the unit and the given position and left context
-         *
-         * @param lc    the ID of the left context
-         * @param index the position of the unit within the pronunciation
-         * @return the set of sucessor arcs
-         */
-//        SearchStateArc[] getSuccessors(int lc, int index)
-//        {
-//            
-//            SearchStateArc[] arcs;
-
-//            if (index == pronunciation.getUnits().length - 1)
-//            {
-
-//                if (isContextIndependentUnit(pronunciation.getUnits()[index]))
-//                {
-////                    System.out.println("und isContextIndependentUnit(pronunciation.getUnits()[index]) == true");
-////                    System.out.println("Wird  arcs = new SearchStateArc[1];");
-////                    System.out.println("arcs[0] = new OurFullHMMSearchState(this, index, lc, ANY);");
-//                    arcs = new SearchStateArc[1];
-//                    arcs[0] = new OurFullHMMSearchState(this, index, lc, ANY);
-////                    System.out.println("this = "+this+"index = "+index+"lc = "+lc+"ANY = "+ANY);
-////                    System.out.println("arcs[0] = "+arcs[0]);
-//                }
-//                else
-//                {
-////                    System.out.println("und isContextIndependentUnit(pronunciation.getUnits()[index]) == false");
-////                    System.out.println("int[] nextUnits = gs.getNextUnits();");
-//                    int[] nextUnits = gs.getNextUnits();
-//                    for (int i = 0; i < nextUnits.length; i++)
-//                    {
-//                        System.out.print("nextUnits["+i+"] = "+nextUnits[i]+", " );
-//                    }
-////                    System.out.println("");
-////                    System.out.println("nextUnist.length = "+nextUnits.length);
-////                    System.out.println("arcs = new SearchStateArc[nextUnits.length];");
-//                    arcs = new SearchStateArc[nextUnits.length];
-////                    System.out.println("für alle arcs[i] = new OurFullHMMSearchState(this, index, lc, nextUnits[i]);");
-//                    for (int i = 0; i < arcs.length; i++)
-//                    {
-//                        
-//                        arcs[i] = new OurFullHMMSearchState(this, index, lc,
-//                                nextUnits[i]);
-//                    }
-//                }
-//            }
-//            else
-//            {
-//                arcs = new SearchStateArc[1];             
-//                arcs[0] = new OurFullHMMSearchState(this, index, lc);
-//            }
-//            return arcs;
-//        }
-
-        /**
-         * Gets the pronunciation assocated with this state
-         *
-         * @return the pronunciation
-         */
-        @Override
-        public Pronunciation getPronunciation()
-        {
-            return pronunciation;
-        }
-
-        /**
-         * Determines if the given unit is a CI unit
-         *
-         * @param unit the unit to test
-         * @return true if the unit is a context independent unit
-         */
-//        private boolean isContextIndependentUnit(Unit unit)
-//        {
-//            return unit.isFiller();
-//        }
-
-        /**
-         * Returns a unique string representation of the state. This string is suitable (and typically used) for a label
-         * for a GDL node
-         *
-         * @return the signature
-         */
-        @Override
-        public String getSignature()
-        {
-            return "PS " + LTHMMstate.getSignature() + '-' + pronunciation;
-        }
-
-        /**
-         * Returns a string representation of this object
-         *
-         * @return a string representation
-         */
-        @Override
-        public String toString()
-        {
-            return pronunciation.getWord()
-                .getSpelling();
-        }
-
-        /**
-         * Returns the order of this state type among all of the search states
-         *
-         * @return the order
-         */
-        @Override
-        public int getOrder()
-        {
-            return 2;
-        }
-
-        /**
-         * Returns the grammar state associated with this state
-         *
-         * @return the grammar state
-         */
-        LexTreeHMMState getLexTreeHMMState()
-        {
-            return LTHMMstate;
-        }
-
-        /**
-         * Returns true if this WordSearchState indicates the start of a word. Returns false if this WordSearchState
-         * indicates the end of a word.
-         *
-         * @return true if this WordSearchState indicates the start of a word, false if this WordSearchState indicates
-         *         the end of a word
-         */
-        @Override
-        public boolean isWordStart()
-        {
-            return true;
-        }
-    }
     /**
      * Determines the insertion probability for the given unit lex node
      *
-     * @param unitNode the unit lex node
+     * @param abstractUnitNode the unit lex node
      * @return the insertion probability
      */
-    private float calculateInsertionProbability(UnitNode unitNode)
+    private float calculateInsertionProbability(AbstractUnitNode abstractUnitNode)
     {
-        int type = unitNode.getType();
+        int type = abstractUnitNode.getType();
 
-        if (type == UnitNode.SIMPLE_UNIT)
+        if (type == AbstractUnitNode.SIMPLE_UNIT)
         {
             return logUnitInsertionProbability;
         }
-        else if (type == UnitNode.WORD_BEGINNING_UNIT)
+        else if (type == AbstractUnitNode.WORD_BEGINNING_UNIT)
         {
             return logUnitInsertionProbability + logWordInsertionProbability;
         }
-        else if (type == UnitNode.SILENCE_UNIT)
+        else if (type == AbstractUnitNode.SILENCE_UNIT)
         {
             return logSilenceInsertionProbability;
         }
@@ -2008,7 +1662,7 @@ public class LexTreeLinguist implements Linguist
      * @param endNode the end node
      * @return an array of associated HMM nodes
      */
-    private HMMNode[] getHMMNodes(EndNode endNode)
+    private UnitNode[] getHMMNodes(EndNode endNode)
     {
         return hmmTree.getHMMNodes(endNode);
     }

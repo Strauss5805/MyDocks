@@ -70,26 +70,6 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
     @S4Component(type = UnitManager.class)
     public final static String UNIT_MANAGER = "unitManager";
 
-    /** The property used to define the acoustic model to use when building the search graph */
-    @S4Component(type = AcousticModel.class)
-    public final static String ACOUSTIC_MODEL = "acousticModel";
-
-    /** The property that specifies whether to add a branch for detecting out-of-grammar utterances. */
-    @S4Boolean(defaultValue = false)
-    public final static String ADD_OUT_OF_GRAMMAR_BRANCH = "addOutOfGrammarBranch";
-
-    /** The property for the probability of entering the out-of-grammar branch. */
-    @S4Double(defaultValue = 1.0)
-    public final static String OUT_OF_GRAMMAR_PROBABILITY = "outOfGrammarProbability";
-
-    /** The property for the probability of inserting a CI phone in the out-of-grammar ci phone loop */
-    @S4Double(defaultValue = 1.0)
-    public static final String PHONE_INSERTION_PROBABILITY = "phoneInsertionProbability";
-
-    /** The property for the acoustic model to use to build the phone loop that detects out of grammar utterances. */
-    @S4Component(type = AcousticModel.class)
-    public final static String PHONE_LOOP_ACOUSTIC_MODEL = "phoneLoopAcousticModel";
-
     // ----------------------------------
     // Subcomponents that are configured
     // by the property sheet
@@ -97,8 +77,6 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
     //
     // -----------------------------------
     private Grammar grammar;
-    private AcousticModel acousticModel;
-    private AcousticModel phoneLoopAcousticModel;
     private LogMath logMath;
     // ------------------------------------
     // Data that is configured by the
@@ -109,10 +87,6 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
     private float logUnitInsertionProbability;
     private float logFillerInsertionProbability;
     private float languageWeight;
-    @SuppressWarnings("unused")
-    private float logOutOfGrammarBranchProbability;
-    private float logPhoneInsertionProbability;
-    private boolean addOutOfGrammarBranch;
 
     // ------------------------------------
     // Data used for building and maintaining
@@ -120,7 +94,6 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
     // -------------------------------------
     private SearchGraph searchGraph;
     private Logger logger;
-    SearchStateArc outOfGrammarGraph;
     private GrammarNode initialGrammarState;
 
     // this map is used to manage the set of follow on units for a
@@ -152,7 +125,6 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
     {
 
         this.logger = Logger.getLogger(getClass().getName());
-        this.acousticModel = acousticModel;
         logMath = LogMath.getLogMath();
         this.grammar = grammar;
 
@@ -161,14 +133,6 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
         this.logUnitInsertionProbability = logMath.linearToLog(unitInsertionProbability);
         this.logFillerInsertionProbability = logMath.linearToLog(fillerInsertionProbability);
         this.languageWeight = languageWeight;
-        this.addOutOfGrammarBranch = addOutOfGrammarBranch;
-        this.logOutOfGrammarBranchProbability = logMath.linearToLog(outOfGrammarBranchProbability);
-
-        this.logPhoneInsertionProbability = logMath.linearToLog(logPhoneInsertionProbability);
-        if (addOutOfGrammarBranch)
-        {
-            this.phoneLoopAcousticModel = phoneLoopAcousticModel;
-        }
     }
 
     public OurDynamicFlatLinguist()
@@ -186,7 +150,6 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
     {
         // hookup to all of the components
         logger = ps.getLogger();
-        acousticModel = (AcousticModel) ps.getComponent(ACOUSTIC_MODEL);
 
         
         logMath = LogMath.getLogMath();
@@ -199,14 +162,6 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
         logUnitInsertionProbability = logMath.linearToLog(ps.getDouble(PROP_UNIT_INSERTION_PROBABILITY));
         logFillerInsertionProbability = logMath.linearToLog(ps.getDouble(PROP_FILLER_INSERTION_PROBABILITY));
         languageWeight = ps.getFloat(Linguist.PROP_LANGUAGE_WEIGHT);
-        addOutOfGrammarBranch = ps.getBoolean(ADD_OUT_OF_GRAMMAR_BRANCH);
-        logOutOfGrammarBranchProbability = logMath.linearToLog(ps.getDouble(OUT_OF_GRAMMAR_PROBABILITY));
-
-        logPhoneInsertionProbability = logMath.linearToLog(ps.getDouble(PHONE_INSERTION_PROBABILITY));
-        if (addOutOfGrammarBranch)
-        {
-            phoneLoopAcousticModel = (AcousticModel) ps.getComponent(PHONE_LOOP_ACOUSTIC_MODEL);
-        }
     }
 
     /**
@@ -229,7 +184,6 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
     protected void setupAcousticModel(PropertySheet ps)
             throws PropertyException
     {
-        acousticModel = (AcousticModel) ps.getComponent(ACOUSTIC_MODEL);
     }
 
     @Override
@@ -251,11 +205,6 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
      * @throws java.io.IOException*/
     protected void allocateAcousticModel() throws IOException
     {
-        acousticModel.allocate();
-        if (addOutOfGrammarBranch)
-        {
-            phoneLoopAcousticModel.allocate();
-        }
     }
 
     /*
@@ -266,10 +215,6 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
     @Override
     public void deallocate()
     {
-        if (acousticModel != null)
-        {
-            acousticModel.deallocate();
-        }
         grammar.deallocate();
     }
 
@@ -1246,21 +1191,6 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
         }
 
         /**
-         * Generate a hashcode for an object
-         *
-         * @return the hashcode
-         */
-        @Override
-        public int hashCode()
-        {
-            // TODO: maybe improve hash by using AtomicInteger.getNext() from a class variable
-            return pState.getGrammarState()
-                .getGrammarNode()
-                .hashCode() * 29 + pState.getPronunciation()
-                .hashCode() * 19 + index * 7; 
-        }
-
-        /**
          * Determines if the given object is equal to this object
          *
          * @param o the object to test
@@ -1327,45 +1257,7 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
             return arcs;
         }
 
-        /**
-         * Determines if this unit is the last unit of a word
-         *
-         * @return true if this unit is the last unit of a word
-         */
-        boolean isLastUnitOfWord()
-        {
-            return isLastUnitOfWord;
-        }
-
-        /**
-         * Determines the position of the unit within the word
-         *
-         * @return the position of the unit within the word
-         */
-        HMMPosition getPosition()
-        {
-            int len = pState.getPronunciation()
-                .getUnits().length;
-            if (len == 1)
-            {
-                return HMMPosition.SINGLE;
-            }
-            else if (index == 0)
-            {
-                return HMMPosition.BEGIN;
-            }
-            else if (index == len - 1)
-            {
-                return HMMPosition.END;
-            }
-            else
-            {
-                return HMMPosition.INTERNAL;
-            }
-        }
-        
-
-        /**
+         /**
          * Returns the order of this state type among all of the search states
          *
          * @return the order
@@ -1389,16 +1281,6 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
                 .getGrammarNode() + pState.getPronunciation() + index + '-';
         }
 
-        /**
-         * Returns the ID of the right context for this state
-         *
-         * @return the right context unit ID
-         */
-        int getRC()
-        {
-            return 0;
-        }
-
         @Override
         public boolean isEmitting()
         {
@@ -1418,7 +1300,7 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
             // of a word, if not get the next full hmm in the word
             // otherwise generate arcs to the next set of words
                
-            if (!isLastUnitOfWord())
+            if (!isLastUnitOfWord)
             {                
                 arcs = pState.getSuccessors(0, index + 1);
             }
@@ -1427,7 +1309,7 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
                 // we are at the end of the word, so we transit to the
                 // next grammar nodes
                 GrammarState gs = pState.getGrammarState();             
-                arcs = gs.getNextGrammarStates(0, getRC());
+                arcs = gs.getNextGrammarStates(0, 0);
             }
             return arcs;
         }

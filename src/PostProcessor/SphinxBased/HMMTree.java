@@ -22,8 +22,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.logging.Logger;
 
-import javax.swing.text.Position;
-
 import edu.cmu.sphinx.linguist.WordSequence;
 import edu.cmu.sphinx.linguist.acoustic.HMM;
 import edu.cmu.sphinx.linguist.acoustic.HMMPool;
@@ -173,7 +171,7 @@ class Node {
         Node child = null;
         Node matchingChild = getSuccessor(hmm);
         if (matchingChild == null) {
-            child = new HMMNode(hmm, probability);
+            child = new UnitNode(hmm, probability);
             putSuccessor(hmm, child);
         } else {
             if (matchingChild.getUnigramProbability() < probability) {
@@ -261,8 +259,8 @@ class Node {
      * @return the node (may be different than child if there was already a node attached holding the hmm held by
      *         child)
      */
-    UnitNode addSuccessor(UnitNode child) {
-        UnitNode matchingChild = (UnitNode) getSuccessor(child.getKey());
+    AbstractUnitNode addSuccessor(AbstractUnitNode child) {
+        AbstractUnitNode matchingChild = (AbstractUnitNode) getSuccessor(child.getKey());
         if (matchingChild == null) {
             putSuccessor(child.getKey(), child);
         } else {
@@ -383,7 +381,7 @@ class WordNode extends Node {
  */
 class InitialWordNode extends WordNode {
 
-    final HMMNode parent;
+    final UnitNode parent;
 
 
     /**
@@ -392,7 +390,7 @@ class InitialWordNode extends WordNode {
      * @param pronunciation the pronunciation
      * @param parent        the parent node
      */
-    InitialWordNode(Pronunciation pronunciation, HMMNode parent) {
+    InitialWordNode(Pronunciation pronunciation, UnitNode parent) {
         super(pronunciation, LogMath.LOG_ONE);
         this.parent = parent;
     }
@@ -403,14 +401,14 @@ class InitialWordNode extends WordNode {
      *
      * @return the parent
      */
-    HMMNode getParent() {
+    UnitNode getParent() {
         return parent;
     }
 
 }
 
 
-abstract class UnitNode extends Node {
+abstract class AbstractUnitNode extends Node {
 
     public final static int SIMPLE_UNIT = 1;
     public final static int WORD_BEGINNING_UNIT = 2;
@@ -425,7 +423,7 @@ abstract class UnitNode extends Node {
      *
      * @param probablilty the probability for the node
      */
-    UnitNode(float probablilty) {
+    AbstractUnitNode(float probablilty) {
         super(probablilty);
     }
 
@@ -467,9 +465,9 @@ abstract class UnitNode extends Node {
 
 /** A node that represents an HMM in the hmm tree */
 
-class HMMNode extends UnitNode {
+class UnitNode extends AbstractUnitNode {
 
-    private final HMM hmm;
+    private final Unit baseUnit;
 
     // There can potentially be a large number of nodes (millions),
     // therefore it is important to conserve space as much as
@@ -488,16 +486,14 @@ class HMMNode extends UnitNode {
      *
      * @param hmm the hmm to hold
      */
-    HMMNode(HMM hmm, float probablilty) {
+    UnitNode(HMM hmm, float probablilty) {
         super(probablilty);
-        this.hmm = hmm;
-
-        Unit base = getBaseUnit();
+        baseUnit = hmm.getBaseUnit();
 
         int type = SIMPLE_UNIT;
-        if (base.isSilence()) {
+        if (baseUnit.isSilence()) {
             type = SILENCE_UNIT;
-        } else if (base.isFiller()) {
+        } else if (baseUnit.isFiller()) {
             type = FILLER_UNIT;
         } else if (hmm.getPosition().isWordBeginning()) {
             type = WORD_BEGINNING_UNIT;
@@ -514,29 +510,14 @@ class HMMNode extends UnitNode {
     @Override
     Unit getBaseUnit() {
         // return hmm.getUnit().getBaseUnit();
-        return hmm.getBaseUnit();
+        return baseUnit;
     }
 
-
-    /**
-     * Returns the hmm for this node
-     *
-     * @return the hmm
-     */
-    HMM getHMM() {
-        return hmm;
-    }
 
 
     @Override
     HMMPosition getPosition() {
-        return hmm.getPosition();
-    }
-
-
-    @Override
-    HMM getKey() {
-        return getHMM();
+        return HMMPosition.SINGLE;
     }
 
 
@@ -547,7 +528,7 @@ class HMMNode extends UnitNode {
      */
     @Override
     public String toString() {
-        return "HMMNode " + hmm + " p " + getUnigramProbability();
+        return "BaseUnit " + baseUnit + " p " + getUnigramProbability();
     }
 
 
@@ -601,10 +582,17 @@ class HMMNode extends UnitNode {
         }
         return (Unit[]) rcSet;
     }
+
+
+    @Override
+    Object getKey()
+    {
+        return baseUnit;
+    }
 }
 
 
-class EndNode extends UnitNode {
+class EndNode extends AbstractUnitNode {
 
     final Unit baseUnit;
     final Unit leftContext;
@@ -698,7 +686,7 @@ class HMMTree {
     private EntryPointTable entryPointTable;
     private boolean debug;
     private final float languageWeight;
-    private final Map<Object, HMMNode[]> endNodeMap;
+    private final Map<Object, UnitNode[]> endNodeMap;
     private WordNode sentenceEndWordNode;
     private Logger logger;
 
@@ -717,7 +705,7 @@ class HMMTree {
         this.hmmPool = pool;
         this.dictionary = dictionary;
         this.lm = lm;
-        this.endNodeMap = new HashMap<Object, HMMNode[]>();
+        this.endNodeMap = new HashMap<Object, UnitNode[]>();
         this.addFillerWords = addFillerWords;
         this.languageWeight = languageWeight;
         
@@ -748,19 +736,19 @@ class HMMTree {
      * @param endNode the end node
      * @return an array of associated hmm nodes
      */
-    public HMMNode[] getHMMNodes(EndNode endNode) {
-        HMMNode[] results = endNodeMap.get(endNode.getKey());
+    public UnitNode[] getHMMNodes(EndNode endNode) {
+        UnitNode[] results = endNodeMap.get(endNode.getKey());
         if (results == null) {
             // System.out.println("Filling cache for " + endNode.getKey()
             //        + " size " + endNodeMap.size());
-            Map<HMM, HMMNode> resultMap = new HashMap<HMM, HMMNode>();
+            Map<HMM, UnitNode> resultMap = new HashMap<HMM, UnitNode>();
             Unit baseUnit = endNode.getBaseUnit();
             Unit lc = endNode.getLeftContext();
             for (Unit rc : entryPoints) {
                 HMM hmm = hmmPool.getHMM(baseUnit, lc, rc, HMMPosition.END);
-                HMMNode hmmNode = resultMap.get(hmm);
+                UnitNode hmmNode = resultMap.get(hmm);
                 if (hmmNode == null) {
-                    hmmNode = new HMMNode(hmm, LogMath.LOG_ONE);
+                    hmmNode = new UnitNode(hmm, LogMath.LOG_ONE);
                     resultMap.put(hmm, hmmNode);
                 }
                 hmmNode.addRC(rc);
@@ -771,7 +759,7 @@ class HMMTree {
             }
 
             // cache it
-            results = resultMap.values().toArray(new HMMNode[resultMap.size()]);
+            results = resultMap.values().toArray(new UnitNode[resultMap.size()]);
             endNodeMap.put(endNode.getKey(), results);
         }
 
@@ -1158,8 +1146,8 @@ class HMMTree {
             if (rcSet == null) {
                 rcSet = new HashSet<Unit>();
                 for (Node node : baseNode.getSuccessorMap().values()) {
-                    UnitNode unitNode = (UnitNode) node;
-                    rcSet.add(unitNode.getBaseUnit());
+                    AbstractUnitNode abstractUnitNode = (AbstractUnitNode) node;
+                    rcSet.add(abstractUnitNode.getBaseUnit());
                 }
             }
             return rcSet;
@@ -1171,7 +1159,7 @@ class HMMTree {
          */
         void createEntryPointMap() {
             HashMap<HMM, Node> map = new HashMap<HMM, Node>();
-            HashMap<HMM, HMMNode> singleUnitMap = new HashMap<HMM, HMMNode>();
+            HashMap<HMM, UnitNode> singleUnitMap = new HashMap<HMM, UnitNode>();
 
             for (Unit lc : exitPoints) {
                 Node epNode = new Node(LogMath.LOG_ZERO);
@@ -1203,15 +1191,15 @@ class HMMTree {
          * @param lc     the left context
          * @param epNode the entry point node
          */
-        private void connectSingleUnitWords(Unit lc, Node epNode, HashMap<HMM, HMMNode> map) {
+        private void connectSingleUnitWords(Unit lc, Node epNode, HashMap<HMM, UnitNode> map) {
             if (!singleUnitWords.isEmpty()) {
                 
                 for (Unit rc : entryPoints) {
                     HMM hmm = hmmPool.getHMM(baseUnit, lc, rc, HMMPosition.SINGLE);
                     
-                    HMMNode tailNode;
+                    UnitNode tailNode;
                     if (( tailNode = map.get(hmm)) == null) {
-                        tailNode = (HMMNode)
+                        tailNode = (UnitNode)
                                 epNode.addSuccessor(hmm, getProbability());
                         map.put(hmm, tailNode);
                     } else {
@@ -1247,7 +1235,7 @@ class HMMTree {
          */
         private void connectEntryPointNode(Node epNode, Unit rc) {
             for (Node node : baseNode.getSuccessors()) {
-                UnitNode successor = (UnitNode) node;
+                AbstractUnitNode successor = (AbstractUnitNode) node;
                 if (successor.getBaseUnit() == rc) {
                     epNode.addSuccessor(successor);
 //                    System.out.println("EntryPoint: "+epNode + "  ||  Successors: "+ epNode.getSuccessorMap());
@@ -1272,85 +1260,6 @@ class HMMTree {
                 }
             }
             System.out.println();
-        }
-    }
-    private class MyHMM implements HMM {
-        private final Unit unit;
-        private final Unit baseUnit;
-        private final Unit lc;
-        private final Unit rc;
-        private final HMMPosition position;
-        
-        public MyHMM(Unit unit,Unit lc,Unit rc, HMMPosition position)
-        {
-            this.unit =unit;
-            this.lc = lc;
-            this.rc=rc;
-            this.position = position;
-            this.baseUnit = unit.getBaseUnit();
-        }
-
-        /**
-         * Gets the  unit associated with this HMM
-         *
-         * @return the unit associated with this HMM
-         */
-        public Unit getUnit()
-        {
-            return baseUnit;
-        }
-
-
-        /**
-         * Gets the  base unit associated with this HMM
-         *
-         * @return the unit associated with this HMM
-         */
-        public Unit getBaseUnit()
-        {
-            return baseUnit;
-        }
-
-
-        /**
-         * Retrieves the hmm state
-         *
-         * @param which the state of interest
-         */
-        public HMMState getState(int which)
-        {
-            return null;
-        }
-
-
-        /**
-         * Returns the order of the HMM
-         *
-         * @return the order of the HMM
-         */
-        public int getOrder()
-        {
-            return 0;
-        }
-
-
-        /**
-         * Retrieves the position of this HMM. Possible
-         *
-         * @return the position for this HMM
-         */
-        public HMMPosition getPosition() {
-            return position;
-        }
-
-
-        /**
-         * Gets the initial states (with probabilities) for this HMM
-         *
-         * @return the set of arcs that transition to the initial states for this HMM
-         */
-        public HMMState getInitialState() {
-            return getState(0);
         }
     }
 
