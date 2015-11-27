@@ -3124,7 +3124,6 @@ public class TestSupervisor
 
                 try
                 {
-                    //                            PerformanceFileWriter tableRows = new PerformanceFileWriter();
                     BufferedReader br = null;
                     try
                     {

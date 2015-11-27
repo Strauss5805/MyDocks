@@ -225,8 +225,8 @@ public class PhonemeCreator {
 		} finally {
 			try {
 				fis.close();
-				System.out.println("Loaded " + sentenceFile
-						+ ".ser successfully");
+//				System.out.println("Loaded " + sentenceFile
+//						+ ".ser successfully");
 
 			} catch (Exception e) {
 			}

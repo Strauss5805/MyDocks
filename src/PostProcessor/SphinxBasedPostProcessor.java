@@ -92,7 +92,7 @@ public class SphinxBasedPostProcessor implements StandardRecognizer
             cm.setGlobalProperty("wordInsertionProbability",
                     wordInsertionProbability + "");
         
-        System.out.println("LW: " + getLanguageWeight() + " WIP: " + getWIP());
+//        System.out.println("LW: " + getLanguageWeight() + " WIP: " + getWIP());
         
         recognizer = (Recognizer) cm.lookup("recognizer");
         recognizer.allocate();

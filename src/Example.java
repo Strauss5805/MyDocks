@@ -20,9 +20,14 @@
  * 7twiefel@informatik.uni-hamburg.de
  */
 
+import java.io.BufferedReader;
 import java.io.Console;
+import java.io.DataInputStream;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioInputStream;
@@ -359,7 +364,8 @@ class Example
 //                createConf();
 //                findLWandWIP();
 //        createRefHyp();
-        testSphinx();
+        testSphinxWithConstantGoogleResults("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/","heinrichLab.google.refhyp");
+//        testSphinx();
         if (true) return;
 
         // set verbose to false
@@ -426,6 +432,9 @@ class Example
     public static void testSphinx()
     {
 
+        // set verbose to false
+        Printer.verbose = false;
+
         String key = "AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw";
 
         //starts the simulation example
@@ -448,7 +457,7 @@ class Example
         r = rawGoogle.recognizeFromFile(filename);
 
         r = sphinxPostProcessorTrigram.recognizeFromResult(r);
-        //        r = sphinxNGram.recognizeFromFile(filename);
+        
         if (r != null)
         {
             String result = r.getBestResult();
@@ -498,7 +507,7 @@ class Example
     public static void createRefHyp()
     {
         System.out.println("Creating RefHyp");
-        String path= "/informatik2/students/home/1strauss/Vorwerk/vorwerk_corpus/";
+        String path= "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/";
         String batchfile = "strauss_semevaltask.batch";
         TestSupervisor.testGoogleOOV(path, batchfile);
     }
@@ -506,6 +515,84 @@ class Example
     {
 //        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/", "heinrichLab.google.refhyp", lw, wip);
         TestSupervisor.myTestGoogleWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/corpus/semevaltask6_evaldata/", "heinrichLab.google.refhyp");
+    }
+
+    public static void testSphinxWithConstantGoogleResults(String path, String refhyp)
+    {
+    
+        // set verbose to false
+        Printer.verbose = false;
+    
+        //starts the simulation example
+        String configname = "config/mywords/mywords";
+        //        String configname = "config/elpmaxe/elpmaxe";
+    
+        System.out.println("Starting Sphinx N-Gram");
+        final SphinxBasedPostProcessor sphinxPostProcessorTrigram = new SphinxBasedPostProcessor(
+                configname + ".pngram.xml", configname + ".words", 0, 0, 0);
+        //        SphinxRecognizer sphinxNGram = new SphinxRecognizer(configname
+        //                + ".ngram.xml");
+        // recognize from file
+        
+        Result r=new Result();
+        String strLine;
+        try
+        {
+            BufferedReader br = null;
+            try
+            {
+                br = new BufferedReader(new InputStreamReader(
+                        new DataInputStream(new FileInputStream(path
+                                + refhyp))));
+            }
+            catch (FileNotFoundException e1)
+            {
+                // TODO Auto-generated catch block
+                e1.printStackTrace();
+            }
+
+            strLine = br.readLine();
+                String[] strLineSplit = strLine.split(";");
+                String hypGoogle = strLineSplit[0];
+                String input = strLineSplit[1];
+                System.out.println("Input: "+ input);
+                System.out.println("GoogleHyp: "+ hypGoogle);
+                r.addResult(hypGoogle);
+                r = sphinxPostProcessorTrigram.recognizeFromResult(r);
+
+
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    
+        r = sphinxPostProcessorTrigram.recognizeFromResult(r);
+        
+        if (r != null)
+        {
+            String result = r.getBestResult();
+            System.out.println("Final Result: " + result);
+    
+            //            PhonemeCreator pc = new PhonemeCreator();
+            //            ArrayList<PhonemeContainer> phonemesSpeech = pc.getPhonemes(r);
+            //get best result
+    
+            //            PRINTES OUT THE RESULT IN PHONEMEFORM
+            //            String[] phonemes = phonemesSpeech.get(0)
+            //                .getPhonemes();
+            //            System.out.print(phonemes.length+" Phoneme :");
+            //            for (int i = 0; i < phonemes.length; i++)
+            //            {
+            //                System.out.print(phonemes[i]+", ");  
+            //            }
+            //            System.out.println();
+    
+        }
+        else
+        {
+            System.out.println("result = null");
+        }
     }
 
 }
