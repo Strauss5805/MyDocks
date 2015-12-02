@@ -841,21 +841,21 @@ public class LexTreeLinguist implements Linguist
 
             // if we want a unit state create it, otherwise
             // get the first hmm state of the unit
-            //	    System.out.println("createUnitStateArc: " + hmmNode);
-            if (generateUnitStates)
-            {
+            //      System.out.println("createUnitStateArc: " + hmmNode);
+//            if (generateUnitStates)
+//            {
                 arc = new LexTreeUnitState(hmmNode, getWordHistory(),
                         previous.getSmearTerm(), smearProbability,
                         languageProbability, insertionProbability);
-            }
-            else
-            {
-                Unit unit = hmmNode.getBaseUnit();
-                arc = new LexTreeHMMState(hmmNode, getWordHistory(),
-                        previous.getSmearTerm(), smearProbability,
-                        unit, languageProbability,
-                        insertionProbability, null);
-            }
+//            }
+//            else
+//            {
+//                Unit unit = hmmNode.getBaseUnit();
+//                arc = new LexTreeHMMState(hmmNode, getWordHistory(),
+//                        previous.getSmearTerm(), smearProbability,
+//                        unit, languageProbability,
+//                        insertionProbability, null);
+//            }
             return arc;
         }
 
@@ -1004,7 +1004,7 @@ public class LexTreeLinguist implements Linguist
         @Override
         public SearchStateArc[] getSuccessors()
         {
-            //	    System.out.println("LexTreeEndUnitState, getSuccessors");
+            //      System.out.println("LexTreeEndUnitState, getSuccessors");
             SearchStateArc[] arcs;
             UnitNode[] nodes = getHMMNodes(getEndNode());
             arcs = new SearchStateArc[nodes.length];
@@ -1165,13 +1165,27 @@ public class LexTreeLinguist implements Linguist
         @Override
         public SearchStateArc[] getSuccessors()
         {
+            SearchStateArc[] nextStates;
+            if (parentNode == null)
+            {
+                nextStates = super.getSuccessors();
+            }
+            else
+            {
+                nextStates = super.getSuccessors(parentNode);
+            }
+            return nextStates;
+            
 //            System.out.println("LexTreeUnitState, getSuccessors");
-            SearchStateArc[] arcs = new SearchStateArc[1];
-            Unit unit = getUnitNode().getBaseUnit();
-            arcs[0] = new LexTreeHMMState(getUnitNode(), getWordHistory(),
-                    getSmearTerm(), getSmearProb(), unit,
-                    logOne, logOne, parentNode);
-            return arcs;
+//            SearchStateArc[] arcs = new SearchStateArc[1];
+//            Unit unit = getUnitNode().getBaseUnit();
+//            arcs[0] = new LexTreeHMMState(getUnitNode(), getWordHistory(),
+//                    getSmearTerm(), getSmearProb(), unit,
+//                    logOne, logOne, parentNode);
+//            arcs[0] = new LexTreeUnitState(getUnitNode(), getWordHistory(),
+//                    getSmearTerm(), getSmearProb(),
+//                    logOne, logOne);
+//            return arcs;
         }
 
         @Override
@@ -1220,11 +1234,18 @@ public class LexTreeLinguist implements Linguist
 //          I CHANGED THIS METHOD SO THE PHONESCORER SCORES THE BASEUNITS OF THE HMMS
           // TODO: if numberOfTimesUsed != 0 then add a penalty to the score
           numberOfTimesUsed++;
-          System.out.print("Score: " +data+" gegen ");//+name +" mit "+hmmState.getHMM().getUnit().getContext()+" als Vorgänger");
+//          System.out.print("Score: " +data+" gegen ");//+name +" mit "+hmmState.getHMM().getUnit().getContext()+" als Vorgänger");
       // DER FAKTOR AM ENDE DIENT DER HÖHEREN GEWICHTUNG DIESES SCORES IN DER WEITERVERARBEITUNG
           return ((PhoneData) data).getConfusionScore(getUnitNode().getBaseUnit().getName(), numberOfTimesUsed);  
           //FAKTOR WAR AUF 19 AM BESTEN
 //                return hmmState.getScore(data);
+        }
+
+        /** Determines if this is an emitting state */
+        @Override
+        public boolean isEmitting()
+        {
+            return true;
         }
     }
 
@@ -1380,7 +1401,7 @@ public class LexTreeLinguist implements Linguist
         // DER FAKTOR AM ENDE DIENT DER HÖHEREN GEWICHTUNG DIESES SCORES IN DER WEITERVERARBEITUNG
             return ((PhoneData) data).getConfusionScore(name, numberOfTimesUsed);  
             //FAKTOR WAR AUF 19 AM BESTEN
-//            	    return hmmState.getScore(data);
+//                  return hmmState.getScore(data);
         }
 
         @Override
@@ -1424,8 +1445,8 @@ public class LexTreeLinguist implements Linguist
          */
         public Pronunciation getPronunciation()
         {
-//            	    System.out.println("Pronounciation: "
-//            		    + ((WordNode) getNode()).getPronunciation());
+//                  System.out.println("Pronounciation: "
+//                      + ((WordNode) getNode()).getPronunciation());
             return ((WordNode) getNode()).getPronunciation();
         }
 
@@ -1507,7 +1528,7 @@ public class LexTreeLinguist implements Linguist
         @Override
         public SearchStateArc[] getSuccessors()
         {
-            //	    System.out.println("LexTreeWordState, getSuccessors");
+            //      System.out.println("LexTreeWordState, getSuccessors");
             SearchStateArc[] arcs;
             arcs = EMPTY_ARC;
             WordNode wordNode = (WordNode) getNode();
@@ -1537,8 +1558,8 @@ public class LexTreeLinguist implements Linguist
                 }
 
                 // now add the link to the end of sentence arc:
-                //		    System.out.println("createWordStateArc: " + createWordStateArc(
-                //			    hmmTree.getSentenceEndWordNode(), lastNode, this));
+                //          System.out.println("createWordStateArc: " + createWordStateArc(
+                //              hmmTree.getSentenceEndWordNode(), lastNode, this));
 
                 arcs[index++] = createWordStateArc(
                         hmmTree.getSentenceEndWordNode(), lastNode, this);

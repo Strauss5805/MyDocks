@@ -558,7 +558,6 @@ class Example
                 System.out.println("Input: "+ input);
                 System.out.println("GoogleHyp: "+ hypGoogle);
                 r.addResult(hypGoogle);
-                r = sphinxPostProcessorTrigram.recognizeFromResult(r);
 
 
         }
