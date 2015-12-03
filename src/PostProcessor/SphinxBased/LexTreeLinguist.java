@@ -1008,27 +1008,27 @@ public class LexTreeLinguist implements Linguist
             SearchStateArc[] arcs;
             UnitNode[] nodes = getHMMNodes(getEndNode());
             arcs = new SearchStateArc[nodes.length];
-
-            if (generateUnitStates)
-            {
+//
+//            if (generateUnitStates)
+//            {
                 for (int i = 0; i < nodes.length; i++)
                 {
                     arcs[i] = new LexTreeUnitState(nodes[i],
                             getWordHistory(), getSmearTerm(),
                             getSmearProb(), logOne, logOne, this.getNode());
                 }
-            }
-            else
-            {
-                for (int i = 0; i < nodes.length; i++)
-                {
-                    Unit unit = nodes[i].getBaseUnit();
-                    arcs[i] = new LexTreeHMMState(nodes[i],
-                            getWordHistory(), getSmearTerm(),
-                            getSmearProb(), unit, logOne,
-                            logOne, this.getNode());
-                }
-            }
+//            }
+//            else
+//            {
+//                for (int i = 0; i < nodes.length; i++)
+//                {
+//                    Unit unit = nodes[i].getBaseUnit();
+//                    arcs[i] = new LexTreeHMMState(nodes[i],
+//                            getWordHistory(), getSmearTerm(),
+//                            getSmearProb(), unit, logOne,
+//                            logOne, this.getNode());
+//                }
+//            }
             return arcs;
         }
 
@@ -1247,169 +1247,6 @@ public class LexTreeLinguist implements Linguist
         {
             return true;
         }
-    }
-
-    /** Represents a HMM state in the search space */
-    public class LexTreeHMMState extends LexTreeState implements
-            HMMSearchState, ScoreProvider
-    {
-        String name;
-        private float logLanguageProbability;
-        private float logInsertionProbability;
-        private final Node parentNode;
-        private float scorefactor;
-        int hashCode = -1;
-        private int numberOfTimesUsed = 0;
-
-        /**
-         * Constructs a LexTreeHMMState
-         *
-         * @param hmmNode the HMM state associated with this unit
-         * @param wordSequence the word history
-         * @param languageProbability the probability of the transition
-         * @param insertionProbability the probability of the transition
-         */
-        LexTreeHMMState(UnitNode hmmNode, WordSequence wordSequence,
-                float smearTerm, float smearProb, Unit baseUnit,
-                float languageProbability, float insertionProbability,
-                Node parentNode)
-        {
-            super(hmmNode, wordSequence, smearTerm, smearProb);
-//            System.out.println("LexTreeHMMState erstellt");
-            this.parentNode = parentNode;
-            this.name = baseUnit.getName();
-            this.logLanguageProbability = languageProbability;
-            this.logInsertionProbability = insertionProbability;
-        }
-
-        /**
-         * returns the HMM state associated with this state
-         *
-         * @return the HMM state
-         */
-        public HMMState getHMMState()
-        {
-            return null;
-        }
-
-        /**
-         * Generate a hashcode for an object
-         *
-         * @return the hashcode
-         */
-        @Override
-        public int hashCode()
-        {
-            if (hashCode == -1)
-            {
-                hashCode = super.hashCode() * 30;
-                if (parentNode != null)
-                {
-                    hashCode *= 377;
-                    hashCode += parentNode.hashCode();
-                }
-            }
-            return hashCode;
-        }
-
-        /**
-         * Determines if the given object is equal to this object
-         *
-         * @param o the object to test
-         * @return <code>true</code> if the object is equal to this
-         */
-        @Override
-        public boolean equals(Object o)
-        {
-            if (o == this)
-            {
-                return true;
-            }
-            else if (o instanceof LexTreeHMMState)
-            {
-                LexTreeHMMState other = (LexTreeHMMState) o;
-                return parentNode == other.parentNode && super.equals(o);
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        /**
-         * Gets the language probability of entering this state
-         *
-         * @return the log probability
-         */
-        @Override
-        public float getLanguageProbability()
-        {
-            return logLanguageProbability;
-        }
-
-        /**
-         * Gets the language probability of entering this state
-         *
-         * @return the log probability
-         */
-        @Override
-        public float getInsertionProbability()
-        {
-            return logInsertionProbability;
-        }
-
-        /**
-         * Retrieves the set of successors for this state
-         *
-         * @return the list of successor states
-         */
-        @Override
-        public SearchStateArc[] getSuccessors()
-        {
-            SearchStateArc[] nextStates;
-            if (parentNode == null)
-            {
-                nextStates = super.getSuccessors();
-            }
-            else
-            {
-                nextStates = super.getSuccessors(parentNode);
-            }
-            return nextStates;
-        }
-
-        /** Determines if this is an emitting state */
-        @Override
-        public boolean isEmitting()
-        {
-            return true;
-        }
-
-        @Override
-        public int getOrder()
-        {
-            return 5;
-        }
-
-
-        public float getScore(Data data)
-        {
-//            I CHANGED THIS METHOD SO THE PHONESCORER SCORES THE BASEUNITS OF THE HMMS
-            // TODO: if numberOfTimesUsed != 0 then add a penalty to the score
-            numberOfTimesUsed++;
-//            System.out.print("Score: " +data+" gegen "+name +" mit "+hmmState.getHMM().getUnit().getContext()+" als Vorgänger");
-        // DER FAKTOR AM ENDE DIENT DER HÖHEREN GEWICHTUNG DIESES SCORES IN DER WEITERVERARBEITUNG
-            return ((PhoneData) data).getConfusionScore(name, numberOfTimesUsed);  
-            //FAKTOR WAR AUF 19 AM BESTEN
-//                  return hmmState.getScore(data);
-        }
-
-        @Override
-        public float[] getComponentScore(Data arg0)
-        {
-            return null;
-        }
-
     }
 
     /** Represents a word state in the search space */
