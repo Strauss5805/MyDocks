@@ -37,6 +37,7 @@ import javax.sound.sampled.DataLine;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
+import edu.cmu.sphinx.result.TokenGraphDumper;
 import Data.Result;
 import Frontend.LocalMicrophone;
 import Frontend.VoiceActivityDetector;
@@ -360,11 +361,11 @@ class Example
     public static void main(String[] args)
     {
 //        testGoogleWER();
-//                testWER(18f, 3f);
+                testWER(4.35f, 2.35f);
 //                createConf();
 //                findLWandWIP();
 //        createRefHyp();
-        testSphinxWithConstantGoogleResults("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/","heinrichLab.google.refhyp");
+//        testSphinxWithConstantGoogleResults("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/","heinrichLab.google.refhyp");
 //        testSphinx();
         if (true) return;
 
@@ -534,7 +535,7 @@ class Example
         //                + ".ngram.xml");
         // recognize from file
         
-        Result r=new Result();
+        Result r= new Result();
         String strLine;
         try
         {
@@ -555,6 +556,7 @@ class Example
                 String[] strLineSplit = strLine.split(";");
                 String hypGoogle = strLineSplit[0];
                 String input = strLineSplit[1];
+                
                 System.out.println("Input: "+ input);
                 System.out.println("GoogleHyp: "+ hypGoogle);
                 r.addResult(hypGoogle);
@@ -567,6 +569,10 @@ class Example
         }
     
         r = sphinxPostProcessorTrigram.recognizeFromResult(r);
+        
+        
+
+        
         
         if (r != null)
         {

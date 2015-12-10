@@ -20,7 +20,6 @@ import java.util.logging.Logger;
 import Data.PhoneData;
 import edu.cmu.sphinx.decoder.scorer.ScoreProvider;
 import edu.cmu.sphinx.frontend.Data;
-import edu.cmu.sphinx.linguist.HMMSearchState;
 import edu.cmu.sphinx.linguist.Linguist;
 import edu.cmu.sphinx.linguist.SearchGraph;
 import edu.cmu.sphinx.linguist.SearchState;
@@ -29,10 +28,7 @@ import edu.cmu.sphinx.linguist.UnitSearchState;
 import edu.cmu.sphinx.linguist.WordSearchState;
 import edu.cmu.sphinx.linguist.WordSequence;
 import edu.cmu.sphinx.linguist.acoustic.AcousticModel;
-import edu.cmu.sphinx.linguist.acoustic.HMM;
 import edu.cmu.sphinx.linguist.acoustic.HMMPool;
-import edu.cmu.sphinx.linguist.acoustic.HMMState;
-import edu.cmu.sphinx.linguist.acoustic.HMMStateArc;
 import edu.cmu.sphinx.linguist.acoustic.Unit;
 import edu.cmu.sphinx.linguist.acoustic.UnitManager;
 import edu.cmu.sphinx.linguist.dictionary.Dictionary;
@@ -49,7 +45,6 @@ import edu.cmu.sphinx.util.props.PropertySheet;
 import edu.cmu.sphinx.util.props.S4Boolean;
 import edu.cmu.sphinx.util.props.S4Component;
 import edu.cmu.sphinx.util.props.S4Double;
-import edu.cmu.sphinx.util.props.S4Integer;
 
 /**
  * A linguist that can represent large vocabularies efficiently. This class
@@ -307,7 +302,6 @@ public class LexTreeLinguist implements Linguist
     // ------------------------------------
     private Logger logger;
     protected boolean addFillerWords;
-    private boolean generateUnitStates;
     private boolean wantUnigramSmear = true;
     private float unigramSmearWeight = 1.0f;
     
@@ -360,7 +354,6 @@ public class LexTreeLinguist implements Linguist
         this.logUnitInsertionProbability = logMath.linearToLog(unitInsertionProbability);
         this.languageWeight = languageWeight;
         this.addFillerWords = addFillerWords;
-        this.generateUnitStates = generateUnitStates;
         this.unigramSmearWeight = unigramSmearWeight;
 
     }
@@ -394,7 +387,6 @@ public class LexTreeLinguist implements Linguist
         logUnitInsertionProbability = logMath.linearToLog(ps.getDouble(PROP_UNIT_INSERTION_PROBABILITY));
         languageWeight = ps.getFloat(PROP_LANGUAGE_WEIGHT);
         addFillerWords = (ps.getBoolean(PROP_ADD_FILLER_WORDS));
-        generateUnitStates = (ps.getBoolean(PROP_GENERATE_UNIT_STATES));
         unigramSmearWeight = ps.getFloat(PROP_UNIGRAM_SMEAR_WEIGHT);
     }
 
@@ -1004,31 +996,21 @@ public class LexTreeLinguist implements Linguist
         @Override
         public SearchStateArc[] getSuccessors()
         {
+            UnitNode[] nodes = getHMMNodes(getEndNode());
             //      System.out.println("LexTreeEndUnitState, getSuccessors");
             SearchStateArc[] arcs;
-            UnitNode[] nodes = getHMMNodes(getEndNode());
+//            UnitNode[] nodes = getHMMNodes(getEndNode());
             arcs = new SearchStateArc[nodes.length];
-//
-//            if (generateUnitStates)
-//            {
+
+
                 for (int i = 0; i < nodes.length; i++)
                 {
                     arcs[i] = new LexTreeUnitState(nodes[i],
                             getWordHistory(), getSmearTerm(),
                             getSmearProb(), logOne, logOne, this.getNode());
                 }
-//            }
-//            else
-//            {
-//                for (int i = 0; i < nodes.length; i++)
-//                {
-//                    Unit unit = nodes[i].getBaseUnit();
-//                    arcs[i] = new LexTreeHMMState(nodes[i],
-//                            getWordHistory(), getSmearTerm(),
-//                            getSmearProb(), unit, logOne,
-//                            logOne, this.getNode());
-//                }
-//            }
+
+
             return arcs;
         }
 
@@ -1234,10 +1216,11 @@ public class LexTreeLinguist implements Linguist
 //          I CHANGED THIS METHOD SO THE PHONESCORER SCORES THE BASEUNITS OF THE HMMS
           // TODO: if numberOfTimesUsed != 0 then add a penalty to the score
           numberOfTimesUsed++;
-//          System.out.print("Score: " +data+" gegen ");//+name +" mit "+hmmState.getHMM().getUnit().getContext()+" als Vorgänger");
-      // DER FAKTOR AM ENDE DIENT DER HÖHEREN GEWICHTUNG DIESES SCORES IN DER WEITERVERARBEITUNG
-          return ((PhoneData) data).getConfusionScore(getUnitNode().getBaseUnit().getName(), numberOfTimesUsed);  
-          //FAKTOR WAR AUF 19 AM BESTEN
+          // DER FAKTOR AM ENDE DIENT DER HÖHEREN GEWICHTUNG DIESES SCORES IN DER WEITERVERARBEITUNG#
+          // DER SCORE FÜR EIN MISMATCH IST BEIM ORIGINALEM LEXTREELINGUIST ca. 218370
+          // DER NEUE SCORE (GEGEN PHONEME UND NICHT GEGEN FEATURES) FÜR MISMATCH NUR ca. 23023
+          // DAHER DER FAKTOR VON 9.48
+          return ((PhoneData) data).getConfusionScore(getUnitNode().getBaseUnit().getName(), numberOfTimesUsed)*9.48f;  
 //                return hmmState.getScore(data);
         }
 

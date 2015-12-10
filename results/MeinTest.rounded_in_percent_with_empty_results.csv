@@ -1,11 +1,96 @@
-MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,,
-Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,,
-Standard,18,3,6,40,60.769,6.757,505,10,275,0,93.243,0,,Trigram,Uniweight 1
-,,,,,,,,,,,,,,,
-MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,,
-Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,,
-Standard,18,3,6,34.385,66.385,7.095,461,10,392,0,92.905,0,,Trigram,Uniweight 0.7
-,,,,,,,,,,,,,,,
-MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,,
-Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,Bigram,Uniweight 0.7
-Standard,18,3,6,30.077,70.462,4.054,474,7,435,0,95.946,0,,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,
+Standard,0.7,10.5,0.067,66.538,46.923,20.946,378,175,57,0,79.054,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,
+Standard,4.35,2.35,1.851,72.538,33.615,26.351,236,80,121,0,73.649,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,
+Standard,4.35,2.35,1.851,71.692,34.615,25.676,246,82,122,0,74.324,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,
+Standard,4.35,2.35,1.851,74.077,32.077,27.703,218,80,119,0,72.297,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,
+Standard,4.35,2.35,1.851,74.462,31.923,27.703,216,83,116,0,72.297,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,
+Standard,4.35,2.35,1.851,73.769,32.385,27.703,219,80,122,0,72.297,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,
+Standard,4.35,2.35,1.851,74.462,31.923,27.703,216,83,116,0,72.297,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,Filler E-8
+Standard,4.35,2.35,1.851,75.923,30.769,28.041,204,87,109,0,71.959,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,E-7
+Standard,4.35,2.35,1.851,77.231,29.692,28.378,196,90,100,0,71.622,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,E-6
+Standard,4.35,2.35,1.851,78.462,28.769,28.716,189,94,91,0,71.284,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,E-5
+Standard,4.35,2.35,1.851,78.692,28.615,28.716,190,95,87,0,71.284,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,E-4
+Standard,4.35,2.35,1.851,78.615,28.615,28.716,193,94,85,0,71.284,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,E-3
+Standard,4.35,2.35,1.851,79.462,28.308,28.716,193,101,74,0,71.284,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,E-2
+Standard,4.35,2.35,1.851,79.615,28.154,28.716,193,101,72,0,71.284,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,E-1
+Standard,4.35,2.35,1.851,79.923,28,28.716,190,103,71,0,71.284,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,1
+Standard,4.35,2.35,1.851,80.154,27.846,28.716,188,104,70,0,71.284,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,
+Standard,4.35,2.35,1.851,80,28,28.716,190,104,70,0,71.284,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,
+Standard,4.35,2.35,1.851,79.231,29.308,27.703,204,111,66,0,72.297,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,absBeamwidth 5000
+Standard,4.35,2.35,1.851,80.308,27.769,28.716,186,105,70,0,71.284,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,absBeamwidth 10000
+Standard,4.35,2.35,1.851,80.385,27.692,28.716,184,105,71,0,71.284,0,,
+,,,,,,,,,,,,,,
+MeinTest.rounded_in_percent_with_empty_results,,,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time,,abs Beamwidth auf 5000 da laufziet zu stark gestiegen und zu wenig verbesserung vorhanden
+Standard,4.35,2.35,1.851,80.308,27.769,28.716,186,105,70,0,71.284,0,,
+;;;;;;;;;;
+MeinTest.rounded_in_percent_with_empty_results;;;;;;;;;;
+Approach;Language Weight;Word Insertion Probability;Ratio;Accuracy;WER;Sentence Accuracy;Substitutions;Insertions;Deletions;Empty Results;SER;Average Time
+Standard;4.35;2.35;1.851;80.308;27.769;28.716;186;105;70;0;71.284;0
+;;;;;;;;;;
+MeinTest.rounded_in_percent_with_empty_results;;;;;;;;;;
+Approach;Language Weight;Word Insertion Probability;Ratio;Accuracy;WER;Sentence Accuracy;Substitutions;Insertions;Deletions;Empty Results;SER;Average Time
+Standard;4.35;2.35;1.851;80.308;27.769;28.716;186;105;70;0;71.284;0
+;;;;;;;;;;
+MeinTest.rounded_in_percent_with_empty_results;;;;;;;;;;
+Approach;Language Weight;Word Insertion Probability;Ratio;Accuracy;WER;Sentence Accuracy;Substitutions;Insertions;Deletions;Empty Results;SER;Average Time
+Standard;4.35;2.35;1.851;90.077;9.923;70.946;94;0;35;0;29.054;0

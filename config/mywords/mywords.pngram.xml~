@@ -10,8 +10,8 @@
     <property name="relativeBeamWidth"  value="1E-120"/>
     <property name="absoluteWordBeamWidth" value="200"/>
     <property name="relativeWordBeamWidth" value="1E-80"/>
-    <property name="wordInsertionProbability" value="1.35"/>
-    <property name="languageWeight" value="2.35"/>
+    <property name="wordInsertionProbability" value="0.7"/>
+    <property name="languageWeight" value="10.5"/>
     <property name="silenceInsertionProbability" value="0"/>
     <property name="frontend" value="frontend"/>
     <property name="recognizer" value="recognizer"/>
@@ -119,8 +119,8 @@
         <property name="languageModel" value="trigramModel"/>
         <property name="dictionary" value="dictionary"/>
         <property name="addFillerWords" value="false"/>
-        <property name="fillerInsertionProbability" value="1E-10"/>
-        <property name="generateUnitStates" value="false"/>
+        <property name="fillerInsertionProbability" value="1"/>
+        <property name="generateUnitStates" value="true"/>
         <property name="wantUnigramSmear" value="true"/>
         <property name="unigramSmearWeight" value="1"/>
         <property name="wordInsertionProbability" 
@@ -173,8 +173,8 @@
             value="${languagemodelfile}"/>
         <property name="logMath" value="logMath"/>
         <property name="dictionary" value="dictionary"/>
-        <property name="maxDepth" value="2"/>
-        <property name="unigramWeight" value="0.7"/>
+        <property name="maxDepth" value="3"/>
+        <property name="unigramWeight" value="1"/>
     </component>
     
     <component name="gdldumper" type="edu.cmu.sphinx.linguist.util.GDLDumper">

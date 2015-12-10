@@ -726,6 +726,7 @@ class HMMTree {
      */
     public Node[] getEntryPoint(Unit lc, Unit base) {
         EntryPoint ep = entryPointTable.getEntryPoint(base);
+//        return ep.baseNode.getSuccessors();
         return ep.getEntryPointsFromLeftContext(lc).getSuccessors();
     }
 
@@ -1083,6 +1084,7 @@ class HMMTree {
         Node getEntryPointsFromLeftContext(Unit leftContext) {
             return unitToEntryPointMap.get(leftContext);
         }
+        
 
 
         /**

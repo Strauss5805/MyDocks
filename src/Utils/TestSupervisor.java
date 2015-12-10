@@ -3202,10 +3202,10 @@ public class TestSupervisor
 
                 PerformanceFileWriter tableRows = new PerformanceFileWriter();
 
-                for (float wordInsertionProbability = wip; wordInsertionProbability < wip + 1; wordInsertionProbability = wordInsertionProbability + 0.1f)
+                for (float wordInsertionProbability = wip; wordInsertionProbability < wip + 2; wordInsertionProbability = wordInsertionProbability + 0.1f)
                 {
                     //darf nicht 0 sein, da wenn 0 wird die LW aus der config datei genommen (2.35) hab ich geändert auf -1 daher geht es jetzt
-                    for (float languageWeight = 0f; languageWeight <= 10; languageWeight = languageWeight + 0.1f)
+                    for (float languageWeight = 0f; languageWeight <= 20; languageWeight = languageWeight + 0.1f)
                     {
 
                         final NISTAlign alignerrefshyp = new NISTAlign(true,
@@ -3278,7 +3278,7 @@ public class TestSupervisor
             }
         }
 
-        for (float wordInsertionProbability = 0.0f; wordInsertionProbability <= 10.0f; wordInsertionProbability = wordInsertionProbability + 1f)
+        for (float wordInsertionProbability = 0.0f; wordInsertionProbability <= 20.0f; wordInsertionProbability = wordInsertionProbability + 2f)
         {
             //            System.out.println("start Thread WIP:"+wordInsertionProbability);
             Thread t = new Thread(new OneShotTask(wordInsertionProbability,

@@ -92,7 +92,7 @@ public class SphinxBasedPostProcessor implements StandardRecognizer
             cm.setGlobalProperty("wordInsertionProbability",
                     wordInsertionProbability + "");
         
-//        System.out.println("LW: " + getLanguageWeight() + " WIP: " + getWIP());
+        System.out.println("LW: " + getLanguageWeight() + " WIP: " + getWIP());
         
         recognizer = (Recognizer) cm.lookup("recognizer");
         recognizer.allocate();
@@ -137,12 +137,12 @@ public class SphinxBasedPostProcessor implements StandardRecognizer
             .getPhonemes();
         
 //        PRINTES OUT THE PHONEMES OF THE GOOGLEHYPOTHESE
-//        System.out.print(phonemes.length+" Phoneme :");
-//        for (int i = 0; i < phonemes.length; i++)
-//        {
-//            System.out.print(phonemes[i]+", ");  
-//        }
-//        System.out.println();
+        System.out.print(phonemes.length+" Phoneme :");
+        for (int i = 0; i < phonemes.length; i++)
+        {
+            System.out.print(phonemes[i]+", ");  
+        }
+        System.out.println();
 
         //ad to phone frontend
         pfe.addPhonemes(phonemes);
