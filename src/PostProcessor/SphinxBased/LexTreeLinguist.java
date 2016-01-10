@@ -746,7 +746,15 @@ public class LexTreeLinguist implements Linguist
         protected SearchStateArc[] getSuccessors(Node theNode)
         {
             Node[] nodes = theNode.getSuccessors();
-            SearchStateArc[] arcs = new SearchStateArc[nodes.length];
+            SearchStateArc[] arcs;
+            if (theNode instanceof UnitNode)
+            {
+                arcs = new SearchStateArc[nodes.length+1];
+            }
+            else 
+            {
+                arcs = new SearchStateArc[nodes.length];
+            }
             // System.out.println("Arc: "+ this);
             int i = 0;
             for (Node nextNode : nodes)
@@ -766,6 +774,10 @@ public class LexTreeLinguist implements Linguist
                     arcs[i] = createUnitStateArc((UnitNode) nextNode, this);
                 }
                 i++;
+            }
+            if (theNode instanceof UnitNode)
+            {
+            arcs[i]=createUnitStateArc((UnitNode) theNode, this);
             }
             return arcs;
         }
@@ -1220,7 +1232,9 @@ public class LexTreeLinguist implements Linguist
           // DER SCORE FÜR EIN MISMATCH IST BEIM ORIGINALEM LEXTREELINGUIST ca. 218370
           // DER NEUE SCORE (GEGEN PHONEME UND NICHT GEGEN FEATURES) FÜR MISMATCH NUR ca. 23023
           // DAHER DER FAKTOR VON 9.48
-          return ((PhoneData) data).getConfusionScore(getUnitNode().getBaseUnit().getName(), numberOfTimesUsed)*9.48f;  
+          // FÜR MYEXAMPLE AUF 1.125
+          return ((PhoneData) data).getConfusionScore(getUnitNode().getBaseUnit().getName(), numberOfTimesUsed)*1f;  
+
 //                return hmmState.getScore(data);
         }
 

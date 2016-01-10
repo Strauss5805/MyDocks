@@ -3111,10 +3111,10 @@ public class TestSupervisor
                 PerformanceFileWriter tableRows = new PerformanceFileWriter();
 
                 final NISTAlign alignerrefshyp = new NISTAlign(true, true);
-                String spath = "/informatik2/students/home/1strauss/workspace/MeinDocks/config/mywords/";
+                String spath = "/informatik2/students/home/1strauss/workspace/MeinDocks/config/TIMIT/TIMIT";
 
                 final SphinxBasedPostProcessor standard = new SphinxBasedPostProcessor(
-                        spath + "mywords.pngram.xml", spath + "mywords.words",
+                        spath + ".oldpngram.xml", spath + ".words",
                         lw, wip, 0);
                 //                        final SphinxBasedPostProcessor standard = new SphinxBasedPostProcessor(
                 //                                spath + "elpmaxe.pngram.xml", spath + "elpmaxe.words",
@@ -3136,10 +3136,9 @@ public class TestSupervisor
                         // TODO Auto-generated catch block
                         e1.printStackTrace();
                     }
-
                     while ((strLine = br.readLine()) != null)
                     {
-                        //                                System.out.println(strLine);
+                    
                         String[] strLineSplit = strLine.split(";");
                         String ref = strLineSplit[1];
                         String hypGoogle = strLineSplit[0];
@@ -3158,6 +3157,8 @@ public class TestSupervisor
 
                     tableRows.add("Standard", standard.getLanguageWeight(),
                             standard.getWIP(), alignerrefshyp, 0);
+                    System.out.println(alignerrefshyp.getTotalWordErrorRate());
+                    
 
 
                 }
@@ -3202,19 +3203,19 @@ public class TestSupervisor
 
                 PerformanceFileWriter tableRows = new PerformanceFileWriter();
 
-                for (float wordInsertionProbability = wip; wordInsertionProbability < wip + 2; wordInsertionProbability = wordInsertionProbability + 0.1f)
+                for (float wordInsertionProbability = wip; wordInsertionProbability < wip + 4; wordInsertionProbability = wordInsertionProbability + 0.05f)
                 {
                     //darf nicht 0 sein, da wenn 0 wird die LW aus der config datei genommen (2.35) hab ich geändert auf -1 daher geht es jetzt
-                    for (float languageWeight = 0f; languageWeight <= 20; languageWeight = languageWeight + 0.1f)
+                    for (float languageWeight = 0f; languageWeight <= 3; languageWeight = languageWeight + 0.05f)
                     {
 
                         final NISTAlign alignerrefshyp = new NISTAlign(true,
                                 true);
-                        String spath = "/informatik2/students/home/1strauss/workspace/MeinDocks/config/mywords/";
+                        String spath = "/informatik2/students/home/1strauss/workspace/MeinDocks/config/TIMIT/";
 
                         final SphinxBasedPostProcessor standard = new SphinxBasedPostProcessor(
-                                spath + "mywords.pngram.xml", spath
-                                        + "mywords.words", languageWeight,
+                                spath + "TIMIT.oldpngram.xml", spath
+                                        + "TIMIT.words", languageWeight,
                                 wordInsertionProbability, 0);
                         //                        final SphinxBasedPostProcessor standard = new SphinxBasedPostProcessor(
                         //                                spath + "elpmaxe.pngram.xml", spath + "elpmaxe.words",
@@ -3278,7 +3279,7 @@ public class TestSupervisor
             }
         }
 
-        for (float wordInsertionProbability = 0.0f; wordInsertionProbability <= 20.0f; wordInsertionProbability = wordInsertionProbability + 2f)
+        for (float wordInsertionProbability = 0.0f; wordInsertionProbability <= 5.0f; wordInsertionProbability = wordInsertionProbability + 10f)
         {
             //            System.out.println("start Thread WIP:"+wordInsertionProbability);
             Thread t = new Thread(new OneShotTask(wordInsertionProbability,
@@ -3635,8 +3636,16 @@ public class TestSupervisor
                 if (doRecognition)
                 {
                     Result r = rawGoogle.recognizeFromFile(filename);
+                    if (r==null)
+                    {
+                        googleResult = "";
+                    }
+                    else
+                    {
                     googleResult = r.getBestResult();
+                    }
                     out.write(googleResult + ";" + sentence + "\n");
+                    
                 }
                 else
                 {

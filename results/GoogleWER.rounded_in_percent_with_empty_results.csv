@@ -2,7 +2,3 @@
 GoogleWER.rounded_in_percent_with_empty_results;;;;;;;;;;
 Approach;Language Weight;Word Insertion Probability;Ratio;Accuracy;WER;Sentence Accuracy;Substitutions;Insertions;Deletions;Empty Results;SER;Average Time
 GoogleWER;;;;90.643;10.505;42.0;142;20;21;0;58.0;0
-;;;;;;;;;;
-GoogleWER.rounded_in_percent_with_empty_results;;;;;;;;;;
-Approach;Language Weight;Word Insertion Probability;Ratio;Accuracy;WER;Sentence Accuracy;Substitutions;Insertions;Deletions;Empty Results;SER;Average Time
-GoogleWER;;;;90.643;10.505;42.0;142;20;21;0;58.0;0

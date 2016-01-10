@@ -86,9 +86,9 @@ public class SphinxBasedPostProcessor implements StandardRecognizer
         referenceRecognizer = -1;
 
         //ACTUNG DIE GEHÖREN EIG AUF 0
-        if (languageWeight != 0)
+        if (languageWeight != -10)
             cm.setGlobalProperty("languageWeight", languageWeight + "");
-        if (wordInsertionProbability != 0)
+        if (wordInsertionProbability != -10)
             cm.setGlobalProperty("wordInsertionProbability",
                     wordInsertionProbability + "");
         

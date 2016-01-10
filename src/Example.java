@@ -361,11 +361,11 @@ class Example
     public static void main(String[] args)
     {
 //        testGoogleWER();
-                testWER(4.35f, 2.35f);
+//                testWER(0.7f, 2f);
 //                createConf();
-//                findLWandWIP();
+                findLWandWIP();
 //        createRefHyp();
-//        testSphinxWithConstantGoogleResults("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/","heinrichLab.google.refhyp");
+//        testSphinxWithConstantGoogleResults("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "timit.google.refhyp");
 //        testSphinx();
         if (true) return;
 
@@ -453,14 +453,15 @@ class Example
         //                + ".ngram.xml");
         // recognize from file
         
-        String filename = "data/nao_dice_can_be_drop.wav";
+        String filename = "data/169rec.wav";
+//        playSound(filename);
         Result r;
         r = rawGoogle.recognizeFromFile(filename);
 
-        r = sphinxPostProcessorTrigram.recognizeFromResult(r);
         
         if (r != null)
         {
+            r = sphinxPostProcessorTrigram.recognizeFromResult(r);
             String result = r.getBestResult();
             System.out.println("Final Result: " + result);
 
@@ -488,34 +489,35 @@ class Example
     public static void findLWandWIP()
     {
 //        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/","heinrichLab.google.refhyp");
-        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/","heinrichLab.google.refhyp");
-
+        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "test2timit.google.refhyp");
+//        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/Semeval/semevaltask6_evaldata/", "strauss.google.refhyp");
     }
 
-    public static void testWER(float wip, float lw)
+    public static void testWER(float lw, float wip)
     {
-//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/", "heinrichLab.google.refhyp", lw, wip);
-        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/", "heinrichLab.google.refhyp", lw, wip);
+//      TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/SCRIPTED/heinrich_speech_dataset/", "heinrichLab.google.refhyp", lw, wip);
+      TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "timit.google.refhyp",wip , lw);
+//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/Semeval/semevaltask6_evaldata/", "strauss.google.refhyp", lw, wip);
     }
 
     public static void createConf()
     {
         System.out.println("Creating configuration");
-        String batch_name = "/informatik2/students/home/1strauss/eclipse_workspace/txteditor/strauss_semevaltask.batch";
-        String config_name = "test";
+        String batch_name = "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/aaa.batch";
+        String config_name = "löschen";
         ConfigCreator.createConfig(config_name, batch_name);
     }    
     public static void createRefHyp()
     {
         System.out.println("Creating RefHyp");
-        String path= "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/";
-        String batchfile = "strauss_semevaltask.batch";
+        String path= "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/";
+        String batchfile = "AmplifiedSourceFiles.batch";
         TestSupervisor.testGoogleOOV(path, batchfile);
     }
     public static void testGoogleWER()
     {
 //        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/", "heinrichLab.google.refhyp", lw, wip);
-        TestSupervisor.myTestGoogleWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/corpus/semevaltask6_evaldata/", "heinrichLab.google.refhyp");
+//        TestSupervisor.myTestGoogleWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/Semeval/semevaltask6_evaldata/", "strauss.google.refhyp");
     }
 
     public static void testSphinxWithConstantGoogleResults(String path, String refhyp)
@@ -525,12 +527,12 @@ class Example
         Printer.verbose = false;
     
         //starts the simulation example
-        String configname = "config/mywords/mywords";
+        String configname = "config/timit/timit";
         //        String configname = "config/elpmaxe/elpmaxe";
     
         System.out.println("Starting Sphinx N-Gram");
         final SphinxBasedPostProcessor sphinxPostProcessorTrigram = new SphinxBasedPostProcessor(
-                configname + ".pngram.xml", configname + ".words", 0, 0, 0);
+                configname + ".oldpngram.xml", configname + ".words", 0, 0, 0);
         //        SphinxRecognizer sphinxNGram = new SphinxRecognizer(configname
         //                + ".ngram.xml");
         // recognize from file
@@ -553,6 +555,12 @@ class Example
             }
 
             strLine = br.readLine();
+            strLine = br.readLine();
+
+            strLine = br.readLine();           
+            strLine = br.readLine(); 
+
+
                 String[] strLineSplit = strLine.split(";");
                 String hypGoogle = strLineSplit[0];
                 String input = strLineSplit[1];
