@@ -6,12 +6,12 @@
 <property name="dictionaryfile" value="file:config/mywords/model/mywords.dic"/>
 <property name="languagemodelfile" value="file:config/mywords/model/mywords.lm"/>
 
-    <property name="absoluteBeamWidth"  value="1500"/>
+    <property name="absoluteBeamWidth"  value="5000"/>
     <property name="relativeBeamWidth"  value="1E-120"/>
     <property name="absoluteWordBeamWidth" value="200"/>
     <property name="relativeWordBeamWidth" value="1E-80"/>
-    <property name="wordInsertionProbability" value="0.7"/>
-    <property name="languageWeight" value="10.5"/>
+    <property name="wordInsertionProbability" value="1.4"/>
+    <property name="languageWeight" value="0.95"/>
     <property name="silenceInsertionProbability" value="0.1"/>
     <property name="frontend" value="frontend"/>
     <property name="recognizer" value="recognizer"/>
@@ -43,7 +43,7 @@
     
     <component name="decoder" type="edu.cmu.sphinx.decoder.Decoder">
         <property name="searchManager" value="simpleSearch"/>
-        <property name="featureBlockSize" value="50"/>
+        <property name="fireNonFinalResults" value="true"/>
     </component>
     
     <!-- ******************************************************** -->
@@ -131,23 +131,6 @@
         <property name="unitManager" value="unitManager"/>
     </component>    
     
-    <component name="flatLinguist" type="PostProcessor.SphinxBased.OurDynamicFlatLinguist">
-        <property name="logMath" value="logMath"/>
-        <property name="grammar" value="ngramGrammar"/>
-        <property name="acousticModel" value="wsj"/>
-        <property name="wordInsertionProbability" 
-                value="${wordInsertionProbability}"/>
-        <property name="silenceInsertionProbability" 
-                value="${silenceInsertionProbability}"/>
-        <property name="languageWeight" value="${languageWeight}"/>
-        <property name="unitManager" value="unitManager"/>
-        <property name="languageModel" value="trigramModel"/>
-    </component>
-    
-    <component name="ngramGrammar" type="edu.cmu.sphinx.linguist.language.grammar.LMGrammar">
-        <property name="dictionary" value="dictionary"/>
-        <property name="languageModel" value="trigramModel"/>
-    </component>
     
     <!-- ******************************************************** -->
     <!-- The Dictionary configuration                            -->
@@ -158,7 +141,7 @@
                   value="${dictionaryfile}"/>
         <property name="fillerPath" 
 	          value="resource:/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz/noisedict"/>
-        <property name="addSilEndingPronunciation" value="false"/>     <!-- WAR AUF TRUE! -->
+        <property name="addSilEndingPronunciation" value="true"/>     <!-- WAR AUF TRUE! -->
         <property name="wordReplacement" value="&lt;sil&gt;"/>
         <property name="unitManager" value="unitManager"/>
     </component>

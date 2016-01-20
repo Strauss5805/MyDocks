@@ -1,5 +1,0 @@
-;;;;;;;;;;
-MeinTable.rounded_in_percent_with_empty_results;;;;;;;;;;
-Approach;Language Weight;Word Insertion Probability;Ratio;Accuracy;WER;Sentence Accuracy;Substitutions;Insertions;Deletions;Empty Results;SER;Average Time
-Standard;1.0;1.0;1.0;63.0;37.846;2.027;455;11;26;0;97.973;0
-Standard;1.0;1.0;1.0;63.0;37.846;2.027;455;11;26;0;97.973;0

@@ -639,7 +639,8 @@ public class ConfigCreator {
 
 				String[] sentenceWords = sentence.split(" ");
 				for (String s : sentenceWords)
-					words.add(s);
+                    words.add(s);
+
 
 			}
 		} catch (IOException e) {

@@ -132,17 +132,19 @@ public class SphinxBasedPostProcessor implements StandardRecognizer
     {
         //get phonemes
         ArrayList<PhonemeContainer> phonemesSpeech = pc.getPhonemes(r);
+        if(phonemesSpeech.size()==0)
+            return null;
         //get best result
         String[] phonemes = phonemesSpeech.get(0)
             .getPhonemes();
         
 //        PRINTES OUT THE PHONEMES OF THE GOOGLEHYPOTHESE
-        System.out.print(phonemes.length+" Phoneme :");
-        for (int i = 0; i < phonemes.length; i++)
-        {
-            System.out.print(phonemes[i]+", ");  
-        }
-        System.out.println();
+//        System.out.print(phonemes.length+" Phoneme :");
+//        for (int i = 0; i < phonemes.length; i++)
+//        {
+//            System.out.print(phonemes[i]+", ");  
+//        }
+//        System.out.println();
 
         //ad to phone frontend
         pfe.addPhonemes(phonemes);

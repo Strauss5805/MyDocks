@@ -360,13 +360,17 @@ class Example
 
     public static void main(String[] args)
     {
-//        testGoogleWER();
-//                testWER(0.7f, 2f);
-//                createConf();
-                findLWandWIP();
-//        createRefHyp();
-//        testSphinxWithConstantGoogleResults("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "timit.google.refhyp");
-//        testSphinx();
+        // this methode will create a file in the results directory with the WER of rawGoogle
+//                testGoogleWER();
+        // this methode tests the pngramm config file with (languageWeight,wordInsertionProbability)
+//        testWER(2.35f, 4.35f);
+        //creates a the configuration data and the language model from a .batch file
+//                        createConf("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/minitimit.batch", "minitimit");
+                        findLWandWIP();
+//                createRefHyp();
+//                testSphinxWithConstantGoogleResults("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "test2timit.google.refhyp");
+        //        testSphinx();
+//        TestSupervisor.testWERall("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/Semeval/semevaltask6_evaldata/", "strauss.semevaltask500.batch", "config/Semeval500/Semeval500", "FullSemevalEval");
         if (true) return;
 
         // set verbose to false
@@ -452,13 +456,12 @@ class Example
         //        SphinxRecognizer sphinxNGram = new SphinxRecognizer(configname
         //                + ".ngram.xml");
         // recognize from file
-        
+
         String filename = "data/169rec.wav";
-//        playSound(filename);
+        //        playSound(filename);
         Result r;
         r = rawGoogle.recognizeFromFile(filename);
 
-        
         if (r != null)
         {
             r = sphinxPostProcessorTrigram.recognizeFromResult(r);
@@ -488,65 +491,78 @@ class Example
 
     public static void findLWandWIP()
     {
-//        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/","heinrichLab.google.refhyp");
-        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "test2timit.google.refhyp");
-//        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/Semeval/semevaltask6_evaldata/", "strauss.google.refhyp");
+//        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "minitimit.refhyp");
+//                TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "test2timit.google.refhyp");
+        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/SCRIPTED/heinrich_speech_dataset/","halfheinrichLab.google.refhyp");
+        //        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/Semeval/semevaltask6_evaldata/", "strauss.google.refhyp");
+        //        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/SPONT/", "spont.google.refhyp");  
     }
 
     public static void testWER(float lw, float wip)
     {
-//      TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/SCRIPTED/heinrich_speech_dataset/", "heinrichLab.google.refhyp", lw, wip);
-      TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "timit.google.refhyp",wip , lw);
-//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/Semeval/semevaltask6_evaldata/", "strauss.google.refhyp", lw, wip);
+//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/SPONT/", "spont.google.refhyp", wip, lw); 
+//                TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/SPONT/", "spontWithEmptyResults.google.refhyp", wip, lw);      
+//                TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/", "heinrichLab.googl.refhyp", wip, lw);
+//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "minitimit.refhyp", lw, wip);
+//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "strauss.TIMIT_google.refhyp", lw, wip);
+//                TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "test3timit.google.refhyp",wip , lw);
+//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/Semeval/semevaltask6_evaldata/", "strauss.semeval400small.refhyp", wip, lw);
     }
 
-    public static void createConf()
+    public static void createConf(String batchpath, String name)
     {
         System.out.println("Creating configuration");
-        String batch_name = "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/aaa.batch";
-        String config_name = "löschen";
-        ConfigCreator.createConfig(config_name, batch_name);
-    }    
+        ConfigCreator.createConfig(name, batchpath);
+    }
+
     public static void createRefHyp()
     {
         System.out.println("Creating RefHyp");
-        String path= "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/";
+        String path = "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/";
         String batchfile = "AmplifiedSourceFiles.batch";
         TestSupervisor.testGoogleOOV(path, batchfile);
     }
+
     public static void testGoogleWER()
     {
-//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/", "heinrichLab.google.refhyp", lw, wip);
-//        TestSupervisor.myTestGoogleWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/Semeval/semevaltask6_evaldata/", "strauss.google.refhyp");
+        //      TestSupervisor.myTestGoogleWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/Semeval/semevaltask6_evaldata/", "strauss.google.refhyp");
+        TestSupervisor.myTestGoogleWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/", "heinrichLab.googl.refhyp");
     }
 
-    public static void testSphinxWithConstantGoogleResults(String path, String refhyp)
+    public static void testWERall(String path, String batchfile,
+            String configname, String title)
     {
-    
+        TestSupervisor.testWERall(path, batchfile, configname, title);
+    }
+
+    public static void testSphinxWithConstantGoogleResults(String path,
+            String refhyp)
+    {
+
         // set verbose to false
         Printer.verbose = false;
-    
+
         //starts the simulation example
-        String configname = "config/timit/timit";
+        String configname = "config/TIMIT/TIMIT";
         //        String configname = "config/elpmaxe/elpmaxe";
-    
+
         System.out.println("Starting Sphinx N-Gram");
         final SphinxBasedPostProcessor sphinxPostProcessorTrigram = new SphinxBasedPostProcessor(
-                configname + ".oldpngram.xml", configname + ".words", 0, 0, 0);
+                configname + ".pbigram.xml", configname + ".words", 0, 0, 0);
         //        SphinxRecognizer sphinxNGram = new SphinxRecognizer(configname
         //                + ".ngram.xml");
         // recognize from file
-        
-        Result r= new Result();
+
+        Result r = new Result();
         String strLine;
         try
         {
             BufferedReader br = null;
             try
             {
-                br = new BufferedReader(new InputStreamReader(
-                        new DataInputStream(new FileInputStream(path
-                                + refhyp))));
+                br = new BufferedReader(
+                        new InputStreamReader(new DataInputStream(
+                                new FileInputStream(path + refhyp))));
             }
             catch (FileNotFoundException e1)
             {
@@ -555,42 +571,39 @@ class Example
             }
 
             strLine = br.readLine();
+//
+            strLine = br.readLine();
             strLine = br.readLine();
 
-            strLine = br.readLine();           
-            strLine = br.readLine(); 
+            String[] strLineSplit = strLine.split(";");
+            String hypGoogle = strLineSplit[0];
+            String input = strLineSplit[1];
 
-
-                String[] strLineSplit = strLine.split(";");
-                String hypGoogle = strLineSplit[0];
-                String input = strLineSplit[1];
-                
-                System.out.println("Input: "+ input);
-                System.out.println("GoogleHyp: "+ hypGoogle);
-                r.addResult(hypGoogle);
-
+            System.out.println("Input: " + input);
+            System.out.println("GoogleHyp: " + hypGoogle);
+            r.addResult(hypGoogle);
 
         }
         catch (IOException e)
         {
             e.printStackTrace();
         }
-    
-        r = sphinxPostProcessorTrigram.recognizeFromResult(r);
-        
-        
 
-        
-        
+        r = sphinxPostProcessorTrigram.recognizeFromResult(r);
+
         if (r != null)
         {
             String result = r.getBestResult();
-            System.out.println("Final Result: " + result);
-    
+            for (String hyp : r.getResultList())
+            {
+                System.out.println(hyp);
+            }
+            //            System.out.println("Final Result: " + result);
+
             //            PhonemeCreator pc = new PhonemeCreator();
             //            ArrayList<PhonemeContainer> phonemesSpeech = pc.getPhonemes(r);
             //get best result
-    
+
             //            PRINTES OUT THE RESULT IN PHONEMEFORM
             //            String[] phonemes = phonemesSpeech.get(0)
             //                .getPhonemes();
@@ -600,7 +613,7 @@ class Example
             //                System.out.print(phonemes[i]+", ");  
             //            }
             //            System.out.println();
-    
+
         }
         else
         {

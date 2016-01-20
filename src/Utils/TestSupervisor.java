@@ -69,7 +69,7 @@ import edu.cmu.sphinx.util.NISTAlign;
 public class TestSupervisor
 {
     public static String TAG = "TestSupervisor";
-    public static String key = "yourkeyhere";
+    public static String key = "AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw";
 
     public static void testLive2()
     {
@@ -1748,7 +1748,8 @@ public class TestSupervisor
         ;
         final NISTAlign alignerSphinxLeven = new NISTAlign(true, true);
         final NISTAlign alignerLLR = new NISTAlign(true, true);
-        final NISTAlign alignerPNR = new NISTAlign(true, true);
+        final NISTAlign alignerPBIR = new NISTAlign(true, true);
+        final NISTAlign alignerPTRIR = new NISTAlign(true, true);
         final NISTAlign alignerPUR = new NISTAlign(true, true);
         final NISTAlign alignerPGR = new NISTAlign(true, true);
         final NISTAlign alignerPGRsentences = new NISTAlign(true, true);
@@ -1765,24 +1766,28 @@ public class TestSupervisor
         SphinxRecognizer sr_ngram = new SphinxRecognizer(configname
                 + ".ngram.xml");
 
-        System.out.println("Starting SimpleSphinxRecognizerFSG");
-        SphinxRecognizer sr_fsg = new SphinxRecognizer(configname + ".fsg.xml");
+//        System.out.println("Starting SimpleSphinxRecognizerFSG");
+//        SphinxRecognizer sr_fsg = new SphinxRecognizer(configname + ".fsg.xml");
 
-        System.out.println("Starting SimpleSphinxRecognizerFSGsentenceList");
-        SphinxRecognizer sr_fsg_sentences = new SphinxRecognizer(configname
-                + ".fsgsentences.xml");
+//        System.out.println("Starting SimpleSphinxRecognizerFSGsentenceList");
+//        SphinxRecognizer sr_fsg_sentences = new SphinxRecognizer(configname
+//                + ".fsgsentences.xml");
 
         System.out.println("Starting PhonemeNgramRecognizer");
-        final SphinxBasedPostProcessor pnr = new SphinxBasedPostProcessor(
+        final SphinxBasedPostProcessor pbir = new SphinxBasedPostProcessor(
+                configname + ".pbigram.xml", configname + ".words", 0, 0, 0);
+        
+        System.out.println("Starting PhonemeNgramRecognizer");
+        final SphinxBasedPostProcessor ptrir = new SphinxBasedPostProcessor(
                 configname + ".pngram.xml", configname + ".words", 0, 0, 0);
 
         System.out.println("Starting PhonemeUnigramRecognizer");
         final SphinxBasedPostProcessor pur = new SphinxBasedPostProcessor(
                 configname + ".punigram.xml", configname + ".words", 0, 0, 0);
-
-        System.out.println("Starting PhonemeGrammarRecognizer");
-        final SphinxBasedPostProcessor pgr = new SphinxBasedPostProcessor(
-                configname + ".pgrammar.xml", configname + ".words", 0, 0, 0);
+//
+//        System.out.println("Starting PhonemeGrammarRecognizer");
+//        final SphinxBasedPostProcessor pgr = new SphinxBasedPostProcessor(
+//                configname + ".pgrammar.xml", configname + ".words", 0, 0, 0);
 
         System.out.println("Starting PhonemeGrammarSentenceRecognizer");
         final SphinxBasedPostProcessor pgr_sentences = new SphinxBasedPostProcessor(
@@ -1819,7 +1824,8 @@ public class TestSupervisor
             int emptyLeven = 0;
             int emptyLLR = 0;
             int emptyPGR = 0;
-            int emptyPNR = 0;
+            int emptyPBIR = 0;
+            int emptyPTRIR = 0;
             int emptyPUR = 0;
             int emptyPGRsentences = 0;
             int emptySphinxFsg = 0;
@@ -1831,7 +1837,8 @@ public class TestSupervisor
             long totalTimeLeven = 0;
             long totalTimeLLR = 0;
             long totalTimePGR = 0;
-            long totalTimePNR = 0;
+            long totalTimePBIR = 0;
+            long totalTimePTRIR = 0;         
             long totalTimePUR = 0;
             long totalTimePGRsentences = 0;
             long totalTimeSphinxFsg = 0;
@@ -1860,7 +1867,8 @@ public class TestSupervisor
                 String googleResult = "";
                 String levenResult = "";
                 String hypLLR = "";
-                String hypPNR = "";
+                String hypPBIR = "";
+                String hypPTRIR = "";               
                 String hypPUR = "";
                 String hypPGR = "";
                 String hypPGRsentences = "";
@@ -1869,7 +1877,8 @@ public class TestSupervisor
                 long timeLeven = 0;
                 long timeLLR = 0;
                 long timePGR = 0;
-                long timePNR = 0;
+                long timePBIR = 0;
+                long timePTRIR = 0;
                 long timePUR = 0;
                 long timePGRsentences = 0;
                 long timeSphinxFsg = 0;
@@ -1950,18 +1959,18 @@ public class TestSupervisor
 
                     }
                     if (r != null) hypLLR = r.getBestResult();
+                    
                     r = new Result();
                     r.addResult(googleResult);
-
-                    timePNR = Printer.reset();
-                    r = pnr.recognizeFromResult(r);
-                    timePNR = Printer.reset() - timePNR;
-                    totalTimePNR += timePNR;
+                    timePBIR = Printer.reset();
+                    r = pbir.recognizeFromResult(r);
+                    timePBIR = Printer.reset() - timePBIR;
+                    totalTimePBIR += timePBIR;
 
                     if (caching && r != null)
                     {
                         String cachepath = "cache/" + batchfile + "/"
-                                + pnr.getName() + "Ngram";
+                                + pbir.getName() + "Ngram";
                         File theDir = new File(cachepath);
                         if (!theDir.exists())
                         {
@@ -1971,7 +1980,29 @@ public class TestSupervisor
                         System.out.println(cachepath);
 
                     }
-                    if (r != null) hypPNR = r.getBestResult();
+                    if (r != null) hypPBIR = r.getBestResult();
+                    
+                    r = new Result();
+                    r.addResult(googleResult);
+                    timePTRIR = Printer.reset();
+                    r = ptrir.recognizeFromResult(r);
+                    timePTRIR = Printer.reset() - timePTRIR;
+                    totalTimePTRIR += timePTRIR;
+
+                    if (caching && r != null)
+                    {
+                        String cachepath = "cache/" + batchfile + "/"
+                                + ptrir.getName() + "Ngram";
+                        File theDir = new File(cachepath);
+                        if (!theDir.exists())
+                        {
+                            theDir.mkdir();
+                        }
+                        r.save(cachepath + "/" + file + ".res");
+                        System.out.println(cachepath);
+
+                    }
+                    if (r != null) hypPTRIR = r.getBestResult();
 
                     r = new Result();
                     r.addResult(googleResult);
@@ -1995,28 +2026,28 @@ public class TestSupervisor
                     }
                     if (r != null) hypPUR = r.getBestResult();
 
-                    r = new Result();
-                    r.addResult(googleResult);
-
-                    timePGR = Printer.reset();
-                    r = pgr.recognizeFromResult(r);
-                    timePGR = Printer.reset() - timePGR;
-                    totalTimePGR += timePGR;
-
-                    if (caching && r != null)
-                    {
-                        String cachepath = "cache/" + batchfile + "/"
-                                + pgr.getName() + "Grammar";
-                        File theDir = new File(cachepath);
-                        if (!theDir.exists())
-                        {
-                            theDir.mkdir();
-                        }
-                        r.save(cachepath + "/" + file + ".res");
-                        System.out.println(cachepath);
-
-                    }
-                    if (r != null) hypPGR = r.getBestResult();
+//                    r = new Result();
+//                    r.addResult(googleResult);
+//                    timePGR = Printer.reset();
+//                    r = pgr.recognizeFromResult(r);
+//                    timePGR = Printer.reset() - timePGR;
+//                    totalTimePGR += timePGR;
+//
+//                    if (caching && r != null)
+//                    {
+//                        String cachepath = "cache/" + batchfile + "/"
+//                                + pgr.getName() + "Grammar";
+//                        File theDir = new File(cachepath);
+//                        if (!theDir.exists())
+//                        {
+//                            theDir.mkdir();
+//                        }
+//                        r.save(cachepath + "/" + file + ".res");
+//                        System.out.println(cachepath);
+//
+//                    }
+//                    if (r != null) hypPGR = r.getBestResult();
+                    
                     r = new Result();
                     r.addResult(googleResult);
 
@@ -2047,7 +2078,8 @@ public class TestSupervisor
                     emptyLeven++;
                     emptyLLR++;
                     emptyPGR++;
-                    emptyPNR++;
+                    emptyPBIR++;
+                    emptyPTRIR++;
                     emptyPGRsentences++;
                 }
 
@@ -2057,6 +2089,7 @@ public class TestSupervisor
                         "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  Google  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
                 alignerGoogle.printSentenceSummary();
                 alignerGoogle.printTotalSummary();
+                
                 alignerLeven.align(sentence, levenResult);
                 Printer.printColor(
                         Printer.ANSI_BLUE,
@@ -2071,12 +2104,20 @@ public class TestSupervisor
                 alignerLLR.printSentenceSummary();
                 alignerLLR.printTotalSummary();
 
-                alignerPNR.align(sentence, hypPNR);
+                alignerPBIR.align(sentence, hypPBIR);
                 Printer.printColor(
                         Printer.ANSI_BLUE,
                         "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  Google Phoneme N-Gram  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
-                alignerPNR.printSentenceSummary();
-                alignerPNR.printTotalSummary();
+                alignerPBIR.printSentenceSummary();
+                alignerPBIR.printTotalSummary();
+                
+                alignerPTRIR.align(sentence, hypPTRIR);
+                Printer.printColor(
+                        Printer.ANSI_BLUE,
+                        "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  Google Phoneme N-Gram  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
+                alignerPTRIR.printSentenceSummary();
+                alignerPTRIR.printTotalSummary();
+                
 
                 alignerPUR.align(sentence, hypPUR);
                 Printer.printColor(
@@ -2085,12 +2126,12 @@ public class TestSupervisor
                 alignerPUR.printSentenceSummary();
                 alignerPUR.printTotalSummary();
 
-                alignerPGR.align(sentence, hypPGR);
-                Printer.printColor(
-                        Printer.ANSI_BLUE,
-                        "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  Google Phoneme Grammar  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
-                alignerPGR.printSentenceSummary();
-                alignerPGR.printTotalSummary();
+//                alignerPGR.align(sentence, hypPGR);
+//                Printer.printColor(
+//                        Printer.ANSI_BLUE,
+//                        "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  Google Phoneme Grammar  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
+//                alignerPGR.printSentenceSummary();
+//                alignerPGR.printTotalSummary();
 
                 alignerPGRsentences.align(sentence, hypPGRsentences);
                 Printer.printColor(
@@ -2099,79 +2140,79 @@ public class TestSupervisor
                 alignerPGRsentences.printSentenceSummary();
                 alignerPGRsentences.printTotalSummary();
 
-                timeSphinxFsg = Printer.reset();
-                r = sr_fsg.recognizeFromFile(filename);
-                timeSphinxFsg = Printer.reset() - timeSphinxFsg;
-                totalTimeSphinxFsg += timeSphinxFsg;
-
+//                timeSphinxFsg = Printer.reset();
+//                r = sr_fsg.recognizeFromFile(filename);
+//                timeSphinxFsg = Printer.reset() - timeSphinxFsg;
+//                totalTimeSphinxFsg += timeSphinxFsg;
+//
+//                String result = "";
+//                if (r != null)
+//                {
+//                    result = r.getBestResult();
+//                    if (caching)
+//                    {
+//                        String cachepath = "cache/" + batchfile + "/"
+//                                + sr_fsg.getName() + "Grammar";
+//                        File theDir = new File(cachepath);
+//                        if (!theDir.exists())
+//                        {
+//                            theDir.mkdir();
+//                        }
+//                        r.save(cachepath + "/" + file + ".res");
+//                        System.out.println(cachepath);
+//
+//                    }
+//                }
+//                else
+//                    emptySphinxFsg++;
+//                alignerSphinxFsg.align(sentence, result);
+//                Printer.printColor(
+//                        Printer.ANSI_BLUE,
+//                        "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  Sphinx Grammar  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
+//                alignerSphinxFsg.printSentenceSummary();
+//                alignerSphinxFsg.printTotalSummary();
+//
+//                timeSphinxFsgSentences = Printer.reset();
+//                r = sr_fsg_sentences.recognizeFromFile(filename);
+//                timeSphinxFsgSentences = Printer.reset()
+//                        - timeSphinxFsgSentences;
+//                totalTimeSphinxFsgSentences += timeSphinxFsgSentences;
+//
+//                result = "";
+//                if (r != null)
+//                {
+//                    result = r.getBestResult();
+//                    if (caching)
+//                    {
+//                        String cachepath = "cache/" + batchfile + "/"
+//                                + sr_fsg_sentences.getName()
+//                                + "GrammarSentences";
+//                        File theDir = new File(cachepath);
+//                        if (!theDir.exists())
+//                        {
+//                            theDir.mkdir();
+//                        }
+//                        r.save(cachepath + "/" + file + ".res");
+//                        System.out.println(cachepath);
+//
+//                    }
+//                }
+//                else
+//                    emptySphinxFsgSentences++;
+//
+//                alignerSphinxFsgSentences.align(sentence, result);
+//                Printer.printColor(
+//                        Printer.ANSI_BLUE,
+//                        "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  Sphinx Grammar Sentencelist  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
+//                alignerSphinxFsgSentences.printSentenceSummary();
+//                alignerSphinxFsgSentences.printTotalSummary();
+//
+//                timeSphinxNgram = Printer.reset();
+//                r = sr_ngram.recognizeFromFile(filename);
+//                timeSphinxNgram = Printer.reset() - timeSphinxNgram;
+//                totalTimeSphinxNgram += timeSphinxNgram;
+//
                 String result = "";
-                if (r != null)
-                {
-                    result = r.getBestResult();
-                    if (caching)
-                    {
-                        String cachepath = "cache/" + batchfile + "/"
-                                + sr_fsg.getName() + "Grammar";
-                        File theDir = new File(cachepath);
-                        if (!theDir.exists())
-                        {
-                            theDir.mkdir();
-                        }
-                        r.save(cachepath + "/" + file + ".res");
-                        System.out.println(cachepath);
-
-                    }
-                }
-                else
-                    emptySphinxFsg++;
-                alignerSphinxFsg.align(sentence, result);
-                Printer.printColor(
-                        Printer.ANSI_BLUE,
-                        "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  Sphinx Grammar  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
-                alignerSphinxFsg.printSentenceSummary();
-                alignerSphinxFsg.printTotalSummary();
-
-                timeSphinxFsgSentences = Printer.reset();
-                r = sr_fsg_sentences.recognizeFromFile(filename);
-                timeSphinxFsgSentences = Printer.reset()
-                        - timeSphinxFsgSentences;
-                totalTimeSphinxFsgSentences += timeSphinxFsgSentences;
-
-                result = "";
-                if (r != null)
-                {
-                    result = r.getBestResult();
-                    if (caching)
-                    {
-                        String cachepath = "cache/" + batchfile + "/"
-                                + sr_fsg_sentences.getName()
-                                + "GrammarSentences";
-                        File theDir = new File(cachepath);
-                        if (!theDir.exists())
-                        {
-                            theDir.mkdir();
-                        }
-                        r.save(cachepath + "/" + file + ".res");
-                        System.out.println(cachepath);
-
-                    }
-                }
-                else
-                    emptySphinxFsgSentences++;
-
-                alignerSphinxFsgSentences.align(sentence, result);
-                Printer.printColor(
-                        Printer.ANSI_BLUE,
-                        "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  Sphinx Grammar Sentencelist  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
-                alignerSphinxFsgSentences.printSentenceSummary();
-                alignerSphinxFsgSentences.printTotalSummary();
-
-                timeSphinxNgram = Printer.reset();
-                r = sr_ngram.recognizeFromFile(filename);
-                timeSphinxNgram = Printer.reset() - timeSphinxNgram;
-                totalTimeSphinxNgram += timeSphinxNgram;
-
-                result = "";
                 if (r != null)
                 {
                     result = r.getBestResult();
@@ -2253,10 +2294,17 @@ public class TestSupervisor
             Printer.printColor(
                     Printer.ANSI_BLUE,
                     "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  Google Phoneme N-Gram  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
-            alignerPNR.printTotalSummary();
+            
+            alignerPBIR.printTotalSummary();
             Printer.printColor(
                     Printer.ANSI_BLUE,
                     "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  Google Phoneme UniGram  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
+          
+            alignerPTRIR.printTotalSummary();
+            Printer.printColor(
+                    Printer.ANSI_BLUE,
+                    "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  Google Phoneme UniGram  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
+            
             alignerPUR.printTotalSummary();
             Printer.printColor(
                     Printer.ANSI_BLUE,
@@ -2302,10 +2350,17 @@ public class TestSupervisor
             Printer.printColor(
                     Printer.ANSI_BLUE,
                     "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  Google Phoneme N-Gram  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
-            alignerPNR.printNISTTotalSummary();
+           
+            alignerPBIR.printNISTTotalSummary();
             Printer.printColor(
                     Printer.ANSI_BLUE,
                     "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  Google Phoneme UniGram  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
+            
+            alignerPTRIR.printNISTTotalSummary();
+            Printer.printColor(
+                    Printer.ANSI_BLUE,
+                    "\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0  Google Phoneme UniGram  \u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0\u25a0");
+            
             alignerPUR.printNISTTotalSummary();
             Printer.printColor(
                     Printer.ANSI_BLUE,
@@ -2344,28 +2399,31 @@ public class TestSupervisor
                     emptyLeven, totalTimeLeven / numberExamples);
             tableRows.add("Google Word List", 0, 0, alignerLLR, emptyLLR,
                     totalTimeLLR / numberExamples);
-            tableRows.add("Google Phoneme N-Gram", pnr.getLanguageWeight(),
-                    pnr.getWIP(), alignerPNR, emptyPNR, totalTimePNR
+            tableRows.add("Google Phoneme Bi-Gram", pbir.getLanguageWeight(),
+                    pbir.getWIP(), alignerPBIR, emptyPBIR, totalTimePBIR
+                            / numberExamples);
+            tableRows.add("Google Phoneme Tri-Gram", ptrir.getLanguageWeight(),
+                    ptrir.getWIP(), alignerPTRIR, emptyPTRIR, totalTimePTRIR
                             / numberExamples);
             tableRows.add("Google Phoneme Unigram", pur.getLanguageWeight(),
                     pur.getWIP(), alignerPUR, emptyPUR, totalTimePUR
                             / numberExamples);
-            tableRows.add("Google Phoneme Grammar", pgr.getLanguageWeight(),
-                    pgr.getWIP(), alignerPGR, emptyPGR, totalTimePGR
-                            / numberExamples);
+//            tableRows.add("Google Phoneme Grammar", pgr.getLanguageWeight(),
+//                    pgr.getWIP(), alignerPGR, emptyPGR, totalTimePGR
+//                            / numberExamples);
             tableRows.add("Google Phoneme Grammar Sentence List",
                     pgr_sentences.getLanguageWeight(), pgr_sentences.getWIP(),
                     alignerPGRsentences, emptyPGRsentences,
                     totalTimePGRsentences / numberExamples);
 
-            tableRows.add("Sphinx Grammar", sr_fsg.getLanguageWeight(),
-                    sr_fsg.getWIP(), alignerSphinxFsg, emptySphinxFsg,
-                    totalTimeSphinxFsg / numberExamples);
-            tableRows.add("Sphinx Grammar Sentence List",
-                    sr_fsg_sentences.getLanguageWeight(),
-                    sr_fsg_sentences.getWIP(), alignerSphinxFsgSentences,
-                    emptySphinxFsgSentences, totalTimeSphinxFsgSentences
-                            / numberExamples);
+//            tableRows.add("Sphinx Grammar", sr_fsg.getLanguageWeight(),
+//                    sr_fsg.getWIP(), alignerSphinxFsg, emptySphinxFsg,
+//                    totalTimeSphinxFsg / numberExamples);
+//            tableRows.add("Sphinx Grammar Sentence List",
+//                    sr_fsg_sentences.getLanguageWeight(),
+//                    sr_fsg_sentences.getWIP(), alignerSphinxFsgSentences,
+//                    emptySphinxFsgSentences, totalTimeSphinxFsgSentences
+//                            / numberExamples);
             tableRows.add("Sphinx N-Gram", sr_ngram.getLanguageWeight(),
                     sr_ngram.getWIP(), alignerSphinxNgram, emptySphinxNgram,
                     totalTimeSphinxNgram / numberExamples);
@@ -3102,7 +3160,6 @@ public class TestSupervisor
                 this.path = path;
                 this.wip = wip;
                 this.lw = lw;
-
             }
 
             public void run()
@@ -3111,10 +3168,10 @@ public class TestSupervisor
                 PerformanceFileWriter tableRows = new PerformanceFileWriter();
 
                 final NISTAlign alignerrefshyp = new NISTAlign(true, true);
-                String spath = "/informatik2/students/home/1strauss/workspace/MeinDocks/config/TIMIT/TIMIT";
+                String spath = "/informatik2/students/home/1strauss/workspace/MeinDocks/config/minitimit/minitimit";
 
                 final SphinxBasedPostProcessor standard = new SphinxBasedPostProcessor(
-                        spath + ".oldpngram.xml", spath + ".words",
+                        spath + ".pngram.xml", spath + ".words",
                         lw, wip, 0);
                 //                        final SphinxBasedPostProcessor standard = new SphinxBasedPostProcessor(
                 //                                spath + "elpmaxe.pngram.xml", spath + "elpmaxe.words",
@@ -3145,7 +3202,11 @@ public class TestSupervisor
                         Result r = new Result();
                         r.addResult(hypGoogle);
                         r = standard.recognizeFromResult(r);
-                        String hyps = r.getBestResult();
+                        String hyps;
+                        if(r==null)
+                            hyps =""; 
+                        else
+                            hyps = r.getBestResult();
                         alignerrefshyp.align(ref, hyps);
 
                         //                                Printer.printColor(
@@ -3203,19 +3264,19 @@ public class TestSupervisor
 
                 PerformanceFileWriter tableRows = new PerformanceFileWriter();
 
-                for (float wordInsertionProbability = wip; wordInsertionProbability < wip + 4; wordInsertionProbability = wordInsertionProbability + 0.05f)
+                for (float wordInsertionProbability = wip; wordInsertionProbability < wip + 1f; wordInsertionProbability = wordInsertionProbability + 0.1f)
                 {
                     //darf nicht 0 sein, da wenn 0 wird die LW aus der config datei genommen (2.35) hab ich geändert auf -1 daher geht es jetzt
-                    for (float languageWeight = 0f; languageWeight <= 3; languageWeight = languageWeight + 0.05f)
+                    for (float languageWeight = 0f; languageWeight <= 10; languageWeight = languageWeight + 0.1f)
                     {
 
                         final NISTAlign alignerrefshyp = new NISTAlign(true,
                                 true);
-                        String spath = "/informatik2/students/home/1strauss/workspace/MeinDocks/config/TIMIT/";
+                        String spath = "/informatik2/students/home/1strauss/workspace/MeinDocks/config/mywords/mywords";
 
                         final SphinxBasedPostProcessor standard = new SphinxBasedPostProcessor(
-                                spath + "TIMIT.oldpngram.xml", spath
-                                        + "TIMIT.words", languageWeight,
+                                spath + ".pngram.xml", spath
+                                        + ".words", languageWeight,
                                 wordInsertionProbability, 0);
                         //                        final SphinxBasedPostProcessor standard = new SphinxBasedPostProcessor(
                         //                                spath + "elpmaxe.pngram.xml", spath + "elpmaxe.words",
@@ -3272,14 +3333,14 @@ public class TestSupervisor
                     }
 
                 }
-                tableRows.createPerformanceTable("MeinTable"
+                tableRows.createPerformanceTable("110111java1.7halfscriptedneuLex"
                         + ".rounded_in_percent_with_empty_results", true, true,
                         false);
 
             }
         }
 
-        for (float wordInsertionProbability = 0.0f; wordInsertionProbability <= 5.0f; wordInsertionProbability = wordInsertionProbability + 10f)
+        for (float wordInsertionProbability = 0.0f; wordInsertionProbability <= 10f; wordInsertionProbability = wordInsertionProbability + 1f)
         {
             //            System.out.println("start Thread WIP:"+wordInsertionProbability);
             Thread t = new Thread(new OneShotTask(wordInsertionProbability,
@@ -3583,7 +3644,7 @@ public class TestSupervisor
         {
             resultFile = new BufferedReader(new InputStreamReader(
                     new DataInputStream(new FileInputStream(path
-                            + "heinrichLab.google.refhyp"))));
+                            + "strauss.TIMIT_google.refhyp"))));
         }
         catch (FileNotFoundException e1)
         {
@@ -3606,13 +3667,13 @@ public class TestSupervisor
             int doubleOOVSubstitutions = 0;
 
             boolean doRecognition = true;
-            File f = new File(path + "heinrichLab.google.refhyp");
+            File f = new File(path + "strauss.TIMIT_google.refhyp");
             BufferedWriter out = null;
             if (f.exists())
                 doRecognition = false;
             else
                 out = new BufferedWriter(new FileWriter(path
-                        + "heinrichLab.google.refhyp"));
+                        + "strauss.TIMIT_google.refhyp"));
 
             while ((strLine = br.readLine()) != null)
             {

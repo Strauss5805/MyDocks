@@ -5,15 +5,14 @@
     <!-- ******************************************************** --> 
 <property name="dictionaryfile" value="file:config/TIMIT/model/TIMIT.dic"/>
 <property name="languagemodelfile" value="file:config/TIMIT/model/TIMIT.lm"/>
-<property name="fillerPath" value="resource:/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz/noisedict"/>
-<property name="amLocation" value="resource:/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz"/>        
 
-    <property name="absoluteBeamWidth"  value="5000"/>
+    <property name="absoluteBeamWidth"  value="10000"/>
     <property name="relativeBeamWidth"  value="1E-120"/>
     <property name="absoluteWordBeamWidth" value="200"/>
     <property name="relativeWordBeamWidth" value="1E-80"/>
     <property name="wordInsertionProbability" value="0.7"/>
-    <property name="silenceInsertionProbability" value="0.7"/>
+    <property name="languageWeight" value="2"/>
+    <property name="silenceInsertionProbability" value="0.1"/>
     <property name="frontend" value="frontend"/>
     <property name="recognizer" value="recognizer"/>
     <property name="showCreations" value="false"/>
@@ -45,17 +44,15 @@
     <component name="decoder" type="edu.cmu.sphinx.decoder.Decoder">
         <property name="searchManager" value="simpleSearch"/>
         <property name="fireNonFinalResults" value="true"/>
-        <property name="featureBlockSize" value="50"/>
     </component>
     
     <!-- ******************************************************** -->
     <!-- The Search Manager                                       -->
     <!-- ******************************************************** --> 
     
-    
    <component name="simpleSearch" type="edu.cmu.sphinx.decoder.search.SimpleBreadthFirstSearchManager">
         <property name="logMath" value="logMath"/>
-        <property name="linguist" value="lexTreeLinguist"/>
+        <property name="linguist" value="${linguist}"/>
         <property name="pruner" value="trivialPruner"/>
         <property name="scorer" value="simpleScorer"/>
         <property name="activeListFactory" value="standardActiveListFactory"/>
@@ -138,27 +135,14 @@
     <!-- ******************************************************** -->
     <!-- The Dictionary configuration                            -->
     <!-- ******************************************************** -->
-<!--
     <component name="dictionary" 
         type="edu.cmu.sphinx.linguist.dictionary.FastDictionary">
         <property name="dictionaryPath"
                   value="${dictionaryfile}"/>
         <property name="fillerPath" 
 	          value="resource:/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz/noisedict"/>
-        <property name="addSilEndingPronunciation" value="false"/>      WAR AUF TRUE! 
+        <property name="addSilEndingPronunciation" value="true"/>     <!-- WAR AUF TRUE! -->
         <property name="wordReplacement" value="&lt;sil&gt;"/>
-        <property name="unitManager" value="unitManager"/>
-    </component>
--->
-
-    <component name="dictionary"
-        type="edu.cmu.sphinx.linguist.dictionary.FullDictionary">
-        <property name="dictionaryPath"
-	 value="${dictionaryfile}"/>
-        <property name="fillerPath"
-	 value="${fillerPath}"/>
-        <property name="addSilEndingPronunciation" value="false"/>
-        <property name="allowMissingWords" value="false"/>
         <property name="unitManager" value="unitManager"/>
     </component>
     
@@ -173,31 +157,31 @@
         <property name="logMath" value="logMath"/>
         <property name="dictionary" value="dictionary"/>
         <property name="maxDepth" value="3"/>
-        <property name="unigramWeight" value="0.5"/>
+        <property name="unigramWeight" value="1"/>
     </component>
-
+    
     <component name="gdldumper" type="edu.cmu.sphinx.linguist.util.GDLDumper">
         <property name="linguist" value="${linguist}" />
         <property name="filename" value="/tmp/lala.gdl" />
         <property name="skipHMMs" value="false" />
         <property name="logMath" value="logMath" />
     </component>
-
+    
     
     <!-- ******************************************************** -->
     <!-- The acoustic model configuration                         -->
     <!-- ******************************************************** -->
     <component name="wsj"
                type="edu.cmu.sphinx.linguist.acoustic.tiedstate.TiedStateAcousticModel">
-        <property name="loader" value="sphinx3Loader"/>
+        <property name="loader" value="wsjLoader"/>
         <property name="unitManager" value="unitManager"/>
     </component>
 
-    <component name="sphinx3Loader" type="edu.cmu.sphinx.linguist.acoustic.tiedstate.Sphinx3Loader">
+    <component name="wsjLoader" type="edu.cmu.sphinx.linguist.acoustic.tiedstate.Sphinx3Loader">
         <property name="logMath" value="logMath"/>
         <property name="unitManager" value="unitManager"/>
      <!--    <property name="location" value="resource:/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz"/>-->
-     <property name="location" value="${amLocation}"/>
+     <property name="location" value="hub4opensrc.cd_continuous_8gau"/>
     </component>
 
     <!-- ******************************************************** -->

@@ -1196,7 +1196,22 @@ public class LexTreeLinguist implements Linguist
         @Override
         public float getInsertionProbability()
         {
-            return logInsertionProbability;
+            //ACHTUNG HIER WAR MAL:
+//            return logInsertionProbability;
+            Unit unit = this.getUnit();
+
+            if (unit.isSilence())
+            {
+                return logSilenceInsertionProbability;
+            }
+            else if (unit.isFiller())
+            {
+                return logFillerInsertionProbability;
+            }
+            else
+            {
+                return logUnitInsertionProbability;
+            }
         }
 
         /**
@@ -1207,7 +1222,9 @@ public class LexTreeLinguist implements Linguist
         @Override
         public float getLanguageProbability()
         {
-            return logLanguageProbability;
+            //ACHTUNG HIER WAR MAL return logLanguageProbability;!!
+//            return logLanguageProbability;
+            return LogMath.LOG_ONE;
         }
 
         @Override
@@ -1367,7 +1384,13 @@ public class LexTreeLinguist implements Linguist
             arcs = EMPTY_ARC;
             WordNode wordNode = (WordNode) getNode();
 
-            if (wordNode.getWord() != sentenceEndWord)
+            if (wordNode.getWord().isSentenceStartWord())
+            {
+
+                arcs = new SearchStateArc[1];
+                arcs[0]= createUnitStateArc((UnitNode) lastNode , this);;
+            }       
+            else if (wordNode.getWord() != sentenceEndWord)
             {
                 int index = 0;
                 List<Node> list = new ArrayList<Node>();

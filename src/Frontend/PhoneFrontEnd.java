@@ -64,15 +64,15 @@ public class PhoneFrontEnd extends FrontEnd {
 	public void addPhonemes(String[] phonemes)
 	{
 		phones.add(new DataStartSignal(0));
-//		phones.add(new PhoneData("SIL",substitutionMethod));
+		phones.add(new PhoneData("SIL",substitutionMethod));
 		for(String p: phonemes)
 		{
 			phones.add(new PhoneData(p,substitutionMethod));
-			phones.add(new PhoneData(p,substitutionMethod));
+//			phones.add(new PhoneData(p,substitutionMethod));
 		}
-//		phones.add(new PhoneData("SIL",substitutionMethod));
-//		phones.add(new PhoneData("SIL",substitutionMethod));
-//		phones.add(new PhoneData("SIL",substitutionMethod));
+		phones.add(new PhoneData("SIL",substitutionMethod));
+		phones.add(new PhoneData("SIL",substitutionMethod));
+		phones.add(new PhoneData("SIL",substitutionMethod));
 //		System.out.println(phones.toString());
 		phones.add(new DataEndSignal(100));
 	}
