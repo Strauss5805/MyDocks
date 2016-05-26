@@ -1,0 +1,117 @@
+Language model created by QuickLM on Thu Feb 11 12:04:02 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 10 sentences and 21 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=21
+ngram 2=38
+ngram 3=39
+
+\1-grams:
+-1.1072 </s> -0.3010
+-1.1072 <s> -0.2150
+-2.1072 are -0.2976
+-1.8062 banana -0.2469
+-2.1072 doing -0.2976
+-2.1072 is -0.2872
+-2.1072 it -0.2872
+-2.1072 it's -0.2872
+-2.1072 no -0.2907
+-2.1072 object -0.2837
+-2.1072 pen -0.2837
+-2.1072 phone -0.2657
+-1.3291 pick -0.2620
+-1.5051 please -0.2802
+-1.3291 robot -0.2232
+-2.1072 stop -0.2802
+-1.6301 the -0.2872
+-1.6301 this -0.2872
+-1.4082 up -0.2545
+-1.5051 wrong -0.2430
+-2.1072 you -0.2976
+
+\2-grams:
+-1.3010 <s> it's 0.0000
+-1.3010 <s> no 0.0000
+-1.3010 <s> pick -0.2218
+-1.3010 <s> please 0.0000
+-0.6990 <s> robot -0.1249
+-1.3010 <s> stop 0.0000
+-1.3010 <s> wrong -0.0969
+-0.3010 are doing 0.0000
+-0.6021 banana </s> -0.3010
+-0.6021 banana up -0.0792
+-0.3010 doing it 0.0000
+-0.3010 is wrong -0.2430
+-0.3010 it wrong -0.0969
+-0.3010 it's wrong -0.0969
+-0.3010 no this -0.2218
+-0.3010 object up -0.0792
+-0.3010 pen up -0.0792
+-0.3010 phone </s> -0.3010
+-0.7782 pick the -0.1249
+-0.7782 pick this -0.1249
+-0.7782 pick up 0.0000
+-0.3010 please pick 0.0000
+-1.0792 robot </s> -0.3010
+-1.0792 robot pick -0.2218
+-0.6021 robot please 0.0000
+-1.0792 robot you 0.0000
+-0.3010 stop robot -0.2632
+-0.7782 the banana -0.1761
+-0.7782 the pen 0.0000
+-0.7782 the phone 0.0000
+-0.7782 this banana -0.1761
+-0.7782 this is 0.0000
+-0.7782 this object 0.0000
+-0.3979 up </s> -0.3010
+-1.0000 up the -0.2218
+-0.4260 wrong </s> -0.3010
+-0.9031 wrong robot -0.2632
+-0.3010 you are 0.0000
+
+\3-grams:
+-0.3010 <s> it's wrong
+-0.3010 <s> no this
+-0.3010 <s> pick up
+-0.3010 <s> please pick
+-0.9031 <s> robot pick
+-0.4260 <s> robot please
+-0.3010 <s> stop robot
+-0.3010 <s> wrong </s>
+-0.3010 are doing it
+-0.3010 banana up </s>
+-0.3010 doing it wrong
+-0.3010 is wrong robot
+-0.3010 it wrong </s>
+-0.3010 it's wrong </s>
+-0.3010 no this is
+-0.3010 object up </s>
+-0.3010 pen up </s>
+-0.6021 pick the banana
+-0.6021 pick the pen
+-0.6021 pick this banana
+-0.6021 pick this object
+-0.6021 pick up </s>
+-0.6021 pick up the
+-0.6021 please pick the
+-0.9031 please pick this
+-0.9031 please pick up
+-0.3010 robot pick this
+-0.3010 robot please pick
+-0.3010 robot you are
+-0.3010 stop robot you
+-0.3010 the banana up
+-0.3010 the pen up
+-0.3010 the phone </s>
+-0.3010 this banana </s>
+-0.3010 this is wrong
+-0.3010 this object up
+-0.3010 up the phone
+-0.3010 wrong robot </s>
+-0.3010 you are doing
+
+\end\

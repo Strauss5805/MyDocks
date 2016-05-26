@@ -1,0 +1,27 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for WTM
+ */
+
+grammar scenario;
+
+public <utterance> = (the emblem depicts the acropolis all aglow) |
+(while he was in custody his wife divorced him) |
+(his shoulder felt as if it were broken) |
+(only lawyers love millionaires) |
+(if carol comes tomorrow have her arrange for a meeting at two) |
+(military personnel are expected to obey government orders) |
+(she said sharks have no bones and shrimp swam backward) |
+(milk production may be increased by the anti infective properties of this drug) |
+(the gunman kept his victim cornered at gunpoint for three hours) |
+(did you buy any corduroy overalls) |
+(he trembled lest his piece should fail) |
+(steve wore a bright red cashmere sweater) |
+(iguanas and alligators are tropical reptiles) |
+(no the man was not drunk he wondered how he got tied up with this stranger) |
+(his work began just six days after the flood) |
+(she is thinner than i am) |
+(lighted windows glowed jewel bright through the downpour) |
+(the viewpoint overlooked the ocean) |
+(salvation reconsidered);

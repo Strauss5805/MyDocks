@@ -1,0 +1,27 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for WTM
+ */
+
+grammar scenario;
+
+public <utterance> = (if people were more generous there would be no need for welfare) |
+(how good is your endurance) |
+(laboratory astrophysics) |
+(flies swarmed around the bowl of lentils in which he mopped thick black bread) |
+(straw hats are out of fashion this year) |
+(the tooth fairy forgot to come when roger's tooth fell out) |
+(their props were two stepladders a chair and a palm fan) |
+(the pulsing glow of a cigarette) |
+(that diagram makes sense only after much study) |
+(will robin wear a yellow lily) |
+(special task forces rescue hostages from kidnappers) |
+(she wore warm fleecy woolen overalls) |
+(we may say that his problem was diagnosed but that he refused treatment) |
+(ralph controlled the stopwatch from the bleachers) |
+(the best way to learn is to solve extra problems) |
+(we can get it if we dig he said patiently) |
+(do without fancy tablecloths) |
+(this brochure is particularly informative for prospective buyer) |
+(why charge money for such garbage);

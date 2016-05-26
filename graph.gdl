@@ -1,0 +1,1051 @@
+graph: {
+title: "should she wake him"
+display_edge_labels: yes
+node: { title: "0" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "0" targetname: "1" }
+node: { title: "1" label: "SIL[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "1" targetname: "2" }
+node: { title: "2" label: "SIL[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "2" targetname: "3" }
+node: { title: "3" label: "SIL[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "3" targetname: "4" }
+node: { title: "4" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "4" targetname: "5" }
+node: { title: "5" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "5" targetname: "6" }
+node: { title: "6" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "6" targetname: "7" }
+node: { title: "7" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "7" targetname: "8" }
+node: { title: "8" label: "wake[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "8" targetname: "9" }
+node: { title: "9" label: "K[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "9" targetname: "10" }
+node: { title: "10" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "10" targetname: "11" }
+node: { title: "11" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "11" targetname: "12" }
+node: { title: "12" label: "EY[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "12" targetname: "13" }
+node: { title: "13" label: "EY[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "13" targetname: "14" }
+node: { title: "14" label: "W[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "14" targetname: "15" }
+node: { title: "15" label: "W[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "15" targetname: "16" }
+node: { title: "16" label: "<sil>[0.0,0.0,0.0]" color: lightblue }
+edge: { sourcename: "16" targetname: "17" }
+node: { title: "17" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "17" targetname: "18" }
+node: { title: "18" label: "she[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "18" targetname: "19" }
+node: { title: "19" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "19" targetname: "20" }
+node: { title: "20" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "20" targetname: "21" }
+node: { title: "21" label: "SH[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "21" targetname: "22" }
+node: { title: "22" label: "SH[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "22" targetname: "23" }
+node: { title: "23" label: "should[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "23" targetname: "24" }
+node: { title: "24" label: "D[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "24" targetname: "25" }
+node: { title: "25" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "25" targetname: "26" }
+node: { title: "26" label: "UH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "26" targetname: "27" }
+node: { title: "27" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "27" targetname: "28" }
+node: { title: "28" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "28" targetname: "29" }
+node: { title: "29" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "29" targetname: "30" }
+node: { title: "30" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "30" targetname: "31" }
+node: { title: "31" label: "SH[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "31" targetname: "32" }
+node: { title: "32" label: "SH[-1053.483,14700.055,0.0]" color: green }
+edge: { sourcename: "32" targetname: "33" }
+node: { title: "33" label: "<sil>[0.0,0.0,0.0]" color: lightblue }
+edge: { sourcename: "33" targetname: "34" }
+node: { title: "34" label: "SIL[-1053.483,-23023.182,0.0]" color: green }
+edge: { sourcename: "34" targetname: "35" }
+node: { title: "35" label: "<s>[0.0,0.0,0.0]" color: lightblue }
+node: { title: "36" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "36" targetname: "37" }
+node: { title: "37" label: "<sil>[0.0,0.0,0.0]" color: lightblue }
+edge: { sourcename: "37" targetname: "1" }
+node: { title: "38" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "38" targetname: "39" }
+node: { title: "39" label: "she[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "39" targetname: "40" }
+node: { title: "40" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "40" targetname: "41" }
+node: { title: "41" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "41" targetname: "42" }
+node: { title: "42" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "42" targetname: "43" }
+node: { title: "43" label: "<sil>[0.0,0.0,0.0]" color: lightblue }
+edge: { sourcename: "43" targetname: "3" }
+node: { title: "44" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "44" targetname: "45" }
+node: { title: "45" label: "she[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "45" targetname: "46" }
+node: { title: "46" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "46" targetname: "41" }
+node: { title: "47" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "47" targetname: "48" }
+node: { title: "48" label: "she[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "48" targetname: "49" }
+node: { title: "49" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "49" targetname: "41" }
+node: { title: "50" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "50" targetname: "51" }
+node: { title: "51" label: "she[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "51" targetname: "52" }
+node: { title: "52" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "52" targetname: "41" }
+node: { title: "53" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "53" targetname: "54" }
+node: { title: "54" label: "wake[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "54" targetname: "55" }
+node: { title: "55" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "55" targetname: "56" }
+node: { title: "56" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "56" targetname: "57" }
+node: { title: "57" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "57" targetname: "58" }
+node: { title: "58" label: "W[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "58" targetname: "59" }
+node: { title: "59" label: "W[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "59" targetname: "60" }
+node: { title: "60" label: "W[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "60" targetname: "61" }
+node: { title: "61" label: "W[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "61" targetname: "62" }
+node: { title: "62" label: "W[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "62" targetname: "63" }
+node: { title: "63" label: "wake[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "63" targetname: "64" }
+node: { title: "64" label: "K[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "64" targetname: "10" }
+node: { title: "65" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "65" targetname: "66" }
+node: { title: "66" label: "wake[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "66" targetname: "67" }
+node: { title: "67" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "67" targetname: "56" }
+node: { title: "68" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "68" targetname: "69" }
+node: { title: "69" label: "wake[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "69" targetname: "70" }
+node: { title: "70" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "70" targetname: "56" }
+node: { title: "71" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "71" targetname: "72" }
+node: { title: "72" label: "wake[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "72" targetname: "73" }
+node: { title: "73" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "73" targetname: "56" }
+node: { title: "74" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "74" targetname: "75" }
+node: { title: "75" label: "SIL[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "75" targetname: "76" }
+node: { title: "76" label: "SIL[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "76" targetname: "77" }
+node: { title: "77" label: "SIL[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "77" targetname: "78" }
+node: { title: "78" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "78" targetname: "79" }
+node: { title: "79" label: "him[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "79" targetname: "80" }
+node: { title: "80" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "80" targetname: "81" }
+node: { title: "81" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "81" targetname: "82" }
+node: { title: "82" label: "IH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "82" targetname: "83" }
+node: { title: "83" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "83" targetname: "84" }
+node: { title: "84" label: "wake[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "84" targetname: "85" }
+node: { title: "85" label: "K[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "85" targetname: "10" }
+node: { title: "86" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "86" targetname: "87" }
+node: { title: "87" label: "<sil>[0.0,0.0,0.0]" color: lightblue }
+edge: { sourcename: "87" targetname: "75" }
+node: { title: "88" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "88" targetname: "89" }
+node: { title: "89" label: "she[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "89" targetname: "90" }
+node: { title: "90" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "90" targetname: "91" }
+node: { title: "91" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "91" targetname: "92" }
+node: { title: "92" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "92" targetname: "93" }
+node: { title: "93" label: "<sil>[0.0,0.0,0.0]" color: lightblue }
+edge: { sourcename: "93" targetname: "77" }
+node: { title: "94" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "94" targetname: "95" }
+node: { title: "95" label: "she[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "95" targetname: "96" }
+node: { title: "96" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "96" targetname: "91" }
+node: { title: "97" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "97" targetname: "98" }
+node: { title: "98" label: "she[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "98" targetname: "99" }
+node: { title: "99" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "99" targetname: "91" }
+node: { title: "100" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "100" targetname: "101" }
+node: { title: "101" label: "she[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "101" targetname: "102" }
+node: { title: "102" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "102" targetname: "91" }
+node: { title: "103" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "103" targetname: "104" }
+node: { title: "104" label: "him[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "104" targetname: "105" }
+node: { title: "105" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "105" targetname: "106" }
+node: { title: "106" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "106" targetname: "107" }
+node: { title: "107" label: "IH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "107" targetname: "108" }
+node: { title: "108" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "108" targetname: "109" }
+node: { title: "109" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "109" targetname: "110" }
+node: { title: "110" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "110" targetname: "111" }
+node: { title: "111" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "111" targetname: "83" }
+node: { title: "112" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "112" targetname: "113" }
+node: { title: "113" label: "him[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "113" targetname: "114" }
+node: { title: "114" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "114" targetname: "106" }
+node: { title: "115" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "115" targetname: "116" }
+node: { title: "116" label: "him[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "116" targetname: "117" }
+node: { title: "117" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "117" targetname: "106" }
+node: { title: "118" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "118" targetname: "119" }
+node: { title: "119" label: "him[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "119" targetname: "120" }
+node: { title: "120" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "120" targetname: "106" }
+node: { title: "121" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "121" targetname: "122" }
+node: { title: "122" label: "SIL[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "122" targetname: "123" }
+node: { title: "123" label: "SIL[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "123" targetname: "124" }
+node: { title: "124" label: "SIL[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "124" targetname: "125" }
+node: { title: "125" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "125" targetname: "126" }
+node: { title: "126" label: "should[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "126" targetname: "127" }
+node: { title: "127" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "127" targetname: "128" }
+node: { title: "128" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "128" targetname: "129" }
+node: { title: "129" label: "UH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "129" targetname: "130" }
+node: { title: "130" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "130" targetname: "131" }
+node: { title: "131" label: "wake[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "131" targetname: "132" }
+node: { title: "132" label: "K[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "132" targetname: "10" }
+node: { title: "133" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "133" targetname: "134" }
+node: { title: "134" label: "<sil>[0.0,0.0,0.0]" color: lightblue }
+edge: { sourcename: "134" targetname: "122" }
+node: { title: "135" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "135" targetname: "136" }
+node: { title: "136" label: "she[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "136" targetname: "137" }
+node: { title: "137" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "137" targetname: "138" }
+node: { title: "138" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "138" targetname: "139" }
+node: { title: "139" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "139" targetname: "140" }
+node: { title: "140" label: "<sil>[0.0,0.0,0.0]" color: lightblue }
+edge: { sourcename: "140" targetname: "124" }
+node: { title: "141" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "141" targetname: "142" }
+node: { title: "142" label: "she[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "142" targetname: "143" }
+node: { title: "143" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "143" targetname: "138" }
+node: { title: "144" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "144" targetname: "145" }
+node: { title: "145" label: "she[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "145" targetname: "146" }
+node: { title: "146" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "146" targetname: "138" }
+node: { title: "147" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "147" targetname: "148" }
+node: { title: "148" label: "she[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "148" targetname: "149" }
+node: { title: "149" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "149" targetname: "138" }
+node: { title: "150" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "150" targetname: "151" }
+node: { title: "151" label: "should[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "151" targetname: "152" }
+node: { title: "152" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "152" targetname: "153" }
+node: { title: "153" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "153" targetname: "154" }
+node: { title: "154" label: "UH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "154" targetname: "155" }
+node: { title: "155" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "155" targetname: "156" }
+node: { title: "156" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "156" targetname: "157" }
+node: { title: "157" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "157" targetname: "158" }
+node: { title: "158" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "158" targetname: "130" }
+node: { title: "159" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "159" targetname: "160" }
+node: { title: "160" label: "should[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "160" targetname: "161" }
+node: { title: "161" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "161" targetname: "153" }
+node: { title: "162" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "162" targetname: "163" }
+node: { title: "163" label: "should[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "163" targetname: "164" }
+node: { title: "164" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "164" targetname: "153" }
+node: { title: "165" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "165" targetname: "166" }
+node: { title: "166" label: "should[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "166" targetname: "167" }
+node: { title: "167" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "167" targetname: "153" }
+node: { title: "168" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "168" targetname: "169" }
+node: { title: "169" label: "she[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "169" targetname: "170" }
+node: { title: "170" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "170" targetname: "171" }
+node: { title: "171" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "171" targetname: "172" }
+node: { title: "172" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "172" targetname: "173" }
+node: { title: "173" label: "<sil>[0.0,0.0,0.0]" color: lightblue }
+edge: { sourcename: "173" targetname: "174" }
+node: { title: "174" label: "SIL[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "174" targetname: "175" }
+node: { title: "175" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "175" targetname: "176" }
+node: { title: "176" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "176" targetname: "177" }
+node: { title: "177" label: "she[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "177" targetname: "178" }
+node: { title: "178" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "178" targetname: "179" }
+node: { title: "179" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "179" targetname: "180" }
+node: { title: "180" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "180" targetname: "131" }
+node: { title: "181" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "181" targetname: "182" }
+node: { title: "182" label: "she[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "182" targetname: "183" }
+node: { title: "183" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "183" targetname: "171" }
+node: { title: "184" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "184" targetname: "185" }
+node: { title: "185" label: "she[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "185" targetname: "186" }
+node: { title: "186" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "186" targetname: "171" }
+node: { title: "187" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "187" targetname: "188" }
+node: { title: "188" label: "she[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "188" targetname: "189" }
+node: { title: "189" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "189" targetname: "171" }
+node: { title: "190" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "190" targetname: "191" }
+node: { title: "191" label: "SIL[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "191" targetname: "192" }
+node: { title: "192" label: "SIL[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "192" targetname: "174" }
+node: { title: "193" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "193" targetname: "194" }
+node: { title: "194" label: "<sil>[0.0,0.0,0.0]" color: lightblue }
+edge: { sourcename: "194" targetname: "191" }
+node: { title: "195" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "195" targetname: "196" }
+node: { title: "196" label: "should[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "196" targetname: "197" }
+node: { title: "197" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "197" targetname: "198" }
+node: { title: "198" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "198" targetname: "199" }
+node: { title: "199" label: "UH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "199" targetname: "200" }
+node: { title: "200" label: "UH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "200" targetname: "201" }
+node: { title: "201" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "201" targetname: "202" }
+node: { title: "202" label: "<sil>[0.0,0.0,0.0]" color: lightblue }
+edge: { sourcename: "202" targetname: "176" }
+node: { title: "203" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "203" targetname: "204" }
+node: { title: "204" label: "should[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "204" targetname: "205" }
+node: { title: "205" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "205" targetname: "198" }
+node: { title: "206" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "206" targetname: "207" }
+node: { title: "207" label: "should[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "207" targetname: "208" }
+node: { title: "208" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "208" targetname: "198" }
+node: { title: "209" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "209" targetname: "210" }
+node: { title: "210" label: "should[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "210" targetname: "211" }
+node: { title: "211" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "211" targetname: "198" }
+node: { title: "212" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "212" targetname: "213" }
+node: { title: "213" label: "him[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "213" targetname: "214" }
+node: { title: "214" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "214" targetname: "215" }
+node: { title: "215" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "215" targetname: "216" }
+node: { title: "216" label: "IH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "216" targetname: "217" }
+node: { title: "217" label: "IH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "217" targetname: "218" }
+node: { title: "218" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "218" targetname: "202" }
+node: { title: "219" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "219" targetname: "220" }
+node: { title: "220" label: "him[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "220" targetname: "221" }
+node: { title: "221" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "221" targetname: "215" }
+node: { title: "222" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "222" targetname: "223" }
+node: { title: "223" label: "him[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "223" targetname: "224" }
+node: { title: "224" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "224" targetname: "215" }
+node: { title: "225" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "225" targetname: "226" }
+node: { title: "226" label: "him[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "226" targetname: "227" }
+node: { title: "227" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "227" targetname: "215" }
+node: { title: "228" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "228" targetname: "229" }
+node: { title: "229" label: "wake[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "229" targetname: "230" }
+node: { title: "230" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "230" targetname: "231" }
+node: { title: "231" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "231" targetname: "232" }
+node: { title: "232" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "232" targetname: "233" }
+node: { title: "233" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "233" targetname: "234" }
+node: { title: "234" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "234" targetname: "235" }
+node: { title: "235" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "235" targetname: "236" }
+node: { title: "236" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "236" targetname: "237" }
+node: { title: "237" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "237" targetname: "238" }
+node: { title: "238" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "238" targetname: "11" }
+node: { title: "239" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "239" targetname: "240" }
+node: { title: "240" label: "wake[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "240" targetname: "241" }
+node: { title: "241" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "241" targetname: "231" }
+node: { title: "242" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "242" targetname: "243" }
+node: { title: "243" label: "wake[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "243" targetname: "244" }
+node: { title: "244" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "244" targetname: "231" }
+node: { title: "245" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "245" targetname: "246" }
+node: { title: "246" label: "wake[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "246" targetname: "247" }
+node: { title: "247" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "247" targetname: "231" }
+node: { title: "248" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "248" targetname: "249" }
+node: { title: "249" label: "wake[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "249" targetname: "250" }
+node: { title: "250" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "250" targetname: "251" }
+node: { title: "251" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "251" targetname: "252" }
+node: { title: "252" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "252" targetname: "253" }
+node: { title: "253" label: "W[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "253" targetname: "254" }
+node: { title: "254" label: "<sil>[0.0,0.0,0.0]" color: lightblue }
+edge: { sourcename: "254" targetname: "78" }
+node: { title: "255" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "255" targetname: "256" }
+node: { title: "256" label: "wake[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "256" targetname: "257" }
+node: { title: "257" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "257" targetname: "251" }
+node: { title: "258" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "258" targetname: "259" }
+node: { title: "259" label: "wake[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "259" targetname: "260" }
+node: { title: "260" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "260" targetname: "251" }
+node: { title: "261" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "261" targetname: "262" }
+node: { title: "262" label: "wake[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "262" targetname: "263" }
+node: { title: "263" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "263" targetname: "251" }
+node: { title: "264" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "264" targetname: "265" }
+node: { title: "265" label: "should[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "265" targetname: "266" }
+node: { title: "266" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "266" targetname: "267" }
+node: { title: "267" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "267" targetname: "268" }
+node: { title: "268" label: "UH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "268" targetname: "269" }
+node: { title: "269" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "269" targetname: "254" }
+node: { title: "270" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "270" targetname: "271" }
+node: { title: "271" label: "should[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "271" targetname: "272" }
+node: { title: "272" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "272" targetname: "267" }
+node: { title: "273" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "273" targetname: "274" }
+node: { title: "274" label: "should[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "274" targetname: "275" }
+node: { title: "275" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "275" targetname: "267" }
+node: { title: "276" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "276" targetname: "277" }
+node: { title: "277" label: "should[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "277" targetname: "278" }
+node: { title: "278" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "278" targetname: "267" }
+node: { title: "279" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "279" targetname: "280" }
+node: { title: "280" label: "him[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "280" targetname: "281" }
+node: { title: "281" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "281" targetname: "282" }
+node: { title: "282" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "282" targetname: "283" }
+node: { title: "283" label: "IH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "283" targetname: "284" }
+node: { title: "284" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "284" targetname: "254" }
+node: { title: "285" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "285" targetname: "286" }
+node: { title: "286" label: "him[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "286" targetname: "287" }
+node: { title: "287" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "287" targetname: "282" }
+node: { title: "288" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "288" targetname: "289" }
+node: { title: "289" label: "him[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "289" targetname: "290" }
+node: { title: "290" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "290" targetname: "282" }
+node: { title: "291" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "291" targetname: "292" }
+node: { title: "292" label: "him[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "292" targetname: "293" }
+node: { title: "293" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "293" targetname: "282" }
+node: { title: "294" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "294" targetname: "295" }
+node: { title: "295" label: "wake[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "295" targetname: "296" }
+node: { title: "296" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "296" targetname: "297" }
+node: { title: "297" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "297" targetname: "298" }
+node: { title: "298" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "298" targetname: "299" }
+node: { title: "299" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "299" targetname: "300" }
+node: { title: "300" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "300" targetname: "301" }
+node: { title: "301" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "301" targetname: "302" }
+node: { title: "302" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "302" targetname: "303" }
+node: { title: "303" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "303" targetname: "304" }
+node: { title: "304" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "304" targetname: "305" }
+node: { title: "305" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "305" targetname: "306" }
+node: { title: "306" label: "EY[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "306" targetname: "307" }
+node: { title: "307" label: "EY[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "307" targetname: "308" }
+node: { title: "308" label: "W[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "308" targetname: "309" }
+node: { title: "309" label: "W[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "309" targetname: "310" }
+node: { title: "310" label: "should[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "310" targetname: "311" }
+node: { title: "311" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "311" targetname: "312" }
+node: { title: "312" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "312" targetname: "313" }
+node: { title: "313" label: "UH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "313" targetname: "314" }
+node: { title: "314" label: "SH[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "314" targetname: "315" }
+node: { title: "315" label: "SH[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "315" targetname: "316" }
+node: { title: "316" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "316" targetname: "317" }
+node: { title: "317" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "317" targetname: "27" }
+node: { title: "318" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "318" targetname: "319" }
+node: { title: "319" label: "wake[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "319" targetname: "320" }
+node: { title: "320" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "320" targetname: "297" }
+node: { title: "321" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "321" targetname: "322" }
+node: { title: "322" label: "wake[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "322" targetname: "323" }
+node: { title: "323" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "323" targetname: "297" }
+node: { title: "324" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "324" targetname: "325" }
+node: { title: "325" label: "wake[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "325" targetname: "326" }
+node: { title: "326" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "326" targetname: "297" }
+node: { title: "327" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "327" targetname: "328" }
+node: { title: "328" label: "should[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "328" targetname: "329" }
+node: { title: "329" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "329" targetname: "330" }
+node: { title: "330" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "330" targetname: "331" }
+node: { title: "331" label: "UH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "331" targetname: "332" }
+node: { title: "332" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "332" targetname: "333" }
+node: { title: "333" label: "<sil>[0.0,0.0,0.0]" color: lightblue }
+edge: { sourcename: "333" targetname: "125" }
+node: { title: "334" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "334" targetname: "335" }
+node: { title: "335" label: "should[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "335" targetname: "336" }
+node: { title: "336" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "336" targetname: "330" }
+node: { title: "337" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "337" targetname: "338" }
+node: { title: "338" label: "should[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "338" targetname: "339" }
+node: { title: "339" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "339" targetname: "330" }
+node: { title: "340" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "340" targetname: "341" }
+node: { title: "341" label: "should[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "341" targetname: "342" }
+node: { title: "342" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "342" targetname: "330" }
+node: { title: "343" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "343" targetname: "344" }
+node: { title: "344" label: "him[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "344" targetname: "345" }
+node: { title: "345" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "345" targetname: "346" }
+node: { title: "346" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "346" targetname: "347" }
+node: { title: "347" label: "IH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "347" targetname: "348" }
+node: { title: "348" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "348" targetname: "333" }
+node: { title: "349" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "349" targetname: "350" }
+node: { title: "350" label: "him[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "350" targetname: "351" }
+node: { title: "351" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "351" targetname: "346" }
+node: { title: "352" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "352" targetname: "353" }
+node: { title: "353" label: "him[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "353" targetname: "354" }
+node: { title: "354" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "354" targetname: "346" }
+node: { title: "355" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "355" targetname: "356" }
+node: { title: "356" label: "him[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "356" targetname: "357" }
+node: { title: "357" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "357" targetname: "346" }
+node: { title: "358" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "358" targetname: "359" }
+node: { title: "359" label: "wake[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "359" targetname: "360" }
+node: { title: "360" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "360" targetname: "361" }
+node: { title: "361" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "361" targetname: "362" }
+node: { title: "362" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "362" targetname: "363" }
+node: { title: "363" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "363" targetname: "364" }
+node: { title: "364" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "364" targetname: "365" }
+node: { title: "365" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "365" targetname: "366" }
+node: { title: "366" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "366" targetname: "367" }
+node: { title: "367" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "367" targetname: "368" }
+node: { title: "368" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "368" targetname: "369" }
+node: { title: "369" label: "EY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "369" targetname: "370" }
+node: { title: "370" label: "EY[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "370" targetname: "371" }
+node: { title: "371" label: "EY[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "371" targetname: "372" }
+node: { title: "372" label: "W[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "372" targetname: "373" }
+node: { title: "373" label: "W[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "373" targetname: "374" }
+node: { title: "374" label: "W[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "374" targetname: "375" }
+node: { title: "375" label: "W[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "375" targetname: "376" }
+node: { title: "376" label: "W[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "376" targetname: "377" }
+node: { title: "377" label: "W[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "377" targetname: "378" }
+node: { title: "378" label: "W[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "378" targetname: "379" }
+node: { title: "379" label: "W[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "379" targetname: "380" }
+node: { title: "380" label: "W[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "380" targetname: "381" }
+node: { title: "381" label: "W[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "381" targetname: "382" }
+node: { title: "382" label: "W[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "382" targetname: "383" }
+node: { title: "383" label: "W[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "383" targetname: "384" }
+node: { title: "384" label: "W[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "384" targetname: "385" }
+node: { title: "385" label: "W[-23023.182,14700.055,0.0]" color: green }
+edge: { sourcename: "385" targetname: "33" }
+node: { title: "386" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "386" targetname: "387" }
+node: { title: "387" label: "wake[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "387" targetname: "388" }
+node: { title: "388" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "388" targetname: "361" }
+node: { title: "389" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "389" targetname: "390" }
+node: { title: "390" label: "wake[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "390" targetname: "391" }
+node: { title: "391" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "391" targetname: "361" }
+node: { title: "392" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "392" targetname: "393" }
+node: { title: "393" label: "wake[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "393" targetname: "394" }
+node: { title: "394" label: "K[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "394" targetname: "361" }
+node: { title: "395" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "395" targetname: "396" }
+node: { title: "396" label: "him[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "396" targetname: "397" }
+node: { title: "397" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "397" targetname: "398" }
+node: { title: "398" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "398" targetname: "399" }
+node: { title: "399" label: "IH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "399" targetname: "400" }
+node: { title: "400" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "400" targetname: "401" }
+node: { title: "401" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "401" targetname: "402" }
+node: { title: "402" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "402" targetname: "403" }
+node: { title: "403" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "403" targetname: "404" }
+node: { title: "404" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "404" targetname: "405" }
+node: { title: "405" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "405" targetname: "406" }
+node: { title: "406" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "406" targetname: "407" }
+node: { title: "407" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "407" targetname: "408" }
+node: { title: "408" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "408" targetname: "409" }
+node: { title: "409" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "409" targetname: "410" }
+node: { title: "410" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "410" targetname: "411" }
+node: { title: "411" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "411" targetname: "412" }
+node: { title: "412" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "412" targetname: "413" }
+node: { title: "413" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "413" targetname: "414" }
+node: { title: "414" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "414" targetname: "415" }
+node: { title: "415" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "415" targetname: "416" }
+node: { title: "416" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "416" targetname: "417" }
+node: { title: "417" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "417" targetname: "418" }
+node: { title: "418" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "418" targetname: "419" }
+node: { title: "419" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "419" targetname: "420" }
+node: { title: "420" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "420" targetname: "421" }
+node: { title: "421" label: "HH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "421" targetname: "422" }
+node: { title: "422" label: "HH[-23023.182,14700.055,0.0]" color: green }
+edge: { sourcename: "422" targetname: "33" }
+node: { title: "423" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "423" targetname: "424" }
+node: { title: "424" label: "him[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "424" targetname: "425" }
+node: { title: "425" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "425" targetname: "398" }
+node: { title: "426" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "426" targetname: "427" }
+node: { title: "427" label: "him[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "427" targetname: "428" }
+node: { title: "428" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "428" targetname: "398" }
+node: { title: "429" label: "</s>[0.0,0.0,-16285.446]" color: magenta }
+edge: { sourcename: "429" targetname: "430" }
+node: { title: "430" label: "him[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "430" targetname: "431" }
+node: { title: "431" label: "M[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "431" targetname: "398" }
+node: { title: "432" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "432" targetname: "433" }
+node: { title: "433" label: "should[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "433" targetname: "434" }
+node: { title: "434" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "434" targetname: "435" }
+node: { title: "435" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "435" targetname: "436" }
+node: { title: "436" label: "UH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "436" targetname: "437" }
+node: { title: "437" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "437" targetname: "438" }
+node: { title: "438" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "438" targetname: "439" }
+node: { title: "439" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "439" targetname: "440" }
+node: { title: "440" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "440" targetname: "441" }
+node: { title: "441" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "441" targetname: "442" }
+node: { title: "442" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "442" targetname: "443" }
+node: { title: "443" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "443" targetname: "444" }
+node: { title: "444" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "444" targetname: "445" }
+node: { title: "445" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "445" targetname: "446" }
+node: { title: "446" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "446" targetname: "447" }
+node: { title: "447" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "447" targetname: "448" }
+node: { title: "448" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "448" targetname: "449" }
+node: { title: "449" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "449" targetname: "314" }
+node: { title: "450" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "450" targetname: "451" }
+node: { title: "451" label: "should[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "451" targetname: "452" }
+node: { title: "452" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "452" targetname: "435" }
+node: { title: "453" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "453" targetname: "454" }
+node: { title: "454" label: "should[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "454" targetname: "455" }
+node: { title: "455" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "455" targetname: "435" }
+node: { title: "456" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "456" targetname: "457" }
+node: { title: "457" label: "should[0.0,0.0,-16285.446]" color: lightblue }
+edge: { sourcename: "457" targetname: "458" }
+node: { title: "458" label: "D[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "458" targetname: "435" }
+node: { title: "459" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "459" targetname: "460" }
+node: { title: "460" label: "she[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "460" targetname: "461" }
+node: { title: "461" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "461" targetname: "462" }
+node: { title: "462" label: "[0.0,0.0,0.0]" color: green }
+edge: { sourcename: "462" targetname: "463" }
+node: { title: "463" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "463" targetname: "464" }
+node: { title: "464" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "464" targetname: "465" }
+node: { title: "465" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "465" targetname: "466" }
+node: { title: "466" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "466" targetname: "467" }
+node: { title: "467" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "467" targetname: "468" }
+node: { title: "468" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "468" targetname: "469" }
+node: { title: "469" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "469" targetname: "470" }
+node: { title: "470" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "470" targetname: "471" }
+node: { title: "471" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "471" targetname: "472" }
+node: { title: "472" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "472" targetname: "473" }
+node: { title: "473" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "473" targetname: "474" }
+node: { title: "474" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "474" targetname: "475" }
+node: { title: "475" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "475" targetname: "476" }
+node: { title: "476" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "476" targetname: "477" }
+node: { title: "477" label: "SH[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "477" targetname: "478" }
+node: { title: "478" label: "SH[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "478" targetname: "479" }
+node: { title: "479" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "479" targetname: "480" }
+node: { title: "480" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "480" targetname: "481" }
+node: { title: "481" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "481" targetname: "482" }
+node: { title: "482" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "482" targetname: "483" }
+node: { title: "483" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "483" targetname: "484" }
+node: { title: "484" label: "SH[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "484" targetname: "485" }
+node: { title: "485" label: "SH[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "485" targetname: "486" }
+node: { title: "486" label: "SH[-1053.483,14700.055,0.0]" color: green }
+edge: { sourcename: "486" targetname: "33" }
+node: { title: "487" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "487" targetname: "488" }
+node: { title: "488" label: "she[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "488" targetname: "489" }
+node: { title: "489" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "489" targetname: "462" }
+node: { title: "490" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "490" targetname: "491" }
+node: { title: "491" label: "she[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "491" targetname: "492" }
+node: { title: "492" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "492" targetname: "462" }
+node: { title: "493" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "493" targetname: "494" }
+node: { title: "494" label: "she[0.0,0.0,-64389.727]" color: lightblue }
+edge: { sourcename: "494" targetname: "495" }
+node: { title: "495" label: "IY[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "495" targetname: "462" }
+node: { title: "496" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "496" targetname: "497" }
+node: { title: "497" label: "SIL[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "497" targetname: "498" }
+node: { title: "498" label: "SIL[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "498" targetname: "499" }
+node: { title: "499" label: "SIL[-1053.483,0.0,0.0]" color: green }
+edge: { sourcename: "499" targetname: "500" }
+node: { title: "500" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "500" targetname: "501" }
+node: { title: "501" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "501" targetname: "502" }
+node: { title: "502" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "502" targetname: "503" }
+node: { title: "503" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "503" targetname: "504" }
+node: { title: "504" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "504" targetname: "505" }
+node: { title: "505" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "505" targetname: "506" }
+node: { title: "506" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "506" targetname: "507" }
+node: { title: "507" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "507" targetname: "508" }
+node: { title: "508" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "508" targetname: "509" }
+node: { title: "509" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "509" targetname: "510" }
+node: { title: "510" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "510" targetname: "511" }
+node: { title: "511" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "511" targetname: "512" }
+node: { title: "512" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "512" targetname: "513" }
+node: { title: "513" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "513" targetname: "514" }
+node: { title: "514" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "514" targetname: "515" }
+node: { title: "515" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "515" targetname: "516" }
+node: { title: "516" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "516" targetname: "517" }
+node: { title: "517" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "517" targetname: "518" }
+node: { title: "518" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "518" targetname: "519" }
+node: { title: "519" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "519" targetname: "520" }
+node: { title: "520" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "520" targetname: "521" }
+node: { title: "521" label: "SIL[-23023.182,0.0,0.0]" color: green }
+edge: { sourcename: "521" targetname: "34" }
+node: { title: "522" label: "</s>[0.0,0.0,-64389.727]" color: magenta }
+edge: { sourcename: "522" targetname: "523" }
+node: { title: "523" label: "<sil>[0.0,0.0,0.0]" color: lightblue }
+edge: { sourcename: "523" targetname: "497" }
+}

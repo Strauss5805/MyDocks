@@ -1,0 +1,17 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for WTM
+ */
+
+grammar scenario;
+
+public <utterance> = (help me pick up the apple) |
+(pick up the smartphone) |
+(put it down) |
+(down) |
+(object down) |
+(robot put it down) |
+(i want you to put that object down now) |
+(put the apple down) |
+(please lay down this object);

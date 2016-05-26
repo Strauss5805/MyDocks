@@ -1,0 +1,31 @@
+Language model created by QuickLM on Mon Nov 23 11:19:38 CET 2015
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 1 sentences and 5 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=5
+ngram 2=4
+ngram 3=3
+
+\1-grams:
+-1.0000 </s> -0.3010
+-1.0000 <s> -0.2553
+-1.0000 chilli -0.2553
+-1.0000 fresh -0.2553
+-1.0000 green -0.2553
+
+\2-grams:
+-0.3010 <s> fresh 0.0000
+-0.3010 chilli </s> -0.3010
+-0.3010 fresh green 0.0000
+-0.3010 green chilli 0.0000
+
+\3-grams:
+-0.3010 <s> fresh green
+-0.3010 fresh green chilli
+-0.3010 green chilli </s>
+
+\end\

@@ -1,0 +1,17 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for WTM
+ */
+
+grammar scenario;
+
+public <utterance> = (clean the table) |
+(please clean the table) |
+(robot clean the table up) |
+(robot please clean the table) |
+(help me clean the table) |
+(robot i am standing in front of you) |
+(the door is in front of you) |
+(door the object is in front of me) |
+(there is an apple in front of you);

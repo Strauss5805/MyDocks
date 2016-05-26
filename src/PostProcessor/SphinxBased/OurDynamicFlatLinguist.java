@@ -690,7 +690,6 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
         @Override
         public SearchStateArc[] getSuccessors()
         {
-//            System.out.println("GrammarState :");
             SearchStateArc[] arcs = getCachedSuccessors();
 
             if (arcs != null)
@@ -860,7 +859,7 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
         @Override
         public String toString()
         {
-            return node + ""; //+ hmmPool.getUnit(lc) + ',' + hmmPool.getUnit(nextBaseID) + ']';
+            return node + "["; //+ hmmPool.getUnit(lc) + ',' + hmmPool.getUnit(nextBaseID) + ']';
         }
 
         /**
@@ -888,10 +887,6 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
         @Override
         public SearchStateArc[] getSuccessors()
         {
-//            System.out.println("--------------------");
-//            System.out.println("InitialState : ");
-//            System.out.println("nextArcs.toArray(new SearchStateArc[nextArcs.size()]) = "+ nextArcs.toArray(new SearchStateArc[nextArcs.size()]));
-//            System.out.println("--------------------");
             return nextArcs.toArray(new SearchStateArc[nextArcs.size()]);
         }
 
@@ -1017,18 +1012,14 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
         @Override
         public SearchStateArc[] getSuccessors()
         {
-//            System.out.println("--------------------");
-//            System.out.println("PronounciationState :");
             SearchStateArc[] arcs = getCachedSuccessors();
-//            System.out.println("wenn arcs = getCachedSuccessors() == null -> arcs = getSuccessors(gs.getLC(), 0);");
-//            System.out.println("arcs = "+arcs);
+
             if (arcs == null)
             {
                 arcs = getSuccessors(gs.getLC(), 0);
                 cacheSuccessors(arcs);
             }
             
-//            System.out.println("--------------------");
             return arcs;
         }
 
@@ -1043,7 +1034,6 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
         {
             
             SearchStateArc[] arcs;
-
             if (index == pronunciation.getUnits().length - 1)
             {
                 if (isContextIndependentUnit(pronunciation.getUnits()[index]))
@@ -1054,7 +1044,6 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
                 else
                 {
                     int[] nextUnits = gs.getNextUnits();
-
                     arcs = new SearchStateArc[nextUnits.length];
                     for (int i = 0; i < arcs.length; i++)
                     {
@@ -1298,7 +1287,6 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
         @Override
         public SearchStateArc[] getSuccessors()
         {
-//            System.out.println("OurFullHMMSearchState :");
             SearchStateArc[] arcs = getCachedSuccessors();
             if (arcs == null)
             {
@@ -1419,8 +1407,8 @@ public class OurDynamicFlatLinguist implements Linguist, Configurable
         @Override
         public float getScore(Data data)
         {
-            //System.out.println("getting score");
-            String name = pState.getPronunciation().getUnits()[index].getName();
+            String name = pState.getPronunciation()
+                .getUnits()[index].getName();
             // TODO: if numberOfTimesUsed != 0 then add a penalty to the score
             numberOfTimesUsed++;
 

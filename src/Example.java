@@ -38,6 +38,7 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
 import edu.cmu.sphinx.result.TokenGraphDumper;
+import edu.cmu.sphinx.util.NISTAlign;
 import Data.Result;
 import Frontend.LocalMicrophone;
 import Frontend.VoiceActivityDetector;
@@ -361,16 +362,47 @@ class Example
     public static void main(String[] args)
     {
         // this methode will create a file in the results directory with the WER of rawGoogle
-//                testGoogleWER();
+        //        testGoogleWER();
+        
         // this methode tests the pngramm config file with (languageWeight,wordInsertionProbability)
-//        testWER(2.35f, 4.35f);
+//        testWER(1.67f,4.12f);
+        
         //creates a the configuration data and the language model from a .batch file
-//                        createConf("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/minitimit.batch", "minitimit");
-                        findLWandWIP();
+        createConf("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/delete/delete.batch", "delete");
+//        createConf("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/heinrichLab_L2test.batch", "scripted_test2");
+//        createConf("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/heinrichLab_L3test.batch", "scripted_test3");
+//        createConf("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/heinrichLab_L4test.batch", "scripted_test4");
+//        createConf("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/heinrichLab_L5test.batch", "scripted_test5");
+//        createConf("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/heinrichLab_L6test.batch", "scripted_test6");
+//        createConf("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/heinrichLab_L7test.batch", "scripted_test7");
+//        createConf("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/heinrichLab_L8test.batch", "scripted_test8");
+//        createConf("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/heinrichLab_L9test.batch", "scripted_test9");
+//        createConf("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/heinrichLab_L10test.batch", "scripted_test10");
+               
+
+
+//                findLWandWIP();
+        
 //                createRefHyp();
-//                testSphinxWithConstantGoogleResults("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "test2timit.google.refhyp");
+        
+//                testSphinxWithConstantGoogleResults("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "minitimit.refhyp");
+       
         //        testSphinx();
-//        TestSupervisor.testWERall("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/Semeval/semevaltask6_evaldata/", "strauss.semevaltask500.batch", "config/Semeval500/Semeval500", "FullSemevalEval");
+
+//        TestSupervisor.testWERall("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/","heinrichLab_L1test.batch", "config/scripted1/scripted1", "sigscripted1");
+//        TestSupervisor.testWERall("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/","heinrichLab_L2test.batch", "config/scripted2/scripted2", "sigscripted2");
+//        TestSupervisor.testWERall("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/","heinrichLab_L3test.batch", "config/scripted3/scripted3", "sigscripted3");
+//        TestSupervisor.testWERall("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/","heinrichLab_L4test.batch", "config/scripted4/scripted4", "sigscripted4");
+//        TestSupervisor.testWERall("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/","heinrichLab_L5test.batch", "config/scripted5/scripted5", "sigscripted5");
+//        TestSupervisor.testWERall("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/","heinrichLab_L6test.batch", "config/scripted6/scripted6", "sigscripted6");
+//        TestSupervisor.testWERall("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/","heinrichLab_L7test.batch", "config/scripted7/scripted7", "sigscripted7");
+//        TestSupervisor.testWERall("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/","heinrichLab_L8test.batch", "config/scripted8/scripted8", "sigscripted8");
+//        TestSupervisor.testWERall("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/","heinrichLab_L9test.batch", "config/scripted9/scripted9", "sigscripted9");
+//        TestSupervisor.testWERall("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/","heinrichLab_L10test.batch", "config/scripted10/scripted10", "sigscripted10");
+
+
+
+        //        TestSupervisor.matlabFormatPerformance();    
         if (true) return;
 
         // set verbose to false
@@ -493,20 +525,45 @@ class Example
     {
 //        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "minitimit.refhyp");
 //                TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "test2timit.google.refhyp");
-        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/SCRIPTED/heinrich_speech_dataset/","halfheinrichLab.google.refhyp");
+        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/SCRIPTED/heinrich_speech_dataset/","heinrichLab.google.refhyp","scripted");
         //        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/Semeval/semevaltask6_evaldata/", "strauss.google.refhyp");
         //        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/SPONT/", "spont.google.refhyp");  
+//        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "test2timit.google.refhyp");
+//        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/", "halfheinrichLab.googl.refhyp");
+//        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L1test.batch.refhyp","scripted1");
+//        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L2test.batch.refhyp","scripted2");
+//        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L3test.batch.refhyp","scripted3");
+//        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L4test.batch.refhyp","scripted4");
+//        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L5test.batch.refhyp","scripted5");
+//        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L6test.batch.refhyp","scripted6");
+//        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L7test.batch.refhyp","scripted7");
+//        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L8test.batch.refhyp","scripted8");
+//        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L9test.batch.refhyp","scripted9");
+//        TestSupervisor.findBestWIPandLW("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L10test.batch.refhyp","scripted10");
     }
 
     public static void testWER(float lw, float wip)
     {
+//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/SCRIPTED/heinrich_speech_dataset/","heinrichLab.google.refhyp",wip,lw); 
 //        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/SPONT/", "spont.google.refhyp", wip, lw); 
 //                TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/SPONT/", "spontWithEmptyResults.google.refhyp", wip, lw);      
-//                TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/", "heinrichLab.googl.refhyp", wip, lw);
+                TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/heinrich_speech_dataset/", "heinrichLab.googl.refhyp","scripted", wip, lw);
+//                TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/SCRIPTED/heinrich_speech_dataset/","smallheinrichLab.google.refhyp",wip,lw);
 //        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "minitimit.refhyp", lw, wip);
-//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "strauss.TIMIT_google.refhyp", lw, wip);
-//                TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "test3timit.google.refhyp",wip , lw);
+//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "strauss.TIMIT_google.refhyp", wip, lw);
+//                TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/", "test2timit.google.refhyp",wip , lw);
 //        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/Semeval/semevaltask6_evaldata/", "strauss.semeval400small.refhyp", wip, lw);
+//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L1test.batch.refhyp","scripted1",wip,lw); 
+//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L2test.batch.refhyp","scripted2",wip,lw); 
+//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L3test.batch.refhyp","scripted3",wip,lw); 
+//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L4test.batch.refhyp","scripted4",wip,lw); 
+//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L5test.batch.refhyp","scripted5",wip,lw); 
+//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L6test.batch.refhyp","scripted6",wip,lw); 
+//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L7test.batch.refhyp","scripted7",wip,lw); 
+//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L8test.batch.refhyp","scripted8",wip,lw); 
+//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L9test.batch.refhyp","scripted9",wip,lw); 
+//        TestSupervisor.myTestWER("/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/", "strauss.heinrichLab_L10test.batch.refhyp","scripted10",wip,lw); 
+
     }
 
     public static void createConf(String batchpath, String name)
@@ -518,9 +575,47 @@ class Example
     public static void createRefHyp()
     {
         System.out.println("Creating RefHyp");
-        String path = "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/TIMIT/AmplifiedSourceFiles/";
-        String batchfile = "AmplifiedSourceFiles.batch";
+        
+        String path = "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/";
+        String batchfile = "heinrichLab_L1test.batch";
         TestSupervisor.testGoogleOOV(path, batchfile);
+        
+        path = "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/";
+        batchfile = "heinrichLab_L2test.batch";
+        TestSupervisor.testGoogleOOV(path, batchfile);
+        
+        path = "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/";
+        batchfile = "heinrichLab_L3test.batch";
+        TestSupervisor.testGoogleOOV(path, batchfile);
+        
+        path = "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/";
+        batchfile = "heinrichLab_L4test.batch";
+        TestSupervisor.testGoogleOOV(path, batchfile);
+        
+        path = "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/";
+        batchfile = "heinrichLab_L5test.batch";
+        TestSupervisor.testGoogleOOV(path, batchfile);
+             
+        path = "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/";
+        batchfile = "heinrichLab_L6test.batch";
+        TestSupervisor.testGoogleOOV(path, batchfile);
+        
+        path = "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/";
+        batchfile = "heinrichLab_L7test.batch";
+        TestSupervisor.testGoogleOOV(path, batchfile);
+        
+        path = "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/";
+        batchfile = "heinrichLab_L8test.batch";
+        TestSupervisor.testGoogleOOV(path, batchfile);
+        
+        path = "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/";
+        batchfile = "heinrichLab_L9test.batch";
+        TestSupervisor.testGoogleOOV(path, batchfile);
+        
+        path = "/informatik2/students/home/1strauss/BachelorArbeit/Dataset/CrossValidation/Scripted/Test/";
+        batchfile = "heinrichLab_L10test.batch";
+        TestSupervisor.testGoogleOOV(path, batchfile);
+        
     }
 
     public static void testGoogleWER()
@@ -543,18 +638,20 @@ class Example
         Printer.verbose = false;
 
         //starts the simulation example
-        String configname = "config/TIMIT/TIMIT";
+        String configname = "config/minitimit/minitimit";
         //        String configname = "config/elpmaxe/elpmaxe";
-
+        
+        final NISTAlign alignerrefshyp = new NISTAlign(true, true);
+        
         System.out.println("Starting Sphinx N-Gram");
         final SphinxBasedPostProcessor sphinxPostProcessorTrigram = new SphinxBasedPostProcessor(
-                configname + ".pbigram.xml", configname + ".words", 0, 0, 0);
+                configname + ".pngram.xml", configname + ".words", 0, 0, 0);
         //        SphinxRecognizer sphinxNGram = new SphinxRecognizer(configname
         //                + ".ngram.xml");
         // recognize from file
 
         Result r = new Result();
-        String strLine;
+        String strLine=null;
         try
         {
             BufferedReader br = null;
@@ -572,8 +669,9 @@ class Example
 
             strLine = br.readLine();
 //
-            strLine = br.readLine();
-            strLine = br.readLine();
+//            strLine = br.readLine();
+//            strLine = br.readLine();
+//            strLine = br.readLine();
 
             String[] strLineSplit = strLine.split(";");
             String hypGoogle = strLineSplit[0];
@@ -593,7 +691,12 @@ class Example
 
         if (r != null)
         {
+            String[] strLineSplit = strLine.split(";");
+            String input = strLineSplit[1];
             String result = r.getBestResult();
+            alignerrefshyp.align(input,result);
+            System.out.println(alignerrefshyp.getTotalWordErrorRate());
+            
             for (String hyp : r.getResultList())
             {
                 System.out.println(hyp);

@@ -1,0 +1,9 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for WTM
+ */
+
+grammar scenario;
+
+public <utterance> = (fresh green chilli);

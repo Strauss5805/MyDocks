@@ -1,0 +1,13 @@
+;;;;;;;;;;
+spont4.rounded_in_percent_with_empty_results;;;;;;;;;;
+Approach;Language Weight;Word Insertion Probability;Ratio;Accuracy;WER;Sentence Accuracy;Substitutions;Insertions;Deletions;Empty Results;SER;Average Time
+Google;;;;55.556;48.148;10.0;8;2;16;0;90.0;158
+Google Sentence List;;;;24.074;81.481;0.0;12;3;29;0;100.0;83
+Google Word List;;;;46.296;57.407;10.0;13;2;16;0;90.0;12
+Google Phoneme Unigram;0.2;0.5;0.4;20.37;92.593;10.0;31;7;12;0;90.0;98
+Google Phoneme Bi-Gram;2.35;4.35;0.54;22.222;77.778;10.0;17;0;25;0;90.0;132
+Google Phoneme FlatTri-Gram;1.9;5.0;0.38;35.185;74.074;10.0;19;5;16;0;90.0;492
+Google Phoneme LexTri-Gram;0.95;1.4;0.679;33.333;66.667;10.0;16;0;20;0;90.0;431
+Sphinx Bi-Gram;10.5;0.7;15.0;25.926;74.074;0.0;29;0;11;0;100.0;25023
+Sphinx Tri-Gram;10.5;0.7;15.0;25.926;74.074;0.0;29;0;11;0;100.0;22319
+Sphinx Sentence List;;;;18.519;85.185;0.0;18;2;26;0;100.0;166

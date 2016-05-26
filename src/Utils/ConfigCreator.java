@@ -46,7 +46,7 @@ public class ConfigCreator {
 	private static String TAG = "ConfigCreator";
 	//creates a new xml file for the config
 	private static void createXML(String basepath, String configname, String xmlname) {
-		String prefix = "config/elpmaxe/elpmaxe";
+		String prefix = "config/scripted1/scripted1";
 
 		FileInputStream fstream = null;
 		try {
@@ -133,11 +133,14 @@ public class ConfigCreator {
 		createXML(basepath,configname,".fsgsentences.xml");
 		//create an n-gram config for sphinx
 		createXML(basepath,configname,".ngram.xml");
+	    createXML(basepath,configname,".bigram.xml");
 		//create a grammar of sentences config for sphinx based postprocessors
 		createXML(basepath,configname,".pgrammarsentences.xml");
 		//create an n-gram config for sphinx based postprocessors
 		createXML(basepath,configname,".pngram.xml");
 		createXML(basepath,configname,".punigram.xml");
+	    createXML(basepath,configname,".pdyntruengram.xml");
+	    createXML(basepath,configname,".pdyntruetrigram.xml");
 		//create a sent file from a sentencelist
 		sentenceListToSentFile(basepath,basepath+configname+".sentences.txt",configname);
 		//create a language model

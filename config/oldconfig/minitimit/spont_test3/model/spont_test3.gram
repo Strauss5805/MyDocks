@@ -1,0 +1,17 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for WTM
+ */
+
+grammar scenario;
+
+public <utterance> = (there is something in the front) |
+(robot somethin is front of me something is approaching me) |
+(the banana is in front of you) |
+(please go to left) |
+(ok go to the left) |
+(please move to the left) |
+(go left) |
+(left) |
+(robot go to the left side);

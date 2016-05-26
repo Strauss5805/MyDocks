@@ -1,0 +1,323 @@
+<s> pick up the prism placed on the yellow cube and move it on the green cube </s>
+<s> pick up the cyan prism placed on the blue cube and move it on the blue cube closest to the left </s>
+<s> pick up the blue cube placed on the left side of the green cube </s>
+<s> pick up the blue cube placed on the red cube and move it on the red green tower </s>
+<s> pick up the green prism placed on the blue cube and move it in front of the green prism </s>
+<s> move the red prism one square backwards </s>
+<s> pick up the green cube placed on the yellow cube and move it on the red cube </s>
+<s> move the yellow cube one square backwards </s>
+<s> move the green cube closest to the center of the board and place it on the green cube </s>
+<s> pick up the pink cube placed on the red cube and move it in the top right corner </s>
+<s> pick up the blue prism </s>
+<s> pick up the blue block from the top of the green block and put it down on the blue block which lies next to another green block </s>
+<s> move the turquoise pyramid above the yellow cube </s>
+<s> move the red pyramid one cell to the left </s>
+<s> place the yellow triangle on the blue block </s>
+<s> move the gray cube on top of the green cube </s>
+<s> move the yellow cube on top of the blue cube standing in the top left corner </s>
+<s> move the yellow cube on top of the blue cube </s>
+<s> move the blue pyramid on top of the yellow cube nearest to the right back corner </s>
+<s> pick up the green block </s>
+<s> move the gray cube nearest to the top edge on top of the tower standing on the top right corner </s>
+<s> pick up the blue cube standing over the green cube nearest to the left edge drop it on the blue cube nearest to the bottom edge </s>
+<s> drop the green cube </s>
+<s> move the turquoise pyramid on top of the yellow cube nearest to the top left corner </s>
+<s> place the blue block two squares to the right of the blue pyramid </s>
+<s> pick up the gray cube and place it on the turquoise cube nearest to the right edge </s>
+<s> pick up the red cube nearest to the left edge </s>
+<s> pick up the red cube and place it on top of the tower standing on the top left corner </s>
+<s> move the yellow block on the corner to the green block closest to the center </s>
+<s> move the yellow block on the corner to the green block that is closest to the center </s>
+<s> move the red prism on the green block onto the yellow block closest to the back </s>
+<s> pick up the green cube </s>
+<s> pick up the blue cube </s>
+<s> move the yellow pyramid to the left most blue block </s>
+<s> move the turquoise pyramid on top the green cube standing in the top left corner </s>
+<s> place the yellow block on the green block </s>
+<s> move the pink pyramid standing on a blue cube on top of the yellow cube </s>
+<s> place the red pyramid on the top left corner </s>
+<s> move the gray pyramid on top of the red cube standing in the bottom right corner </s>
+<s> place the red pyramid next to the grey block on top of the turquoise block </s>
+<s> place the yellow prism on top of the red cube </s>
+<s> move the green prism to the bottom left corner </s>
+<s> move the purple prism onto the gray block closest to the left </s>
+<s> pick up the blue pyramid </s>
+<s> pick up the left gray cube </s>
+<s> move the pyramid on the left red cube </s>
+<s> place the blue block on top of the lone yellow block </s>
+<s> move the yellow cube to the top right corner </s>
+<s> place the blue block on top the green block </s>
+<s> place the white block to the left of the pink block </s>
+<s> place the blue block on top of the white block </s>
+<s> move the cyan pyramid that is on top of the blue block to the other blue block </s>
+<s> move the blue pyramid to the top of the red block </s>
+<s> place the block on the back right corner on the blue block </s>
+<s> place the red cube on the top left corner </s>
+<s> move the cyan block that is closest to the top right corner to the top left corner </s>
+<s> place the left most pyramid on top of the left most red block </s>
+<s> move the green block closest to the center on top of the green block on the corner </s>
+<s> move the pyramid to the top left corner </s>
+<s> move the yellow block to the blue block that is next to the pyramid </s>
+<s> pickup the cube closet to top left corner </s>
+<s> place red cube on green cube </s>
+<s> move the green block on top of the white block </s>
+<s> pick up the cyan block </s>
+<s> place the grey brick on the green one </s>
+<s> pick up the block to the right of the red block </s>
+<s> move the red block that is on top of a grey block on top of the green block </s>
+<s> place the pyramid that is closest to the center on the red block </s>
+<s> move the pyramid to the green block </s>
+<s> place the pyramid that is next to the yellow block on the blue block </s>
+<s> move the block one place to the back </s>
+<s> place the yellow cube on top of the blue one </s>
+<s> pick up the green cube placed on top of the tower nearest to the top right corner </s>
+<s> move the blue cube on top of the green cube </s>
+<s> take red block from stack on right and put it on red stack nearest to the back </s>
+<s> move the red block on top of the other yellow block </s>
+<s> pick up the blue cube nearest to the left edge </s>
+<s> move the pyramid to the red block </s>
+<s> place the left most pyramid on the blue block </s>
+<s> move the red block to the green block that is closest to the top left corner </s>
+<s> pick up the red pyramid that is closest to the top </s>
+<s> pick up the pink pyramid nearest to the right edge place it on top of the turquoise cube </s>
+<s> place the pyramid next to the grey block on the cyan block </s>
+<s> drop the block </s>
+<s> move the turquoise pyramid on top of the yellow red tower nearest to the top edge </s>
+<s> place the blue cube on top of the red cube </s>
+<s> pick up the gray cube nearest to the right edge place it on top of the tower standing on the right back corner </s>
+<s> pick up the red cube and place it on top of the yellow blue gray tower </s>
+<s> place the red pyramid on the green block </s>
+<s> move the gray pyramid on top of the tower nearest to the bottom right corner </s>
+<s> pick up the yellow pyramid standing on the red cube place it on top of the green tower </s>
+<s> place the white block on the back right corner </s>
+<s> pick up the blue cube nearest to the right edge </s>
+<s> move the pink pyramid on top of the red cube </s>
+<s> drop the red pyramid </s>
+<s> pick up the blue cube and place it on the green cube nearest to the bottom left corner </s>
+<s> pick up the red cube and place it on top of the gray one </s>
+<s> drop the yellow cube </s>
+<s> pick up the blue cube nearest to the bottom left corner </s>
+<s> move the red cube in the top left corner </s>
+<s> pick up the red cube and place it on top of the white and blue tower </s>
+<s> place the white pyramid on top of the blue cube </s>
+<s> move the green pyramid next to the blue cube on top of the blue cube </s>
+<s> move the green pyramid on top of the yellow cube </s>
+<s> pick up the blue cube nearest to the left edge and place on top of the red cube nearest to the same edge </s>
+<s> pick up the red pyramid standing on a green cube and place it on top of the blue tower </s>
+<s> drop the yellow pyramid </s>
+<s> pick up the green cube nearest to the center of the board </s>
+<s> pick up the turquoise pyramid standing on the green cube nearest to the left edge and place it on the yellow cube nearest to the bottom edge </s>
+<s> drop the red cube </s>
+<s> pick up the green cube and place it one cell to the left of the blue cube nearest to the bottom edge </s>
+<s> pick up the pyramid standing on the red green tower and place it on the tower nearest to the top left corner of the board </s>
+<s> pick up the red pyramid nearest to the right edge of the board </s>
+<s> pick up the blue cube standing on another blue cube and place it one cell left of the single red cube </s>
+<s> move the cyan pyramid to the top left corner </s>
+<s> pick up the single red cube nearest to the right edge and place it in the bottom right corner </s>
+<s> pick up the white pyramid and place it on top of the tower standing in the bottom left corner </s>
+<s> pick up the pink pyramid standing on the blue cube and place it on top of the yellow red tower </s>
+<s> pick up the blue cube nearest to the top right corner and place it on the pink cube </s>
+<s> pick up the yellow pyramid and place it on top of the green tower </s>
+<s> pick up the yellow cube and place it on top of the tower standing in the bottom left corner of the board </s>
+<s> drop the blue pyramid </s>
+<s> pick up the grey cube and place it on top of the blue one </s>
+<s> pick up the gray pyramid and place it on top of the tower nearest to the bottom right corner </s>
+<s> pick up the white cube standing in the top left corner and place it on the red cube nearest to the bottom edge of the board </s>
+<s> pick up the pink pyramid and place it on top of the blue cube nearest to the left edge of the board </s>
+<s> pick up the gray cube nearest to the right edge and place it on top of the tower standing in the bottom right corner </s>
+<s> pick up the yellow pyramid standing on top of the pink tower and place it on the red cube </s>
+<s> drop the cube </s>
+<s> pick up the turquoise pyramid standing over a white cube and place on top of the blue and green tower </s>
+<s> pick up the white cube standing on a grey cube and place it on the single green cube nearest to the top edge of the board </s>
+<s> move the cyan pyramid to the yellow square </s>
+<s> move the block back one square </s>
+<s> pick up the yellow pyramid and place it on top of the red green tower </s>
+<s> pick up the red cube nearest to the top edge and place it over the turquoise cube nearest to the bottom edge of the board </s>
+<s> pick up the white cube standing in the top left corner </s>
+<s> pick up the blue cube nearest to the left edge and place it on top of the red cube nearest to the same edge </s>
+<s> pick up the yellow pyramid and place it on top of the yellow cube </s>
+<s> pick up the red pyramid nearest to the top edge and place it on top of the red cube </s>
+<s> pick up the red pyramid and place it on top of the single blue cube </s>
+<s> pick up the red pyramid nearest to the top edge of the board </s>
+<s> pick up the red cube and place on the top of the blue cube nearest to the bottom left corner </s>
+<s> pick up the green cube and place it on top of the blue one </s>
+<s> pick up the yellow pyramid nearest to the bottom edge of the board </s>
+<s> pick up the yellow pyramid standing on the red green tower and place it on the yellow green tower near to the top left corner of the board </s>
+<s> pick up the yellow pyramid nearest to the left edge and place it on top of the tower nearest to the top left corner </s>
+<s> pick up the pink pyramid and place it on top of the green and blue tower </s>
+<s> pick up the gray cube and place it on top of the green cube </s>
+<s> pick up the white cube and place it on top of the tower standing in the bottom right corner </s>
+<s> pick up the turquoise pyramid standing in the bottom right corner and place it over the green cube nearest to the right edge </s>
+<s> pick up the yellow pyramid and place it on the red cube </s>
+<s> pick up the pink pyramid </s>
+<s> pick up the yellow cube and place it on the blue cube nearest to the top edge of the board </s>
+<s> place the left pyramid on the blue block </s>
+<s> pick up the pink pyramid and place it on the gray cube nearest to the top edge of the board </s>
+<s> place the grey cube on the red block </s>
+<s> pick up the turquoise pyramid and place it over the red cube standing in the top left corner </s>
+<s> pick up the yellow cube </s>
+<s> pick up the red pyramid and place over the single green cube </s>
+<s> pick up the blue cube nearest to the left edge of the board </s>
+<s> pick up the yellow cube and place it over the tower nearest to the top left corner of the board </s>
+<s> move the green cube one cell back </s>
+<s> pick up the red cube and place it in the top left corner </s>
+<s> pick up the yellow pyramid and place it over the gray cube standing in the top right corner of the board </s>
+<s> pick up the yellow cube and place it one cell left of the blue cube nearest to the bottom right corner of the board </s>
+<s> pick up the blue cube and place it over the green red tower </s>
+<s> pick up the red cube and place it over the green one </s>
+<s> pick up the red cube and place it over the yellow one </s>
+<s> pick up the yellow pyramid and place it over the yellow cube </s>
+<s> pick up the turquoise pyramid nearest to the right edge and place it over the gray cube </s>
+<s> pick up the blue pyramid nearest to the top edge and place it one cell right of the white pyramid nearest to the bottom edge </s>
+<s> pick up the pink pyramid standing over the blue cube and place it over the yellow red tower nearest to the bottom left corner </s>
+<s> pick up the gray cube in front of the yellow cube and place it over the yellow cube </s>
+<s> pick up the blue cube and place it over the smaller red blue tower that stands on the left edge of the board </s>
+<s> move the red block on top of the blue block </s>
+<s> pick up the green cube and place it two cells up </s>
+<s> pick up the pink pyramid nearest to the right edge and place it over the red cube nearest to the top right corner of the board </s>
+<s> pick up the blue cube and place it over the green cube standing in the bottom right corner </s>
+<s> move the green block back one step </s>
+<s> pick up the blue cube and place it over the yellow cube </s>
+<s> move the blue cube one step to the left </s>
+<s> pick up the red cube and place it over the pink one </s>
+<s> move the red block on the corner two steps left </s>
+<s> move the green cube one cell backwards </s>
+<s> pick up the gray cube nearest to the bottom left corner </s>
+<s> pick up the red cube and place over the red white tower </s>
+<s> pick up the white cube standing in the top left corner of the board </s>
+<s> pick up the blue pyramid nearest to the top edge of the board </s>
+<s> pick up the gray cube standing in the top right corner and place over the other gray cube </s>
+<s> lift the green pyramid </s>
+<s> move the pyramid to the left most tower </s>
+<s> place the pyramid on the left most blue block </s>
+<s> pick up the pink pyramid and place it over the gray cube nearest to the bottom edge </s>
+<s> pick up the yellow pyramid nearest to the right edge and place it over the red cube </s>
+<s> pick up the yellow pyramid and place it over the single blue cube near to the center of the board </s>
+<s> pick up the gray pyramid and place it over the red white tower </s>
+<s> pick up the red pyramid standing on the floor and place it over the yellow green tower </s>
+<s> pick up the blue cube and place it on top of the yellow cube </s>
+<s> pick up the red cube and place it on the green cube nearest to the top left corner </s>
+<s> pick up the gray pyramid standing on the green red tower and place it over the green blue tower </s>
+<s> pick up the blue pyramid nearest to the top left corner of the board </s>
+<s> pick up the blue cube nearest to the bottom left corner and place over the blue cube nearest to the top left corner of the board </s>
+<s> pick up the blue prism and move it left two places </s>
+<s> pick up the red cube and place it over the gray cube standing in the bottom right corner of the board </s>
+<s> pick up the pink pyramid and place it over the cyan tower of cubes </s>
+<s> pick up the blue cube standing on the red cube then move it on top of the green cube </s>
+<s> move the red cube in the bottom left corner of the board </s>
+<s> pick up the gray cube and place it over the green one </s>
+<s> pick up the gray pyramid and place it in the bottom right corner </s>
+<s> pick up the yellow pyramid and place it over the blue cube </s>
+<s> pick up the blue pyramid and place it over the yellow cube nearest to the bottom right corner of the board </s>
+<s> move the green prism on top of the yellow cube </s>
+<s> pick up the red pyramid standing over a blue cube and place it over the green cube nearest to the right edge of the board </s>
+<s> pick up the yellow pyramid nearest to the top left corner </s>
+<s> pick up the blue cube that is standing on the yellow cube then place it on top of the red cube </s>
+<s> pick up the purple prism </s>
+<s> pick up the blue cube and place it on top of the white cube </s>
+<s> pick up one white cube from the white tower and place it on top of the grey cube </s>
+<s> pick up the pink pyramid and place it on top of the gray cube nearest to the right edge of the board </s>
+<s> pick up the pink pyramid and place it on the top of the gray tower of cubes standing in the bottom right corner </s>
+<s> pick up the red cube nearest to the top edge and place it on top of the cyan cube nearest to the bottom edge </s>
+<s> place the light blue prism on top of the green cube </s>
+<s> move the yellow prism that is sitting on the red block on to the green tower </s>
+<s> pick up the yellow pyramid and place it on top of the tower nearest to the top right corner </s>
+<s> pick up the green pyramid nearest to the bottom right corner </s>
+<s> pick up the gray cube standing in the top right corner and place it on top of the other gray cube </s>
+<s> pick up the gray pyramid nearest to the top right corner and place it on top of the green cube </s>
+<s> move the red prism two steps back </s>
+<s> pick up the pink pyramid and place it on top of the turquoise cubes </s>
+<s> pick up the turquoise pyramid and place it on top of the red cube standing in the top left corner </s>
+<s> move the red prism one step back </s>
+<s> pick up the red prism and place it on top of the blue cube </s>
+<s> move the yellow cube on top of the blue cube standing on the yellow cubes </s>
+<s> pick up the pink pyramid standing on top of the yellow cube and place it on top of the gray cube nearest to the bottom edge of the board </s>
+<s> pick up the red pyramid nearest to the left edge and place it on top of the green cubes standing in the top left corner </s>
+<s> move the red block sitting on the grey block on top of the yellow block </s>
+<s> pick up the green cube standing on top of a yellow cube and place it on top of the red cube </s>
+<s> pick up the pink pyramid nearest to the right edge and place it on top of the yellow cube </s>
+<s> pick up the cyan pyramid and place it on top of the yellow cube </s>
+<s> pick up the red cube standing on a grey cube and place it on top of the yellow one </s>
+<s> pick up the yellow pyramid standing on top of the green red tower and place it on top of the small green blue tower </s>
+<s> pick up the red pyramid nearest to the bottom left corner of the board </s>
+<s> move the yellow cube one cell up </s>
+<s> pick up the pink pyramid and place it on top of the green blue tower </s>
+<s> drop the cyan pyramid </s>
+<s> pick up the red cube standing on a gray cube and place it on top of the green cube </s>
+<s> pick up the pink pyramid nearest to the right edge and place it on top of the cyan cube </s>
+<s> pick up the green cube and place it on the red cube nearest to the center of the board </s>
+<s> pick up the gray cube nearest to the top edge and place it on top of the tower standing in the bottom right corner </s>
+<s> pick up the blue cube standing in the top right corner and place it on top of the tower standing in bottom right corner </s>
+<s> pick up the pink pyramid and place it on top the cyan cubes </s>
+<s> pick up the white cube standing over the cyan cubes and place it on the single red cube nearest to the left edge </s>
+<s> move the pink pyramid on top of the blue cube nearest to the left edge of the board </s>
+<s> move the red cube one cell forward </s>
+<s> pick up the blue cube nearest to the bottom left corner and place it on top of the blue cube nearest to the top left corner </s>
+<s> move the green triangle on top of the yellow square </s>
+<s> pick up the blue cube that is sitting on a green cube then place it on the blue cube that is next to a green cube </s>
+<s> move the red cube that is sitting on the green cube on top of the white cube </s>
+<s> move the sky blue prism on top of the yellow cube </s>
+<s> pick up the yellow prism standing on the green cube </s>
+<s> take the pink piece and put it on the blue block to the left of the grey piece </s>
+<s> drop the gray cube </s>
+<s> pick up the cyan pyramid nearest to the right edge and place it on the blue cube nearest to the bottom left corner of the board </s>
+<s> pick up the cyan pyramid nearest to the right edge and place it on top of the green cube </s>
+<s> move the cyan pyramid to the yellow block </s>
+<s> move the blue pyramid on top of the blue cube </s>
+<s> pick up the blue cube nearest to the right edge and place it on top of the red cube </s>
+<s> pick up the yellow pyramid standing on top of a red cube </s>
+<s> pick up the white cube and place it over the gray one </s>
+<s> take the green pyramid and put it in the top left corner </s>
+<s> take blue block and put it on the red block </s>
+<s> take yellow pyramid from red and green tower and put on yellow and green tower </s>
+<s> take red pyramid from yellow cube and put on top right corner </s>
+<s> move magenta prism and put on cyan tower </s>
+<s> take white block from grey block and put on white tower </s>
+<s> take green block from yellow block and put on the blue block immediately to left of blue yellow tower </s>
+<s> move blue block from red block and put on other red block </s>
+<s> move blue block from green block and put on blue block </s>
+<s> move red block from tower two places left </s>
+<s> put pyramid to right of grey pyramid </s>
+<s> place the red pyramid on the yellow cube </s>
+<s> put down the pyramid </s>
+<s> move green pyramid onto green block next to red block </s>
+<s> move pyramid onto green tower </s>
+<s> move pyramid nearest the top into the top left corner </s>
+<s> place the grey block on the blue one </s>
+<s> pick up the red block </s>
+<s> place the pyramid on the green tower </s>
+<s> place the pink pyramid to the left of the grey one </s>
+<s> move green block one square left </s>
+<s> move the red pyramid one place to the left </s>
+<s> pick up the cyan pyramid standing in the bottom right corner and place it on top of the red cube </s>
+<s> pick up the red pyramid and place it on top of the red cube </s>
+<s> pick up the gray cube and place on top of the tower nearest to the left edge </s>
+<s> pick up the cyan pyramid nearest to the right edge </s>
+<s> move the blue cube nearest to the center on top of the other blue cube </s>
+<s> pick up the red cube and place it on top of the pink one </s>
+<s> move the cyan pyramid one cell backwards </s>
+<s> pick up the yellow cube and place it on top of the green ones </s>
+<s> pick up the green cube nearest to the top right corner and place on top of the tower nearest to the top left corner </s>
+<s> move the blue cube on top of the red one </s>
+<s> pick up the pyramid nearest to the top right corner and place it on top of the yellow cube </s>
+<s> move the cyan pyramid in the top right corner of the board </s>
+<s> pick up the green cube nearest to the bottom edge </s>
+<s> pick up the blue cube standing in the top left corner and place over the red cube nearest to the top edge </s>
+<s> move the red cube on top of the blue one </s>
+<s> pick up the green pyramid nearest to the right edge and move it one cell back </s>
+<s> move the yellow cube in the bottom left corner of the board </s>
+<s> pick up the green cube nearest to the top right corner and place it in the bottom right corner </s>
+<s> pick up the red cube nearest to the bottom edge and place it on top of the green cube </s>
+<s> drop the red cube on top of the yellow one </s>
+<s> pick up the red cube nearest to the right edge and place on top of the white cube nearest to the center of the board </s>
+<s> put the yellow cube on top of the red one </s>
+<s> move the red pyramid one cell forward </s>
+<s> pick up the red cube nearest to the top edge and place it on the cyan cube nearest to the bottom edge </s>
+<s> move the red pyramid on top of the blue cube nearest to the bottom left corner </s>
+<s> move the red cube nearest to the top right corner in the top right corner </s>
+<s> pick up the blue cube standing on a yellow tower and place it on top of the cyan cube nearest to the top edge </s>
+<s> pick up the yellow cube and place it over the green ones </s>
+<s> pick up the green cube nearest to the bottom edge and place it on the yellow cube nearest to the bottom right corner </s>
+<s> move the green pyramid three cells to the left </s>
+<s> pick up the blue cube and place it over the white one </s>
+<s> move the red pyramid on top of the single green cube </s>

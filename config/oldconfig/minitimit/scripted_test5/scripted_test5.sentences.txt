@@ -1,0 +1,30 @@
+nao ball close to i
+nao patient close to patient
+nao phone close to i
+nao patient close to apple
+nao where is dice
+nao ball has color yellow
+nao phone close to desk
+nao follow nao
+nao apple close to nao
+nao oximeter close to oximeter
+nao nao close to home
+nao dice close to apple
+nao banana has color red
+nao find banana
+nao phone close to sofa
+nao ball close to apple
+nao phone close to wall
+nao drop apple
+nao nao close to chair
+nao phone close to banana
+nao what can ball
+nao find i
+nao banana can be pick
+nao ball can be pick
+nao find ball
+nao show oximeter
+nao banana close to dice
+nao patient close to oximeter
+nao show phone
+nao bring apple

@@ -1,0 +1,168 @@
+Language model created by QuickLM on Thu Feb 11 12:04:03 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 9 sentences and 32 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=32
+ngram 2=58
+ngram 3=59
+
+\1-grams:
+-1.2711 </s> -0.3010
+-1.2711 <s> -0.2661
+-2.2253 a -0.2984
+-2.2253 at -0.2958
+-1.9243 can -0.2958
+-2.2253 find -0.2932
+-2.2253 hey -0.2958
+-1.9243 i -0.2932
+-1.4472 is -0.2744
+-1.7482 left -0.2744
+-1.7482 look -0.2798
+-1.9243 my -0.2771
+-1.9243 object -0.2906
+-1.6232 on -0.2771
+-2.2253 pen -0.2852
+-2.2253 please -0.2932
+-1.4472 right -0.2716
+-1.9243 robot -0.2879
+-1.9243 show -0.2825
+-2.2253 side -0.2771
+-2.2253 smartphone -0.2852
+-1.7482 something -0.2661
+-2.2253 table -0.2906
+-1.3802 the -0.2716
+-1.7482 there -0.2604
+-2.2253 think -0.2932
+-2.2253 this -0.2984
+-1.7482 to -0.2771
+-2.2253 towards -0.2958
+-2.2253 which -0.2852
+-2.2253 you -0.2984
+-1.9243 your -0.2771
+
+\2-grams:
+-1.2553 <s> hey 0.0000
+-1.2553 <s> i -0.1761
+-0.9542 <s> look -0.1249
+-0.9542 <s> show 0.0000
+-1.2553 <s> smartphone 0.0000
+-1.2553 <s> there -0.1249
+-1.2553 <s> this 0.0000
+-0.3010 a table 0.0000
+-0.3010 at my -0.1761
+-0.6021 can find 0.0000
+-0.6021 can you 0.0000
+-0.3010 find something -0.2218
+-0.3010 hey robot -0.1761
+-0.6021 i can -0.1761
+-0.6021 i think 0.0000
+-1.0792 is a 0.0000
+-1.0792 is at 0.0000
+-0.7782 is on 0.0000
+-1.0792 is something -0.2218
+-1.0792 is towards 0.0000
+-0.4771 left </s> -0.3010
+-0.7782 left side 0.0000
+-0.7782 look robot -0.1761
+-0.7782 look there -0.2218
+-0.7782 look to -0.1249
+-0.6021 my left -0.1249
+-0.6021 my right -0.2632
+-0.6021 object to -0.1249
+-0.6021 object which 0.0000
+-0.4260 on the -0.1549
+-0.9031 on your -0.1761
+-0.3010 pen is -0.2632
+-0.3010 please look -0.2218
+-0.3802 right </s> -0.3010
+-1.0792 right can -0.1761
+-0.6021 robot i -0.1761
+-0.6021 robot there -0.1249
+-0.3010 show the -0.2341
+-0.3010 side </s> -0.3010
+-0.3010 smartphone is -0.2218
+-0.7782 something is -0.2632
+-0.7782 something on -0.0969
+-0.7782 something to -0.2218
+-0.3010 table on -0.0969
+-1.1461 the left -0.1249
+-0.8451 the object 0.0000
+-0.5441 the right -0.0669
+-0.7782 there </s> -0.3010
+-0.4771 there is -0.2218
+-0.3010 think something -0.2218
+-0.3010 this pen 0.0000
+-0.4771 to the -0.1091
+-0.7782 to your -0.1761
+-0.3010 towards my -0.1761
+-0.3010 which is -0.2218
+-0.3010 you please 0.0000
+-0.6021 your left -0.2218
+-0.6021 your right -0.0669
+
+\3-grams:
+-0.3010 <s> hey robot
+-0.3010 <s> i can
+-0.6021 <s> look robot
+-0.6021 <s> look to
+-0.3010 <s> show the
+-0.3010 <s> smartphone is
+-0.3010 <s> there is
+-0.3010 <s> this pen
+-0.3010 a table on
+-0.3010 at my left
+-0.3010 can find something
+-0.3010 can you please
+-0.3010 find something to
+-0.3010 hey robot i
+-0.3010 i can find
+-0.3010 i think something
+-0.3010 is a table
+-0.3010 is at my
+-0.6021 is on the
+-0.6021 is on your
+-0.3010 is something on
+-0.3010 is towards my
+-0.3010 left side </s>
+-0.3010 look robot there
+-0.3010 look there </s>
+-0.3010 look to the
+-0.3010 my left </s>
+-0.3010 my right can
+-0.3010 object to the
+-0.3010 object which is
+-0.3010 on the right
+-0.3010 on your left
+-0.3010 pen is at
+-0.3010 please look there
+-0.3010 right can you
+-0.3010 robot i think
+-0.3010 robot there is
+-0.3010 show the object
+-0.3010 smartphone is on
+-0.3010 something is towards
+-0.3010 something on the
+-0.3010 something to your
+-0.3010 table on the
+-0.3010 the left </s>
+-0.6021 the object to
+-0.6021 the object which
+-0.3010 the right </s>
+-0.6021 there is a
+-0.6021 there is something
+-0.3010 think something is
+-0.3010 this pen is
+-0.6021 to the left
+-0.6021 to the right
+-0.3010 to your right
+-0.3010 towards my right
+-0.3010 which is on
+-0.3010 you please look
+-0.3010 your left side
+-0.3010 your right </s>
+
+\end\

@@ -1,0 +1,875 @@
+Language model created by QuickLM on Wed Oct 28 11:40:48 CET 2015
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 136 sentences and 79 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=79
+ngram 2=260
+ngram 3=517
+
+\1-grams:
+-1.4564 </s> -0.3010
+-1.4564 <s> -0.2821
+-3.1128 a -0.2897
+-3.5899 above -0.2628
+-2.1428 and -0.2829
+-3.2889 another -0.2904
+-2.6869 back -0.2786
+-3.2889 backwards -0.2856
+-1.7770 block -0.2564
+-1.8998 blue -0.2713
+-2.9879 board -0.2823
+-2.5899 bottom -0.2925
+-3.5899 brick -0.2893
+-3.1128 cell -0.2890
+-2.8118 center -0.2667
+-2.3595 closest -0.2930
+-3.5899 closet -0.2930
+-2.0336 corner -0.2545
+-1.5688 cube -0.2447
+-3.5899 cubes -0.2856
+-2.5108 cyan -0.2743
+-3.5899 down -0.2893
+-2.6357 drop -0.2591
+-2.3595 edge -0.2565
+-3.2889 from -0.2625
+-3.5899 front -0.2947
+-2.6357 gray -0.2752
+-1.9367 green -0.2713
+-2.8118 grey -0.2815
+-2.5486 in -0.2627
+-2.6357 is -0.2866
+-2.1128 it -0.2868
+-2.0459 left -0.2627
+-2.9879 left-most -0.2850
+-3.5899 lies -0.3004
+-3.5899 lone -0.2976
+-1.7976 move -0.2591
+-2.1586 nearest -0.2930
+-2.8118 next -0.2930
+-1.8418 of -0.2624
+-1.5729 on -0.2387
+-2.6357 one -0.2796
+-3.2889 onto -0.2628
+-3.2889 other -0.2920
+-3.5899 over -0.2628
+-1.9179 pick -0.2958
+-3.5899 pickup -0.2628
+-2.6869 pink -0.2762
+-1.9272 place -0.2310
+-2.6869 placed -0.2893
+-2.3858 prism -0.2591
+-3.5899 purple -0.2992
+-3.2889 put -0.2977
+-1.9272 pyramid -0.2532
+-1.9272 red -0.2687
+-3.5899 red-green -0.2992
+-2.2097 right -0.2685
+-3.5899 same -0.2991
+-3.5899 side -0.2947
+-3.2889 single -0.2959
+-3.2889 square -0.3008
+-3.5899 squares -0.2930
+-3.2889 stack -0.2862
+-2.4139 standing -0.2879
+-3.5899 take -0.2959
+-2.6357 that -0.3000
+-1.0741 the -0.2173
+-1.7387 to -0.2537
+-1.7326 top -0.2288
+-2.3858 tower -0.2774
+-3.5899 triangle -0.2893
+-2.5899 turquoise -0.2761
+-3.5899 two -0.3009
+-1.9179 up -0.2628
+-3.5899 which -0.3009
+-2.6869 white -0.2729
+-2.0986 yellow -0.2742
+-3.5899 yellow-blue-gray -0.2992
+-3.2889 yellow-red -0.2992
+
+\2-grams:
+-1.5315 <s> drop -0.0458
+-0.6942 <s> move -0.0465
+-0.7625 <s> pick 0.0000
+-2.4346 <s> pickup 0.0000
+-1.0544 <s> place -0.1698
+-2.4346 <s> take 0.0000
+-0.7782 a blue -0.1611
+-0.7782 a green -0.1856
+-0.7782 a grey -0.1761
+-0.3010 above the -0.2814
+-1.7482 and blue -0.2921
+-0.9031 and move -0.2758
+-0.4929 and place -0.1885
+-1.4472 and put 0.0000
+-0.6021 another blue -0.1611
+-0.6021 another green -0.2218
+-0.6021 back </s> -0.3010
+-0.9031 back corner -0.0772
+-0.9031 back right -0.1761
+-0.3010 backwards </s> -0.3010
+-0.6668 block </s> -0.3010
+-2.1139 block and -0.2852
+-1.5119 block closest 0.0000
+-1.8129 block from 0.0000
+-0.9098 block on -0.0244
+-2.1139 block one -0.2762
+-2.1139 block onto 0.0000
+-1.4150 block that 0.0000
+-1.4150 block to -0.0121
+-2.1139 block two 0.0000
+-2.1139 block which 0.0000
+-0.8451 blue block -0.0444
+-0.5599 blue cube -0.0162
+-1.9912 blue one -0.2218
+-1.9912 blue prism -0.2583
+-1.3892 blue pyramid -0.1502
+-1.6902 blue tower -0.1938
+-0.4260 board </s> -0.3010
+-0.9031 board and -0.1326
+-0.8239 bottom edge -0.1675
+-0.6990 bottom left -0.1719
+-0.8239 bottom right -0.1761
+-0.3010 brick on -0.1733
+-0.7782 cell left -0.2820
+-0.4771 cell to -0.0121
+-0.7782 center </s> -0.3010
+-0.7782 center of -0.0077
+-0.7782 center on -0.0244
+-0.3010 closest to -0.0121
+-0.3010 closet to -0.2980
+-0.3949 corner </s> -0.3010
+-1.8573 corner and -0.1326
+-1.8573 corner of -0.0077
+-1.5563 corner on -0.1733
+-1.3802 corner to -0.0121
+-0.8309 cube </s> -0.3010
+-1.1181 cube and -0.0442
+-1.4771 cube closest 0.0000
+-2.3222 cube closet 0.0000
+-1.8451 cube in -0.0378
+-1.0212 cube nearest 0.0000
+-1.1761 cube on -0.0204
+-2.3222 cube one -0.2499
+-2.3222 cube place -0.1946
+-1.6232 cube placed 0.0000
+-1.6232 cube standing 0.0000
+-2.3222 cube to -0.0121
+-0.3010 cubes </s> -0.3010
+-0.7782 cyan block -0.0956
+-0.9031 cyan cube -0.2143
+-0.9031 cyan prism -0.1576
+-1.0792 cyan pyramid -0.2511
+-0.3010 down on -0.1733
+-1.2553 drop it -0.0792
+-0.3522 drop the -0.2141
+-0.5772 edge </s> -0.3010
+-1.0544 edge and -0.1326
+-1.5315 edge drop -0.2762
+-1.5315 edge of -0.0077
+-1.5315 edge on -0.1952
+-1.2304 edge place -0.1946
+-0.6021 from stack -0.1761
+-0.6021 from the -0.2835
+-0.3010 front of -0.0077
+-1.2553 gray block -0.2875
+-0.5563 gray cube -0.0894
+-1.2553 gray one -0.2218
+-0.9542 gray pyramid -0.2237
+-0.7782 green block -0.0621
+-0.6320 green cube -0.0792
+-1.9542 green one -0.2218
+-1.4771 green prism -0.1938
+-1.6532 green pyramid -0.2065
+-1.4771 green tower -0.1938
+-0.6021 grey block -0.2440
+-1.0792 grey brick 0.0000
+-0.7782 grey cube -0.2243
+-1.3424 in front 0.0000
+-0.3424 in the -0.2737
+-0.5563 is closest 0.0000
+-0.9542 is next 0.0000
+-0.9542 is on -0.1952
+-1.7782 it down 0.0000
+-1.3010 it in 0.0000
+-0.3979 it on -0.0204
+-1.4771 it one -0.2218
+-1.1461 left </s> -0.3010
+-1.8451 left and -0.2430
+-0.5898 left corner -0.0669
+-1.1461 left edge -0.0918
+-1.8451 left gray -0.1597
+-1.3680 left of -0.0077
+-1.8451 left red -0.1698
+-1.8451 left side 0.0000
+-0.9031 left-most blue -0.2341
+-0.6021 left-most pyramid -0.2237
+-0.9031 left-most red -0.2563
+-0.3010 lies next 0.0000
+-0.3010 lone yellow -0.2329
+-1.2483 move it -0.0414
+-0.3531 move the -0.1216
+-0.3010 nearest to -0.0121
+-0.3010 next to -0.0061
+-2.0492 of a -0.2218
+-0.3089 of the -0.1335
+-2.0170 on a -0.1249
+-2.3181 on another -0.1761
+-2.3181 on green -0.1856
+-2.3181 on red -0.2963
+-2.3181 on right -0.2919
+-0.5938 on the -0.0829
+-0.6649 on top -0.1294
+-0.7782 one </s> -0.3010
+-0.7782 one cell 0.0000
+-1.2553 one place -0.2963
+-0.9542 one square 0.0000
+-0.3010 onto the -0.2758
+-0.6021 other blue -0.2341
+-0.6021 other yellow -0.2329
+-0.3010 over the -0.2730
+-0.3010 pick up 0.0000
+-0.3010 pickup the -0.2997
+-1.2041 pink block -0.1957
+-0.9031 pink cube -0.2194
+-0.5051 pink pyramid -0.1761
+-0.6628 place it -0.0142
+-1.9638 place on -0.1952
+-1.9638 place red -0.1698
+-0.6021 place the -0.1951
+-1.9638 place to -0.0121
+-0.3010 placed on -0.0244
+-1.0280 prism </s> -0.3010
+-1.5051 prism closest 0.0000
+-1.5051 prism in -0.0378
+-0.8062 prism on -0.0244
+-1.5051 prism one -0.2499
+-1.5051 prism onto 0.0000
+-1.0280 prism placed 0.0000
+-1.5051 prism to -0.0121
+-0.3010 purple prism -0.2872
+-0.3010 put it -0.0669
+-1.1856 pyramid </s> -0.3010
+-1.9638 pyramid above 0.0000
+-1.6628 pyramid and -0.1326
+-1.6628 pyramid nearest 0.0000
+-1.4867 pyramid next 0.0000
+-0.7877 pyramid on -0.0244
+-1.9638 pyramid one -0.2218
+-1.1856 pyramid standing -0.1249
+-1.3617 pyramid that 0.0000
+-1.1856 pyramid to -0.0121
+-1.0095 red block -0.0563
+-0.5836 red cube -0.0580
+-1.9638 red green -0.2863
+-1.4867 red prism -0.1938
+-1.0607 red pyramid -0.0776
+-1.9638 red stack -0.1761
+-0.3010 red-green tower -0.2872
+-1.6812 right </s> -0.3010
+-1.6812 right and -0.2852
+-1.3802 right back -0.2430
+-0.6021 right corner -0.0119
+-0.9031 right edge -0.0483
+-1.3802 right of -0.0077
+-0.3010 same edge -0.1675
+-0.3010 side of -0.0077
+-0.3010 single red -0.1698
+-0.3010 square backwards 0.0000
+-0.3010 squares to -0.0121
+-0.6021 stack nearest 0.0000
+-0.6021 stack on -0.2989
+-0.8751 standing in -0.0378
+-0.4771 standing on -0.1648
+-1.4771 standing over 0.0000
+-0.3010 take red -0.2563
+-0.3010 that is 0.0000
+-2.0388 the back -0.0969
+-2.2148 the block -0.0902
+-1.1735 the blue 0.0000
+-2.2148 the board 0.0000
+-1.8169 the bottom 0.0000
+-2.0388 the center 0.0000
+-2.2148 the corner -0.0235
+-2.5159 the cube -0.2292
+-1.7377 the cyan 0.0000
+-1.9138 the gray 0.0000
+-1.2041 the green 0.0000
+-2.1179 the grey 0.0000
+-1.6128 the left -0.1802
+-2.2148 the left-most 0.0000
+-2.8169 the lone 0.0000
+-2.5159 the other 0.0000
+-1.9138 the pink 0.0000
+-2.2148 the prism -0.1181
+-2.8169 the purple 0.0000
+-1.8627 the pyramid -0.0532
+-1.2258 the red -0.0093
+-2.8169 the red-green 0.0000
+-1.7755 the right -0.1880
+-2.8169 the same 0.0000
+-2.5159 the single 0.0000
+-1.4019 the top -0.0119
+-1.9718 the tower -0.1761
+-1.8169 the turquoise 0.0000
+-1.9138 the white 0.0000
+-1.3545 the yellow 0.0000
+-2.8169 the yellow-blue-gray 0.0000
+-2.5159 the yellow-red 0.0000
+-2.1523 to another -0.1761
+-0.3134 to the -0.0937
+-2.1523 to top -0.2566
+-1.8573 top </s> -0.3010
+-1.8573 top edge -0.1498
+-1.0122 top left -0.1719
+-0.5051 top of 0.0000
+-1.3133 top right -0.1761
+-1.8573 top the -0.2730
+-0.6601 tower </s> -0.3010
+-1.5051 tower and -0.1326
+-0.9031 tower nearest 0.0000
+-0.9031 tower standing -0.0280
+-0.3010 triangle on -0.1733
+-1.3010 turquoise block -0.1957
+-1.0000 turquoise cube -0.1802
+-1.3010 turquoise cubes 0.0000
+-0.5229 turquoise pyramid -0.1434
+-0.3010 two squares 0.0000
+-0.3010 up the -0.1094
+-0.3010 which lies 0.0000
+-1.2041 white and -0.2932
+-0.6021 white block -0.0956
+-1.2041 white cube -0.2711
+-0.9031 white pyramid -0.2123
+-0.8381 yellow block -0.0736
+-0.5883 yellow cube -0.0580
+-1.7924 yellow prism -0.2272
+-1.1903 yellow pyramid -0.1946
+-1.7924 yellow triangle 0.0000
+-0.3010 yellow-blue-gray tower -0.1938
+-0.3010 yellow-red tower -0.1181
+
+\3-grams:
+-0.3010 <s> drop the
+-0.3010 <s> move the
+-0.3010 <s> pick up
+-0.3010 <s> pickup the
+-1.6812 <s> place red
+-0.3195 <s> place the
+-0.3010 <s> take red
+-0.3010 a blue cube
+-0.3010 a green cube
+-0.3010 a grey block
+-0.3010 above the yellow
+-0.3010 and blue tower
+-0.3010 and move it
+-0.3259 and place it
+-1.5563 and place on
+-0.3010 and put it
+-0.3010 another blue cube
+-0.3010 another green block
+-0.3010 back corner </s>
+-0.3010 back right corner
+-0.3010 block and put
+-0.3010 block closest to
+-0.6021 block from stack
+-0.6021 block from the
+-0.5509 block on the
+-0.6601 block on top
+-0.3010 block one place
+-0.3010 block onto the
+-0.3010 block that is
+-0.3010 block to the
+-0.3010 block two squares
+-0.3010 block which lies
+-0.6690 blue block </s>
+-1.4472 blue block from
+-0.9700 blue block on
+-1.4472 blue block that
+-1.4472 blue block to
+-1.4472 blue block two
+-1.4472 blue block which
+-1.1303 blue cube </s>
+-1.0334 blue cube and
+-1.7324 blue cube closest
+-1.7324 blue cube in
+-0.8873 blue cube nearest
+-1.1303 blue cube on
+-1.4314 blue cube placed
+-1.2553 blue cube standing
+-0.3010 blue one </s>
+-0.3010 blue prism </s>
+-0.6021 blue pyramid </s>
+-0.9031 blue pyramid on
+-0.9031 blue pyramid to
+-0.3010 blue tower </s>
+-0.3010 board and place
+-0.3010 bottom edge </s>
+-0.3010 bottom left corner
+-0.3010 bottom right corner
+-0.3010 brick on the
+-0.3010 cell left of
+-0.3010 cell to the
+-0.3010 center of the
+-0.6021 center on the
+-0.6021 center on top
+-0.3010 closest to the
+-0.3010 closet to top
+-0.3010 corner and place
+-0.3010 corner of the
+-0.3010 corner on the
+-0.3010 corner to the
+-0.7270 cube and move
+-0.5051 cube and place
+-0.3010 cube closest to
+-0.3010 cube closet to
+-0.3010 cube in the
+-0.3010 cube nearest to
+-1.4472 cube on green
+-0.8451 cube on the
+-0.4929 cube on top
+-0.3010 cube one square
+-0.3010 cube place it
+-0.3010 cube placed on
+-0.5229 cube standing in
+-1.0000 cube standing on
+-1.0000 cube standing over
+-0.3010 cube to the
+-0.6021 cyan block </s>
+-0.9031 cyan block on
+-0.9031 cyan block that
+-0.7782 cyan cube </s>
+-0.4771 cyan cube closest
+-0.7782 cyan prism in
+-0.7782 cyan prism on
+-0.7782 cyan prism placed
+-0.6021 cyan pyramid that
+-0.6021 cyan pyramid to
+-0.3010 down on the
+-0.3010 drop it on
+-1.2041 drop the block
+-1.2041 drop the cube
+-1.2041 drop the green
+-1.2041 drop the prism
+-0.9031 drop the red
+-0.9031 drop the yellow
+-0.3010 edge and place
+-0.3010 edge drop it
+-0.3010 edge of the
+-0.3010 edge on top
+-0.3010 edge place it
+-0.3010 from stack on
+-0.3010 from the top
+-0.3010 front of the
+-0.3010 gray block closest
+-1.0000 gray cube </s>
+-1.0000 gray cube and
+-0.6990 gray cube nearest
+-1.0000 gray cube on
+-0.3010 gray one </s>
+-0.3010 gray pyramid on
+-0.6320 green block </s>
+-1.4771 green block and
+-1.1761 green block closest
+-1.1761 green block on
+-1.4771 green block onto
+-1.1761 green block that
+-0.6690 green cube </s>
+-1.3222 green cube and
+-1.1461 green cube closest
+-1.0212 green cube nearest
+-1.3222 green cube placed
+-1.6232 green cube standing
+-0.3010 green one </s>
+-0.7782 green prism </s>
+-0.7782 green prism placed
+-0.7782 green prism to
+-0.6021 green pyramid next
+-0.6021 green pyramid on
+-0.3010 green tower </s>
+-0.3010 grey block on
+-0.3010 grey brick on
+-0.6021 grey cube </s>
+-0.6021 grey cube in
+-0.3010 in front of
+-0.8239 in the bottom
+-1.3010 in the corner
+-0.5229 in the top
+-0.3010 is closest to
+-0.3010 is next to
+-0.3010 is on top
+-0.3010 it down on
+-0.7782 it in front
+-0.4771 it in the
+-1.6812 it on red
+-0.6021 it on the
+-0.6398 it on top
+-0.3010 it one cell
+-0.3010 left and move
+-0.3259 left corner </s>
+-1.5563 left corner of
+-0.6990 left edge </s>
+-0.6990 left edge and
+-1.0000 left edge drop
+-0.3010 left gray cube
+-0.3010 left of the
+-0.3010 left red cube
+-0.3010 left side of
+-0.3010 left-most blue block
+-0.3010 left-most pyramid on
+-0.3010 left-most red block
+-0.3010 lies next to
+-0.3010 lone yellow block
+-0.8451 move it in
+-0.4472 move it on
+-2.0414 move the block
+-1.4393 move the blue
+-1.2632 move the cyan
+-1.4393 move the gray
+-1.2632 move the green
+-2.0414 move the grey
+-1.5643 move the pink
+-1.7404 move the prism
+-2.0414 move the purple
+-1.4393 move the pyramid
+-1.0872 move the red
+-1.4393 move the turquoise
+-2.0414 move the white
+-1.0872 move the yellow
+-0.3010 nearest to the
+-1.0792 next to another
+-0.3802 next to the
+-0.3010 of a grey
+-1.0872 of the blue
+-1.4393 of the board
+-2.0414 of the gray
+-1.0414 of the green
+-2.0414 of the left-most
+-2.0414 of the lone
+-2.0414 of the other
+-2.0414 of the pink
+-1.1963 of the red
+-2.0414 of the single
+-1.2632 of the tower
+-1.5643 of the turquoise
+-1.5643 of the white
+-1.4393 of the yellow
+-2.0414 of the yellow-blue-gray
+-1.7404 of the yellow-red
+-0.6021 on a blue
+-0.6021 on a green
+-0.3010 on another blue
+-0.3010 on green cube
+-0.3010 on red stack
+-0.3010 on right and
+-1.7243 on the back
+-1.0253 on the blue
+-1.5482 on the corner
+-1.4232 on the cyan
+-1.0253 on the green
+-2.0253 on the grey
+-1.7243 on the left
+-2.0253 on the pink
+-1.1802 on the red
+-2.0253 on the red-green
+-2.0253 on the right
+-1.4232 on the top
+-2.0253 on the tower
+-2.0253 on the turquoise
+-1.3263 on the yellow
+-0.3208 on top of
+-1.6532 on top the
+-0.7782 one cell left
+-0.4771 one cell to
+-0.3010 one place to
+-0.3010 one square backwards
+-0.6021 onto the gray
+-0.6021 onto the yellow
+-0.3010 other blue block
+-0.3010 other yellow block
+-0.3010 over the green
+-0.3010 pick up the
+-0.3010 pickup the cube
+-0.3010 pink block </s>
+-0.6021 pink cube </s>
+-0.6021 pink cube placed
+-1.0000 pink pyramid nearest
+-0.6990 pink pyramid on
+-0.6990 pink pyramid standing
+-1.6021 place it in
+-0.3716 place it on
+-1.3010 place it one
+-0.3010 place on top
+-0.3010 place red cube
+-1.6628 place the block
+-0.9638 place the blue
+-1.6628 place the grey
+-1.3617 place the left-most
+-1.1856 place the pyramid
+-1.0607 place the red
+-1.1856 place the white
+-1.0607 place the yellow
+-0.3010 place to the
+-0.3590 placed on the
+-1.2041 placed on top
+-0.3010 prism closest to
+-0.3010 prism in the
+-0.3979 prism on the
+-1.0000 prism on top
+-0.3010 prism one square
+-0.3010 prism onto the
+-0.3010 prism placed on
+-0.3010 prism to the
+-0.3010 purple prism onto
+-0.6021 put it down
+-0.6021 put it on
+-0.3010 pyramid above the
+-0.3010 pyramid and place
+-0.3010 pyramid nearest to
+-0.3010 pyramid next to
+-0.8751 pyramid on the
+-0.4357 pyramid on top
+-0.3010 pyramid one cell
+-0.3010 pyramid standing on
+-0.3010 pyramid that is
+-0.3010 pyramid to the
+-0.5563 red block </s>
+-1.2553 red block from
+-1.2553 red block on
+-1.2553 red block that
+-1.2553 red block to
+-0.7782 red cube </s>
+-0.9031 red cube and
+-1.6812 red cube in
+-1.2041 red cube nearest
+-1.0792 red cube on
+-1.6812 red cube place
+-1.6812 red cube standing
+-0.3010 red green tower
+-0.7782 red prism closest
+-0.7782 red prism on
+-0.7782 red prism one
+-1.2041 red pyramid </s>
+-1.2041 red pyramid nearest
+-1.2041 red pyramid next
+-0.9031 red pyramid on
+-1.2041 red pyramid one
+-1.2041 red pyramid standing
+-1.2041 red pyramid that
+-0.3010 red stack nearest
+-0.3010 red-green tower and
+-0.3010 right and put
+-0.3010 right back corner
+-0.4260 right corner </s>
+-1.3802 right corner and
+-1.3802 right corner on
+-1.3802 right corner to
+-0.7782 right edge </s>
+-1.0792 right edge and
+-1.0792 right edge of
+-0.7782 right edge place
+-0.3010 right of the
+-0.3010 same edge </s>
+-0.3010 side of the
+-0.3010 single red cube
+-0.3010 square backwards </s>
+-0.3010 squares to the
+-0.3010 stack nearest to
+-0.3010 stack on right
+-0.3010 standing in the
+-1.0000 standing on a
+-1.3010 standing on another
+-0.4559 standing on the
+-0.3010 standing over the
+-0.3010 take red block
+-0.5563 that is closest
+-0.9542 that is next
+-0.9542 that is on
+-0.4771 the back </s>
+-0.7782 the back right
+-0.9031 the block </s>
+-0.9031 the block on
+-0.9031 the block one
+-0.9031 the block to
+-0.8653 the blue block
+-0.5465 the blue cube
+-1.9445 the blue one
+-1.9445 the blue prism
+-1.3424 the blue pyramid
+-1.9445 the blue tower
+-0.4260 the board </s>
+-0.9031 the board and
+-0.8239 the bottom edge
+-0.6990 the bottom left
+-0.8239 the bottom right
+-0.7782 the center </s>
+-0.7782 the center of
+-0.7782 the center on
+-0.9031 the corner </s>
+-0.9031 the corner on
+-0.6021 the corner to
+-0.6021 the cube </s>
+-0.6021 the cube closet
+-0.7782 the cyan block
+-0.9031 the cyan cube
+-0.9031 the cyan prism
+-1.0792 the cyan pyramid
+-1.2041 the gray block
+-0.6021 the gray cube
+-1.2041 the gray one
+-0.9031 the gray pyramid
+-0.7677 the green block
+-0.6351 the green cube
+-1.9138 the green one
+-1.4367 the green prism
+-1.6128 the green pyramid
+-1.6128 the green tower
+-0.6990 the grey block
+-1.0000 the grey brick
+-0.6990 the grey cube
+-0.8062 the left </s>
+-1.5051 the left and
+-0.8062 the left edge
+-1.5051 the left gray
+-1.2041 the left of
+-1.5051 the left red
+-1.5051 the left side
+-0.9031 the left-most blue
+-0.6021 the left-most pyramid
+-0.9031 the left-most red
+-0.3010 the lone yellow
+-0.6021 the other blue
+-0.6021 the other yellow
+-1.2041 the pink block
+-0.9031 the pink cube
+-0.5051 the pink pyramid
+-0.9031 the prism </s>
+-0.6021 the prism on
+-0.9031 the prism placed
+-0.3010 the purple prism
+-1.2553 the pyramid </s>
+-1.2553 the pyramid next
+-1.2553 the pyramid on
+-1.2553 the pyramid standing
+-0.9542 the pyramid that
+-0.7782 the pyramid to
+-1.0470 the red block
+-0.5911 the red cube
+-1.8921 the red green
+-1.4150 the red prism
+-0.9890 the red pyramid
+-0.3010 the red-green tower
+-1.3424 the right </s>
+-1.0414 the right back
+-0.5643 the right edge
+-1.0414 the right of
+-0.3010 the same edge
+-0.3010 the single red
+-1.4150 the top </s>
+-1.4150 the top edge
+-0.6021 the top left
+-1.4150 the top of
+-0.8709 the top right
+-0.6690 the tower nearest
+-0.5441 the tower standing
+-1.3010 the turquoise block
+-1.0000 the turquoise cube
+-1.3010 the turquoise cubes
+-0.5229 the turquoise pyramid
+-1.2041 the white and
+-0.6021 the white block
+-1.2041 the white cube
+-0.9031 the white pyramid
+-0.9183 the yellow block
+-0.5593 the yellow cube
+-1.7634 the yellow prism
+-1.1614 the yellow pyramid
+-1.7634 the yellow triangle
+-0.3010 the yellow-blue-gray tower
+-0.3010 the yellow-red tower
+-0.3010 to another green
+-1.5378 to the back
+-1.8388 to the blue
+-1.2948 to the bottom
+-1.3617 to the center
+-1.5378 to the green
+-1.8388 to the grey
+-1.0259 to the left
+-2.1399 to the left-most
+-2.1399 to the other
+-2.1399 to the pyramid
+-2.1399 to the red
+-1.1399 to the right
+-2.1399 to the same
+-0.9638 to the top
+-2.1399 to the yellow
+-0.3010 to top left
+-0.6021 top edge </s>
+-0.6021 top edge on
+-0.3010 top left corner
+-1.9542 top of a
+-0.3108 top of the
+-0.3010 top right corner
+-0.3010 top the green
+-0.3010 tower and place
+-0.3010 tower nearest to
+-0.9031 tower standing in
+-0.4260 tower standing on
+-0.3010 triangle on the
+-0.3010 turquoise block </s>
+-0.6021 turquoise cube </s>
+-0.6021 turquoise cube nearest
+-0.3010 turquoise cubes </s>
+-1.0792 turquoise pyramid </s>
+-1.0792 turquoise pyramid above
+-0.6021 turquoise pyramid on
+-1.0792 turquoise pyramid standing
+-0.3010 two squares to
+-1.9731 up the block
+-0.8270 up the blue
+-1.6721 up the cyan
+-1.6721 up the gray
+-1.1280 up the green
+-1.9731 up the left
+-1.4960 up the pink
+-1.9731 up the prism
+-1.9731 up the pyramid
+-1.0189 up the red
+-1.9731 up the single
+-1.6721 up the turquoise
+-1.9731 up the white
+-1.6721 up the yellow
+-0.3010 which lies next
+-0.3010 white and blue
+-0.6021 white block </s>
+-0.9031 white block on
+-0.9031 white block to
+-0.3010 white cube on
+-0.6021 white pyramid and
+-0.6021 white pyramid on
+-0.7782 yellow block </s>
+-1.2553 yellow block closest
+-0.6532 yellow block on
+-1.2553 yellow block to
+-0.9031 yellow cube </s>
+-1.2041 yellow cube and
+-1.5051 yellow cube closest
+-1.0280 yellow cube nearest
+-0.9031 yellow cube on
+-1.5051 yellow cube one
+-1.5051 yellow cube to
+-0.3010 yellow prism on
+-0.9031 yellow pyramid </s>
+-0.9031 yellow pyramid and
+-0.9031 yellow pyramid standing
+-0.9031 yellow pyramid to
+-0.3010 yellow triangle on
+-0.3010 yellow-blue-gray tower </s>
+-0.6021 yellow-red tower </s>
+-0.6021 yellow-red tower nearest
+
+\end\

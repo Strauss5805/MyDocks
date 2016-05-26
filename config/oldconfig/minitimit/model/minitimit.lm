@@ -1,0 +1,34 @@
+Language model created by QuickLM on Tue Jan 19 12:30:46 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 1 sentences and 6 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=6
+ngram 2=5
+ngram 3=4
+
+\1-grams:
+-1.0792 </s> -0.3010
+-1.0792 <s> -0.2632
+-1.0792 him -0.2632
+-1.0792 she -0.2632
+-1.0792 should -0.2632
+-1.0792 wake -0.2632
+
+\2-grams:
+-0.3010 <s> should 0.0000
+-0.3010 him </s> -0.3010
+-0.3010 she wake 0.0000
+-0.3010 should she 0.0000
+-0.3010 wake him 0.0000
+
+\3-grams:
+-0.3010 <s> should she
+-0.3010 she wake him
+-0.3010 should she wake
+-0.3010 wake him </s>
+
+\end\

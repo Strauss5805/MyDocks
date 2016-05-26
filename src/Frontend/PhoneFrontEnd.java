@@ -68,13 +68,14 @@ public class PhoneFrontEnd extends FrontEnd {
 		for(String p: phonemes)
 		{
 			phones.add(new PhoneData(p,substitutionMethod));
-//			phones.add(new PhoneData(p,substitutionMethod));
+			phones.add(new PhoneData(p,substitutionMethod));
 		}
 		phones.add(new PhoneData("SIL",substitutionMethod));
 		phones.add(new PhoneData("SIL",substitutionMethod));
 		phones.add(new PhoneData("SIL",substitutionMethod));
 //		System.out.println(phones.toString());
 		phones.add(new DataEndSignal(100));
+//		System.out.println("tick");
 	}
 
 	/**

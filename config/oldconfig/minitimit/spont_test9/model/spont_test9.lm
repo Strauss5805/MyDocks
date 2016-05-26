@@ -1,0 +1,121 @@
+Language model created by QuickLM on Thu Feb 11 12:04:03 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 9 sentences and 24 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=24
+ngram 2=40
+ngram 3=38
+
+\1-grams:
+-1.1176 </s> -0.3010
+-1.1176 <s> -0.2291
+-2.0719 a -0.2973
+-2.0719 are -0.2973
+-2.0719 can -0.2936
+-2.0719 dice -0.2936
+-2.0719 doing -0.2666
+-2.0719 is -0.2973
+-1.5948 left -0.2666
+-1.7709 me -0.2898
+-1.7709 my -0.2898
+-1.7709 object -0.2898
+-1.7709 on -0.2822
+-2.0719 pen -0.2666
+-1.7709 please -0.2784
+-1.5948 robot -0.2705
+-1.7709 show -0.2936
+-1.2937 stop -0.2248
+-1.5948 the -0.2784
+-1.7709 there -0.2626
+-2.0719 to -0.2936
+-2.0719 what -0.2936
+-1.7709 you -0.2898
+-2.0719 yourself -0.2666
+
+\2-grams:
+-1.2553 <s> can 0.0000
+-1.2553 <s> object -0.1761
+-1.2553 <s> please 0.0000
+-0.7782 <s> robot 0.0000
+-1.2553 <s> show 0.0000
+-1.2553 <s> stop -0.2632
+-1.2553 <s> there -0.1761
+-0.3010 a dice 0.0000
+-0.3010 are doing 0.0000
+-0.3010 can you -0.1761
+-0.3010 dice on -0.1761
+-0.3010 doing </s> -0.3010
+-0.3010 is a 0.0000
+-0.3010 left </s> -0.3010
+-0.3010 me the -0.1249
+-0.3010 my left 0.0000
+-0.6021 object on -0.1761
+-0.6021 object to 0.0000
+-0.6021 on my 0.0000
+-0.6021 on the -0.2218
+-0.3010 pen </s> -0.3010
+-0.3010 please stop -0.1761
+-0.7782 robot show 0.0000
+-0.4771 robot stop -0.1761
+-0.3010 show me 0.0000
+-0.7782 stop </s> -0.3010
+-1.0792 stop stop -0.2632
+-1.0792 stop there -0.1761
+-1.0792 stop what 0.0000
+-1.0792 stop yourself 0.0000
+-0.7782 the left 0.0000
+-0.7782 the object -0.1761
+-0.7782 the pen 0.0000
+-0.6021 there </s> -0.3010
+-0.6021 there is 0.0000
+-0.3010 to my 0.0000
+-0.3010 what you -0.1761
+-0.6021 you are 0.0000
+-0.6021 you please 0.0000
+-0.3010 yourself </s> -0.3010
+
+\3-grams:
+-0.3010 <s> can you
+-0.3010 <s> object to
+-0.3010 <s> please stop
+-0.7782 <s> robot show
+-0.4771 <s> robot stop
+-0.3010 <s> show me
+-0.3010 <s> stop yourself
+-0.3010 <s> there is
+-0.3010 a dice on
+-0.3010 are doing </s>
+-0.3010 can you please
+-0.3010 dice on the
+-0.3010 is a dice
+-0.6021 me the object
+-0.6021 me the pen
+-0.3010 my left </s>
+-0.3010 object on my
+-0.3010 object to my
+-0.3010 on my left
+-0.3010 on the left
+-0.6021 please stop </s>
+-0.6021 please stop there
+-0.3010 robot show me
+-0.6021 robot stop </s>
+-0.6021 robot stop stop
+-0.3010 show me the
+-0.3010 stop stop what
+-0.3010 stop there </s>
+-0.3010 stop what you
+-0.3010 stop yourself </s>
+-0.3010 the left </s>
+-0.3010 the object on
+-0.3010 the pen </s>
+-0.3010 there is a
+-0.3010 to my left
+-0.3010 what you are
+-0.3010 you are doing
+-0.3010 you please stop
+
+\end\

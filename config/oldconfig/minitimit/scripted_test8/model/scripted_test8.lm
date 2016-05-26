@@ -1,0 +1,214 @@
+Language model created by QuickLM on Thu Feb 11 12:28:39 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 30 sentences and 33 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=33
+ngram 2=73
+ngram 3=89
+
+\1-grams:
+-1.1184 </s> -0.3010
+-1.1184 <s> -0.2582
+-1.9934 apple -0.2396
+-2.1184 ball -0.2558
+-2.1184 banana -0.2865
+-2.1184 blue -0.2666
+-2.5955 can -0.2921
+-1.4816 close -0.2853
+-1.6413 color -0.2819
+-2.1184 desk -0.2666
+-2.2945 dice -0.2910
+-2.5955 drop -0.2977
+-2.2945 find -0.2876
+-2.5955 floor -0.2666
+-2.5955 follow -0.2955
+-2.5955 go -0.2853
+-2.5955 green -0.2666
+-1.6413 has -0.2819
+-1.8965 i -0.2508
+-2.5955 is -0.2955
+-1.0273 nao -0.1464
+-1.9934 oximeter -0.2396
+-1.6924 phone -0.2396
+-2.5955 purple -0.2666
+-2.5955 push -0.2966
+-2.5955 red -0.2666
+-2.2945 sofa -0.2666
+-1.4494 to -0.2188
+-2.5955 wall -0.2666
+-2.5955 what -0.2999
+-2.5955 where -0.2999
+-2.5955 which -0.2910
+-2.2945 yellow -0.2666
+
+\2-grams:
+-0.3010 <s> nao -0.0753
+-0.6021 apple </s> -0.3010
+-0.9031 apple close 0.0000
+-0.9031 apple has -0.0458
+-0.4771 ball </s> -0.3010
+-0.7782 ball has -0.0458
+-0.3010 banana close 0.0000
+-0.3010 blue </s> -0.3010
+-0.3010 can phone -0.1761
+-0.3010 close to -0.0300
+-0.7782 color blue 0.0000
+-1.2553 color green 0.0000
+-1.2553 color has -0.2762
+-1.2553 color purple 0.0000
+-1.2553 color red 0.0000
+-0.9542 color yellow 0.0000
+-0.3010 desk </s> -0.3010
+-0.3010 dice has -0.0458
+-0.3010 drop ball -0.1249
+-0.6021 find apple -0.1761
+-0.6021 find phone -0.1761
+-0.3010 floor </s> -0.3010
+-0.3010 follow i -0.1461
+-0.3010 go to -0.2852
+-0.3010 green </s> -0.3010
+-0.3522 has color -0.0458
+-1.2553 has phone -0.1761
+-0.5229 i </s> -0.3010
+-0.6990 i close 0.0000
+-0.3010 is i -0.1461
+-1.5682 nao </s> -0.3010
+-1.5682 nao apple -0.1761
+-1.8692 nao ball -0.2218
+-1.3921 nao banana 0.0000
+-1.1703 nao close 0.0000
+-1.5682 nao dice 0.0000
+-1.8692 nao drop 0.0000
+-1.5682 nao find 0.0000
+-1.8692 nao follow 0.0000
+-1.8692 nao go 0.0000
+-1.5682 nao i -0.2041
+-1.1703 nao nao -0.2706
+-1.5682 nao oximeter -0.1761
+-1.2672 nao phone -0.1761
+-1.8692 nao push 0.0000
+-1.8692 nao what 0.0000
+-1.8692 nao where 0.0000
+-1.8692 nao which 0.0000
+-0.6021 oximeter </s> -0.3010
+-0.9031 oximeter close 0.0000
+-0.9031 oximeter has -0.0458
+-0.6021 phone </s> -0.3010
+-1.2041 phone close 0.0000
+-0.7270 phone has -0.0458
+-0.3010 purple </s> -0.3010
+-0.3010 push oximeter -0.1761
+-0.3010 red </s> -0.3010
+-0.3010 sofa </s> -0.3010
+-1.4472 to apple -0.1761
+-1.4472 to ball -0.1249
+-0.9700 to desk 0.0000
+-1.4472 to floor 0.0000
+-1.4472 to i -0.1461
+-1.1461 to nao -0.2891
+-1.4472 to oximeter -0.1761
+-1.4472 to phone -0.1761
+-1.1461 to sofa 0.0000
+-1.4472 to wall 0.0000
+-0.3010 wall </s> -0.3010
+-0.3010 what can 0.0000
+-0.3010 where is 0.0000
+-0.3010 which color -0.2762
+-0.3010 yellow </s> -0.3010
+
+\3-grams:
+-1.4771 <s> nao apple
+-1.7782 <s> nao ball
+-1.3010 <s> nao banana
+-1.4771 <s> nao dice
+-1.7782 <s> nao drop
+-1.4771 <s> nao find
+-1.7782 <s> nao follow
+-1.7782 <s> nao go
+-1.4771 <s> nao i
+-1.0792 <s> nao nao
+-1.4771 <s> nao oximeter
+-1.1761 <s> nao phone
+-1.7782 <s> nao push
+-1.7782 <s> nao what
+-1.7782 <s> nao where
+-1.7782 <s> nao which
+-0.3010 apple close to
+-0.3010 apple has color
+-0.3010 ball has color
+-0.3010 banana close to
+-0.3010 can phone </s>
+-1.4150 close to ball
+-0.9379 close to desk
+-1.4150 close to floor
+-1.4150 close to i
+-1.1139 close to nao
+-1.4150 close to oximeter
+-1.4150 close to phone
+-1.1139 close to sofa
+-1.4150 close to wall
+-0.3010 color blue </s>
+-0.3010 color green </s>
+-0.3010 color has phone
+-0.3010 color purple </s>
+-0.3010 color red </s>
+-0.3010 color yellow </s>
+-0.3010 dice has color
+-0.3010 drop ball </s>
+-0.3010 find apple </s>
+-0.3010 find phone </s>
+-0.3010 follow i </s>
+-0.3010 go to apple
+-0.7270 has color blue
+-1.2041 has color green
+-1.2041 has color purple
+-1.2041 has color red
+-0.9031 has color yellow
+-0.3010 has phone </s>
+-0.3010 i close to
+-0.3010 is i </s>
+-0.6021 nao apple close
+-0.6021 nao apple has
+-0.3010 nao ball has
+-0.3010 nao banana close
+-0.3010 nao close to
+-0.3010 nao dice has
+-0.3010 nao drop ball
+-0.6021 nao find apple
+-0.6021 nao find phone
+-0.3010 nao follow i
+-0.3010 nao go to
+-0.3010 nao i close
+-0.3010 nao nao close
+-0.6021 nao oximeter close
+-0.6021 nao oximeter has
+-0.9031 nao phone close
+-0.4260 nao phone has
+-0.3010 nao push oximeter
+-0.3010 nao what can
+-0.3010 nao where is
+-0.3010 nao which color
+-0.3010 oximeter close to
+-0.3010 oximeter has color
+-0.3010 phone close to
+-0.3010 phone has color
+-0.3010 push oximeter </s>
+-0.3010 to apple </s>
+-0.3010 to ball </s>
+-0.3010 to desk </s>
+-0.3010 to floor </s>
+-0.3010 to i </s>
+-0.3010 to nao </s>
+-0.3010 to oximeter </s>
+-0.3010 to phone </s>
+-0.3010 to sofa </s>
+-0.3010 to wall </s>
+-0.3010 what can phone
+-0.3010 where is i
+-0.3010 which color has
+
+\end\

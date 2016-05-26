@@ -1,0 +1,3767 @@
+Language model created by QuickLM on Tue Feb  2 12:18:21 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 173 sentences and 830 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=830
+ngram 2=1499
+ngram 3=1419
+
+\1-grams:
+-1.3100 </s> -0.3010
+-1.3100 <s> -0.2396
+-1.9570 a -0.2956
+-3.5480 abdomen -0.2996
+-3.5480 ability -0.2986
+-3.5480 abruptly -0.3003
+-3.5480 accomplished -0.3009
+-3.5480 account -0.2792
+-3.5480 accusations -0.3003
+-3.5480 aches -0.3009
+-3.5480 acropolis -0.3005
+-3.5480 add -0.2920
+-3.5480 address -0.3009
+-3.0709 after -0.2913
+-3.5480 age -0.3009
+-3.5480 aglow -0.2792
+-3.5480 agricultural -0.3009
+-3.5480 alice's -0.3009
+-2.9460 all -0.2916
+-3.5480 alligators -0.2989
+-3.2470 allow -0.2961
+-3.5480 along -0.3009
+-3.5480 aluminum -0.3009
+-2.8491 always -0.3003
+-3.5480 am -0.2792
+-3.5480 ambiguous -0.2792
+-3.5480 ambled -0.3007
+-3.5480 ambulance -0.2988
+-3.5480 american -0.3009
+-2.9460 an -0.3005
+-2.1678 and -0.2889
+-3.5480 ankle -0.2997
+-3.5480 annoying -0.3007
+-3.5480 answer -0.2792
+-3.5480 anti -0.3009
+-3.0709 any -0.3002
+-3.5480 anything -0.2988
+-3.5480 apology -0.2792
+-3.5480 appetizers -0.2792
+-3.5480 approval -0.2988
+-3.5480 approximated -0.3008
+-2.3176 are -0.2797
+-3.5480 areas -0.2989
+-3.5480 argued -0.2983
+-3.2470 arm -0.2781
+-3.5480 around -0.2920
+-3.5480 arrange -0.2988
+-3.5480 artificial -0.3009
+-3.5480 artists -0.3009
+-2.5938 as -0.2935
+-3.5480 ask -0.3009
+-3.5480 assistance -0.2792
+-3.5480 astrophysics -0.2792
+-2.7699 at -0.2907
+-3.5480 audition -0.2792
+-3.5480 auditors -0.2792
+-3.5480 audits -0.2792
+-3.5480 augmented -0.2998
+-3.5480 authorities -0.3008
+-3.5480 authorized -0.2920
+-3.5480 autumn -0.2792
+-3.2470 avoid -0.3008
+-3.5480 away -0.2792
+-3.2470 back -0.2791
+-3.5480 backward -0.2792
+-3.5480 ball -0.2792
+-3.5480 balls -0.2988
+-3.5480 barb -0.3009
+-3.5480 bargains -0.2999
+-3.5480 barometric -0.3009
+-3.5480 based -0.2997
+-3.5480 basketball -0.3005
+-2.5066 be -0.2896
+-3.5480 beach -0.3009
+-3.5480 beautiful -0.2792
+-3.5480 become -0.3009
+-3.5480 bedroom -0.3008
+-3.2470 before -0.3008
+-3.5480 beg -0.3000
+-3.2470 began -0.2984
+-3.5480 beggar -0.2792
+-3.2470 best -0.3007
+-3.5480 beyond -0.3009
+-3.0709 big -0.3007
+-3.5480 birth -0.3009
+-3.2470 black -0.3008
+-3.5480 bleachers -0.2792
+-3.5480 boat's -0.3008
+-3.5480 bob -0.3009
+-3.5480 bog -0.3009
+-3.2470 bones -0.2981
+-3.5480 bonfire -0.2792
+-3.5480 books -0.2989
+-3.5480 boots -0.2997
+-3.5480 boring -0.3009
+-3.5480 bounded -0.2998
+-3.2470 bowl -0.2770
+-3.5480 boy -0.3009
+-3.5480 bread -0.2792
+-3.5480 breakdown -0.2989
+-3.2470 brief -0.3008
+-3.2470 bright -0.3004
+-3.5480 brochure -0.2996
+-3.5480 broken -0.2792
+-3.5480 brown -0.3007
+-3.5480 buff -0.2792
+-3.5480 burn -0.2997
+-3.5480 burned -0.3009
+-3.5480 business -0.3009
+-2.7029 but -0.2846
+-3.0709 buy -0.3000
+-3.5480 buyer -0.2792
+-3.5480 buys -0.3009
+-2.5480 by -0.2854
+-3.5480 calcium -0.3008
+-3.2470 call -0.2991
+-3.5480 came -0.3009
+-2.9460 can -0.2771
+-3.5480 candy -0.2999
+-3.5480 captured -0.2983
+-3.5480 carol -0.3009
+-3.5480 carpet -0.3008
+-3.5480 carriage -0.3009
+-3.5480 carry -0.2962
+-3.5480 carrying -0.2962
+-3.5480 case -0.2792
+-3.5480 cases -0.2999
+-3.5480 cashmere -0.3009
+-3.5480 cat's -0.3009
+-3.5480 catastrophic -0.3009
+-3.5480 cattle -0.2792
+-3.5480 causeway -0.3009
+-3.5480 centrifuge -0.3009
+-3.5480 ceramic -0.3009
+-3.5480 chablis -0.2792
+-3.5480 chair -0.2981
+-3.5480 change -0.2792
+-3.5480 changes -0.2792
+-3.5480 charge -0.3007
+-3.5480 charlie's -0.3008
+-3.5480 cheap -0.3009
+-3.5480 chief -0.3009
+-3.5480 children -0.3007
+-3.5480 chosen -0.3007
+-3.5480 cigarette -0.2792
+-3.5480 clay -0.3008
+-3.2470 cleaners -0.2987
+-3.5480 cleans -0.3009
+-3.5480 cliff -0.2992
+-3.5480 cloth -0.2986
+-3.5480 clumsy -0.3009
+-3.5480 coincided -0.3000
+-3.5480 coleslaw -0.3007
+-3.5480 colored -0.2920
+-3.5480 combine -0.3005
+-3.2470 come -0.3005
+-3.5480 comes -0.3009
+-3.5480 common -0.3009
+-3.5480 completely -0.3009
+-3.5480 conformists -0.3009
+-3.5480 contagious -0.3009
+-3.5480 control -0.2792
+-3.5480 controlled -0.2920
+-3.5480 cook -0.3007
+-3.5480 corduroy -0.3008
+-3.5480 cornered -0.3003
+-3.5480 cory -0.2981
+-3.5480 costume -0.3009
+-3.5480 costumes -0.2981
+-3.5480 countryside -0.2792
+-3.5480 cranberry -0.3009
+-3.5480 crayons -0.2792
+-3.5480 cream -0.2996
+-3.5480 crunched -0.2998
+-3.5480 curious -0.3007
+-3.5480 custody -0.2996
+-3.5480 customer -0.3009
+-3.5480 cutbacks -0.3009
+-3.2470 cutting -0.3005
+-3.5480 dance -0.2981
+-3.2470 day -0.2791
+-3.5480 days -0.3007
+-3.5480 december -0.2981
+-3.5480 depicts -0.2920
+-3.5480 destroy -0.3008
+-3.2470 development -0.2773
+-3.5480 dew -0.2997
+-3.5480 diagnosed -0.3002
+-3.5480 diagram -0.3008
+-3.2470 did -0.2781
+-3.5480 die -0.3000
+-3.2470 dig -0.2982
+-3.5480 dim -0.3009
+-3.5480 dime -0.3004
+-3.2470 dirty -0.3008
+-3.5480 diseases -0.2792
+-3.5480 dishes -0.2792
+-3.5480 dislikes -0.3009
+-3.5480 distance -0.2792
+-3.5480 distributed -0.2792
+-3.5480 divorced -0.3008
+-3.0709 do -0.3003
+-3.5480 dome -0.3008
+-2.9460 don't -0.3002
+-3.5480 done -0.3009
+-3.5480 downpour -0.2792
+-3.5480 dozen -0.3009
+-3.5480 driving -0.3009
+-3.5480 drug -0.2792
+-3.5480 drunk -0.2986
+-3.0709 each -0.3005
+-3.5480 earn -0.3004
+-3.5480 ears -0.2792
+-3.5480 eat -0.3008
+-3.5480 eating -0.3009
+-3.5480 economic -0.3009
+-3.5480 effects -0.2792
+-3.5480 eight -0.3009
+-3.5480 electrical -0.3005
+-3.5480 electricity -0.2981
+-3.5480 electron -0.3009
+-3.5480 elegant -0.2792
+-3.5480 emblem -0.3009
+-3.5480 employment -0.2792
+-3.5480 ended -0.3009
+-3.5480 endurance -0.2792
+-3.5480 enjoy -0.3004
+-3.2470 enough -0.3008
+-3.5480 entertaining -0.3009
+-3.5480 errors -0.2792
+-3.2470 every -0.3008
+-3.5480 exam -0.3009
+-3.5480 excited -0.2981
+-3.5480 expected -0.2986
+-3.5480 expense -0.3009
+-3.5480 expensive -0.3009
+-3.5480 experts -0.3002
+-3.5480 exposure -0.2986
+-3.5480 extensive -0.3009
+-3.5480 extra -0.3009
+-3.5480 eyebrow -0.3009
+-3.0709 eyes -0.3002
+-3.5480 fail -0.2792
+-3.5480 fairy -0.3009
+-3.5480 fallen -0.3008
+-3.5480 fan -0.2792
+-3.5480 fancy -0.3009
+-3.5480 farm -0.2996
+-3.5480 farmyard -0.2792
+-3.5480 fashion -0.3002
+-3.5480 fast -0.2981
+-3.5480 favor -0.2989
+-3.5480 feeling -0.3007
+-3.5480 feels -0.3000
+-3.2470 fell -0.2981
+-3.2470 felt -0.2951
+-3.5480 fences -0.2981
+-3.0709 few -0.3002
+-3.5480 field -0.3009
+-3.5480 file -0.3009
+-3.5480 filtering -0.3007
+-3.5480 first -0.3008
+-3.5480 fish -0.3008
+-3.5480 fleecy -0.3009
+-3.5480 flies -0.3009
+-3.5480 flimsy -0.2792
+-3.5480 flood -0.2792
+-3.5480 folded -0.3009
+-2.2927 for -0.2925
+-2.9460 forces -0.2769
+-3.5480 forgot -0.2986
+-3.5480 formula -0.2792
+-3.5480 fortune -0.3009
+-3.5480 frantically -0.2997
+-3.5480 fresh -0.3008
+-2.8491 from -0.2868
+-3.5480 frost -0.2792
+-3.5480 functional -0.3009
+-3.5480 further -0.2996
+-3.5480 gallon -0.2989
+-3.5480 galoshes -0.2989
+-3.5480 garbage -0.2792
+-3.5480 gas -0.2792
+-3.5480 gave -0.2962
+-3.5480 geese -0.2792
+-3.5480 general -0.2999
+-3.5480 generals -0.2792
+-3.5480 generous -0.3007
+-3.2470 get -0.3003
+-3.5480 gets -0.3007
+-3.5480 gives -0.3009
+-3.5480 glistened -0.2983
+-3.5480 gloom -0.2792
+-3.5480 gloves -0.2986
+-3.5480 glow -0.2989
+-3.5480 glowed -0.3009
+-3.5480 goat -0.3009
+-3.5480 gone -0.2981
+-3.0709 good -0.2753
+-3.5480 got -0.3009
+-3.5480 government -0.3009
+-3.5480 governor -0.2792
+-3.5480 grades -0.3009
+-3.5480 grandmother -0.3009
+-3.5480 grazing -0.3009
+-3.2470 greg -0.2984
+-3.5480 grows -0.3004
+-3.5480 guard -0.2988
+-3.5480 guess -0.2920
+-3.5480 gunman -0.3009
+-3.5480 gunpoint -0.2988
+-3.5480 guns -0.2999
+-3.0709 had -0.3002
+-3.5480 halloween -0.2792
+-3.5480 hand -0.3009
+-3.2470 hard -0.2790
+-3.5480 harmonize -0.3009
+-3.0709 has -0.2788
+-3.5480 hated -0.3007
+-3.5480 hats -0.2989
+-2.8491 have -0.2989
+-3.5480 haven't -0.3008
+-3.5480 having -0.2962
+-2.2470 he -0.2951
+-3.5480 healthier -0.2986
+-3.5480 heating -0.3008
+-3.5480 heave -0.2997
+-3.5480 help -0.3008
+-2.8491 her -0.3003
+-3.5480 here -0.3002
+-3.5480 hierarchies -0.2792
+-3.5480 high -0.2999
+-3.5480 higher -0.3005
+-3.2470 him -0.2792
+-3.2470 himself -0.2791
+-2.4688 his -0.2991
+-3.5480 honey -0.2792
+-3.5480 hook -0.2792
+-3.5480 hostages -0.3004
+-3.2470 hours -0.2792
+-3.5480 house -0.2983
+-3.2470 how -0.2982
+-3.5480 however -0.2920
+-3.5480 huge -0.3009
+-3.5480 hurts -0.3007
+-3.5480 husbandry -0.2992
+-2.9460 i -0.3005
+-3.2470 i'd -0.3008
+-3.5480 identify -0.3009
+-3.5480 idly -0.3009
+-2.7699 if -0.2898
+-3.5480 iguanas -0.2981
+-2.2056 in -0.2599
+-3.5480 income -0.3009
+-3.5480 increased -0.2998
+-3.5480 increases -0.3009
+-3.5480 increasing -0.3009
+-3.5480 indeed -0.3004
+-3.5480 industry -0.3009
+-3.5480 inevitable -0.2792
+-3.5480 infective -0.3009
+-3.5480 informative -0.2988
+-3.5480 ingredients -0.2983
+-3.5480 intelligence -0.2996
+-3.5480 interest -0.2983
+-3.2470 into -0.2960
+-3.5480 investigation -0.2792
+-2.4688 is -0.2894
+-2.8491 it -0.2955
+-3.2470 it's -0.2961
+-3.5480 item -0.2997
+-3.5480 items -0.2792
+-3.5480 its -0.3009
+-3.5480 jane -0.3003
+-3.5480 january -0.2989
+-3.5480 jeff -0.3008
+-3.5480 jewel -0.3008
+-3.2470 job -0.2962
+-3.5480 john -0.3009
+-3.5480 journal -0.2792
+-3.5480 just -0.3009
+-3.5480 justification -0.2998
+-3.5480 kept -0.2996
+-3.5480 kidnappers -0.2792
+-3.5480 knowingly -0.2792
+-3.5480 laboratory -0.3009
+-3.5480 lake -0.2792
+-3.5480 large -0.3008
+-3.5480 larger -0.3009
+-3.5480 latent -0.3004
+-3.5480 later -0.2920
+-3.2470 laugh -0.2979
+-3.5480 lawyers -0.3008
+-3.5480 leap -0.3009
+-3.5480 learn -0.2996
+-3.5480 leaves -0.2983
+-3.5480 leeway -0.3009
+-3.5480 lentils -0.2983
+-3.5480 less -0.3004
+-3.5480 lessons -0.2997
+-3.5480 lest -0.2996
+-3.5480 lie -0.2792
+-3.5480 lighted -0.3009
+-3.5480 lights -0.3009
+-3.5480 like -0.2986
+-3.5480 lily -0.2792
+-3.5480 litter -0.3009
+-3.2470 living -0.2791
+-3.5480 look -0.3007
+-3.5480 looked -0.3003
+-3.5480 looking -0.2988
+-3.5480 lori's -0.3009
+-3.5480 loss -0.3009
+-3.5480 lot -0.2989
+-3.2470 love -0.3008
+-3.5480 lower -0.3004
+-3.5480 lunchroom -0.3009
+-3.5480 luxurious -0.3009
+-3.2470 made -0.2770
+-3.5480 magnetic -0.3005
+-3.5480 magnetism -0.2792
+-3.5480 make -0.3008
+-3.2470 makes -0.3007
+-3.5480 man -0.2992
+-3.2470 many -0.3008
+-3.5480 marriage -0.2792
+-3.5480 marvelously -0.2792
+-3.5480 masks -0.2981
+-3.5480 massage -0.2792
+-3.5480 materials -0.3009
+-2.7699 may -0.2981
+-3.5480 me -0.2792
+-3.5480 meat -0.3007
+-3.2470 meats -0.2918
+-3.5480 medical -0.3009
+-3.5480 medieval -0.3009
+-3.5480 meeting -0.3003
+-3.5480 meow -0.3004
+-3.5480 mergers -0.2792
+-3.5480 merit -0.3009
+-3.5480 message -0.2792
+-3.5480 miami -0.2792
+-3.5480 michael -0.3009
+-3.2470 military -0.3008
+-3.2470 milk -0.3005
+-3.5480 millionaires -0.2792
+-3.5480 mine -0.2792
+-3.5480 miraculously -0.2792
+-3.5480 mirage -0.2792
+-3.5480 misquote -0.2992
+-3.5480 modeling -0.3009
+-3.5480 mom -0.3009
+-3.0709 money -0.2948
+-3.5480 months -0.2986
+-3.5480 mopped -0.3009
+-2.8491 more -0.2784
+-3.2470 morning -0.2791
+-3.5480 most -0.3009
+-3.5480 much -0.3009
+-3.5480 murals -0.2792
+-3.5480 muscular -0.3009
+-3.5480 musicians -0.3009
+-3.5480 must -0.2997
+-3.5480 mustache -0.2792
+-3.0709 my -0.3005
+-3.5480 nancy's -0.2792
+-3.5480 nearest -0.3009
+-3.2470 need -0.2967
+-3.5480 needed -0.3008
+-3.5480 neglect -0.2920
+-3.5480 negotiations -0.2920
+-3.2470 never -0.3005
+-3.5480 new -0.3009
+-3.5480 newspaper -0.3009
+-3.5480 nice -0.3009
+-3.5480 nightly -0.3009
+-3.5480 nihilistic -0.2792
+-2.8491 no -0.2913
+-3.5480 noise -0.3008
+-2.8491 not -0.2991
+-3.5480 noteworthy -0.2792
+-3.5480 novel -0.2996
+-3.0709 now -0.2882
+-3.5480 nuclear -0.3009
+-3.5480 oasis -0.2992
+-3.5480 obey -0.3009
+-3.5480 objects -0.3008
+-3.5480 obtain -0.3009
+-3.5480 occasionally -0.3009
+-3.5480 ocean -0.2792
+-2.3176 of -0.2838
+-3.0709 often -0.2994
+-3.2470 oil -0.2788
+-3.5480 oldsters -0.2989
+-2.5066 on -0.2673
+-3.5480 once -0.2792
+-2.8491 one -0.2983
+-3.0709 only -0.2915
+-2.9460 or -0.3004
+-3.5480 orders -0.2792
+-3.5480 organizations -0.3009
+-3.5480 oriental -0.3009
+-3.5480 others -0.2989
+-3.2470 our -0.3008
+-3.2470 out -0.2770
+-3.5480 outgrew -0.3004
+-3.2470 over -0.2918
+-3.2470 overalls -0.2792
+-3.5480 overcharged -0.2792
+-3.5480 overlooked -0.2920
+-3.5480 own -0.2962
+-3.5480 paid -0.2792
+-3.5480 palm -0.3009
+-3.5480 pam -0.3009
+-3.5480 paper -0.2981
+-3.5480 papered -0.3008
+-3.5480 paramagnetic -0.3004
+-3.5480 parental -0.3009
+-3.5480 parenthood -0.3009
+-3.5480 part -0.2792
+-3.5480 particularly -0.3009
+-3.5480 past -0.3009
+-3.5480 patiently -0.2792
+-3.5480 paw -0.2792
+-3.5480 peck -0.2989
+-3.2470 people -0.2994
+-3.5480 perfume -0.2792
+-3.5480 personnel -0.2989
+-3.5480 petticoats -0.2792
+-3.5480 pewter -0.2989
+-3.5480 phony -0.3009
+-3.5480 pick -0.2962
+-3.5480 piece -0.3007
+-3.5480 pill -0.2792
+-3.5480 planned -0.3009
+-3.5480 played -0.3009
+-3.5480 plays -0.3009
+-3.2470 please -0.3007
+-3.5480 pocket -0.2792
+-3.5480 politics -0.2981
+-3.5480 pond -0.2981
+-3.5480 poor -0.2792
+-3.5480 popular -0.3009
+-3.5480 popularity -0.2792
+-3.5480 position -0.2792
+-3.5480 possible -0.2986
+-3.2470 potatoes -0.2790
+-3.5480 pressure -0.3009
+-3.5480 prestige -0.2986
+-3.2470 pretty -0.2982
+-3.5480 prime -0.3009
+-3.2470 problem -0.2991
+-3.5480 problems -0.2792
+-3.5480 proceeding -0.3009
+-3.5480 processing -0.2989
+-3.5480 product -0.3008
+-3.5480 production -0.3003
+-3.5480 products -0.2989
+-3.5480 project -0.3008
+-3.5480 promote -0.3009
+-3.5480 properties -0.2989
+-3.5480 props -0.2999
+-3.5480 prospect -0.2989
+-3.5480 prospective -0.3009
+-3.5480 protected -0.2998
+-3.5480 pulsing -0.3009
+-3.5480 puncturing -0.3005
+-3.5480 purchase -0.2792
+-3.5480 put -0.2920
+-3.5480 question -0.3004
+-3.5480 questions -0.3002
+-3.5480 radiation -0.3009
+-3.5480 radiosterilization -0.3009
+-3.5480 rail -0.3009
+-3.5480 ralph -0.3009
+-3.5480 rare -0.3009
+-3.5480 rather -0.3004
+-3.5480 rationalize -0.3005
+-3.5480 reads -0.2920
+-3.5480 real -0.2792
+-3.5480 received -0.3009
+-3.5480 reconsidered -0.2792
+-3.5480 rector -0.2992
+-3.2470 red -0.3008
+-3.5480 refused -0.3009
+-3.5480 related -0.2986
+-3.5480 remained -0.3009
+-3.5480 remote -0.3009
+-3.5480 rent -0.3009
+-3.5480 rented -0.2920
+-3.5480 reptiles -0.2792
+-3.5480 requires -0.3009
+-3.5480 rescue -0.3009
+-3.5480 resides -0.2983
+-3.5480 retracted -0.3000
+-3.5480 return -0.3009
+-3.5480 review -0.3008
+-3.5480 reviewers -0.3009
+-3.5480 ride -0.2920
+-3.5480 rifle -0.3009
+-3.2470 right -0.3005
+-3.5480 roam -0.2920
+-3.5480 rob -0.3009
+-3.5480 robin -0.3009
+-3.5480 roger's -0.3008
+-3.5480 room -0.3009
+-3.5480 ropes -0.2920
+-3.5480 rubbed -0.2996
+-3.5480 rug -0.2792
+-3.5480 run -0.2920
+-3.5480 rural -0.3009
+-3.2470 said -0.3008
+-3.5480 sailors -0.3007
+-3.5480 salvation -0.3009
+-3.5480 sat -0.2998
+-3.5480 saw -0.3008
+-3.2470 say -0.3000
+-3.5480 schnooks -0.2792
+-3.5480 seattle -0.2792
+-3.5480 second -0.3009
+-3.5480 section -0.3000
+-3.5480 seemed -0.2986
+-3.5480 sense -0.3007
+-3.5480 separate -0.3009
+-3.5480 serve -0.2920
+-3.5480 services -0.2792
+-3.5480 several -0.3009
+-3.5480 shampooed -0.3008
+-3.5480 sharks -0.3004
+-3.5480 shaving -0.3009
+-2.8491 she -0.2988
+-3.5480 shellfish -0.2988
+-3.5480 ships -0.2989
+-3.5480 shirtsleeve -0.2981
+-3.5480 shoes -0.3004
+-3.5480 shore -0.2792
+-3.5480 short -0.3008
+-3.0709 should -0.3000
+-3.5480 shoulder -0.3008
+-3.5480 shrimp -0.3009
+-3.5480 silly -0.3009
+-3.5480 silverware -0.3005
+-3.5480 sing -0.3003
+-3.5480 single -0.3009
+-3.5480 six -0.3009
+-3.5480 sketched -0.2920
+-3.5480 slapped -0.3008
+-3.5480 sleepily -0.3000
+-3.5480 sleeping -0.3009
+-3.5480 slipped -0.2981
+-3.5480 slope -0.2792
+-3.5480 slow -0.3007
+-3.5480 slowly -0.2792
+-3.2470 small -0.3008
+-3.5480 smiles -0.3009
+-3.5480 snake -0.3009
+-3.5480 so -0.3008
+-3.5480 social -0.3008
+-3.5480 society -0.2992
+-3.5480 soft -0.3008
+-3.5480 solve -0.3009
+-3.0709 some -0.2987
+-3.5480 somewhat -0.3009
+-3.5480 soon -0.2962
+-3.5480 soothed -0.2998
+-3.5480 special -0.3009
+-3.5480 speculations -0.3003
+-3.5480 spend -0.2983
+-3.5480 spending -0.2996
+-3.5480 spider -0.3009
+-3.5480 spilled -0.3007
+-3.5480 spinach -0.3009
+-3.5480 sport -0.2792
+-3.5480 sprained -0.3004
+-3.5480 steep -0.3009
+-3.5480 stepladders -0.2962
+-3.5480 steve -0.3008
+-3.5480 stick -0.2792
+-3.5480 stockings -0.3009
+-3.5480 stole -0.2962
+-3.5480 stopwatch -0.3004
+-3.5480 stranded -0.2792
+-3.5480 stranger -0.2792
+-3.5480 straw -0.3009
+-3.5480 stray -0.3009
+-3.5480 streamlined -0.3009
+-3.5480 street -0.3009
+-3.5480 streets -0.2983
+-3.5480 strength -0.3009
+-3.5480 strong -0.2792
+-3.5480 strongly -0.3009
+-3.5480 structural -0.2981
+-3.5480 study -0.2792
+-3.5480 subsystems -0.2792
+-3.5480 subway -0.3002
+-3.0709 such -0.3002
+-3.5480 sugar -0.2792
+-3.5480 sun -0.2792
+-3.5480 superb -0.3009
+-3.5480 supervision -0.2996
+-3.5480 suppers -0.2792
+-3.5480 surface -0.2989
+-3.5480 swam -0.3009
+-3.5480 swarmed -0.3009
+-3.5480 sweater -0.2792
+-3.5480 swing -0.3005
+-3.5480 synagogue -0.3003
+-3.2470 system -0.2988
+-3.5480 table -0.3009
+-3.5480 tablecloths -0.2792
+-3.5480 tag -0.3000
+-3.5480 take -0.3002
+-3.5480 target -0.2792
+-3.5480 task -0.3005
+-3.5480 teeth -0.3009
+-3.5480 tempo -0.2989
+-3.5480 tempted -0.2986
+-3.5480 test -0.3008
+-2.8491 than -0.2963
+-2.6449 that -0.2958
+-1.6847 the -0.2908
+-3.2470 their -0.3008
+-3.2470 them -0.2786
+-3.0709 there -0.2991
+-3.0709 these -0.3007
+-2.8491 they -0.2992
+-3.5480 they're -0.3009
+-3.5480 thick -0.3008
+-3.5480 thighs -0.2792
+-3.5480 thinner -0.3004
+-2.7029 this -0.2996
+-3.0709 those -0.3005
+-3.2470 thought -0.2989
+-3.5480 three -0.3008
+-3.0709 through -0.2920
+-3.5480 thursday's -0.3009
+-3.5480 thursdays -0.2792
+-3.5480 tied -0.3008
+-3.2470 time -0.2987
+-2.2470 to -0.2872
+-3.5480 together -0.3007
+-3.5480 tomorrow -0.3004
+-3.5480 too -0.3009
+-3.2470 tooth -0.3007
+-3.5480 tradition -0.3009
+-3.5480 treatment -0.2792
+-3.5480 treats -0.2792
+-3.5480 trembled -0.3009
+-3.5480 trend -0.2992
+-3.5480 trish -0.3009
+-3.5480 tropical -0.3009
+-3.5480 twelfth -0.3008
+-3.5480 twilight -0.2997
+-3.5480 twitched -0.2996
+-3.2470 two -0.2791
+-3.5480 umbrella -0.2999
+-3.5480 under -0.3009
+-3.5480 unevenly -0.3009
+-3.5480 union -0.2792
+-3.5480 unit -0.3000
+-3.5480 unlimited -0.3009
+-3.5480 unpleasant -0.3004
+-3.5480 unstuck -0.2792
+-3.5480 untimely -0.3009
+-3.5480 unusual -0.2792
+-3.2470 up -0.2998
+-3.5480 upbringing -0.2983
+-3.5480 upon -0.2999
+-3.5480 upper -0.3008
+-3.2470 us -0.3005
+-3.5480 use -0.3009
+-3.5480 useful -0.2983
+-3.0709 very -0.3005
+-3.5480 victim -0.3009
+-3.5480 viewpoint -0.3009
+-3.5480 visually -0.3007
+-3.5480 wage -0.3009
+-3.5480 wake -0.3008
+-3.2470 walking -0.3008
+-3.2470 wall -0.2999
+-3.5480 warm -0.3009
+-2.3719 was -0.2911
+-3.5480 way -0.2986
+-2.6449 we -0.2968
+-3.5480 we'll -0.3004
+-3.5480 wear -0.2962
+-3.5480 weatherproof -0.3009
+-3.5480 web -0.3009
+-3.5480 weekday -0.3008
+-3.5480 welcomed -0.3009
+-3.5480 welfare -0.2792
+-3.5480 well -0.3008
+-2.5938 were -0.2738
+-3.2470 what -0.2982
+-3.5480 whatsoever -0.2792
+-3.0709 when -0.2993
+-3.5480 whenever -0.2920
+-3.5480 where -0.2999
+-3.0709 which -0.2940
+-3.2470 while -0.2976
+-3.5480 white -0.3005
+-3.5480 who -0.3009
+-3.0709 why -0.3004
+-3.5480 wife -0.3009
+-2.9460 will -0.3004
+-3.5480 windows -0.3009
+-2.6449 with -0.2845
+-3.5480 withdraw -0.3005
+-3.0709 within -0.2915
+-3.0709 without -0.3007
+-3.5480 woman -0.3009
+-3.5480 wondered -0.3008
+-3.5480 woolen -0.3008
+-3.2470 wore -0.2961
+-3.2470 work -0.3004
+-3.5480 working -0.3008
+-3.5480 worm -0.2997
+-3.5480 worn -0.2792
+-3.5480 worry -0.3008
+-3.0709 would -0.2989
+-3.5480 year -0.2792
+-3.2470 years -0.2791
+-3.5480 yell -0.3005
+-3.5480 yellow -0.3009
+-2.5938 you -0.2765
+-3.5480 young -0.3009
+-3.5480 youngsters -0.3008
+-2.9460 your -0.3003
+-3.5480 yourself -0.2792
+-3.5480 zoning -0.2792
+
+\2-grams:
+-1.6940 <s> a -0.2478
+-2.5391 <s> agricultural 0.0000
+-2.5391 <s> alice's 0.0000
+-2.5391 <s> allow -0.1761
+-2.5391 <s> aluminum 0.0000
+-2.5391 <s> american 0.0000
+-2.5391 <s> and -0.2919
+-2.2380 <s> are -0.2747
+-2.5391 <s> artificial 0.0000
+-2.5391 <s> as -0.2762
+-2.5391 <s> at -0.2632
+-2.5391 <s> authorities 0.0000
+-2.5391 <s> barb 0.0000
+-2.5391 <s> basketball 0.0000
+-2.5391 <s> be -0.2808
+-2.5391 <s> before -0.1761
+-2.5391 <s> beg 0.0000
+-2.5391 <s> bob 0.0000
+-2.5391 <s> books 0.0000
+-2.5391 <s> brown 0.0000
+-2.0620 <s> but -0.1963
+-2.5391 <s> by -0.2788
+-2.5391 <s> calcium 0.0000
+-2.5391 <s> call -0.1761
+-2.5391 <s> catastrophic 0.0000
+-2.5391 <s> cheap 0.0000
+-2.5391 <s> chief 0.0000
+-2.5391 <s> cliff 0.0000
+-2.5391 <s> combine 0.0000
+-2.5391 <s> cory 0.0000
+-2.5391 <s> december 0.0000
+-2.5391 <s> destroy 0.0000
+-2.5391 <s> did -0.1761
+-2.2380 <s> do -0.1249
+-2.5391 <s> don't -0.2430
+-2.5391 <s> each -0.2218
+-2.5391 <s> eating 0.0000
+-2.5391 <s> eight 0.0000
+-2.5391 <s> few -0.2218
+-2.5391 <s> flies 0.0000
+-2.5391 <s> grandmother 0.0000
+-2.5391 <s> greg -0.1761
+-2.5391 <s> guess 0.0000
+-1.5848 <s> he -0.1903
+-2.5391 <s> heave 0.0000
+-2.5391 <s> help 0.0000
+-2.5391 <s> her -0.2553
+-2.2380 <s> his -0.2632
+-2.5391 <s> how -0.1761
+-2.5391 <s> however 0.0000
+-2.5391 <s> husbandry 0.0000
+-2.2380 <s> i'd 0.0000
+-2.0620 <s> if -0.1761
+-2.5391 <s> iguanas 0.0000
+-2.5391 <s> in -0.2910
+-2.5391 <s> increasing 0.0000
+-2.5391 <s> indeed 0.0000
+-2.2380 <s> it's 0.0000
+-2.5391 <s> jane 0.0000
+-2.5391 <s> jeff 0.0000
+-2.5391 <s> john 0.0000
+-2.5391 <s> laboratory 0.0000
+-2.5391 <s> laugh -0.1761
+-2.5391 <s> lighted 0.0000
+-2.5391 <s> lori's 0.0000
+-2.5391 <s> lot 0.0000
+-2.5391 <s> materials 0.0000
+-2.5391 <s> meats -0.1761
+-2.5391 <s> medieval 0.0000
+-2.5391 <s> michael 0.0000
+-2.5391 <s> military -0.1761
+-2.5391 <s> milk -0.1761
+-2.5391 <s> mom 0.0000
+-2.2380 <s> no -0.2041
+-2.5391 <s> objects 0.0000
+-2.2380 <s> only -0.1249
+-2.5391 <s> pam 0.0000
+-2.5391 <s> planned 0.0000
+-2.2380 <s> please 0.0000
+-2.5391 <s> pretty -0.1761
+-2.5391 <s> project 0.0000
+-2.5391 <s> ralph 0.0000
+-2.5391 <s> rector 0.0000
+-2.5391 <s> right -0.1761
+-2.5391 <s> rob 0.0000
+-2.5391 <s> salvation 0.0000
+-2.5391 <s> serve 0.0000
+-2.5391 <s> shaving 0.0000
+-1.9370 <s> she -0.0792
+-2.5391 <s> should -0.2218
+-2.5391 <s> some -0.2218
+-2.5391 <s> special 0.0000
+-2.5391 <s> steve 0.0000
+-2.5391 <s> straw 0.0000
+-2.5391 <s> swing 0.0000
+-2.2380 <s> that -0.2430
+-1.2838 <s> the -0.2370
+-2.5391 <s> their -0.1761
+-2.5391 <s> there -0.2218
+-1.9370 <s> they -0.0792
+-2.5391 <s> this -0.2688
+-2.5391 <s> those -0.2218
+-2.2380 <s> to -0.2788
+-2.5391 <s> tradition 0.0000
+-2.5391 <s> visually 0.0000
+-2.0620 <s> we -0.2109
+-2.5391 <s> weatherproof 0.0000
+-2.5391 <s> where 0.0000
+-2.5391 <s> while -0.1761
+-2.5391 <s> who 0.0000
+-2.0620 <s> why 0.0000
+-2.5391 <s> will -0.2430
+-2.5391 <s> withdraw 0.0000
+-2.5391 <s> within -0.2218
+-2.2380 <s> you -0.2499
+-2.5391 <s> young 0.0000
+-2.5391 <s> youngsters 0.0000
+-1.8921 a ball 0.0000
+-1.8921 a beggar 0.0000
+-1.4150 a big 0.0000
+-1.8921 a boring 0.0000
+-1.5911 a brief 0.0000
+-1.8921 a bright -0.1761
+-1.8921 a carriage 0.0000
+-1.8921 a centrifuge 0.0000
+-1.8921 a chair 0.0000
+-1.8921 a chosen 0.0000
+-1.8921 a cigarette 0.0000
+-1.8921 a dime 0.0000
+-1.8921 a few -0.2218
+-1.8921 a folded 0.0000
+-1.8921 a heating 0.0000
+-1.8921 a large 0.0000
+-1.8921 a living -0.1761
+-1.8921 a meeting 0.0000
+-1.8921 a message 0.0000
+-1.8921 a mirage 0.0000
+-1.8921 a muscular 0.0000
+-1.8921 a palm 0.0000
+-1.8921 a peck 0.0000
+-1.8921 a popular 0.0000
+-1.8921 a prime 0.0000
+-1.8921 a rare 0.0000
+-1.8921 a second 0.0000
+-1.8921 a short 0.0000
+-1.8921 a single 0.0000
+-1.8921 a soft 0.0000
+-1.8921 a streamlined 0.0000
+-1.8921 a superb 0.0000
+-1.8921 a unit 0.0000
+-1.8921 a walking -0.1761
+-1.8921 a woman 0.0000
+-1.8921 a yellow 0.0000
+-0.3010 abdomen is -0.2825
+-0.3010 ability to -0.2900
+-0.3010 abruptly at -0.2632
+-0.3010 accomplished artists 0.0000
+-0.3010 account </s> -0.3010
+-0.3010 accusations at -0.2632
+-0.3010 aches whenever 0.0000
+-0.3010 acropolis all -0.2430
+-0.3010 add the -0.2980
+-0.3010 address whatsoever 0.0000
+-0.7782 after i -0.2430
+-0.7782 after much 0.0000
+-0.7782 after the -0.2980
+-0.3010 age marriage 0.0000
+-0.3010 aglow </s> -0.3010
+-0.3010 agricultural products 0.0000
+-0.3010 alice's ability 0.0000
+-0.9031 all aglow 0.0000
+-0.9031 all errors 0.0000
+-0.9031 all phony 0.0000
+-0.9031 all the -0.2980
+-0.3010 alligators are -0.2881
+-0.6021 allow a -0.2954
+-0.6021 allow leeway 0.0000
+-0.3010 along carrying 0.0000
+-0.3010 aluminum silverware 0.0000
+-1.0000 always hurts 0.0000
+-1.0000 always seemed 0.0000
+-1.0000 always thought -0.1761
+-1.0000 always together 0.0000
+-1.0000 always use 0.0000
+-0.3010 am </s> -0.3010
+-0.3010 ambiguous </s> -0.3010
+-0.3010 ambled through 0.0000
+-0.3010 ambulance for -0.2888
+-0.3010 american newspaper 0.0000
+-0.9031 an ambulance 0.0000
+-0.9031 an apology 0.0000
+-0.9031 an entertaining 0.0000
+-0.9031 an unpleasant 0.0000
+-1.6812 and a -0.2954
+-1.6812 and alligators 0.0000
+-1.6812 and don't -0.2430
+-1.6812 and functional 0.0000
+-1.6812 and had -0.2218
+-1.6812 and having 0.0000
+-1.3802 and he -0.2553
+-1.6812 and january 0.0000
+-1.6812 and leaves 0.0000
+-1.6812 and less 0.0000
+-1.6812 and looked 0.0000
+-1.6812 and masks 0.0000
+-1.6812 and now -0.2218
+-1.6812 and shrimp 0.0000
+-1.6812 and sing 0.0000
+-1.6812 and sketched 0.0000
+-1.6812 and sprained 0.0000
+-1.6812 and teeth 0.0000
+-1.6812 and there -0.2218
+-1.6812 and trish 0.0000
+-1.6812 and we -0.2730
+-1.6812 and well 0.0000
+-1.6812 and what -0.1761
+-0.3010 ankle on -0.1891
+-0.3010 annoying each -0.2218
+-0.3010 answer </s> -0.3010
+-0.3010 anti infective 0.0000
+-0.7782 any corduroy 0.0000
+-0.7782 any governor 0.0000
+-0.7782 any more -0.2553
+-0.3010 anything for -0.2888
+-0.3010 apology </s> -0.3010
+-0.3010 appetizers </s> -0.3010
+-0.3010 approval for -0.2888
+-0.3010 approximated what -0.1761
+-1.5315 are a -0.2954
+-1.5315 are as -0.2762
+-1.5315 are beautiful 0.0000
+-1.5315 are expected 0.0000
+-1.5315 are for -0.2888
+-1.5315 are more -0.2553
+-1.5315 are nice 0.0000
+-1.5315 are out -0.1761
+-1.5315 are protected 0.0000
+-1.5315 are somewhat 0.0000
+-1.5315 are the -0.2980
+-1.5315 are tropical 0.0000
+-1.5315 are unevenly 0.0000
+-1.2304 are very -0.1249
+-1.5315 are you -0.2762
+-1.5315 are your -0.2430
+-0.3010 areas are -0.2881
+-0.3010 argued in -0.2910
+-0.6021 arm </s> -0.3010
+-0.6021 arm as -0.2762
+-0.3010 around the -0.2980
+-0.3010 arrange for -0.2762
+-0.3010 artificial intelligence 0.0000
+-0.3010 artists obtain 0.0000
+-0.9542 as a -0.2897
+-1.2553 as electrical 0.0000
+-1.2553 as general 0.0000
+-1.2553 as high 0.0000
+-1.2553 as if -0.2632
+-1.2553 as such -0.2218
+-1.2553 as treats 0.0000
+-1.2553 as you -0.2762
+-0.3010 ask questions 0.0000
+-0.3010 assistance </s> -0.3010
+-0.3010 astrophysics </s> -0.3010
+-1.0792 at gunpoint 0.0000
+-1.0792 at her -0.2553
+-1.0792 at once 0.0000
+-1.0792 at the -0.2980
+-1.0792 at twilight 0.0000
+-1.0792 at two -0.1761
+-0.3010 audition </s> -0.3010
+-0.3010 auditors </s> -0.3010
+-0.3010 audits </s> -0.3010
+-0.3010 augmented by -0.2788
+-0.3010 authorities say 0.0000
+-0.3010 authorized the -0.2980
+-0.3010 autumn </s> -0.3010
+-0.6021 avoid exposure 0.0000
+-0.6021 avoid puncturing 0.0000
+-0.3010 away </s> -0.3010
+-0.6021 back </s> -0.3010
+-0.6021 back spending 0.0000
+-0.3010 backward </s> -0.3010
+-0.3010 ball </s> -0.3010
+-0.3010 balls for -0.2888
+-0.3010 barb burned 0.0000
+-0.3010 bargains as -0.2499
+-0.3010 barometric pressure 0.0000
+-0.3010 based on -0.2808
+-0.3010 basketball can -0.2430
+-1.3424 be an -0.2430
+-1.3424 be completely 0.0000
+-1.3424 be excited 0.0000
+-1.3424 be flimsy 0.0000
+-1.3424 be hated 0.0000
+-1.3424 be increased 0.0000
+-1.3424 be no -0.2041
+-1.3424 be overcharged 0.0000
+-1.3424 be paid 0.0000
+-1.3424 be the -0.2950
+-1.3424 be within -0.2218
+-0.3010 beach balls 0.0000
+-0.3010 beautiful </s> -0.3010
+-0.3010 become generals 0.0000
+-0.3010 bedroom wall -0.1761
+-0.6021 before frost 0.0000
+-0.6021 before thursday's 0.0000
+-0.3010 beg that -0.2730
+-0.6021 began just 0.0000
+-0.6021 began to -0.2900
+-0.3010 beggar </s> -0.3010
+-0.6021 best time -0.1761
+-0.6021 best way 0.0000
+-0.3010 beyond politics 0.0000
+-0.7782 big bonfire 0.0000
+-0.7782 big goat 0.0000
+-0.7782 big house 0.0000
+-0.3010 birth control 0.0000
+-0.6021 black bread 0.0000
+-0.6021 black gloves 0.0000
+-0.3010 bleachers </s> -0.3010
+-0.3010 boat's come -0.1761
+-0.3010 bob papered 0.0000
+-0.3010 bog gets 0.0000
+-0.3010 bones and -0.2825
+-0.3010 bonfire </s> -0.3010
+-0.3010 books are -0.2881
+-0.3010 boots on -0.2808
+-0.3010 boring novel 0.0000
+-0.3010 bounded by -0.2788
+-0.6021 bowl </s> -0.3010
+-0.6021 bowl of -0.2881
+-0.3010 boy put 0.0000
+-0.3010 bread </s> -0.3010
+-0.3010 breakdown of -0.2609
+-0.6021 brief burn 0.0000
+-0.6021 brief case 0.0000
+-0.6021 bright red -0.1761
+-0.6021 bright through 0.0000
+-0.3010 brochure is -0.2825
+-0.3010 broken </s> -0.3010
+-0.3010 brown eyes -0.2218
+-0.3010 buff </s> -0.3010
+-0.3010 burn on -0.2808
+-0.3010 burned paper 0.0000
+-0.3010 business mergers 0.0000
+-1.1461 but he -0.2900
+-1.1461 but i -0.2430
+-1.1461 but in -0.2910
+-1.1461 but rationalize 0.0000
+-1.1461 but such -0.2218
+-1.1461 but that -0.2730
+-1.1461 but the -0.2980
+-0.7782 buy any -0.2218
+-0.7782 buy oil -0.1761
+-0.7782 buy these -0.2218
+-0.3010 buyer </s> -0.3010
+-0.3010 buys fresh 0.0000
+-1.3010 by a -0.2954
+-1.3010 by its 0.0000
+-1.3010 by several 0.0000
+-1.3010 by snake 0.0000
+-1.3010 by that -0.2730
+-0.8239 by the -0.2920
+-1.3010 by working 0.0000
+-1.3010 by zoning 0.0000
+-0.3010 calcium makes -0.1761
+-0.6021 call an -0.2430
+-0.6021 call his -0.2825
+-0.3010 came along 0.0000
+-0.9031 can </s> -0.3010
+-0.9031 can be -0.2808
+-0.9031 can get -0.1761
+-0.9031 can often -0.2218
+-0.3010 candy as -0.2762
+-0.3010 captured in -0.2910
+-0.3010 carol comes 0.0000
+-0.3010 carpet cleaners -0.1761
+-0.3010 carriage crunched 0.0000
+-0.3010 carry a -0.2897
+-0.3010 carrying a -0.2954
+-0.3010 case </s> -0.3010
+-0.3010 cases were -0.2762
+-0.3010 cashmere sweater 0.0000
+-0.3010 cat's meow 0.0000
+-0.3010 catastrophic economic 0.0000
+-0.3010 cattle </s> -0.3010
+-0.3010 causeway ended 0.0000
+-0.3010 centrifuge purchase 0.0000
+-0.3010 ceramic modeling 0.0000
+-0.3010 chablis </s> -0.3010
+-0.3010 chair and -0.2919
+-0.3010 change </s> -0.3010
+-0.3010 changes </s> -0.3010
+-0.3010 charge money -0.2218
+-0.3010 charlie's dirty -0.1761
+-0.3010 cheap stockings 0.0000
+-0.3010 chief interest 0.0000
+-0.3010 children should -0.2218
+-0.3010 chosen few -0.2218
+-0.3010 cigarette </s> -0.3010
+-0.3010 clay red -0.1761
+-0.6021 cleaners for -0.2888
+-0.6021 cleaners shampooed 0.0000
+-0.3010 cleans shellfish 0.0000
+-0.3010 cliff was -0.2863
+-0.3010 cloth to -0.2900
+-0.3010 clumsy customer 0.0000
+-0.3010 coincided with -0.2730
+-0.3010 coleslaw after -0.2218
+-0.3010 colored the -0.2980
+-0.3010 combine all -0.2430
+-0.6021 come unstuck 0.0000
+-0.6021 come when -0.2218
+-0.3010 comes tomorrow 0.0000
+-0.3010 common candy 0.0000
+-0.3010 completely elegant 0.0000
+-0.3010 conformists look 0.0000
+-0.3010 contagious diseases 0.0000
+-0.3010 control </s> -0.3010
+-0.3010 controlled the -0.2980
+-0.3010 cook without -0.2218
+-0.3010 corduroy overalls 0.0000
+-0.3010 cornered at -0.2632
+-0.3010 cory and -0.2919
+-0.3010 costume needed 0.0000
+-0.3010 costumes and -0.2919
+-0.3010 countryside </s> -0.3010
+-0.3010 cranberry bog 0.0000
+-0.3010 crayons </s> -0.3010
+-0.3010 cream is -0.2632
+-0.3010 crunched by -0.2788
+-0.3010 curious often -0.2218
+-0.3010 custody his -0.2825
+-0.3010 customer spilled 0.0000
+-0.3010 cutbacks neglect 0.0000
+-0.6021 cutting back -0.1761
+-0.6021 cutting into -0.1761
+-0.3010 dance and -0.2919
+-0.6021 day </s> -0.3010
+-0.6021 day we'll 0.0000
+-0.3010 days after -0.2218
+-0.3010 december and -0.2919
+-0.3010 depicts the -0.2980
+-0.3010 destroy every -0.1761
+-0.6021 development </s> -0.3010
+-0.6021 development was -0.2863
+-0.3010 dew on -0.1891
+-0.3010 diagnosed but -0.2688
+-0.3010 diagram makes -0.1761
+-0.6021 did </s> -0.3010
+-0.6021 did you -0.2762
+-0.3010 die with -0.2730
+-0.6021 dig he -0.2900
+-0.6021 dig my -0.2218
+-0.3010 dim lights 0.0000
+-0.3010 dime from -0.2553
+-0.6021 dirty dishes 0.0000
+-0.6021 dirty table 0.0000
+-0.3010 diseases </s> -0.3010
+-0.3010 dishes </s> -0.3010
+-0.3010 dislikes appetizers 0.0000
+-0.3010 distance </s> -0.3010
+-0.3010 distributed </s> -0.3010
+-0.3010 divorced him 0.0000
+-0.7782 do avoid -0.1761
+-0.7782 do charlie's 0.0000
+-0.7782 do without -0.2218
+-0.3010 dome fell -0.1761
+-0.9031 don't do -0.2218
+-0.9031 don't eat 0.0000
+-0.9031 don't get -0.1761
+-0.9031 don't identify 0.0000
+-0.3010 done anything 0.0000
+-0.3010 downpour </s> -0.3010
+-0.3010 dozen lunchroom 0.0000
+-0.3010 driving lessons 0.0000
+-0.3010 drug </s> -0.3010
+-0.3010 drunk he -0.2900
+-0.7782 each day -0.1761
+-0.7782 each untimely 0.0000
+-0.7782 each weekday 0.0000
+-0.3010 earn more -0.2553
+-0.3010 ears </s> -0.3010
+-0.3010 eat enough -0.1761
+-0.3010 eating spinach 0.0000
+-0.3010 economic cutbacks 0.0000
+-0.3010 effects </s> -0.3010
+-0.3010 eight field 0.0000
+-0.3010 electrical forces -0.2430
+-0.3010 electricity and -0.2919
+-0.3010 electron paramagnetic 0.0000
+-0.3010 elegant </s> -0.3010
+-0.3010 emblem depicts 0.0000
+-0.3010 employment </s> -0.3010
+-0.3010 ended abruptly 0.0000
+-0.3010 endurance </s> -0.3010
+-0.3010 enjoy it -0.2553
+-0.6021 enough change 0.0000
+-0.6021 enough honey 0.0000
+-0.3010 entertaining sport 0.0000
+-0.3010 errors </s> -0.3010
+-0.6021 every file 0.0000
+-0.6021 every formula 0.0000
+-0.3010 exam review 0.0000
+-0.3010 excited and -0.2919
+-0.3010 expected to -0.2900
+-0.3010 expense account 0.0000
+-0.3010 expensive perfume 0.0000
+-0.3010 experts this -0.2688
+-0.3010 exposure to -0.2900
+-0.3010 extensive investigation 0.0000
+-0.3010 extra problems 0.0000
+-0.3010 eyebrow mustache 0.0000
+-0.7782 eyes eyebrow 0.0000
+-0.7782 eyes sleepily 0.0000
+-0.7782 eyes they -0.2553
+-0.3010 fail </s> -0.3010
+-0.3010 fairy forgot 0.0000
+-0.3010 fallen into -0.1761
+-0.3010 fan </s> -0.3010
+-0.3010 fancy tablecloths 0.0000
+-0.3010 farm is -0.2825
+-0.3010 farmyard </s> -0.3010
+-0.3010 fashion this -0.2688
+-0.3010 fast and -0.2919
+-0.3010 favor of -0.2609
+-0.3010 feeling within -0.2218
+-0.3010 feels that -0.2730
+-0.6021 fell in -0.2910
+-0.6021 fell out -0.1761
+-0.6021 felt a -0.2897
+-0.6021 felt as -0.2762
+-0.3010 fences and -0.2919
+-0.7782 few rural 0.0000
+-0.7782 few will -0.2430
+-0.7782 few years -0.1761
+-0.3010 field guns 0.0000
+-0.3010 file related 0.0000
+-0.3010 filtering through 0.0000
+-0.3010 first time -0.1761
+-0.3010 fish began -0.1761
+-0.3010 fleecy woolen 0.0000
+-0.3010 flies swarmed 0.0000
+-0.3010 flimsy </s> -0.3010
+-0.3010 flood </s> -0.3010
+-0.3010 folded umbrella 0.0000
+-1.2553 for a -0.2897
+-1.5563 for any -0.2218
+-1.5563 for business 0.0000
+-1.5563 for employment 0.0000
+-1.5563 for hours 0.0000
+-1.5563 for me 0.0000
+-1.5563 for medical 0.0000
+-1.5563 for one -0.2553
+-1.5563 for prospective 0.0000
+-1.5563 for real 0.0000
+-1.5563 for schnooks 0.0000
+-1.5563 for such -0.2218
+-1.5563 for three 0.0000
+-1.5563 for under 0.0000
+-1.5563 for welfare 0.0000
+-1.5563 for which -0.2218
+-1.5563 for your -0.2430
+-0.9031 forces </s> -0.3010
+-0.6021 forces are -0.2747
+-0.9031 forces rescue 0.0000
+-0.3010 forgot to -0.2900
+-0.3010 formula </s> -0.3010
+-0.3010 fortune smiles 0.0000
+-0.3010 frantically on -0.1891
+-0.3010 fresh milk -0.1761
+-1.0000 from a -0.2954
+-1.0000 from kidnappers 0.0000
+-1.0000 from nuclear 0.0000
+-0.6990 from the -0.2950
+-0.3010 frost </s> -0.3010
+-0.3010 functional subsystems 0.0000
+-0.3010 further his -0.2825
+-0.3010 gallon of -0.2881
+-0.3010 galoshes are -0.2747
+-0.3010 garbage </s> -0.3010
+-0.3010 gas </s> -0.3010
+-0.3010 gave a -0.2954
+-0.3010 geese </s> -0.3010
+-0.3010 general as -0.2762
+-0.3010 generals </s> -0.3010
+-0.3010 generous there -0.2218
+-0.6021 get it -0.2553
+-0.6021 get so 0.0000
+-0.3010 gets very -0.2218
+-0.3010 gives driving 0.0000
+-0.3010 glistened in -0.2596
+-0.3010 gloom </s> -0.3010
+-0.3010 gloves to -0.2788
+-0.3010 glow of -0.2609
+-0.3010 glowed jewel 0.0000
+-0.3010 goat idly 0.0000
+-0.3010 gone and -0.2825
+-0.7782 good </s> -0.3010
+-0.7782 good for -0.2888
+-0.7782 good is -0.2825
+-0.3010 got tied 0.0000
+-0.3010 government orders 0.0000
+-0.3010 governor </s> -0.3010
+-0.3010 grades higher 0.0000
+-0.3010 grandmother outgrew 0.0000
+-0.3010 grazing cattle 0.0000
+-0.6021 greg buys 0.0000
+-0.6021 greg to -0.2900
+-0.3010 grows more -0.2553
+-0.3010 guard for -0.2888
+-0.3010 guess the -0.2980
+-0.3010 gunman kept 0.0000
+-0.3010 gunpoint for -0.2888
+-0.3010 guns were -0.2762
+-0.7782 had fallen 0.0000
+-0.7782 had no -0.2041
+-0.7782 had slapped 0.0000
+-0.3010 halloween </s> -0.3010
+-0.3010 hand aches 0.0000
+-0.6021 hard </s> -0.3010
+-0.6021 hard laugh -0.1761
+-0.3010 harmonize marvelously 0.0000
+-0.7782 has </s> -0.3010
+-0.7782 has never -0.1761
+-0.7782 has received 0.0000
+-0.3010 hated which -0.2218
+-0.3010 hats are -0.2881
+-1.0000 have chablis 0.0000
+-1.0000 have her -0.2553
+-1.0000 have money -0.2218
+-1.0000 have no -0.2553
+-1.0000 have some -0.2218
+-0.3010 haven't enough -0.1761
+-0.3010 having a -0.2954
+-1.6021 he always -0.2553
+-1.6021 he felt -0.1761
+-1.6021 he gave 0.0000
+-1.6021 he got 0.0000
+-1.6021 he had -0.2218
+-1.6021 he has -0.2218
+-1.6021 he mopped 0.0000
+-1.6021 he never -0.1761
+-1.6021 he occasionally 0.0000
+-1.6021 he refused 0.0000
+-1.6021 he rubbed 0.0000
+-1.6021 he said -0.1761
+-1.6021 he stole 0.0000
+-1.6021 he trembled 0.0000
+-1.1249 he was -0.2553
+-1.6021 he will -0.2430
+-1.6021 he wondered 0.0000
+-1.6021 he would -0.2218
+-0.3010 healthier to -0.2900
+-0.3010 heating system -0.1761
+-0.3010 heave on -0.2808
+-0.3010 help greg -0.1761
+-1.0000 her ankle 0.0000
+-1.0000 her arrange 0.0000
+-1.0000 her knowingly 0.0000
+-1.0000 her right -0.1761
+-1.0000 her upbringing 0.0000
+-0.3010 here but -0.2688
+-0.3010 hierarchies </s> -0.3010
+-0.3010 high as -0.2762
+-0.3010 higher or -0.2430
+-0.3010 him </s> -0.3010
+-0.6021 himself </s> -0.3010
+-0.6021 himself done 0.0000
+-1.3802 his eyes -0.2218
+-1.3802 his piece 0.0000
+-1.3802 his plays 0.0000
+-1.3802 his pocket 0.0000
+-1.3802 his prestige 0.0000
+-1.3802 his problem -0.1761
+-1.3802 his shirtsleeve 0.0000
+-1.3802 his shoulder 0.0000
+-1.3802 his upper 0.0000
+-1.3802 his victim 0.0000
+-1.3802 his wife 0.0000
+-1.3802 his work -0.1761
+-0.3010 honey </s> -0.3010
+-0.3010 hook </s> -0.3010
+-0.3010 hostages from -0.2553
+-0.3010 hours </s> -0.3010
+-0.3010 house in -0.2596
+-0.6021 how good -0.2218
+-0.6021 how he -0.2900
+-0.3010 however the -0.2980
+-0.3010 huge paw 0.0000
+-0.3010 hurts my -0.2218
+-0.3010 husbandry was -0.2863
+-0.9031 i add 0.0000
+-0.9031 i am 0.0000
+-0.9031 i audition 0.0000
+-0.9031 i haven't 0.0000
+-0.6021 i'd rather 0.0000
+-0.6021 i'd ride 0.0000
+-0.3010 identify yourself 0.0000
+-0.3010 idly ambled 0.0000
+-1.0792 if carol 0.0000
+-1.0792 if fortune 0.0000
+-1.0792 if it -0.2553
+-1.0792 if people -0.1761
+-1.0792 if the -0.2980
+-1.0792 if we -0.2730
+-0.3010 iguanas and -0.2919
+-1.6435 in </s> -0.3010
+-1.3424 in a -0.2782
+-1.6435 in autumn 0.0000
+-1.6435 in costumes 0.0000
+-1.6435 in custody 0.0000
+-1.6435 in electricity 0.0000
+-1.6435 in favor 0.0000
+-1.6435 in his -0.2825
+-1.6435 in magnetism 0.0000
+-1.6435 in miami 0.0000
+-1.6435 in petticoats 0.0000
+-1.6435 in position 0.0000
+-1.6435 in radiosterilization 0.0000
+-1.6435 in seattle 0.0000
+-1.0414 in the -0.2890
+-1.6435 in this -0.2688
+-1.6435 in wage 0.0000
+-1.6435 in which -0.2218
+-0.3010 income loss 0.0000
+-0.3010 increased by -0.2304
+-0.3010 increases strength 0.0000
+-0.3010 increasing tempo 0.0000
+-0.3010 indeed it -0.2553
+-0.3010 industry bargains 0.0000
+-0.3010 inevitable </s> -0.3010
+-0.3010 infective properties 0.0000
+-0.3010 informative for -0.2888
+-0.3010 ingredients in -0.2808
+-0.3010 intelligence is -0.2825
+-0.3010 interest in -0.2910
+-0.6021 into a -0.2954
+-0.6021 into meats -0.1761
+-0.3010 investigation </s> -0.3010
+-1.0792 is a -0.2897
+-1.3802 is an -0.2430
+-1.3802 is for -0.2888
+-1.3802 is good -0.2218
+-1.3802 is noteworthy 0.0000
+-1.3802 is particularly 0.0000
+-1.3802 is possible 0.0000
+-1.3802 is rented 0.0000
+-1.3802 is thinner 0.0000
+-1.3802 is to -0.2900
+-1.3802 is your -0.2430
+-1.0000 it if -0.2632
+-1.0000 it is -0.2825
+-1.0000 it was -0.2863
+-1.0000 it were -0.2762
+-1.0000 it when -0.2218
+-0.6021 it's a -0.2954
+-0.6021 it's healthier 0.0000
+-0.3010 item on -0.2808
+-0.3010 items </s> -0.3010
+-0.3010 its dim 0.0000
+-0.3010 jane may -0.2632
+-0.3010 january are -0.2881
+-0.3010 jeff thought -0.1761
+-0.3010 jewel bright -0.1761
+-0.6021 job and -0.2919
+-0.6021 job was -0.2863
+-0.3010 john cleans 0.0000
+-0.3010 journal </s> -0.3010
+-0.3010 just six 0.0000
+-0.3010 justification by -0.2788
+-0.3010 kept his -0.2825
+-0.3010 kidnappers </s> -0.3010
+-0.3010 knowingly </s> -0.3010
+-0.3010 laboratory astrophysics 0.0000
+-0.3010 lake </s> -0.3010
+-0.3010 large bowl -0.1761
+-0.3010 larger social 0.0000
+-0.3010 latent than -0.2041
+-0.3010 later the -0.2980
+-0.6021 laugh and -0.2919
+-0.6021 laugh dance 0.0000
+-0.3010 lawyers love -0.1761
+-0.3010 leap frantically 0.0000
+-0.3010 learn is -0.2825
+-0.3010 leaves in -0.2808
+-0.3010 leeway here 0.0000
+-0.3010 lentils in -0.2910
+-0.3010 less than -0.2041
+-0.3010 lessons on -0.2808
+-0.3010 lest his -0.2825
+-0.3010 lie </s> -0.3010
+-0.3010 lighted windows 0.0000
+-0.3010 lights filtering 0.0000
+-0.3010 like to -0.2900
+-0.3010 lily </s> -0.3010
+-0.3010 litter remained 0.0000
+-0.6021 living </s> -0.3010
+-0.6021 living room 0.0000
+-0.3010 look good -0.2218
+-0.3010 looked at -0.2632
+-0.3010 looking for -0.2888
+-0.3010 lori's costume 0.0000
+-0.3010 loss coincided 0.0000
+-0.3010 lot of -0.2881
+-0.6021 love common 0.0000
+-0.6021 love millionaires 0.0000
+-0.3010 lower than -0.2553
+-0.3010 lunchroom suppers 0.0000
+-0.3010 luxurious massage 0.0000
+-0.6021 made </s> -0.3010
+-0.6021 made of -0.2881
+-0.3010 magnetic forces -0.1761
+-0.3010 magnetism </s> -0.3010
+-0.3010 make us -0.1761
+-0.6021 makes bones 0.0000
+-0.6021 makes sense 0.0000
+-0.3010 man was -0.2863
+-0.6021 many experts 0.0000
+-0.6021 many sailors 0.0000
+-0.3010 marriage </s> -0.3010
+-0.3010 marvelously </s> -0.3010
+-0.3010 masks and -0.2919
+-0.3010 massage </s> -0.3010
+-0.3010 materials ceramic 0.0000
+-1.0792 may be -0.2808
+-1.0792 may earn 0.0000
+-1.0792 may have -0.2553
+-0.7782 may not -0.2041
+-1.0792 may say 0.0000
+-0.3010 me </s> -0.3010
+-0.3010 meat has -0.2218
+-0.6021 meats test 0.0000
+-0.6021 meats the -0.2980
+-0.3010 medical assistance 0.0000
+-0.3010 medieval society 0.0000
+-0.3010 meeting at -0.2632
+-0.3010 meow always -0.2553
+-0.3010 mergers </s> -0.3010
+-0.3010 merit others 0.0000
+-0.3010 message </s> -0.3010
+-0.3010 miami </s> -0.3010
+-0.3010 michael colored 0.0000
+-0.6021 military personnel 0.0000
+-0.6021 military services 0.0000
+-0.6021 milk each -0.2218
+-0.6021 milk production 0.0000
+-0.3010 millionaires </s> -0.3010
+-0.3010 mine </s> -0.3010
+-0.3010 miraculously </s> -0.3010
+-0.3010 mirage </s> -0.3010
+-0.3010 misquote was -0.2863
+-0.3010 modeling clay 0.0000
+-0.3010 mom strongly 0.0000
+-0.7782 money by -0.2788
+-0.7782 money for -0.2888
+-0.7782 money in -0.2910
+-0.3010 months to -0.2900
+-0.3010 mopped thick 0.0000
+-1.0000 more </s> -0.3010
+-1.0000 more annoying 0.0000
+-1.0000 more generous 0.0000
+-1.0000 more latent 0.0000
+-1.0000 more money -0.2218
+-0.6021 morning </s> -0.3010
+-0.6021 morning dew 0.0000
+-0.3010 most accomplished 0.0000
+-0.3010 much study 0.0000
+-0.3010 murals </s> -0.3010
+-0.3010 muscular abdomen 0.0000
+-0.3010 musicians harmonize 0.0000
+-0.3010 must be -0.2808
+-0.3010 mustache </s> -0.3010
+-0.7782 my audits 0.0000
+-0.7782 my ears 0.0000
+-0.7782 my potatoes -0.1761
+-0.3010 nancy's </s> -0.3010
+-0.3010 nearest synagogue 0.0000
+-0.6021 need for -0.2888
+-0.6021 need of -0.2881
+-0.3010 needed black -0.1761
+-0.3010 neglect the -0.2980
+-0.3010 negotiations the -0.2980
+-0.6021 never did -0.1761
+-0.6021 never himself -0.1761
+-0.3010 new product 0.0000
+-0.3010 newspaper reviewers 0.0000
+-0.3010 nice months 0.0000
+-0.3010 nightly increases 0.0000
+-0.3010 nihilistic </s> -0.3010
+-1.0000 no bones 0.0000
+-0.6990 no need 0.0000
+-1.0000 no return 0.0000
+-1.0000 no the -0.2980
+-0.3010 noise problem -0.1761
+-0.6990 not be -0.2596
+-1.0000 not buy -0.2218
+-1.0000 not carry 0.0000
+-1.0000 not drunk 0.0000
+-0.3010 noteworthy </s> -0.3010
+-0.3010 novel is -0.2632
+-0.7782 now and -0.2919
+-0.7782 now may -0.2218
+-0.7782 now the -0.2980
+-0.3010 nuclear effects 0.0000
+-0.3010 oasis was -0.2863
+-0.3010 obey government 0.0000
+-0.3010 objects made -0.1761
+-0.3010 obtain popularity 0.0000
+-0.3010 occasionally reads 0.0000
+-0.3010 ocean </s> -0.3010
+-1.0544 of a -0.2840
+-1.5315 of cutting -0.1761
+-1.5315 of fashion 0.0000
+-1.5315 of gas 0.0000
+-1.5315 of justification 0.0000
+-1.5315 of lentils 0.0000
+-1.5315 of meat 0.0000
+-1.5315 of new 0.0000
+-1.5315 of people -0.1761
+-1.5315 of pewter 0.0000
+-1.5315 of potatoes -0.1761
+-1.5315 of the -0.2950
+-1.5315 of these -0.2218
+-1.5315 of this -0.2688
+-1.5315 of us -0.1761
+-0.7782 often be -0.2808
+-0.7782 often curious 0.0000
+-0.7782 often tempted 0.0000
+-0.6021 oil </s> -0.3010
+-0.6021 oil when -0.2218
+-0.3010 oldsters are -0.2881
+-1.3424 on </s> -0.3010
+-1.3424 on halloween 0.0000
+-1.3424 on hierarchies 0.0000
+-1.3424 on his -0.2825
+-0.6435 on the -0.2859
+-1.3424 on those -0.2218
+-1.3424 on thursdays 0.0000
+-0.3010 once </s> -0.3010
+-1.0000 one feels 0.0000
+-1.0000 one for -0.2888
+-1.0000 one gallon 0.0000
+-1.0000 one huge 0.0000
+-1.0000 one section 0.0000
+-0.7782 only after -0.2218
+-0.7782 only lawyers 0.0000
+-0.7782 only the -0.2980
+-0.9031 or buff 0.0000
+-0.9031 or cutting -0.1761
+-0.9031 or lower 0.0000
+-0.9031 or worry 0.0000
+-0.3010 orders </s> -0.3010
+-0.3010 organizations promote 0.0000
+-0.3010 oriental rug 0.0000
+-0.3010 others are -0.2881
+-0.6021 our boots 0.0000
+-0.6021 our oriental 0.0000
+-0.6021 out </s> -0.3010
+-0.6021 out of -0.2881
+-0.3010 outgrew her -0.2553
+-0.6021 over silly 0.0000
+-0.6021 over the -0.2980
+-0.3010 overalls </s> -0.3010
+-0.3010 overcharged </s> -0.3010
+-0.3010 overlooked the -0.2980
+-0.3010 own a -0.2840
+-0.3010 paid </s> -0.3010
+-0.3010 palm fan 0.0000
+-0.3010 pam gives 0.0000
+-0.3010 paper and -0.2919
+-0.3010 papered over -0.1761
+-0.3010 paramagnetic from -0.2553
+-0.3010 parental approval 0.0000
+-0.3010 parenthood organizations 0.0000
+-0.3010 part </s> -0.3010
+-0.3010 particularly informative 0.0000
+-0.3010 past unusual 0.0000
+-0.3010 patiently </s> -0.3010
+-0.3010 paw </s> -0.3010
+-0.3010 peck of -0.2881
+-0.6021 people were -0.2762
+-0.6021 people will -0.2430
+-0.3010 perfume </s> -0.3010
+-0.3010 personnel are -0.2881
+-0.3010 petticoats </s> -0.3010
+-0.3010 pewter are -0.2881
+-0.3010 phony accusations 0.0000
+-0.3010 pick a -0.2954
+-0.3010 piece should -0.2218
+-0.3010 pill </s> -0.3010
+-0.3010 planned parenthood 0.0000
+-0.3010 played tag 0.0000
+-0.3010 plays nihilistic 0.0000
+-0.6021 please dig -0.1761
+-0.6021 please take 0.0000
+-0.3010 pocket </s> -0.3010
+-0.3010 politics and -0.2919
+-0.3010 pond and -0.2919
+-0.3010 poor </s> -0.3010
+-0.3010 popular item 0.0000
+-0.3010 popularity </s> -0.3010
+-0.3010 position </s> -0.3010
+-0.3010 possible to -0.2900
+-0.6021 potatoes </s> -0.3010
+-0.6021 potatoes up -0.1761
+-0.3010 pressure changes 0.0000
+-0.3010 prestige he -0.2900
+-0.6021 pretty in -0.2910
+-0.6021 pretty soon 0.0000
+-0.3010 prime target 0.0000
+-0.6021 problem grows 0.0000
+-0.6021 problem was -0.2863
+-0.3010 problems </s> -0.3010
+-0.3010 proceeding too 0.0000
+-0.3010 processing of -0.2881
+-0.3010 product development -0.1761
+-0.3010 production may -0.2632
+-0.3010 products are -0.2881
+-0.3010 project development -0.1761
+-0.3010 promote birth 0.0000
+-0.3010 properties of -0.2881
+-0.3010 props were -0.2762
+-0.3010 prospect of -0.2881
+-0.3010 prospective buyer 0.0000
+-0.3010 protected by -0.2788
+-0.3010 pulsing glow 0.0000
+-0.3010 puncturing or -0.2430
+-0.3010 purchase </s> -0.3010
+-0.3010 put the -0.2980
+-0.3010 question from -0.2041
+-0.3010 questions but -0.2688
+-0.3010 radiation processing 0.0000
+-0.3010 radiosterilization resides 0.0000
+-0.3010 rail fences 0.0000
+-0.3010 ralph controlled 0.0000
+-0.3010 rare lie 0.0000
+-0.3010 rather not -0.2553
+-0.3010 rationalize all -0.2430
+-0.3010 reads the -0.2980
+-0.3010 real </s> -0.3010
+-0.3010 received extensive 0.0000
+-0.3010 reconsidered </s> -0.3010
+-0.3010 rector was -0.2863
+-0.6021 red cashmere 0.0000
+-0.6021 red white 0.0000
+-0.3010 refused treatment 0.0000
+-0.3010 related to -0.2900
+-0.3010 remained augmented 0.0000
+-0.3010 remote countryside 0.0000
+-0.3010 rent must 0.0000
+-0.3010 rented the -0.2980
+-0.3010 reptiles </s> -0.3010
+-0.3010 requires parental 0.0000
+-0.3010 rescue hostages 0.0000
+-0.3010 resides in -0.2596
+-0.3010 retracted with -0.2730
+-0.3010 return address 0.0000
+-0.3010 review every -0.1761
+-0.3010 reviewers like 0.0000
+-0.3010 ride the -0.2980
+-0.3010 rifle fast 0.0000
+-0.6021 right hand 0.0000
+-0.6021 right now -0.2218
+-0.3010 roam the -0.2980
+-0.3010 rob sat 0.0000
+-0.3010 robin wear 0.0000
+-0.3010 roger's tooth -0.1761
+-0.3010 room murals 0.0000
+-0.3010 ropes the -0.2980
+-0.3010 rubbed his -0.2825
+-0.3010 rug </s> -0.3010
+-0.3010 run the -0.2980
+-0.3010 rural areas 0.0000
+-0.6021 said patiently 0.0000
+-0.6021 said sharks 0.0000
+-0.3010 sailors any -0.2218
+-0.3010 salvation reconsidered 0.0000
+-0.3010 sat by -0.2304
+-0.3010 saw them -0.1761
+-0.3010 say that -0.2430
+-0.3010 schnooks </s> -0.3010
+-0.3010 seattle </s> -0.3010
+-0.3010 second twitched 0.0000
+-0.3010 section we -0.2730
+-0.3010 seemed to -0.2900
+-0.3010 sense only -0.2218
+-0.3010 separate electron 0.0000
+-0.3010 serve the -0.2980
+-0.3010 services </s> -0.3010
+-0.3010 several dozen 0.0000
+-0.3010 shampooed our -0.1761
+-0.3010 sharks have -0.2553
+-0.3010 shaving cream 0.0000
+-1.0000 she is -0.2825
+-1.0000 she said -0.1761
+-1.0000 she slipped 0.0000
+-1.0000 she wake 0.0000
+-1.0000 she wore -0.1761
+-0.3010 shellfish for -0.2762
+-0.3010 ships are -0.2747
+-0.3010 shirtsleeve and -0.2825
+-0.3010 shoes than -0.2553
+-0.3010 shore </s> -0.3010
+-0.3010 short hard -0.1761
+-0.7782 should avoid -0.1761
+-0.7782 should fail 0.0000
+-0.7782 should she -0.2553
+-0.3010 shoulder felt -0.1761
+-0.3010 shrimp swam 0.0000
+-0.3010 silly items 0.0000
+-0.3010 silverware can -0.2430
+-0.3010 sing if -0.2632
+-0.3010 single union 0.0000
+-0.3010 six days 0.0000
+-0.3010 sketched the -0.2980
+-0.3010 slapped their -0.1761
+-0.3010 sleepily with -0.2730
+-0.3010 sleeping pill 0.0000
+-0.3010 slipped and -0.2919
+-0.3010 slope </s> -0.3010
+-0.3010 slow now -0.2218
+-0.3010 slowly </s> -0.3010
+-0.6021 small boy 0.0000
+-0.6021 small lake 0.0000
+-0.3010 smiles upon 0.0000
+-0.3010 snake rail 0.0000
+-0.3010 so many -0.1761
+-0.3010 social system -0.1761
+-0.3010 society was -0.2863
+-0.3010 soft job -0.1761
+-0.3010 solve extra 0.0000
+-0.7782 some expensive 0.0000
+-0.7782 some merit 0.0000
+-0.7782 some of -0.2881
+-0.3010 somewhat ambiguous 0.0000
+-0.3010 soon a -0.2954
+-0.3010 soothed by -0.2304
+-0.3010 special task 0.0000
+-0.3010 speculations may -0.2632
+-0.3010 spend in -0.2910
+-0.3010 spending is -0.2825
+-0.3010 spider web 0.0000
+-0.3010 spilled some -0.2218
+-0.3010 spinach nightly 0.0000
+-0.3010 sport </s> -0.3010
+-0.3010 sprained her -0.2553
+-0.3010 steep slope 0.0000
+-0.3010 stepladders a -0.2954
+-0.3010 steve wore -0.1761
+-0.3010 stick </s> -0.3010
+-0.3010 stockings run 0.0000
+-0.3010 stole a -0.2954
+-0.3010 stopwatch from -0.2041
+-0.3010 stranded </s> -0.3010
+-0.3010 stranger </s> -0.3010
+-0.3010 straw hats 0.0000
+-0.3010 stray geese 0.0000
+-0.3010 streamlined rifle 0.0000
+-0.3010 street journal 0.0000
+-0.3010 streets in -0.2910
+-0.3010 strength miraculously 0.0000
+-0.3010 strong </s> -0.3010
+-0.3010 strongly dislikes 0.0000
+-0.3010 structural and -0.2919
+-0.3010 study </s> -0.3010
+-0.3010 subsystems </s> -0.3010
+-0.3010 subway but -0.2688
+-0.7782 such cases 0.0000
+-0.7782 such garbage 0.0000
+-0.7782 such it -0.2553
+-0.3010 sugar </s> -0.3010
+-0.3010 sun </s> -0.3010
+-0.3010 superb sleeping 0.0000
+-0.3010 supervision is -0.2825
+-0.3010 suppers </s> -0.3010
+-0.3010 surface of -0.2881
+-0.3010 swam backward 0.0000
+-0.3010 swarmed around 0.0000
+-0.3010 sweater </s> -0.3010
+-0.3010 swing your -0.2430
+-0.3010 synagogue may -0.2218
+-0.6021 system are -0.2881
+-0.6021 system part 0.0000
+-0.3010 table cloth 0.0000
+-0.3010 tablecloths </s> -0.3010
+-0.3010 tag with -0.2730
+-0.3010 take this -0.2688
+-0.3010 target </s> -0.3010
+-0.3010 task forces -0.2430
+-0.3010 teeth strong 0.0000
+-0.3010 tempo of -0.2881
+-0.3010 tempted to -0.2900
+-0.3010 test them -0.1761
+-1.0000 than be -0.2808
+-1.0000 than i -0.2430
+-0.6990 than in -0.2808
+-1.0000 than nancy's 0.0000
+-1.2041 that diagram 0.0000
+-1.2041 that guard 0.0000
+-1.2041 that he -0.2900
+-1.2041 that his -0.2825
+-1.2041 that magnetic 0.0000
+-1.2041 that noise 0.0000
+-1.2041 that oldsters 0.0000
+-1.2041 that one -0.2553
+-2.1644 the acropolis 0.0000
+-2.1644 the answer 0.0000
+-2.1644 the anti 0.0000
+-2.1644 the barometric 0.0000
+-2.1644 the bedroom 0.0000
+-1.8633 the best 0.0000
+-2.1644 the bleachers 0.0000
+-2.1644 the boat's 0.0000
+-2.1644 the bowl -0.1761
+-2.1644 the breakdown 0.0000
+-2.1644 the carpet 0.0000
+-2.1644 the cat's 0.0000
+-2.1644 the causeway 0.0000
+-2.1644 the cleaners -0.1761
+-2.1644 the clumsy 0.0000
+-2.1644 the coleslaw 0.0000
+-2.1644 the cranberry 0.0000
+-2.1644 the dome 0.0000
+-2.1644 the downpour 0.0000
+-2.1644 the emblem 0.0000
+-2.1644 the farm 0.0000
+-2.1644 the farmyard 0.0000
+-2.1644 the first 0.0000
+-2.1644 the fish 0.0000
+-2.1644 the flood 0.0000
+-2.1644 the gloom 0.0000
+-2.1644 the gunman 0.0000
+-2.1644 the hook 0.0000
+-2.1644 the industry 0.0000
+-2.1644 the ingredients 0.0000
+-2.1644 the job -0.1761
+-2.1644 the larger 0.0000
+-2.1644 the litter 0.0000
+-2.1644 the living -0.1761
+-2.1644 the luxurious 0.0000
+-2.1644 the man 0.0000
+-2.1644 the military -0.1761
+-2.1644 the misquote 0.0000
+-2.1644 the morning -0.1761
+-2.1644 the most 0.0000
+-2.1644 the nearest 0.0000
+-2.1644 the oasis 0.0000
+-2.1644 the ocean 0.0000
+-2.1644 the oil -0.1761
+-2.1644 the past 0.0000
+-2.1644 the pond 0.0000
+-2.1644 the poor 0.0000
+-2.1644 the prospect 0.0000
+-2.1644 the pulsing 0.0000
+-2.1644 the question 0.0000
+-2.1644 the radiation 0.0000
+-2.1644 the remote 0.0000
+-2.1644 the rent 0.0000
+-2.1644 the ships 0.0000
+-2.1644 the shore 0.0000
+-1.8633 the small 0.0000
+-2.1644 the spider 0.0000
+-2.1644 the steep 0.0000
+-2.1644 the stopwatch 0.0000
+-2.1644 the stray 0.0000
+-2.1644 the streets 0.0000
+-2.1644 the structural 0.0000
+-2.1644 the subway 0.0000
+-2.1644 the sun 0.0000
+-2.1644 the surface 0.0000
+-2.1644 the tooth -0.1761
+-2.1644 the twelfth 0.0000
+-2.1644 the unlimited 0.0000
+-2.1644 the viewpoint 0.0000
+-2.1644 the wall -0.1761
+-2.1644 the worm 0.0000
+-0.6021 their props 0.0000
+-0.6021 their thighs 0.0000
+-0.6021 them </s> -0.3010
+-0.6021 them always -0.2553
+-0.7782 there forces -0.1761
+-0.7782 there were -0.2762
+-0.7782 there would -0.2218
+-0.7782 these approximated 0.0000
+-0.7782 these shoes 0.0000
+-0.7782 these speculations 0.0000
+-1.0000 they enjoy 0.0000
+-1.0000 they had -0.2218
+-1.0000 they make 0.0000
+-1.0000 they own 0.0000
+-1.0000 they were -0.2762
+-0.3010 they're worn 0.0000
+-0.3010 thick black -0.1761
+-0.3010 thighs </s> -0.3010
+-0.3010 thinner than -0.2553
+-1.1461 this brochure 0.0000
+-1.1461 this dirty -0.1761
+-1.1461 this drug 0.0000
+-1.1461 this one -0.2553
+-1.1461 this stranger 0.0000
+-1.1461 this trend 0.0000
+-1.1461 this year 0.0000
+-0.7782 those musicians 0.0000
+-0.7782 those ropes 0.0000
+-0.7782 those years -0.1761
+-0.6021 thought we -0.2730
+-0.6021 thought you -0.2762
+-0.3010 three hours 0.0000
+-0.3010 through the -0.2920
+-0.3010 thursday's exam 0.0000
+-0.3010 thursdays </s> -0.3010
+-0.3010 tied up -0.1761
+-0.6021 time for -0.2888
+-0.6021 time they're 0.0000
+-1.6021 to ask 0.0000
+-1.3010 to be -0.2596
+-1.6021 to call -0.1761
+-1.6021 to come -0.1761
+-1.6021 to contagious 0.0000
+-1.6021 to cook 0.0000
+-1.6021 to further 0.0000
+-1.6021 to have -0.2553
+-1.6021 to leap 0.0000
+-1.6021 to learn 0.0000
+-1.6021 to many -0.1761
+-1.6021 to my -0.2218
+-1.6021 to obey 0.0000
+-1.6021 to pick 0.0000
+-1.6021 to separate 0.0000
+-1.6021 to solve 0.0000
+-1.6021 to spend 0.0000
+-1.6021 to the -0.2980
+-1.6021 to work -0.1761
+-0.3010 together those -0.2218
+-0.3010 tomorrow have -0.2553
+-0.3010 too slowly 0.0000
+-0.6021 tooth fairy 0.0000
+-0.6021 tooth fell -0.1761
+-0.3010 tradition requires 0.0000
+-0.3010 treatment </s> -0.3010
+-0.3010 treats </s> -0.3010
+-0.3010 trembled lest 0.0000
+-0.3010 trend was -0.2863
+-0.3010 trish played 0.0000
+-0.3010 tropical reptiles 0.0000
+-0.3010 twelfth day -0.1761
+-0.3010 twilight on -0.1891
+-0.3010 twitched his -0.2825
+-0.6021 two </s> -0.3010
+-0.6021 two stepladders 0.0000
+-0.3010 umbrella as -0.2499
+-0.3010 under age 0.0000
+-0.3010 unevenly distributed 0.0000
+-0.3010 union </s> -0.3010
+-0.3010 unit with -0.2730
+-0.3010 unlimited expense 0.0000
+-0.3010 unpleasant one -0.2553
+-0.3010 unstuck </s> -0.3010
+-0.3010 untimely income 0.0000
+-0.3010 unusual </s> -0.3010
+-0.6021 up before -0.1761
+-0.6021 up with -0.2730
+-0.3010 upbringing in -0.2910
+-0.3010 upon you -0.2762
+-0.3010 upper arm -0.1761
+-0.6021 us conformists 0.0000
+-0.6021 us has -0.2218
+-0.3010 use mine 0.0000
+-0.3010 useful in -0.2910
+-0.7782 very pretty -0.1761
+-0.7782 very slow 0.0000
+-0.7782 very useful 0.0000
+-0.3010 victim cornered 0.0000
+-0.3010 viewpoint overlooked 0.0000
+-0.3010 visually these -0.2218
+-0.3010 wage negotiations 0.0000
+-0.3010 wake him 0.0000
+-0.6021 walking distance 0.0000
+-0.6021 walking stick 0.0000
+-0.6021 wall street 0.0000
+-0.6021 wall with -0.2730
+-0.3010 warm fleecy 0.0000
+-1.4771 was a -0.2954
+-1.4771 was based 0.0000
+-1.4771 was beyond 0.0000
+-1.4771 was bounded 0.0000
+-1.4771 was diagnosed 0.0000
+-1.4771 was feeling 0.0000
+-1.4771 was gone 0.0000
+-1.4771 was in -0.2910
+-1.4771 was inevitable 0.0000
+-1.4771 was not -0.2553
+-1.4771 was often -0.2218
+-1.4771 was proceeding 0.0000
+-1.4771 was retracted 0.0000
+-1.4771 was soothed 0.0000
+-1.4771 was stranded 0.0000
+-0.3010 way to -0.2900
+-1.2041 we always -0.2553
+-1.2041 we can -0.2430
+-1.2041 we dig -0.1761
+-1.2041 we don't -0.2430
+-1.2041 we may -0.2632
+-1.2041 we welcomed 0.0000
+-1.2041 we were -0.2762
+-1.2041 we would -0.2218
+-0.3010 we'll have -0.2553
+-0.3010 wear a -0.2954
+-0.3010 weatherproof galoshes 0.0000
+-0.3010 web glistened 0.0000
+-0.3010 weekday morning -0.1761
+-0.3010 welcomed auditors 0.0000
+-0.3010 welfare </s> -0.3010
+-0.3010 well made -0.1761
+-1.2553 were </s> -0.3010
+-1.2553 were away 0.0000
+-1.2553 were broken 0.0000
+-1.2553 were captured 0.0000
+-1.2553 were grazing 0.0000
+-1.2553 were in -0.2596
+-1.2553 were more -0.2553
+-1.2553 were two -0.1761
+-1.2553 were you -0.2762
+-0.6021 what eyes -0.2218
+-0.6021 what he -0.2672
+-0.3010 whatsoever </s> -0.3010
+-0.7782 when i -0.2430
+-0.7782 when roger's 0.0000
+-0.7782 when you -0.2762
+-0.3010 whenever the -0.2980
+-0.3010 where were -0.2762
+-0.7782 which he -0.2900
+-0.7782 which of -0.2881
+-0.7782 which to -0.2788
+-0.6021 while he -0.2672
+-0.6021 while we -0.2730
+-0.3010 white or -0.2430
+-0.3010 who authorized 0.0000
+-0.7782 why buy -0.2218
+-0.7782 why charge 0.0000
+-0.7782 why yell 0.0000
+-0.3010 wife divorced 0.0000
+-0.9031 will allow -0.1761
+-0.9031 will become 0.0000
+-0.9031 will roam 0.0000
+-0.9031 will robin 0.0000
+-0.3010 windows glowed 0.0000
+-1.2041 with a -0.2954
+-1.2041 with an -0.2430
+-1.2041 with beach 0.0000
+-1.2041 with crayons 0.0000
+-1.2041 with one -0.2553
+-1.2041 with our -0.1761
+-1.2041 with the -0.2980
+-1.2041 with this -0.2688
+-0.3010 withdraw all -0.2430
+-0.7782 within himself -0.1761
+-0.7782 within the -0.2980
+-0.7782 within walking -0.1761
+-0.7782 without fancy 0.0000
+-0.7782 without sugar 0.0000
+-0.7782 without supervision 0.0000
+-0.3010 woman came 0.0000
+-0.3010 wondered how -0.1761
+-0.3010 woolen overalls 0.0000
+-0.6021 wore a -0.2954
+-0.6021 wore warm 0.0000
+-0.6021 work began -0.1761
+-0.6021 work without -0.2218
+-0.3010 working hard -0.1761
+-0.3010 worm on -0.1891
+-0.3010 worn </s> -0.3010
+-0.3010 worry over -0.1761
+-0.7782 would be -0.2808
+-0.7782 would die 0.0000
+-0.7782 would not -0.2553
+-0.3010 year </s> -0.3010
+-0.6021 years </s> -0.3010
+-0.6021 years later 0.0000
+-0.3010 yell or -0.2430
+-0.3010 yellow lily 0.0000
+-1.2553 you </s> -0.3010
+-1.2553 you always -0.2553
+-1.2553 you argued 0.0000
+-1.2553 you buy -0.2218
+-1.2553 you can -0.2430
+-1.2553 you don't -0.2430
+-1.2553 you looking 0.0000
+-1.2553 you saw 0.0000
+-1.2553 you while -0.1761
+-0.3010 young children 0.0000
+-0.3010 youngsters love -0.1761
+-0.9031 your arm -0.1761
+-0.9031 your back -0.1761
+-0.9031 your endurance 0.0000
+-0.9031 your grades 0.0000
+-0.3010 yourself </s> -0.3010
+-0.3010 zoning </s> -0.3010
+
+\3-grams:
+-1.1461 <s> a big
+-1.1461 <s> a boring
+-1.1461 <s> a carriage
+-1.1461 <s> a chosen
+-1.1461 <s> a few
+-1.1461 <s> a muscular
+-1.1461 <s> a second
+-0.3010 <s> agricultural products
+-0.3010 <s> alice's ability
+-0.3010 <s> allow leeway
+-0.3010 <s> aluminum silverware
+-0.3010 <s> american newspaper
+-0.3010 <s> and what
+-0.6021 <s> are you
+-0.6021 <s> are your
+-0.3010 <s> artificial intelligence
+-0.3010 <s> as such
+-0.3010 <s> at twilight
+-0.3010 <s> authorities say
+-0.3010 <s> barb burned
+-0.3010 <s> basketball can
+-0.3010 <s> be excited
+-0.3010 <s> before thursday's
+-0.3010 <s> beg that
+-0.3010 <s> bob papered
+-0.3010 <s> books are
+-0.3010 <s> brown eyes
+-0.7782 <s> but in
+-0.7782 <s> but such
+-0.7782 <s> but the
+-0.3010 <s> by that
+-0.3010 <s> calcium makes
+-0.3010 <s> call an
+-0.3010 <s> catastrophic economic
+-0.3010 <s> cheap stockings
+-0.3010 <s> chief interest
+-0.3010 <s> cliff was
+-0.3010 <s> combine all
+-0.3010 <s> cory and
+-0.3010 <s> december and
+-0.3010 <s> destroy every
+-0.3010 <s> did you
+-0.6021 <s> do avoid
+-0.6021 <s> do without
+-0.3010 <s> don't do
+-0.3010 <s> each untimely
+-0.3010 <s> eating spinach
+-0.3010 <s> eight field
+-0.3010 <s> few rural
+-0.3010 <s> flies swarmed
+-0.3010 <s> grandmother outgrew
+-0.3010 <s> greg buys
+-0.3010 <s> guess the
+-1.2553 <s> he always
+-1.2553 <s> he gave
+-1.2553 <s> he had
+-1.2553 <s> he has
+-1.2553 <s> he rubbed
+-1.2553 <s> he stole
+-1.2553 <s> he trembled
+-1.2553 <s> he will
+-1.2553 <s> he would
+-0.3010 <s> heave on
+-0.3010 <s> help greg
+-0.3010 <s> her right
+-0.6021 <s> his shoulder
+-0.6021 <s> his work
+-0.3010 <s> how good
+-0.3010 <s> however the
+-0.3010 <s> husbandry was
+-0.6021 <s> i'd rather
+-0.6021 <s> i'd ride
+-0.7782 <s> if carol
+-0.7782 <s> if people
+-0.7782 <s> if the
+-0.3010 <s> iguanas and
+-0.3010 <s> in wage
+-0.3010 <s> increasing tempo
+-0.3010 <s> indeed it
+-0.6021 <s> it's a
+-0.6021 <s> it's healthier
+-0.3010 <s> jane may
+-0.3010 <s> jeff thought
+-0.3010 <s> john cleans
+-0.3010 <s> laboratory astrophysics
+-0.3010 <s> laugh dance
+-0.3010 <s> lighted windows
+-0.3010 <s> lori's costume
+-0.3010 <s> lot of
+-0.3010 <s> materials ceramic
+-0.3010 <s> meats the
+-0.3010 <s> medieval society
+-0.3010 <s> michael colored
+-0.3010 <s> military personnel
+-0.3010 <s> milk production
+-0.3010 <s> mom strongly
+-0.6021 <s> no return
+-0.6021 <s> no the
+-0.3010 <s> objects made
+-0.6021 <s> only lawyers
+-0.6021 <s> only the
+-0.3010 <s> pam gives
+-0.3010 <s> planned parenthood
+-0.6021 <s> please dig
+-0.6021 <s> please take
+-0.3010 <s> pretty soon
+-0.3010 <s> project development
+-0.3010 <s> ralph controlled
+-0.3010 <s> rector was
+-0.3010 <s> right now
+-0.3010 <s> rob sat
+-0.3010 <s> salvation reconsidered
+-0.3010 <s> serve the
+-0.3010 <s> shaving cream
+-0.9031 <s> she is
+-0.9031 <s> she said
+-0.9031 <s> she slipped
+-0.9031 <s> she wore
+-0.3010 <s> should she
+-0.3010 <s> some of
+-0.3010 <s> special task
+-0.3010 <s> steve wore
+-0.3010 <s> straw hats
+-0.3010 <s> swing your
+-0.6021 <s> that diagram
+-0.6021 <s> that noise
+-1.5563 <s> the best
+-1.5563 <s> the carpet
+-1.5563 <s> the cat's
+-1.5563 <s> the causeway
+-1.5563 <s> the clumsy
+-1.5563 <s> the cranberry
+-1.5563 <s> the emblem
+-1.5563 <s> the fish
+-1.5563 <s> the gunman
+-1.5563 <s> the misquote
+-1.5563 <s> the morning
+-1.5563 <s> the nearest
+-1.5563 <s> the oasis
+-1.5563 <s> the prospect
+-1.5563 <s> the pulsing
+-1.5563 <s> the small
+-1.5563 <s> the tooth
+-1.5563 <s> the viewpoint
+-0.3010 <s> their props
+-0.3010 <s> there forces
+-0.9031 <s> they enjoy
+-0.9031 <s> they had
+-0.9031 <s> they make
+-0.9031 <s> they own
+-0.3010 <s> this brochure
+-0.3010 <s> those musicians
+-0.6021 <s> to further
+-0.6021 <s> to many
+-0.3010 <s> tradition requires
+-0.3010 <s> visually these
+-0.7782 <s> we always
+-0.7782 <s> we can
+-0.7782 <s> we may
+-0.3010 <s> weatherproof galoshes
+-0.3010 <s> where were
+-0.3010 <s> while he
+-0.3010 <s> who authorized
+-0.7782 <s> why buy
+-0.7782 <s> why charge
+-0.7782 <s> why yell
+-0.3010 <s> will robin
+-0.3010 <s> withdraw all
+-0.3010 <s> within the
+-0.6021 <s> you don't
+-0.6021 <s> you saw
+-0.3010 <s> young children
+-0.3010 <s> youngsters love
+-0.3010 a ball </s>
+-0.3010 a beggar </s>
+-0.7782 a big bonfire
+-0.7782 a big goat
+-0.7782 a big house
+-0.3010 a boring novel
+-0.6021 a brief burn
+-0.6021 a brief case
+-0.3010 a bright red
+-0.3010 a carriage crunched
+-0.3010 a centrifuge purchase
+-0.3010 a chair and
+-0.3010 a chosen few
+-0.3010 a cigarette </s>
+-0.3010 a dime from
+-0.3010 a few years
+-0.3010 a folded umbrella
+-0.3010 a heating system
+-0.3010 a large bowl
+-0.3010 a living </s>
+-0.3010 a meeting at
+-0.3010 a message </s>
+-0.3010 a mirage </s>
+-0.3010 a muscular abdomen
+-0.3010 a palm fan
+-0.3010 a peck of
+-0.3010 a popular item
+-0.3010 a prime target
+-0.3010 a rare lie
+-0.3010 a second twitched
+-0.3010 a short hard
+-0.3010 a single union
+-0.3010 a soft job
+-0.3010 a streamlined rifle
+-0.3010 a superb sleeping
+-0.3010 a unit with
+-0.3010 a walking stick
+-0.3010 a woman came
+-0.3010 a yellow lily
+-0.3010 abdomen is good
+-0.3010 ability to work
+-0.3010 abruptly at the
+-0.3010 accomplished artists obtain
+-0.3010 accusations at once
+-0.3010 aches whenever the
+-0.3010 acropolis all aglow
+-0.3010 add the oil
+-0.3010 address whatsoever </s>
+-0.3010 after i add
+-0.3010 after much study
+-0.3010 after the flood
+-0.3010 age marriage </s>
+-0.3010 agricultural products are
+-0.3010 alice's ability to
+-0.3010 all aglow </s>
+-0.3010 all errors </s>
+-0.3010 all phony accusations
+-0.3010 all the ingredients
+-0.3010 alligators are tropical
+-0.3010 allow a rare
+-0.3010 allow leeway here
+-0.3010 along carrying a
+-0.3010 aluminum silverware can
+-0.3010 always hurts my
+-0.3010 always seemed to
+-0.3010 always thought we
+-0.3010 always together those
+-0.3010 always use mine
+-0.3010 ambled through the
+-0.3010 ambulance for medical
+-0.3010 american newspaper reviewers
+-0.3010 an ambulance for
+-0.3010 an apology </s>
+-0.3010 an entertaining sport
+-0.3010 an unpleasant one
+-0.3010 and a palm
+-0.3010 and alligators are
+-0.3010 and don't identify
+-0.3010 and functional subsystems
+-0.3010 and had no
+-0.3010 and having a
+-0.6021 and he felt
+-0.6021 and he was
+-0.3010 and january are
+-0.3010 and leaves in
+-0.3010 and less than
+-0.3010 and looked at
+-0.3010 and masks and
+-0.3010 and now the
+-0.3010 and shrimp swam
+-0.3010 and sing if
+-0.3010 and sketched the
+-0.3010 and sprained her
+-0.3010 and teeth strong
+-0.3010 and there were
+-0.3010 and trish played
+-0.3010 and we don't
+-0.3010 and well made
+-0.3010 and what eyes
+-0.3010 ankle on the
+-0.3010 annoying each day
+-0.3010 anti infective properties
+-0.3010 any corduroy overalls
+-0.3010 any governor </s>
+-0.3010 any more </s>
+-0.3010 anything for which
+-0.3010 approval for under
+-0.3010 approximated what he
+-0.3010 are a prime
+-0.3010 are as general
+-0.3010 are beautiful </s>
+-0.3010 are expected to
+-0.3010 are for schnooks
+-0.3010 are more latent
+-0.3010 are nice months
+-0.3010 are out of
+-0.3010 are protected by
+-0.3010 are somewhat ambiguous
+-0.3010 are the structural
+-0.3010 are tropical reptiles
+-0.3010 are unevenly distributed
+-0.6021 are very slow
+-0.6021 are very useful
+-0.3010 are you looking
+-0.3010 are your grades
+-0.3010 areas are protected
+-0.3010 argued in favor
+-0.3010 arm as high
+-0.3010 around the bowl
+-0.3010 arrange for a
+-0.3010 artificial intelligence is
+-0.3010 artists obtain popularity
+-0.6021 as a unit
+-0.6021 as a walking
+-0.3010 as electrical forces
+-0.3010 as general as
+-0.3010 as high as
+-0.3010 as if it
+-0.3010 as such it
+-0.3010 as treats </s>
+-0.3010 as you can
+-0.3010 ask questions but
+-0.3010 at gunpoint for
+-0.3010 at her knowingly
+-0.3010 at once </s>
+-0.3010 at the shore
+-0.3010 at twilight on
+-0.3010 at two </s>
+-0.3010 augmented by several
+-0.3010 authorities say that
+-0.3010 authorized the unlimited
+-0.3010 avoid exposure to
+-0.3010 avoid puncturing or
+-0.3010 back spending is
+-0.3010 balls for hours
+-0.3010 barb burned paper
+-0.3010 bargains as a
+-0.3010 barometric pressure changes
+-0.3010 based on hierarchies
+-0.3010 basketball can be
+-0.3010 be an entertaining
+-0.3010 be completely elegant
+-0.3010 be excited and
+-0.3010 be flimsy </s>
+-0.3010 be hated which
+-0.3010 be increased by
+-0.3010 be no need
+-0.3010 be overcharged </s>
+-0.3010 be paid </s>
+-0.3010 be the best
+-0.3010 be within walking
+-0.3010 beach balls for
+-0.3010 become generals </s>
+-0.3010 bedroom wall with
+-0.3010 before frost </s>
+-0.3010 before thursday's exam
+-0.3010 beg that guard
+-0.3010 began just six
+-0.3010 began to leap
+-0.3010 best time for
+-0.3010 best way to
+-0.3010 beyond politics and
+-0.3010 big bonfire </s>
+-0.3010 big goat idly
+-0.3010 big house in
+-0.3010 birth control </s>
+-0.3010 black bread </s>
+-0.3010 black gloves to
+-0.3010 boat's come unstuck
+-0.3010 bob papered over
+-0.3010 bog gets very
+-0.6021 bones and shrimp
+-0.6021 bones and teeth
+-0.3010 books are for
+-0.3010 boots on </s>
+-0.3010 boring novel is
+-0.3010 bounded by snake
+-0.3010 bowl of lentils
+-0.3010 boy put the
+-0.3010 breakdown of a
+-0.3010 brief burn on
+-0.3010 brief case </s>
+-0.3010 bright red cashmere
+-0.3010 bright through the
+-0.3010 brochure is particularly
+-0.3010 brown eyes eyebrow
+-0.3010 burn on his
+-0.3010 burned paper and
+-0.3010 business mergers </s>
+-0.3010 but he never
+-0.3010 but i haven't
+-0.3010 but in this
+-0.3010 but rationalize all
+-0.3010 but such cases
+-0.3010 but that he
+-0.3010 but the ships
+-0.3010 buy any corduroy
+-0.3010 buy oil when
+-0.3010 buy these shoes
+-0.3010 buys fresh milk
+-0.3010 by a message
+-0.3010 by its dim
+-0.3010 by several dozen
+-0.3010 by snake rail
+-0.3010 by that one
+-0.7782 by the anti
+-0.7782 by the luxurious
+-0.7782 by the pond
+-0.3010 by working hard
+-0.3010 by zoning </s>
+-0.3010 calcium makes bones
+-0.3010 call an ambulance
+-0.3010 call his plays
+-0.3010 came along carrying
+-0.3010 can be an
+-0.3010 can get it
+-0.3010 can often be
+-0.3010 candy as treats
+-0.3010 captured in position
+-0.3010 carol comes tomorrow
+-0.3010 carpet cleaners shampooed
+-0.3010 carriage crunched by
+-0.3010 carry a brief
+-0.3010 carrying a folded
+-0.3010 cases were in
+-0.3010 cashmere sweater </s>
+-0.3010 cat's meow always
+-0.3010 catastrophic economic cutbacks
+-0.3010 causeway ended abruptly
+-0.3010 centrifuge purchase </s>
+-0.3010 ceramic modeling clay
+-0.3010 chair and a
+-0.3010 charge money for
+-0.3010 charlie's dirty dishes
+-0.3010 cheap stockings run
+-0.3010 chief interest in
+-0.3010 children should avoid
+-0.3010 chosen few will
+-0.3010 clay red white
+-0.3010 cleaners for me
+-0.3010 cleaners shampooed our
+-0.3010 cleans shellfish for
+-0.3010 cliff was soothed
+-0.3010 cloth to the
+-0.3010 clumsy customer spilled
+-0.3010 coincided with the
+-0.3010 coleslaw after i
+-0.3010 colored the bedroom
+-0.3010 combine all the
+-0.3010 come unstuck </s>
+-0.3010 come when roger's
+-0.3010 comes tomorrow have
+-0.3010 common candy as
+-0.3010 completely elegant </s>
+-0.3010 conformists look good
+-0.3010 contagious diseases </s>
+-0.3010 controlled the stopwatch
+-0.3010 cook without sugar
+-0.3010 corduroy overalls </s>
+-0.3010 cornered at gunpoint
+-0.3010 cory and trish
+-0.3010 costume needed black
+-0.3010 costumes and masks
+-0.3010 cranberry bog gets
+-0.3010 cream is a
+-0.3010 crunched by its
+-0.3010 curious often tempted
+-0.3010 custody his wife
+-0.3010 customer spilled some
+-0.3010 cutbacks neglect the
+-0.3010 cutting back spending
+-0.3010 cutting into meats
+-0.3010 dance and sing
+-0.3010 day we'll have
+-0.3010 days after the
+-0.3010 december and january
+-0.3010 depicts the acropolis
+-0.3010 destroy every file
+-0.3010 development was proceeding
+-0.3010 dew on the
+-0.3010 diagnosed but that
+-0.3010 diagram makes sense
+-0.3010 did you buy
+-0.3010 die with our
+-0.3010 dig he said
+-0.3010 dig my potatoes
+-0.3010 dim lights filtering
+-0.3010 dime from a
+-0.3010 dirty dishes </s>
+-0.3010 dirty table cloth
+-0.3010 dislikes appetizers </s>
+-0.3010 divorced him </s>
+-0.3010 do avoid puncturing
+-0.3010 do charlie's dirty
+-0.3010 do without fancy
+-0.3010 dome fell in
+-0.3010 don't do charlie's
+-0.3010 don't eat enough
+-0.3010 don't get so
+-0.3010 don't identify yourself
+-0.3010 done anything for
+-0.3010 dozen lunchroom suppers
+-0.3010 driving lessons on
+-0.3010 drunk he wondered
+-0.3010 each day </s>
+-0.3010 each untimely income
+-0.3010 each weekday morning
+-0.3010 earn more money
+-0.3010 eat enough honey
+-0.3010 eating spinach nightly
+-0.3010 economic cutbacks neglect
+-0.3010 eight field guns
+-0.3010 electrical forces </s>
+-0.3010 electricity and less
+-0.3010 electron paramagnetic from
+-0.3010 emblem depicts the
+-0.3010 ended abruptly at
+-0.3010 enjoy it when
+-0.3010 enough change </s>
+-0.3010 enough honey </s>
+-0.3010 entertaining sport </s>
+-0.3010 every file related
+-0.3010 every formula </s>
+-0.3010 exam review every
+-0.3010 excited and don't
+-0.3010 expected to obey
+-0.3010 expense account </s>
+-0.3010 expensive perfume </s>
+-0.3010 experts this trend
+-0.3010 exposure to contagious
+-0.3010 extensive investigation </s>
+-0.3010 extra problems </s>
+-0.3010 eyebrow mustache </s>
+-0.3010 eyes eyebrow mustache
+-0.3010 eyes sleepily with
+-0.3010 eyes they were
+-0.3010 fairy forgot to
+-0.3010 fallen into a
+-0.3010 fancy tablecloths </s>
+-0.3010 farm is rented
+-0.3010 fashion this year
+-0.3010 fast and well
+-0.3010 favor of a
+-0.3010 feeling within himself
+-0.3010 feels that magnetic
+-0.3010 fell in </s>
+-0.3010 fell out </s>
+-0.3010 felt a brief
+-0.3010 felt as if
+-0.3010 fences and there
+-0.3010 few rural areas
+-0.3010 few will become
+-0.3010 few years later
+-0.3010 field guns were
+-0.3010 file related to
+-0.3010 filtering through the
+-0.3010 first time they're
+-0.3010 fish began to
+-0.3010 fleecy woolen overalls
+-0.3010 flies swarmed around
+-0.3010 folded umbrella as
+-0.6021 for a living
+-0.6021 for a meeting
+-0.3010 for any governor
+-0.3010 for business mergers
+-0.3010 for employment </s>
+-0.3010 for hours </s>
+-0.3010 for me </s>
+-0.3010 for medical assistance
+-0.3010 for one gallon
+-0.3010 for prospective buyer
+-0.3010 for real </s>
+-0.3010 for schnooks </s>
+-0.3010 for such garbage
+-0.3010 for three hours
+-0.3010 for under age
+-0.3010 for welfare </s>
+-0.3010 for which to
+-0.3010 for your back
+-0.6021 forces are as
+-0.6021 forces are more
+-0.3010 forces rescue hostages
+-0.3010 forgot to come
+-0.3010 fortune smiles upon
+-0.3010 frantically on the
+-0.3010 fresh milk each
+-0.3010 from a beggar
+-0.3010 from kidnappers </s>
+-0.3010 from nuclear effects
+-0.6021 from the answer
+-0.6021 from the bleachers
+-0.3010 functional subsystems </s>
+-0.3010 further his prestige
+-0.3010 gallon of gas
+-0.3010 galoshes are very
+-0.3010 gave a short
+-0.3010 general as electrical
+-0.3010 generous there would
+-0.3010 get it if
+-0.3010 get so many
+-0.3010 gets very pretty
+-0.3010 gives driving lessons
+-0.3010 glistened in the
+-0.3010 gloves to be
+-0.3010 glow of a
+-0.3010 glowed jewel bright
+-0.3010 goat idly ambled
+-0.3010 gone and he
+-0.3010 good for your
+-0.3010 good is your
+-0.3010 got tied up
+-0.3010 government orders </s>
+-0.3010 grades higher or
+-0.3010 grandmother outgrew her
+-0.3010 grazing cattle </s>
+-0.3010 greg buys fresh
+-0.3010 greg to pick
+-0.3010 grows more annoying
+-0.3010 guard for one
+-0.3010 guess the question
+-0.3010 gunman kept his
+-0.3010 gunpoint for three
+-0.3010 guns were captured
+-0.3010 had fallen into
+-0.3010 had no need
+-0.3010 had slapped their
+-0.3010 hand aches whenever
+-0.3010 hard laugh and
+-0.3010 harmonize marvelously </s>
+-0.3010 has never himself
+-0.3010 has received extensive
+-0.3010 hated which of
+-0.3010 hats are out
+-0.3010 have chablis </s>
+-0.3010 have her arrange
+-0.3010 have money in
+-0.3010 have no bones
+-0.3010 have some merit
+-0.3010 haven't enough change
+-0.3010 having a ball
+-0.3010 he always seemed
+-0.3010 he felt a
+-0.3010 he gave a
+-0.3010 he got tied
+-0.3010 he had fallen
+-0.3010 he has never
+-0.3010 he mopped thick
+-0.3010 he never did
+-0.3010 he occasionally reads
+-0.3010 he refused treatment
+-0.3010 he rubbed his
+-0.3010 he said patiently
+-0.3010 he stole a
+-0.3010 he trembled lest
+-0.7782 he was feeling
+-0.7782 he was in
+-0.7782 he was stranded
+-0.3010 he will allow
+-0.3010 he wondered how
+-0.3010 he would not
+-0.3010 healthier to cook
+-0.3010 heating system part
+-0.3010 heave on those
+-0.3010 help greg to
+-0.3010 her ankle on
+-0.3010 her arrange for
+-0.3010 her knowingly </s>
+-0.3010 her right hand
+-0.3010 her upbringing in
+-0.3010 here but rationalize
+-0.3010 high as you
+-0.3010 higher or lower
+-0.3010 himself done anything
+-0.3010 his eyes sleepily
+-0.3010 his piece should
+-0.3010 his plays nihilistic
+-0.3010 his pocket </s>
+-0.3010 his prestige he
+-0.3010 his problem was
+-0.3010 his shirtsleeve and
+-0.3010 his shoulder felt
+-0.3010 his upper arm
+-0.3010 his victim cornered
+-0.3010 his wife divorced
+-0.3010 his work began
+-0.3010 hostages from kidnappers
+-0.3010 house in the
+-0.3010 how good is
+-0.3010 how he got
+-0.3010 however the litter
+-0.3010 huge paw </s>
+-0.3010 hurts my ears
+-0.3010 husbandry was bounded
+-0.3010 i add the
+-0.3010 i am </s>
+-0.3010 i audition </s>
+-0.3010 i haven't enough
+-0.3010 i'd rather not
+-0.3010 i'd ride the
+-0.3010 identify yourself </s>
+-0.3010 idly ambled through
+-0.3010 if carol comes
+-0.3010 if fortune smiles
+-0.3010 if it were
+-0.3010 if people were
+-0.3010 if the farm
+-0.3010 if we dig
+-0.3010 iguanas and alligators
+-0.6021 in a big
+-0.6021 in a large
+-0.3010 in autumn </s>
+-0.3010 in costumes and
+-0.3010 in custody his
+-0.3010 in electricity and
+-0.3010 in favor of
+-0.3010 in his pocket
+-0.3010 in magnetism </s>
+-0.3010 in miami </s>
+-0.3010 in petticoats </s>
+-0.3010 in position </s>
+-0.3010 in radiosterilization resides
+-0.3010 in seattle </s>
+-0.9031 in the military
+-0.9031 in the past
+-0.9031 in the remote
+-0.9031 in the sun
+-0.3010 in this one
+-0.3010 in wage negotiations
+-0.3010 in which he
+-0.3010 income loss coincided
+-0.3010 increased by the
+-0.3010 increases strength miraculously
+-0.3010 increasing tempo of
+-0.3010 indeed it is
+-0.3010 industry bargains as
+-0.3010 infective properties of
+-0.3010 informative for prospective
+-0.3010 ingredients in a
+-0.3010 intelligence is for
+-0.3010 interest in radiosterilization
+-0.3010 into a soft
+-0.3010 into meats test
+-0.6021 is a popular
+-0.6021 is a superb
+-0.3010 is an unpleasant
+-0.3010 is for real
+-0.3010 is good for
+-0.3010 is noteworthy </s>
+-0.3010 is particularly informative
+-0.3010 is possible to
+-0.3010 is rented the
+-0.3010 is thinner than
+-0.3010 is to solve
+-0.3010 is your endurance
+-0.3010 it if we
+-0.3010 it is possible
+-0.3010 it was beyond
+-0.3010 it were broken
+-0.3010 it when i
+-0.3010 it's a streamlined
+-0.3010 it's healthier to
+-0.3010 item on halloween
+-0.3010 its dim lights
+-0.3010 jane may earn
+-0.3010 january are nice
+-0.3010 jeff thought you
+-0.3010 jewel bright through
+-0.3010 job and now
+-0.3010 job was gone
+-0.3010 john cleans shellfish
+-0.3010 just six days
+-0.3010 justification by a
+-0.3010 kept his victim
+-0.3010 laboratory astrophysics </s>
+-0.3010 large bowl </s>
+-0.3010 larger social system
+-0.3010 latent than in
+-0.3010 later the dome
+-0.3010 laugh and looked
+-0.3010 laugh dance and
+-0.3010 lawyers love millionaires
+-0.3010 leap frantically on
+-0.3010 learn is to
+-0.3010 leaves in a
+-0.3010 leeway here but
+-0.3010 lentils in which
+-0.3010 less than in
+-0.3010 lessons on thursdays
+-0.3010 lest his piece
+-0.3010 lighted windows glowed
+-0.3010 lights filtering through
+-0.3010 like to call
+-0.3010 litter remained augmented
+-0.3010 living room murals
+-0.3010 look good </s>
+-0.3010 looked at her
+-0.3010 looking for employment
+-0.3010 lori's costume needed
+-0.3010 loss coincided with
+-0.3010 lot of people
+-0.3010 love common candy
+-0.3010 love millionaires </s>
+-0.3010 lower than nancy's
+-0.3010 lunchroom suppers </s>
+-0.3010 luxurious massage </s>
+-0.3010 made of pewter
+-0.3010 magnetic forces are
+-0.3010 make us conformists
+-0.3010 makes bones and
+-0.3010 makes sense only
+-0.3010 man was not
+-0.3010 many experts this
+-0.3010 many sailors any
+-0.3010 masks and having
+-0.3010 materials ceramic modeling
+-0.3010 may be increased
+-0.3010 may earn more
+-0.3010 may have some
+-0.3010 may not be
+-0.3010 may say that
+-0.3010 meat has received
+-0.3010 meats test them
+-0.3010 meats the radiation
+-0.3010 medical assistance </s>
+-0.3010 medieval society was
+-0.3010 meeting at two
+-0.3010 meow always hurts
+-0.3010 merit others are
+-0.3010 michael colored the
+-0.3010 military personnel are
+-0.3010 military services </s>
+-0.3010 milk each weekday
+-0.3010 milk production may
+-0.3010 misquote was retracted
+-0.3010 modeling clay red
+-0.3010 mom strongly dislikes
+-0.3010 money by working
+-0.3010 money for such
+-0.3010 money in his
+-0.3010 months to spend
+-0.3010 mopped thick black
+-0.3010 more annoying each
+-0.3010 more generous there
+-0.3010 more latent than
+-0.3010 more money by
+-0.3010 morning dew on
+-0.3010 most accomplished artists
+-0.3010 much study </s>
+-0.3010 muscular abdomen is
+-0.3010 musicians harmonize marvelously
+-0.3010 must be paid
+-0.3010 my audits </s>
+-0.3010 my ears </s>
+-0.3010 my potatoes up
+-0.3010 nearest synagogue may
+-0.3010 need for welfare
+-0.3010 need of justification
+-0.3010 needed black gloves
+-0.3010 neglect the poor
+-0.3010 negotiations the industry
+-0.3010 never did </s>
+-0.3010 never himself done
+-0.3010 new product development
+-0.3010 newspaper reviewers like
+-0.3010 nice months to
+-0.3010 nightly increases strength
+-0.3010 no bones and
+-0.6021 no need for
+-0.6021 no need of
+-0.3010 no return address
+-0.3010 no the man
+-0.3010 noise problem grows
+-0.6021 not be the
+-0.6021 not be within
+-0.3010 not buy these
+-0.3010 not carry a
+-0.3010 not drunk he
+-0.3010 novel is a
+-0.3010 now and we
+-0.3010 now may not
+-0.3010 now the job
+-0.3010 nuclear effects </s>
+-0.3010 oasis was a
+-0.3010 obey government orders
+-0.3010 objects made of
+-0.3010 obtain popularity </s>
+-0.3010 occasionally reads the
+-0.7782 of a centrifuge
+-0.7782 of a cigarette
+-0.7782 of a heating
+-0.3010 of cutting back
+-0.3010 of fashion this
+-0.3010 of gas </s>
+-0.3010 of justification by
+-0.3010 of lentils in
+-0.3010 of meat has
+-0.3010 of new product
+-0.3010 of people will
+-0.3010 of pewter are
+-0.3010 of potatoes </s>
+-0.3010 of the small
+-0.3010 of these speculations
+-0.3010 of this drug
+-0.3010 of us has
+-0.3010 often be flimsy
+-0.3010 often curious often
+-0.3010 often tempted to
+-0.3010 oil when you
+-0.3010 oldsters are a
+-0.3010 on halloween </s>
+-0.3010 on hierarchies </s>
+-0.3010 on his upper
+-1.0000 on the hook
+-1.0000 on the spider
+-1.0000 on the steep
+-1.0000 on the surface
+-1.0000 on the twelfth
+-0.3010 on those ropes
+-0.3010 on thursdays </s>
+-0.3010 one feels that
+-0.3010 one for any
+-0.3010 one gallon of
+-0.3010 one huge paw
+-0.3010 one section we
+-0.3010 only after much
+-0.3010 only lawyers love
+-0.3010 only the most
+-0.3010 or buff </s>
+-0.3010 or cutting into
+-0.3010 or lower than
+-0.3010 or worry over
+-0.3010 organizations promote birth
+-0.3010 oriental rug </s>
+-0.3010 others are somewhat
+-0.3010 our boots on
+-0.3010 our oriental rug
+-0.3010 out of fashion
+-0.3010 outgrew her upbringing
+-0.3010 over silly items
+-0.3010 over the living
+-0.3010 overlooked the ocean
+-0.3010 own a big
+-0.3010 palm fan </s>
+-0.3010 pam gives driving
+-0.3010 paper and leaves
+-0.3010 papered over the
+-0.3010 paramagnetic from nuclear
+-0.3010 parental approval for
+-0.3010 parenthood organizations promote
+-0.3010 particularly informative for
+-0.3010 past unusual </s>
+-0.3010 peck of potatoes
+-0.3010 people were more
+-0.3010 people will roam
+-0.3010 personnel are expected
+-0.3010 pewter are beautiful
+-0.3010 phony accusations at
+-0.3010 pick a peck
+-0.3010 piece should fail
+-0.3010 planned parenthood organizations
+-0.3010 played tag with
+-0.3010 plays nihilistic </s>
+-0.3010 please dig my
+-0.3010 please take this
+-0.3010 politics and had
+-0.3010 pond and sketched
+-0.3010 popular item on
+-0.3010 possible to separate
+-0.3010 potatoes up before
+-0.3010 pressure changes </s>
+-0.3010 prestige he occasionally
+-0.3010 pretty in autumn
+-0.3010 pretty soon a
+-0.3010 prime target </s>
+-0.3010 problem grows more
+-0.3010 problem was diagnosed
+-0.3010 proceeding too slowly
+-0.3010 processing of meat
+-0.3010 product development </s>
+-0.3010 production may be
+-0.3010 products are unevenly
+-0.3010 project development was
+-0.3010 promote birth control
+-0.3010 properties of this
+-0.3010 props were two
+-0.3010 prospect of cutting
+-0.3010 prospective buyer </s>
+-0.3010 protected by zoning
+-0.3010 pulsing glow of
+-0.3010 puncturing or cutting
+-0.3010 put the worm
+-0.3010 question from the
+-0.3010 questions but he
+-0.3010 radiation processing of
+-0.3010 radiosterilization resides in
+-0.3010 rail fences and
+-0.3010 ralph controlled the
+-0.3010 rare lie </s>
+-0.3010 rather not buy
+-0.3010 rationalize all errors
+-0.3010 reads the wall
+-0.3010 received extensive investigation
+-0.3010 rector was often
+-0.3010 red cashmere sweater
+-0.3010 red white or
+-0.3010 refused treatment </s>
+-0.3010 related to my
+-0.3010 remained augmented by
+-0.3010 remote countryside </s>
+-0.3010 rent must be
+-0.3010 rented the rent
+-0.3010 requires parental approval
+-0.3010 rescue hostages from
+-0.3010 resides in the
+-0.3010 retracted with an
+-0.3010 return address whatsoever
+-0.3010 review every formula
+-0.3010 reviewers like to
+-0.3010 ride the subway
+-0.3010 rifle fast and
+-0.3010 right hand aches
+-0.3010 right now may
+-0.3010 roam the streets
+-0.3010 rob sat by
+-0.3010 robin wear a
+-0.3010 roger's tooth fell
+-0.3010 room murals </s>
+-0.3010 ropes the boat's
+-0.3010 rubbed his eyes
+-0.3010 run the first
+-0.3010 rural areas are
+-0.3010 said patiently </s>
+-0.3010 said sharks have
+-0.3010 sailors any more
+-0.3010 salvation reconsidered </s>
+-0.3010 sat by the
+-0.3010 saw them always
+-0.6021 say that his
+-0.6021 say that oldsters
+-0.3010 second twitched his
+-0.3010 section we welcomed
+-0.3010 seemed to have
+-0.3010 sense only after
+-0.3010 separate electron paramagnetic
+-0.3010 serve the coleslaw
+-0.3010 several dozen lunchroom
+-0.3010 shampooed our oriental
+-0.3010 sharks have no
+-0.3010 shaving cream is
+-0.3010 she is thinner
+-0.3010 she said sharks
+-0.3010 she slipped and
+-0.3010 she wake him
+-0.3010 she wore warm
+-0.3010 shellfish for a
+-0.3010 ships are very
+-0.3010 shirtsleeve and he
+-0.3010 shoes than be
+-0.3010 short hard laugh
+-0.3010 should avoid exposure
+-0.3010 should fail </s>
+-0.3010 should she wake
+-0.3010 shoulder felt as
+-0.3010 shrimp swam backward
+-0.3010 silly items </s>
+-0.3010 silverware can often
+-0.3010 sing if fortune
+-0.3010 single union </s>
+-0.3010 six days after
+-0.3010 sketched the stray
+-0.3010 slapped their thighs
+-0.3010 sleepily with one
+-0.3010 sleeping pill </s>
+-0.3010 slipped and sprained
+-0.3010 slow now and
+-0.3010 small boy put
+-0.3010 small lake </s>
+-0.3010 smiles upon you
+-0.3010 snake rail fences
+-0.3010 so many sailors
+-0.3010 social system are
+-0.3010 society was based
+-0.3010 soft job and
+-0.3010 solve extra problems
+-0.3010 some expensive perfume
+-0.3010 some merit others
+-0.3010 some of these
+-0.3010 somewhat ambiguous </s>
+-0.3010 soon a woman
+-0.3010 soothed by the
+-0.3010 special task forces
+-0.3010 speculations may have
+-0.3010 spend in miami
+-0.3010 spending is an
+-0.3010 spider web glistened
+-0.3010 spilled some expensive
+-0.3010 spinach nightly increases
+-0.3010 sprained her ankle
+-0.3010 steep slope </s>
+-0.3010 stepladders a chair
+-0.3010 steve wore a
+-0.3010 stockings run the
+-0.3010 stole a dime
+-0.3010 stopwatch from the
+-0.3010 straw hats are
+-0.3010 stray geese </s>
+-0.3010 streamlined rifle fast
+-0.3010 street journal </s>
+-0.3010 streets in costumes
+-0.3010 strength miraculously </s>
+-0.3010 strongly dislikes appetizers
+-0.3010 structural and functional
+-0.3010 subway but i
+-0.3010 such cases were
+-0.3010 such garbage </s>
+-0.3010 such it was
+-0.3010 superb sleeping pill
+-0.3010 supervision is noteworthy
+-0.3010 surface of the
+-0.3010 swam backward </s>
+-0.3010 swarmed around the
+-0.3010 swing your arm
+-0.3010 synagogue may not
+-0.3010 system are the
+-0.3010 system part </s>
+-0.3010 table cloth to
+-0.3010 tag with beach
+-0.3010 take this dirty
+-0.3010 task forces rescue
+-0.3010 teeth strong </s>
+-0.3010 tempo of new
+-0.3010 tempted to ask
+-0.3010 test them </s>
+-0.3010 than be overcharged
+-0.3010 than i am
+-0.6021 than in electricity
+-0.6021 than in magnetism
+-0.3010 than nancy's </s>
+-0.3010 that diagram makes
+-0.3010 that guard for
+-0.3010 that he refused
+-0.3010 that his problem
+-0.3010 that magnetic forces
+-0.3010 that noise problem
+-0.3010 that oldsters are
+-0.3010 that one feels
+-0.3010 the acropolis all
+-0.3010 the answer </s>
+-0.3010 the anti infective
+-0.3010 the barometric pressure
+-0.3010 the bedroom wall
+-0.6021 the best time
+-0.6021 the best way
+-0.3010 the bleachers </s>
+-0.3010 the boat's come
+-0.3010 the bowl of
+-0.3010 the breakdown of
+-0.3010 the carpet cleaners
+-0.3010 the cat's meow
+-0.3010 the causeway ended
+-0.3010 the cleaners for
+-0.3010 the clumsy customer
+-0.3010 the coleslaw after
+-0.3010 the cranberry bog
+-0.3010 the dome fell
+-0.3010 the downpour </s>
+-0.3010 the emblem depicts
+-0.3010 the farm is
+-0.3010 the farmyard </s>
+-0.3010 the first time
+-0.3010 the fish began
+-0.3010 the flood </s>
+-0.3010 the gloom </s>
+-0.3010 the gunman kept
+-0.3010 the hook </s>
+-0.3010 the industry bargains
+-0.3010 the ingredients in
+-0.3010 the job was
+-0.3010 the larger social
+-0.3010 the litter remained
+-0.3010 the living room
+-0.3010 the luxurious massage
+-0.3010 the man was
+-0.3010 the military services
+-0.3010 the misquote was
+-0.3010 the morning dew
+-0.3010 the most accomplished
+-0.3010 the nearest synagogue
+-0.3010 the oasis was
+-0.3010 the ocean </s>
+-0.3010 the oil </s>
+-0.3010 the past unusual
+-0.3010 the pond and
+-0.3010 the poor </s>
+-0.3010 the prospect of
+-0.3010 the pulsing glow
+-0.3010 the question from
+-0.3010 the radiation processing
+-0.3010 the remote countryside
+-0.3010 the rent must
+-0.3010 the ships are
+-0.3010 the shore </s>
+-0.6021 the small boy
+-0.6021 the small lake
+-0.3010 the spider web
+-0.3010 the steep slope
+-0.3010 the stopwatch from
+-0.3010 the stray geese
+-0.3010 the streets in
+-0.3010 the structural and
+-0.3010 the subway but
+-0.3010 the sun </s>
+-0.3010 the surface of
+-0.3010 the tooth fairy
+-0.3010 the twelfth day
+-0.3010 the unlimited expense
+-0.3010 the viewpoint overlooked
+-0.3010 the wall street
+-0.3010 the worm on
+-0.3010 their props were
+-0.3010 their thighs </s>
+-0.3010 them always together
+-0.3010 there forces are
+-0.3010 there were grazing
+-0.3010 there would be
+-0.3010 these approximated what
+-0.3010 these shoes than
+-0.3010 these speculations may
+-0.3010 they enjoy it
+-0.3010 they had slapped
+-0.3010 they make us
+-0.3010 they own a
+-0.3010 they were </s>
+-0.3010 they're worn </s>
+-0.3010 thick black bread
+-0.3010 thinner than i
+-0.3010 this brochure is
+-0.3010 this dirty table
+-0.3010 this drug </s>
+-0.3010 this one section
+-0.3010 this stranger </s>
+-0.3010 this trend was
+-0.3010 this year </s>
+-0.3010 those musicians harmonize
+-0.3010 those ropes the
+-0.3010 those years </s>
+-0.3010 thought we would
+-0.3010 thought you argued
+-0.3010 three hours </s>
+-0.7782 through the downpour
+-0.7782 through the farmyard
+-0.7782 through the gloom
+-0.3010 thursday's exam review
+-0.3010 tied up with
+-0.3010 time for business
+-0.3010 time they're worn
+-0.3010 to ask questions
+-0.6021 to be completely
+-0.6021 to be hated
+-0.3010 to call his
+-0.3010 to come when
+-0.3010 to contagious diseases
+-0.3010 to cook without
+-0.3010 to further his
+-0.3010 to have money
+-0.3010 to leap frantically
+-0.3010 to learn is
+-0.3010 to many experts
+-0.3010 to my audits
+-0.3010 to obey government
+-0.3010 to pick a
+-0.3010 to separate electron
+-0.3010 to solve extra
+-0.3010 to spend in
+-0.3010 to the cleaners
+-0.3010 to work without
+-0.3010 together those years
+-0.3010 tomorrow have her
+-0.3010 too slowly </s>
+-0.3010 tooth fairy forgot
+-0.3010 tooth fell out
+-0.3010 tradition requires parental
+-0.3010 trembled lest his
+-0.3010 trend was inevitable
+-0.3010 trish played tag
+-0.3010 tropical reptiles </s>
+-0.3010 twelfth day we'll
+-0.3010 twilight on the
+-0.3010 twitched his shirtsleeve
+-0.3010 two stepladders a
+-0.3010 umbrella as a
+-0.3010 under age marriage
+-0.3010 unevenly distributed </s>
+-0.3010 unit with a
+-0.3010 unlimited expense account
+-0.3010 unpleasant one for
+-0.3010 untimely income loss
+-0.3010 up before frost
+-0.3010 up with this
+-0.3010 upbringing in petticoats
+-0.3010 upon you </s>
+-0.3010 upper arm </s>
+-0.3010 us conformists look
+-0.3010 us has </s>
+-0.3010 use mine </s>
+-0.3010 useful in seattle
+-0.3010 very pretty in
+-0.3010 very slow now
+-0.3010 very useful in
+-0.3010 victim cornered at
+-0.3010 viewpoint overlooked the
+-0.3010 visually these approximated
+-0.3010 wage negotiations the
+-0.3010 wake him </s>
+-0.3010 walking distance </s>
+-0.3010 walking stick </s>
+-0.3010 wall street journal
+-0.3010 wall with crayons
+-0.3010 warm fleecy woolen
+-0.3010 was a mirage
+-0.3010 was based on
+-0.3010 was beyond politics
+-0.3010 was bounded by
+-0.3010 was diagnosed but
+-0.3010 was feeling within
+-0.3010 was gone and
+-0.3010 was in custody
+-0.3010 was inevitable </s>
+-0.3010 was not drunk
+-0.3010 was often curious
+-0.3010 was proceeding too
+-0.3010 was retracted with
+-0.3010 was soothed by
+-0.3010 was stranded </s>
+-0.3010 way to learn
+-0.3010 we always thought
+-0.3010 we can get
+-0.3010 we dig he
+-0.3010 we don't get
+-0.3010 we may say
+-0.3010 we welcomed auditors
+-0.3010 we were away
+-0.3010 we would die
+-0.3010 we'll have chablis
+-0.3010 wear a yellow
+-0.3010 weatherproof galoshes are
+-0.3010 web glistened in
+-0.3010 weekday morning </s>
+-0.3010 welcomed auditors </s>
+-0.3010 well made </s>
+-0.3010 were away </s>
+-0.3010 were broken </s>
+-0.3010 were captured in
+-0.3010 were grazing cattle
+-0.3010 were in the
+-0.3010 were more generous
+-0.3010 were two stepladders
+-0.3010 were you while
+-0.3010 what eyes they
+-0.3010 what he was
+-0.3010 when i audition
+-0.3010 when roger's tooth
+-0.3010 when you always
+-0.3010 whenever the barometric
+-0.3010 where were you
+-0.3010 which he mopped
+-0.3010 which of us
+-0.3010 which to be
+-0.3010 while he was
+-0.3010 while we were
+-0.3010 white or buff
+-0.3010 who authorized the
+-0.3010 why buy oil
+-0.3010 why charge money
+-0.3010 why yell or
+-0.3010 wife divorced him
+-0.3010 will allow a
+-0.3010 will become generals
+-0.3010 will roam the
+-0.3010 will robin wear
+-0.3010 windows glowed jewel
+-0.3010 with a single
+-0.3010 with an apology
+-0.3010 with beach balls
+-0.3010 with crayons </s>
+-0.3010 with one huge
+-0.3010 with our boots
+-0.3010 with the breakdown
+-0.3010 with this stranger
+-0.3010 withdraw all phony
+-0.3010 within himself </s>
+-0.3010 within the larger
+-0.3010 within walking distance
+-0.3010 without fancy tablecloths
+-0.3010 without sugar </s>
+-0.3010 without supervision is
+-0.3010 woman came along
+-0.3010 wondered how he
+-0.3010 woolen overalls </s>
+-0.3010 wore a bright
+-0.3010 wore warm fleecy
+-0.3010 work began just
+-0.3010 work without supervision
+-0.3010 working hard </s>
+-0.3010 worm on the
+-0.3010 worry over silly
+-0.3010 would be no
+-0.3010 would die with
+-0.3010 would not carry
+-0.3010 years later the
+-0.3010 yell or worry
+-0.3010 yellow lily </s>
+-0.3010 you always use
+-0.3010 you argued in
+-0.3010 you buy any
+-0.3010 you can </s>
+-0.3010 you don't eat
+-0.3010 you looking for
+-0.3010 you saw them
+-0.3010 you while we
+-0.3010 young children should
+-0.3010 youngsters love common
+-0.3010 your arm as
+-0.3010 your back </s>
+-0.3010 your endurance </s>
+-0.3010 your grades higher
+
+\end\

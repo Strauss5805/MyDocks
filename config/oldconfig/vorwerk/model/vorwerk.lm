@@ -1,0 +1,593 @@
+Language model created by QuickLM on Mon Nov 16 10:50:01 CET 2015
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 112 sentences and 130 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=130
+ngram 2=252
+ngram 3=192
+
+\1-grams:
+-0.8782 </s> -0.3010
+-0.8782 <s> -0.2156
+-2.9274 allspice -0.2394
+-2.9274 and -0.3000
+-2.9274 apples -0.2394
+-2.9274 aubergines -0.2394
+-2.9274 avocado -0.2394
+-2.9274 bacon -0.3000
+-2.9274 balsamic -0.3000
+-2.9274 basil -0.2394
+-2.9274 bay -0.3005
+-2.9274 beans -0.2394
+-2.9274 beef -0.3000
+-2.6263 berries -0.2394
+-2.6263 black -0.2995
+-2.6263 bread -0.2382
+-2.6263 butter -0.2394
+-2.9274 buttermilk -0.2394
+-2.9274 button -0.3005
+-2.9274 cabbage -0.2394
+-2.9274 canned -0.3005
+-2.9274 carrots -0.2394
+-2.9274 caster -0.2995
+-2.3253 cheese -0.2394
+-2.9274 cherry -0.2990
+-2.3253 chilli -0.2376
+-2.9274 chocolate -0.2394
+-2.9274 chopped -0.2990
+-2.9274 clove -0.2394
+-2.6263 coriander -0.2394
+-2.9274 cornflour -0.2394
+-2.9274 courgettes -0.2394
+-2.6263 cream -0.2370
+-2.9274 creme -0.3005
+-2.9274 cress -0.2394
+-2.6263 cube -0.2394
+-2.6263 cubes -0.2394
+-2.9274 cucumber -0.2394
+-2.6263 dry -0.2985
+-2.6263 egg -0.2985
+-2.9274 eggplant -0.2394
+-2.9274 eggs -0.2394
+-2.9274 extra -0.3005
+-2.6263 flour -0.2394
+-2.9274 fraiche -0.2394
+-2.1492 fresh -0.2922
+-2.9274 freshly -0.3000
+-2.6263 frozen -0.2964
+-2.6263 fruit -0.2394
+-2.6263 garlic -0.2388
+-2.9274 gherkins -0.2394
+-2.6263 grain -0.2959
+-2.6263 grains -0.2394
+-2.4502 green -0.2974
+-2.6263 ground -0.3000
+-2.9274 gruyere -0.2990
+-2.9274 herbs -0.2394
+-2.9274 honey -0.2394
+-2.9274 ice -0.3000
+-2.9274 in -0.2990
+-2.6263 juice -0.2394
+-2.9274 kidney -0.3005
+-2.9274 leaf -0.2394
+-2.9274 leek -0.2394
+-2.6263 lemon -0.2382
+-2.9274 lime -0.3000
+-2.6263 long -0.3000
+-2.9274 malt -0.3000
+-2.9274 marsala -0.2995
+-2.9274 mayonnaise -0.2394
+-2.9274 meat -0.2995
+-2.9274 milk -0.2394
+-2.6263 mince -0.2394
+-2.9274 mint -0.2394
+-2.3253 mixed -0.2964
+-2.9274 mozzarella -0.2394
+-2.9274 mushrooms -0.2394
+-2.9274 nutmeg -0.2394
+-2.3253 oil -0.2394
+-2.6263 olive -0.2990
+-2.9274 olives -0.2394
+-2.6263 onions -0.2394
+-2.9274 oregano -0.2394
+-2.9274 paprika -0.2394
+-2.9274 parboiled -0.2979
+-2.9274 parmesan -0.2990
+-2.6263 parsley -0.2394
+-2.9274 pasta -0.2394
+-2.9274 paste -0.2394
+-2.9274 peas -0.2394
+-2.4502 pepper -0.2394
+-2.6263 peppers -0.2394
+-2.9274 pickled -0.3005
+-2.9274 plum -0.2990
+-2.9274 potatoes -0.2394
+-2.6263 powder -0.2394
+-2.9274 puree -0.2394
+-2.9274 radishes -0.2394
+-2.1492 red -0.2943
+-2.1492 rice -0.2394
+-2.9274 risotto -0.2979
+-2.9274 salt -0.2394
+-2.9274 sauce -0.2394
+-2.9274 seeds -0.2394
+-2.9274 serrano -0.2990
+-2.9274 shallot -0.2394
+-2.9274 short-grain -0.2979
+-2.9274 spelt -0.3000
+-2.9274 spreadable -0.2990
+-2.4502 stock -0.2995
+-2.4502 sugar -0.2394
+-2.9274 sunflower -0.3005
+-2.9274 tomatoe -0.3005
+-2.3253 tomatoes -0.2394
+-2.9274 tuna -0.3005
+-2.9274 unsalted -0.3000
+-2.9274 vanilla -0.2995
+-2.9274 vannila -0.2394
+-2.9274 vegetable -0.2394
+-2.9274 vegetables -0.3005
+-2.9274 vetetable -0.2995
+-2.6263 vinegar -0.2394
+-2.9274 vinigar -0.2394
+-2.9274 virgin -0.3000
+-2.9274 water -0.2394
+-2.9274 wheat -0.3000
+-2.3253 white -0.2334
+-2.4502 wine -0.2382
+-2.6263 yeast -0.2394
+-2.9274 yolk -0.2394
+
+\2-grams:
+-2.3502 <s> allspice 0.0000
+-2.3502 <s> apples 0.0000
+-2.3502 <s> aubergines 0.0000
+-2.3502 <s> avocado 0.0000
+-2.3502 <s> bacon 0.0000
+-2.3502 <s> balsamic 0.0000
+-2.3502 <s> basil 0.0000
+-2.3502 <s> bay 0.0000
+-2.3502 <s> beef 0.0000
+-2.0492 <s> bread 0.0000
+-2.3502 <s> butter 0.0000
+-2.3502 <s> buttermilk 0.0000
+-2.3502 <s> button 0.0000
+-2.3502 <s> cabbage 0.0000
+-2.3502 <s> canned 0.0000
+-2.3502 <s> carrots 0.0000
+-2.3502 <s> caster 0.0000
+-2.3502 <s> cherry 0.0000
+-2.3502 <s> chilli -0.2430
+-2.3502 <s> chocolate 0.0000
+-2.3502 <s> chopped 0.0000
+-2.3502 <s> coriander 0.0000
+-2.3502 <s> cornflour 0.0000
+-2.3502 <s> courgettes 0.0000
+-2.0492 <s> cream 0.0000
+-2.3502 <s> creme 0.0000
+-2.3502 <s> cress 0.0000
+-2.3502 <s> cucumber 0.0000
+-2.0492 <s> dry 0.0000
+-2.0492 <s> egg 0.0000
+-2.3502 <s> eggplant 0.0000
+-2.3502 <s> eggs 0.0000
+-2.3502 <s> extra 0.0000
+-2.3502 <s> flour 0.0000
+-1.7482 <s> fresh -0.1249
+-2.3502 <s> freshly 0.0000
+-2.3502 <s> frozen -0.1761
+-2.0492 <s> garlic 0.0000
+-2.3502 <s> green -0.2218
+-2.3502 <s> ground 0.0000
+-2.3502 <s> gruyere 0.0000
+-2.3502 <s> herbs 0.0000
+-2.3502 <s> honey 0.0000
+-2.3502 <s> ice 0.0000
+-2.3502 <s> kidney 0.0000
+-2.3502 <s> leek 0.0000
+-2.0492 <s> lemon 0.0000
+-2.3502 <s> lime 0.0000
+-2.0492 <s> long 0.0000
+-2.3502 <s> malt 0.0000
+-2.3502 <s> mayonnaise 0.0000
+-2.3502 <s> meat 0.0000
+-2.3502 <s> milk 0.0000
+-2.3502 <s> mince 0.0000
+-2.3502 <s> mint 0.0000
+-1.7482 <s> mixed 0.0000
+-2.3502 <s> mozzarella 0.0000
+-2.3502 <s> nutmeg 0.0000
+-2.3502 <s> oil 0.0000
+-2.3502 <s> olive 0.0000
+-2.3502 <s> olives 0.0000
+-2.3502 <s> onions 0.0000
+-2.3502 <s> oregano 0.0000
+-2.3502 <s> paprika 0.0000
+-2.3502 <s> parboiled 0.0000
+-2.3502 <s> parmesan 0.0000
+-2.3502 <s> parsley 0.0000
+-2.3502 <s> pasta 0.0000
+-2.3502 <s> pepper 0.0000
+-2.3502 <s> pickled 0.0000
+-2.3502 <s> plum 0.0000
+-2.3502 <s> potatoes 0.0000
+-2.3502 <s> radishes 0.0000
+-1.7482 <s> red -0.1249
+-2.3502 <s> rice 0.0000
+-2.3502 <s> risotto 0.0000
+-2.3502 <s> salt 0.0000
+-2.3502 <s> serrano 0.0000
+-2.3502 <s> shallot 0.0000
+-2.3502 <s> spelt 0.0000
+-2.3502 <s> spreadable 0.0000
+-2.3502 <s> stock -0.1249
+-2.3502 <s> sugar 0.0000
+-2.3502 <s> sunflower 0.0000
+-2.3502 <s> tomatoe 0.0000
+-2.3502 <s> tomatoes 0.0000
+-2.3502 <s> unsalted 0.0000
+-2.3502 <s> vanilla 0.0000
+-2.3502 <s> vannila 0.0000
+-2.3502 <s> vegetable 0.0000
+-2.3502 <s> vetetable 0.0000
+-2.3502 <s> vinigar 0.0000
+-2.3502 <s> water 0.0000
+-2.3502 <s> wheat 0.0000
+-2.3502 <s> white -0.2430
+-2.3502 <s> yeast 0.0000
+-0.3010 allspice </s> -0.3010
+-0.3010 and fruit 0.0000
+-0.3010 apples </s> -0.3010
+-0.3010 aubergines </s> -0.3010
+-0.3010 avocado </s> -0.3010
+-0.3010 bacon cubes 0.0000
+-0.3010 balsamic vinegar 0.0000
+-0.3010 basil </s> -0.3010
+-0.3010 bay leaf 0.0000
+-0.3010 beans </s> -0.3010
+-0.3010 beef mince 0.0000
+-0.3010 berries </s> -0.3010
+-0.3010 black pepper 0.0000
+-0.6021 bread </s> -0.3010
+-0.6021 bread flour 0.0000
+-0.3010 butter </s> -0.3010
+-0.3010 buttermilk </s> -0.3010
+-0.3010 button mushrooms 0.0000
+-0.3010 cabbage </s> -0.3010
+-0.3010 canned tuna 0.0000
+-0.3010 carrots </s> -0.3010
+-0.3010 caster sugar 0.0000
+-0.3010 cheese </s> -0.3010
+-0.3010 cherry tomatoes 0.0000
+-0.6021 chilli </s> -0.3010
+-0.9031 chilli powder 0.0000
+-0.9031 chilli sauce 0.0000
+-0.3010 chocolate </s> -0.3010
+-0.3010 chopped tomatoes 0.0000
+-0.3010 clove </s> -0.3010
+-0.3010 coriander </s> -0.3010
+-0.3010 cornflour </s> -0.3010
+-0.3010 courgettes </s> -0.3010
+-0.6021 cream </s> -0.3010
+-0.6021 cream cheese 0.0000
+-0.3010 creme fraiche 0.0000
+-0.3010 cress </s> -0.3010
+-0.3010 cube </s> -0.3010
+-0.3010 cubes </s> -0.3010
+-0.3010 cucumber </s> -0.3010
+-0.6021 dry marsala 0.0000
+-0.6021 dry white -0.2430
+-0.6021 egg white -0.2430
+-0.6021 egg yolk 0.0000
+-0.3010 eggplant </s> -0.3010
+-0.3010 eggs </s> -0.3010
+-0.3010 extra virgin 0.0000
+-0.3010 flour </s> -0.3010
+-0.3010 fraiche </s> -0.3010
+-1.0792 fresh coriander 0.0000
+-1.0792 fresh fruit 0.0000
+-1.0792 fresh green -0.2218
+-1.0792 fresh parsley 0.0000
+-1.0792 fresh red -0.2218
+-1.0792 fresh yeast 0.0000
+-0.3010 freshly ground 0.0000
+-0.6021 frozen green -0.2218
+-0.6021 frozen red -0.2218
+-0.3010 fruit </s> -0.3010
+-0.6021 garlic </s> -0.3010
+-0.6021 garlic clove 0.0000
+-0.3010 gherkins </s> -0.3010
+-0.6021 grain rice 0.0000
+-0.6021 grain white -0.2430
+-0.3010 grains </s> -0.3010
+-0.7782 green chilli -0.1761
+-0.7782 green peas 0.0000
+-0.7782 green peppers 0.0000
+-0.3010 ground black 0.0000
+-0.3010 gruyere cheese 0.0000
+-0.3010 herbs </s> -0.3010
+-0.3010 honey </s> -0.3010
+-0.3010 ice cubes 0.0000
+-0.3010 in oil 0.0000
+-0.3010 juice </s> -0.3010
+-0.3010 kidney beans 0.0000
+-0.3010 leaf </s> -0.3010
+-0.3010 leek </s> -0.3010
+-0.6021 lemon </s> -0.3010
+-0.6021 lemon juice 0.0000
+-0.3010 lime juice 0.0000
+-0.3010 long grain 0.0000
+-0.3010 malt powder 0.0000
+-0.3010 marsala wine -0.1249
+-0.3010 mayonnaise </s> -0.3010
+-0.3010 meat stock -0.2218
+-0.3010 milk </s> -0.3010
+-0.3010 mince </s> -0.3010
+-0.3010 mint </s> -0.3010
+-0.6021 mixed fresh -0.2218
+-0.9031 mixed frozen -0.1761
+-0.9031 mixed vegetables 0.0000
+-0.3010 mozzarella </s> -0.3010
+-0.3010 mushrooms </s> -0.3010
+-0.3010 nutmeg </s> -0.3010
+-0.3010 oil </s> -0.3010
+-0.3010 olive oil 0.0000
+-0.3010 olives </s> -0.3010
+-0.3010 onions </s> -0.3010
+-0.3010 oregano </s> -0.3010
+-0.3010 paprika </s> -0.3010
+-0.3010 parboiled rice 0.0000
+-0.3010 parmesan cheese 0.0000
+-0.3010 parsley </s> -0.3010
+-0.3010 pasta </s> -0.3010
+-0.3010 paste </s> -0.3010
+-0.3010 peas </s> -0.3010
+-0.3010 pepper </s> -0.3010
+-0.3010 peppers </s> -0.3010
+-0.3010 pickled gherkins 0.0000
+-0.3010 plum tomatoes 0.0000
+-0.3010 potatoes </s> -0.3010
+-0.3010 powder </s> -0.3010
+-0.3010 puree </s> -0.3010
+-0.3010 radishes </s> -0.3010
+-0.7782 red berries 0.0000
+-1.0792 red chilli -0.2430
+-1.0792 red onions 0.0000
+-1.0792 red peppers 0.0000
+-1.0792 red wine -0.2218
+-0.3010 rice </s> -0.3010
+-0.3010 risotto rice 0.0000
+-0.3010 salt </s> -0.3010
+-0.3010 sauce </s> -0.3010
+-0.3010 seeds </s> -0.3010
+-0.3010 serrano chilli -0.1761
+-0.3010 shallot </s> -0.3010
+-0.3010 short-grain rice 0.0000
+-0.3010 spelt grains 0.0000
+-0.3010 spreadable cheese 0.0000
+-0.4771 stock cube 0.0000
+-0.7782 stock paste 0.0000
+-0.3010 sugar </s> -0.3010
+-0.3010 sunflower seeds 0.0000
+-0.3010 tomatoe puree 0.0000
+-0.3010 tomatoes </s> -0.3010
+-0.3010 tuna in 0.0000
+-0.3010 unsalted butter 0.0000
+-0.3010 vanilla sugar 0.0000
+-0.3010 vannila </s> -0.3010
+-0.3010 vegetable </s> -0.3010
+-0.3010 vegetables and 0.0000
+-0.3010 vetetable stock -0.1249
+-0.3010 vinegar </s> -0.3010
+-0.3010 vinigar </s> -0.3010
+-0.3010 virgin olive 0.0000
+-0.3010 water </s> -0.3010
+-0.3010 wheat grains 0.0000
+-0.9031 white </s> -0.3010
+-0.9031 white rice 0.0000
+-0.9031 white short-grain 0.0000
+-0.9031 white wine -0.1249
+-0.4771 wine </s> -0.3010
+-0.7782 wine vinegar 0.0000
+-0.3010 yeast </s> -0.3010
+-0.3010 yolk </s> -0.3010
+
+\3-grams:
+-0.3010 <s> allspice </s>
+-0.3010 <s> apples </s>
+-0.3010 <s> aubergines </s>
+-0.3010 <s> avocado </s>
+-0.3010 <s> bacon cubes
+-0.3010 <s> balsamic vinegar
+-0.3010 <s> basil </s>
+-0.3010 <s> bay leaf
+-0.3010 <s> beef mince
+-0.6021 <s> bread </s>
+-0.6021 <s> bread flour
+-0.3010 <s> butter </s>
+-0.3010 <s> buttermilk </s>
+-0.3010 <s> button mushrooms
+-0.3010 <s> cabbage </s>
+-0.3010 <s> canned tuna
+-0.3010 <s> carrots </s>
+-0.3010 <s> caster sugar
+-0.3010 <s> cherry tomatoes
+-0.3010 <s> chilli powder
+-0.3010 <s> chocolate </s>
+-0.3010 <s> chopped tomatoes
+-0.3010 <s> coriander </s>
+-0.3010 <s> cornflour </s>
+-0.3010 <s> courgettes </s>
+-0.6021 <s> cream </s>
+-0.6021 <s> cream cheese
+-0.3010 <s> creme fraiche
+-0.3010 <s> cress </s>
+-0.3010 <s> cucumber </s>
+-0.6021 <s> dry marsala
+-0.6021 <s> dry white
+-0.6021 <s> egg white
+-0.6021 <s> egg yolk
+-0.3010 <s> eggplant </s>
+-0.3010 <s> eggs </s>
+-0.3010 <s> extra virgin
+-0.3010 <s> flour </s>
+-0.9031 <s> fresh coriander
+-0.9031 <s> fresh green
+-0.9031 <s> fresh parsley
+-0.9031 <s> fresh yeast
+-0.3010 <s> freshly ground
+-0.3010 <s> frozen green
+-0.6021 <s> garlic </s>
+-0.6021 <s> garlic clove
+-0.3010 <s> green peppers
+-0.3010 <s> ground black
+-0.3010 <s> gruyere cheese
+-0.3010 <s> herbs </s>
+-0.3010 <s> honey </s>
+-0.3010 <s> ice cubes
+-0.3010 <s> kidney beans
+-0.3010 <s> leek </s>
+-0.6021 <s> lemon </s>
+-0.6021 <s> lemon juice
+-0.3010 <s> lime juice
+-0.3010 <s> long grain
+-0.3010 <s> malt powder
+-0.3010 <s> mayonnaise </s>
+-0.3010 <s> meat stock
+-0.3010 <s> milk </s>
+-0.3010 <s> mince </s>
+-0.3010 <s> mint </s>
+-0.6021 <s> mixed fresh
+-0.9031 <s> mixed frozen
+-0.9031 <s> mixed vegetables
+-0.3010 <s> mozzarella </s>
+-0.3010 <s> nutmeg </s>
+-0.3010 <s> oil </s>
+-0.3010 <s> olive oil
+-0.3010 <s> olives </s>
+-0.3010 <s> onions </s>
+-0.3010 <s> oregano </s>
+-0.3010 <s> paprika </s>
+-0.3010 <s> parboiled rice
+-0.3010 <s> parmesan cheese
+-0.3010 <s> parsley </s>
+-0.3010 <s> pasta </s>
+-0.3010 <s> pepper </s>
+-0.3010 <s> pickled gherkins
+-0.3010 <s> plum tomatoes
+-0.3010 <s> potatoes </s>
+-0.3010 <s> radishes </s>
+-0.9031 <s> red chilli
+-0.9031 <s> red onions
+-0.9031 <s> red peppers
+-0.9031 <s> red wine
+-0.3010 <s> rice </s>
+-0.3010 <s> risotto rice
+-0.3010 <s> salt </s>
+-0.3010 <s> serrano chilli
+-0.3010 <s> shallot </s>
+-0.3010 <s> spelt grains
+-0.3010 <s> spreadable cheese
+-0.3010 <s> stock cube
+-0.3010 <s> sugar </s>
+-0.3010 <s> sunflower seeds
+-0.3010 <s> tomatoe puree
+-0.3010 <s> tomatoes </s>
+-0.3010 <s> unsalted butter
+-0.3010 <s> vanilla sugar
+-0.3010 <s> vannila </s>
+-0.3010 <s> vegetable </s>
+-0.3010 <s> vetetable stock
+-0.3010 <s> vinigar </s>
+-0.3010 <s> water </s>
+-0.3010 <s> wheat grains
+-0.3010 <s> white short-grain
+-0.3010 <s> yeast </s>
+-0.3010 and fruit </s>
+-0.3010 bacon cubes </s>
+-0.3010 balsamic vinegar </s>
+-0.3010 bay leaf </s>
+-0.3010 beef mince </s>
+-0.3010 black pepper </s>
+-0.3010 bread flour </s>
+-0.3010 button mushrooms </s>
+-0.3010 canned tuna in
+-0.3010 caster sugar </s>
+-0.3010 cherry tomatoes </s>
+-0.3010 chilli powder </s>
+-0.3010 chilli sauce </s>
+-0.3010 chopped tomatoes </s>
+-0.3010 cream cheese </s>
+-0.3010 creme fraiche </s>
+-0.3010 dry marsala wine
+-0.3010 dry white wine
+-0.3010 egg white </s>
+-0.3010 egg yolk </s>
+-0.3010 extra virgin olive
+-0.3010 fresh coriander </s>
+-0.3010 fresh fruit </s>
+-0.3010 fresh green chilli
+-0.3010 fresh parsley </s>
+-0.3010 fresh red berries
+-0.3010 fresh yeast </s>
+-0.3010 freshly ground black
+-0.3010 frozen green peas
+-0.3010 frozen red berries
+-0.3010 garlic clove </s>
+-0.3010 grain rice </s>
+-0.3010 grain white rice
+-0.3010 green chilli </s>
+-0.3010 green peas </s>
+-0.3010 green peppers </s>
+-0.3010 ground black pepper
+-0.3010 gruyere cheese </s>
+-0.3010 ice cubes </s>
+-0.3010 in oil </s>
+-0.3010 kidney beans </s>
+-0.3010 lemon juice </s>
+-0.3010 lime juice </s>
+-0.6021 long grain rice
+-0.6021 long grain white
+-0.3010 malt powder </s>
+-0.3010 marsala wine </s>
+-0.3010 meat stock paste
+-0.6021 mixed fresh fruit
+-0.6021 mixed fresh red
+-0.3010 mixed frozen red
+-0.3010 mixed vegetables and
+-0.3010 olive oil </s>
+-0.3010 parboiled rice </s>
+-0.3010 parmesan cheese </s>
+-0.3010 pickled gherkins </s>
+-0.3010 plum tomatoes </s>
+-0.3010 red berries </s>
+-0.3010 red chilli sauce
+-0.3010 red onions </s>
+-0.3010 red peppers </s>
+-0.3010 red wine vinegar
+-0.3010 risotto rice </s>
+-0.3010 serrano chilli </s>
+-0.3010 short-grain rice </s>
+-0.3010 spelt grains </s>
+-0.3010 spreadable cheese </s>
+-0.3010 stock cube </s>
+-0.3010 stock paste </s>
+-0.3010 sunflower seeds </s>
+-0.3010 tomatoe puree </s>
+-0.3010 tuna in oil
+-0.3010 unsalted butter </s>
+-0.3010 vanilla sugar </s>
+-0.3010 vegetables and fruit
+-0.3010 vetetable stock cube
+-0.3010 virgin olive oil
+-0.3010 wheat grains </s>
+-0.3010 white rice </s>
+-0.3010 white short-grain rice
+-0.3010 white wine </s>
+-0.3010 wine vinegar </s>
+
+\end\

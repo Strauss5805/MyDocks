@@ -1,0 +1,143 @@
+,,,,,,,,,,,,
+semeval400small1.rounded_in_percent_with_empty_results,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time
+Google,,,,89.498,11.416,42.5,33,4,13,1,57.5,-36364649667
+Google Sentence List,,,,68.95,37.215,22.5,79,27,57,1,77.5,379
+Google Word List,,,,92.694,8.219,50,19,4,13,1,50,23
+Google Phoneme Unigram,0.2,0.5,0.4,59.589,48.63,0,156,36,21,0,100,132
+Google Phoneme Bi-Gram,2.35,4.35,0.54,72.603,33.562,12.5,66,27,54,1,87.5,161
+Google Phoneme FlatTri-Gram,1.9,5,0.38,81.05,28.082,17.5,57,40,26,0,82.5,285
+Google Phoneme LexTri-Gram,0.95,1.4,0.679,67.352,34.932,15,88,10,55,1,85,704
+Sphinx Bi-Gram,10.5,0.7,15,21.005,80.594,0,53,7,293,18,100,24307
+Sphinx Tri-Gram,10.5,0.7,15,21.689,79.909,5,51,7,292,18,95,22178
+Sphinx Sentence List,,,,21.233,80.594,7.5,45,8,300,18,92.5,166
+,,,,,,,,,,,,
+semeval400small2.rounded_in_percent_with_empty_results,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time
+Google,,,,90.3,10.855,42.5,37,5,5,0,57.5,-210
+Google Sentence List,,,,68.822,33.256,12.5,72,9,63,0,87.5,416
+Google Word List,,,,94.226,6.928,52.5,20,5,5,0,47.5,23
+Google Phoneme Unigram,0.2,0.5,0.4,60.97,44.804,0,151,25,18,0,100,118
+Google Phoneme Bi-Gram,2.35,4.35,0.54,72.979,32.102,15,56,22,61,0,85,144
+Google Phoneme FlatTri-Gram,1.9,5,0.38,83.603,22.402,27.5,42,26,29,0,72.5,284
+Google Phoneme LexTri-Gram,0.95,1.4,0.679,55.658,48.73,2.5,122,19,70,0,97.5,711
+Sphinx Bi-Gram,10.5,0.7,15,24.249,77.136,0,29,6,299,17,100,22324
+Sphinx Tri-Gram,10.5,0.7,15,24.249,77.136,0,29,6,299,17,100,20443
+Sphinx Sentence List,,,,18.707,81.986,2.5,46,3,306,17,97.5,126
+,,,,,,,,,,,,
+semeval400small3.rounded_in_percent_with_empty_results,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time
+Google,,,,92.873,7.343,42.5,29,1,4,0,57.5,-435
+Google Sentence List,,,,81.641,21.166,25,56,13,29,0,75,423
+Google Word List,,,,94.816,5.4,55,20,1,4,0,45,24
+Google Phoneme Unigram,0.2,0.5,0.4,60.907,45.572,0,164,30,17,0,100,142
+Google Phoneme Bi-Gram,2.35,4.35,0.54,81.641,20.302,30,43,9,42,0,70,170
+Google Phoneme FlatTri-Gram,1.9,5,0.38,90.281,12.095,35,36,11,9,0,65,313
+Google Phoneme LexTri-Gram,0.95,1.4,0.679,67.387,34.125,10,88,7,63,0,90,773
+Sphinx Bi-Gram,10.5,0.7,15,31.317,69.762,2.5,29,5,289,10,97.5,20050
+Sphinx Tri-Gram,10.5,0.7,15,32.181,68.251,2.5,28,2,286,10,97.5,18755
+Sphinx Sentence List,,,,30.886,69.546,12.5,40,2,280,10,87.5,184
+,,,,,,,,,,,,
+semeval400small4.rounded_in_percent_with_empty_results,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time
+Google,,,,92.813,8.125,42.5,39,6,7,0,57.5,92
+Google Sentence List,,,,80.156,22.656,20,67,18,60,0,80,654
+Google Word List,,,,94.219,7.656,50,24,12,13,0,50,32
+Google Phoneme Unigram,0.2,0.5,0.4,60.312,45.156,0,228,35,26,0,100,210
+Google Phoneme Bi-Gram,2.35,4.35,0.54,84.062,17.031,17.5,63,7,39,0,82.5,248
+Google Phoneme FlatTri-Gram,1.9,5,0.38,91.719,10.156,35,38,12,15,0,65,444
+Google Phoneme LexTri-Gram,0.95,1.4,0.679,65.625,35.156,2.5,114,5,106,0,97.5,1120
+Sphinx Bi-Gram,10.5,0.7,15,35,66.094,0,54,7,362,10,100,27430
+Sphinx Tri-Gram,10.5,0.7,15,35.781,65,0,52,5,359,10,100,25560
+Sphinx Sentence List,,,,30.937,69.063,7.5,61,0,381,10,92.5,366
+,,,,,,,,,,,,
+semeval400small5.rounded_in_percent_with_empty_results,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time
+Google,,,,95.136,5.447,65,21,3,4,0,35,17
+Google Sentence List,,,,83.852,20.428,20,64,22,19,0,80,464
+Google Word List,,,,95.914,4.669,67.5,17,3,4,0,32.5,27
+Google Phoneme Unigram,0.2,0.5,0.4,68.288,35.992,0,148,22,15,0,100,154
+Google Phoneme Bi-Gram,2.35,4.35,0.54,88.132,12.84,45,31,5,30,0,55,186
+Google Phoneme FlatTri-Gram,1.9,5,0.38,94.747,6.031,62.5,22,4,5,0,37.5,347
+Google Phoneme LexTri-Gram,0.95,1.4,0.679,63.23,37.938,0,109,6,80,0,100,857
+Sphinx Bi-Gram,10.5,0.7,15,50.195,53.113,7.5,53,17,203,6,92.5,23301
+Sphinx Tri-Gram,10.5,0.7,15,49.222,53.502,10,53,14,208,6,90,21867
+Sphinx Sentence List,,,,51.362,50.195,10,49,8,201,6,90,367
+,,,,,,,,,,,,
+semeval400small6.rounded_in_percent_with_empty_results,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time
+Google,,,,95.763,5.424,50,20,7,5,0,50,-102
+Google Sentence List,,,,84.068,18.305,17.5,64,14,30,0,82.5,610
+Google Word List,,,,96.102,5.085,50,18,7,5,0,50,32
+Google Phoneme Unigram,0.2,0.5,0.4,61.356,43.898,0,205,31,23,0,100,176
+Google Phoneme Bi-Gram,2.35,4.35,0.54,86.78,13.559,32.5,36,2,42,0,67.5,226
+Google Phoneme FlatTri-Gram,1.9,5,0.38,93.559,7.966,45,25,9,13,0,55,403
+Google Phoneme LexTri-Gram,0.95,1.4,0.679,64.068,36.949,5,115,6,97,0,95,963
+Sphinx Bi-Gram,10.5,0.7,15,50.508,51.864,2.5,66,14,226,6,97.5,21934
+Sphinx Tri-Gram,10.5,0.7,15,51.525,50.169,0,64,10,222,6,100,20876
+Sphinx Sentence List,,,,52.034,48.305,5,59,2,224,6,95,487
+,,,,,,,,,,,,
+semeval400small7.rounded_in_percent_with_empty_results,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time
+Google,,,,94.61,6.32,52.5,25,5,4,0,47.5,116
+Google Sentence List,,,,84.015,19.145,30,53,17,33,0,70,616
+Google Word List,,,,94.981,5.948,52.5,23,5,4,0,47.5,30
+Google Phoneme Unigram,0.2,0.5,0.4,60.037,43.866,0,183,21,32,0,100,167
+Google Phoneme Bi-Gram,2.35,4.35,0.54,86.245,14.312,37.5,44,3,30,0,62.5,217
+Google Phoneme FlatTri-Gram,1.9,5,0.38,92.193,8.922,47.5,33,6,9,0,52.5,371
+Google Phoneme LexTri-Gram,0.95,1.4,0.679,64.684,36.431,7.5,100,6,90,0,92.5,772
+Sphinx Bi-Gram,10.5,0.7,15,46.84,57.249,12.5,80,22,206,4,87.5,20945
+Sphinx Tri-Gram,10.5,0.7,15,47.955,55.204,12.5,70,17,210,4,87.5,20043
+Sphinx Sentence List,,,,53.346,47.398,22.5,52,4,199,4,77.5,471
+,,,,,,,,,,,,
+semeval400small8.rounded_in_percent_with_empty_results,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time
+Google,,,,84.277,16.352,50,36,2,14,1,50,-397
+Google Sentence List,,,,65.409,38.05,7.5,71,11,39,1,92.5,191
+Google Word List,,,,89.623,11.321,62.5,18,3,15,1,37.5,15
+Google Phoneme Unigram,0.2,0.5,0.4,59.748,50.943,2.5,114,34,14,0,97.5,73
+Google Phoneme Bi-Gram,2.35,4.35,0.54,64.465,44.34,5,60,28,53,1,95,94
+Google Phoneme FlatTri-Gram,1.9,5,0.38,74.528,38.679,10,51,42,30,0,90,193
+Google Phoneme LexTri-Gram,0.95,1.4,0.679,51.887,55.66,0,104,24,49,1,100,550
+Sphinx Bi-Gram,10.5,0.7,15,69.182,38.994,7.5,44,26,54,3,92.5,15943
+Sphinx Tri-Gram,10.5,0.7,15,72.327,34.277,10,37,21,51,3,90,14663
+Sphinx Sentence List,,,,58.491,47.17,7.5,72,18,60,3,92.5,293
+,,,,,,,,,,,,
+semeval400small9.rounded_in_percent_with_empty_results,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time
+Google,,,,88.345,13.054,47.5,25,6,25,1,52.5,316
+Google Sentence List,,,,77.156,25.408,22.5,58,11,40,1,77.5,301
+Google Word List,,,,91.608,9.79,62.5,11,6,25,1,37.5,20
+Google Phoneme Unigram,0.2,0.5,0.4,62.471,43.823,0,126,27,35,0,100,110
+Google Phoneme Bi-Gram,2.35,4.35,0.54,76.457,28.671,12.5,48,22,53,1,87.5,138
+Google Phoneme FlatTri-Gram,1.9,5,0.38,86.247,19.814,30,32,26,27,0,70,259
+Google Phoneme LexTri-Gram,0.95,1.4,0.679,51.282,51.282,10,122,11,87,1,90,641
+Sphinx Bi-Gram,10.5,0.7,15,65.035,41.259,5,54,27,96,2,95,18325
+Sphinx Tri-Gram,10.5,0.7,15,67.366,37.762,10,48,22,92,2,90,17163
+Sphinx Sentence List,,,,62.704,38.462,17.5,60,5,100,2,82.5,399
+,,,,,,,,,,,,
+semeval400small10.rounded_in_percent_with_empty_results,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time
+Google,,,,93.411,7.364,47.5,26,4,8,0,52.5,12
+Google Sentence List,,,,80.814,22.674,22.5,81,18,18,0,77.5,440
+Google Word List,,,,94.186,6.589,50,22,4,8,0,50,26
+Google Phoneme Unigram,0.2,0.5,0.4,63.372,42.054,0,164,28,25,0,100,150
+Google Phoneme Bi-Gram,2.35,4.35,0.54,85.465,16.085,30,40,8,35,0,70,182
+Google Phoneme FlatTri-Gram,1.9,5,0.38,89.729,12.597,30,40,12,13,0,70,336
+Google Phoneme LexTri-Gram,0.95,1.4,0.679,72.674,27.907,10,86,3,55,0,90,826
+Sphinx Bi-Gram,10.5,0.7,15,56.977,45.93,2.5,74,15,148,1,97.5,21405
+Sphinx Tri-Gram,10.5,0.7,15,59.69,42.636,5,66,12,142,1,95,20222
+Sphinx Sentence List,,,,56.783,44.38,15,66,6,157,1,85,487
+,,,,,,,,,,,,
+Final Semeval400small Avarage Results CrossEval,,,,,,,,,,,,
+Approach,Language Weight,Word Insertion Probability,Ratio,Accuracy,WER,Sentence Accuracy,Substitutions,Insertions,Deletions,Empty Results,SER,Average Time
+Google,,,,91.7026,9.17,48.25,291,43,89,3,51.75,-3636465025.8
+Google Sentence List,,,,77.4883,25.8303,20,665,160,388,3,80,449.4
+Google Word List,,,,93.8369,7.1605,55.25,192,50,96,3,44.75,25.2
+Google Phoneme Unigram,0.2,0.5,0.4,61.705,44.4738,0.25,1639,289,226,0,99.75,143.2
+Google Phoneme Bi-Gram,2.35,4.35,0.54,79.8829,23.2804,23.75,487,133,439,3,76.25,176.6
+Google Phoneme FlatTri-Gram,1.9,5,0.38,87.7656,16.6744,34,376,188,176,0,66,323.5
+Google Phoneme LexTri-Gram,0.95,1.4,0.679,62.3847,39.911,6.25,1048,97,752,3,93.75,791.7
+Sphinx Bi-Gram,10.5,0.7,15,45.0308,58.1995,4,536,146,2176,77,96,21596.4
+Sphinx Tri-Gram,10.5,0.7,15,46.1985,56.3846,5.5,498,116,2161,77,94.5,20177
+Sphinx Sentence List,,,,43.6483,57.7099,10.75,550,56,2208,77,89.25,334.6

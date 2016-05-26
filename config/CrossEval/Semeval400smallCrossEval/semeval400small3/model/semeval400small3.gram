@@ -1,0 +1,317 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for WTM
+ */
+
+grammar scenario;
+
+public <utterance> = (drop the cube) |
+(move the white cube on the cyan cube closest to the left) |
+(move the grey cube in the top right corner) |
+(move the yellow cube on top of the green cube closest to the right) |
+(move the red cube on the green cube closest to the left) |
+(pick up the prism placed on the yellow cube and move it on the green cube) |
+(pick up the cyan prism placed on the blue cube and move it on the blue cube closest to the left) |
+(pick up the blue cube placed on the red cube and move it on the red green tower) |
+(move the red cube on the yellow cube closest to the back) |
+(drop the prism) |
+(drop the red cube) |
+(pick up the green cube placed on the yellow cube and move it on the red cube) |
+(move the prism on the grey cube) |
+(move the green cube closest to the center of the board and place it on the green cube) |
+(move the prism on the red cube) |
+(pick up the pink cube placed on the red cube and move it in the top right corner) |
+(pick up the red prism closest to the left and move it on the green cube) |
+(pick up the blue prism) |
+(move the blue cube in the corner on the cyan cube closest to the top) |
+(move the cyan prism in the top left corner) |
+(move the cyan prism on the cyan cube) |
+(pick up the turquoise pyramid) |
+(move the pink pyramid on top of the turquoise cubes) |
+(move the red pyramid one cell to the left) |
+(move the cyan block on the yellow block) |
+(move the gray cube on top of the green cube) |
+(move the yellow cube on top of the blue cube standing in the top left corner) |
+(move the yellow cube on top of the blue cube) |
+(move the blue pyramid on top of the yellow cube nearest to the right back corner) |
+(pick up the green block) |
+(move the gray cube nearest to the top edge on top of the tower standing on the top right corner) |
+(pick up the blue cube standing over the green cube nearest to the left edge drop it on the blue cube nearest to the bottom edge) |
+(drop the green cube) |
+(move the turquoise pyramid on top of the yellow cube nearest to the top left corner) |
+(pick up the gray cube and place it on the turquoise cube nearest to the right edge) |
+(pick up the red cube nearest to the left edge) |
+(pick up the red cube and place it on top of the tower standing on the top left corner) |
+(move the yellow block on the corner to the green block closest to the center) |
+(move the yellow block on the corner to the green block that is closest to the center) |
+(move the red prism on the green block onto the yellow block closest to the back) |
+(pick up the green cube) |
+(pick up the blue cube) |
+(move the yellow pyramid to the left most blue block) |
+(move the turquoise pyramid on top the green cube standing in the top left corner) |
+(place the yellow block on the green block) |
+(move the pink pyramid standing on a blue cube on top of the yellow cube) |
+(place the red pyramid on the top left corner) |
+(move the gray pyramid on top of the red cube standing in the bottom right corner) |
+(place the yellow prism on top of the red cube) |
+(move the green prism to the bottom left corner) |
+(pick up the blue pyramid) |
+(pick up the left gray cube) |
+(move the pyramid on the left red cube) |
+(move the yellow cube to the top right corner) |
+(place the blue block on top the green block) |
+(place the white block to the left of the pink block) |
+(place the blue block on top of the white block) |
+(move the blue pyramid to the top of the red block) |
+(place the block on the back right corner on the blue block) |
+(place the red cube on the top left corner) |
+(move the cyan block that is closest to the top right corner to the top left corner) |
+(place the left most pyramid on top of the left most red block) |
+(move the green block closest to the center on top of the green block on the corner) |
+(move the pyramid to the top left corner) |
+(place red cube on green cube) |
+(move the green block on top of the white block) |
+(pick up the cyan block) |
+(pick up the block to the right of the red block) |
+(move the red block that is on top of a grey block on top of the green block) |
+(place the pyramid that is closest to the center on the red block) |
+(move the pyramid to the green block) |
+(move the block one place to the back) |
+(place the yellow cube on top of the blue one) |
+(pick up the green cube placed on top of the tower nearest to the top right corner) |
+(pick up the red pyramid nearest to the right edge of the board) |
+(move the cyan pyramid to the top left corner) |
+(pick up the single red cube nearest to the right edge and place it in the bottom right corner) |
+(pick up the white pyramid and place it on top of the tower standing in the bottom left corner) |
+(pick up the pink pyramid standing on the blue cube and place it on top of the yellow red tower) |
+(pick up the blue cube nearest to the top right corner and place it on the pink cube) |
+(pick up the yellow pyramid and place it on top of the green tower) |
+(pick up the yellow cube and place it on top of the tower standing in the bottom left corner of the board) |
+(drop the blue pyramid) |
+(pick up the grey cube and place it on top of the blue one) |
+(pick up the gray pyramid and place it on top of the tower nearest to the bottom right corner) |
+(pick up the white cube standing in the top left corner and place it on the red cube nearest to the bottom edge of the board) |
+(pick up the pink pyramid and place it on top of the blue cube nearest to the left edge of the board) |
+(pick up the gray cube nearest to the right edge and place it on top of the tower standing in the bottom right corner) |
+(pick up the yellow pyramid standing on top of the pink tower and place it on the red cube) |
+(pick up the turquoise pyramid standing over a white cube and place on top of the blue and green tower) |
+(pick up the white cube standing on a grey cube and place it on the single green cube nearest to the top edge of the board) |
+(place the pyramid on the right on the blue cube) |
+(pick up the gray pyramid and place it on top the red yellow tower) |
+(pick up the yellow pyramid and place it on top of the red green tower) |
+(pick up the red cube nearest to the top edge and place it over the turquoise cube nearest to the bottom edge of the board) |
+(pick up the white cube standing in the top left corner) |
+(pick up the yellow pyramid and place it on top of the yellow cube) |
+(pick up the red pyramid nearest to the top edge and place it on top of the red cube) |
+(pick up the red pyramid and place it on top of the single blue cube) |
+(pick up the red pyramid nearest to the top edge of the board) |
+(pick up the blue cube nearest to the right edge) |
+(pick up the red cube and place on the top of the blue cube nearest to the bottom left corner) |
+(pick up the green cube and place it on top of the blue one) |
+(pick up the yellow pyramid nearest to the bottom edge of the board) |
+(pick up the yellow pyramid nearest to the left edge and place it on top of the tower nearest to the top left corner) |
+(pick up the pink pyramid and place it on top of the green and blue tower) |
+(pick up the gray cube and place it on top of the green cube) |
+(pick up the white cube and place it on top of the tower standing in the bottom right corner) |
+(pick up the turquoise pyramid standing in the bottom right corner and place it over the green cube nearest to the right edge) |
+(pick up the yellow pyramid and place it on the red cube) |
+(pick up the pink pyramid) |
+(pick up the yellow cube and place it on the blue cube nearest to the top edge of the board) |
+(place the left pyramid on the blue block) |
+(pick up the pink pyramid and place it on the gray cube nearest to the top edge of the board) |
+(place the grey cube on the red block) |
+(pick up the turquoise pyramid and place it over the red cube standing in the top left corner) |
+(pick up the yellow cube) |
+(pick up the red pyramid and place over the single green cube) |
+(pick up the blue cube nearest to the left edge of the board) |
+(pick up the yellow cube and place it over the tower nearest to the top left corner of the board) |
+(move the green cube one cell back) |
+(pick up the red cube and place it in the top left corner) |
+(pick up the yellow pyramid and place it over the gray cube standing in the top right corner of the board) |
+(pick up the blue cube nearest to the bottom left corner) |
+(pick up the yellow cube and place it one cell left of the blue cube nearest to the bottom right corner of the board) |
+(pick up the blue cube and place it over the green red tower) |
+(pick up the red cube and place it over the green one) |
+(pick up the red cube and place it over the yellow one) |
+(pick up the yellow pyramid and place it over the yellow cube) |
+(pick up the turquoise pyramid nearest to the right edge and place it over the gray cube) |
+(pick up the blue pyramid nearest to the top edge and place it one cell right of the white pyramid nearest to the bottom edge) |
+(pick up the pink pyramid standing over the blue cube and place it over the yellow red tower nearest to the bottom left corner) |
+(move the red block on top of the blue block) |
+(pick up the pink pyramid nearest to the right edge and place it over the red cube nearest to the top right corner of the board) |
+(pick up the blue cube and place it over the green cube standing in the bottom right corner) |
+(pick up the blue cube and place it over the yellow cube) |
+(pick up the red cube and place it over the pink one) |
+(place the green block on top of the blue block) |
+(place the red cube on the blue cube) |
+(pick up the blue cube and place it over the yellow red tower) |
+(pick up the gray cube nearest to the bottom left corner) |
+(pick up the red cube and place over the red white tower) |
+(pick up the white cube standing in the top left corner of the board) |
+(pick up the blue pyramid nearest to the top edge of the board) |
+(move the pyramid to the left most tower) |
+(place the pyramid on the left most blue block) |
+(pick up the pink pyramid and place it over the gray cube nearest to the bottom edge) |
+(pick up the yellow pyramid nearest to the right edge and place it over the red cube) |
+(pick up the gray pyramid and place it over the red white tower) |
+(pick up the blue cube and place it on top of the yellow cube) |
+(pick up the red cube and place it on the green cube nearest to the top left corner) |
+(pick up the gray pyramid standing on the green red tower and place it over the green blue tower) |
+(pick up the blue pyramid nearest to the top left corner of the board) |
+(pick up the blue cube nearest to the bottom left corner and place over the blue cube nearest to the top left corner of the board) |
+(pick up the red cube and place it over the gray cube standing in the bottom right corner of the board) |
+(pick up the pink pyramid and place it over the cyan tower of cubes) |
+(move the red cube in the bottom left corner of the board) |
+(pick up the gray cube and place it over the green one) |
+(pick up the gray pyramid and place it in the bottom right corner) |
+(pick up the yellow pyramid and place it over the blue cube) |
+(pick up the blue pyramid and place it over the yellow cube nearest to the bottom right corner of the board) |
+(move the green prism on top of the yellow cube) |
+(pick up the red pyramid standing over a blue cube and place it over the green cube nearest to the right edge of the board) |
+(pick up the yellow pyramid nearest to the top left corner) |
+(drop the blue block on top of the yellow block) |
+(pick up one green cube and place it on top of the red block) |
+(pick up the blue block and place it on top of the red block) |
+(pick up the blue cube and place it on top of the white cube) |
+(pick up the pink pyramid and place it on top of the gray cube nearest to the right edge of the board) |
+(pick up the blue cube and place it on top of the green cube) |
+(pick up the pink pyramid and place it on the top of the gray tower of cubes standing in the bottom right corner) |
+(pick up the red cube nearest to the top edge and place it on top of the cyan cube nearest to the bottom edge) |
+(pick up the yellow pyramid and place it on top of the tower nearest to the top right corner) |
+(pick up the green pyramid nearest to the bottom right corner) |
+(pick up the gray pyramid nearest to the top right corner and place it on top of the green cube) |
+(pick up the red pyramid and place it on top of the green cube) |
+(drop the blue cube) |
+(pick up the pink pyramid and place it on top of the turquoise cubes) |
+(pick up the turquoise pyramid and place it on top of the red cube standing in the top left corner) |
+(pick up the red prism and place it on top of the blue cube) |
+(move the yellow cube on top of the blue cube standing on the yellow cubes) |
+(pick up the pink pyramid standing on top of the yellow cube and place it on top of the gray cube nearest to the bottom edge of the board) |
+(pick up the red pyramid nearest to the left edge and place it on top of the green cubes standing in the top left corner) |
+(pick up the green cube standing on top of a yellow cube and place it on top of the red cube) |
+(pick up the pink pyramid nearest to the right edge and place it on top of the yellow cube) |
+(pick up the cyan pyramid and place it on top of the yellow cube) |
+(pick up the red cube standing on a grey cube and place it on top of the yellow one) |
+(drop the yellow pyramid) |
+(pick up the red pyramid nearest to the bottom left corner of the board) |
+(move the yellow cube one cell up) |
+(pick up the pink pyramid and place it on top of the green blue tower) |
+(drop the cyan pyramid) |
+(drop the red pyramid) |
+(pick up the red cube standing on a gray cube and place it on top of the green cube) |
+(pick up the pink pyramid nearest to the right edge and place it on top of the cyan cube) |
+(pick up the green cube and place it on the red cube nearest to the center of the board) |
+(pick up the gray cube nearest to the top edge and place it on top of the tower standing in the bottom right corner) |
+(pick up the blue cube standing in the top right corner and place it on top of the tower standing in bottom right corner) |
+(pick up the pink pyramid and place it on top the cyan cubes) |
+(pick up the white cube standing over the cyan cubes and place it on the single red cube nearest to the left edge) |
+(move the pink pyramid on top of the blue cube nearest to the left edge of the board) |
+(pick up the blue cube nearest to the bottom left corner and place it on top of the blue cube nearest to the top left corner) |
+(drop the yellow cube) |
+(pick up the yellow prism standing on the green cube) |
+(move yellow pyramid to the red block) |
+(drop the pink pyramid) |
+(drop the blue pyramid on top of the green cube) |
+(drop the gray cube) |
+(pick up the cyan pyramid nearest to the right edge and place it on the blue cube nearest to the bottom left corner of the board) |
+(pick up the cyan pyramid nearest to the right edge and place it on top of the green cube) |
+(move the cyan pyramid to the yellow block) |
+(put pyramid to right of grey pyramid) |
+(pick up the blue block on the right) |
+(place the red pyramid on the yellow cube) |
+(move pyramid onto green tower) |
+(place the grey block on the blue one) |
+(pick up the red block) |
+(place the pyramid on the green tower) |
+(place the pink pyramid to the left of the grey one) |
+(move the red pyramid one place to the left) |
+(pick up the grey pyramid) |
+(place the pyramid on the block) |
+(place the blue cube on the red cube) |
+(put the red block on the back left corner) |
+(pick up the red pyramid) |
+(place the blue pyramid on the red cube on the right) |
+(put pyramid onto green tower) |
+(place the pyramid on the blue block) |
+(put the grey block on the top left corner) |
+(place the red block on the left most green block) |
+(move pyramid to single green block) |
+(move pyramid onto red block) |
+(put grey cube onto green cube) |
+(put green cube on red cube) |
+(move blue prism onto single grey block on left edge) |
+(drop the block) |
+(move the pyramid onto the red block) |
+(place the pyramid closest to the top on the top left corner) |
+(place the grey cube on the top left corner) |
+(place the cyan pyramid on the yellow cube) |
+(place the green block on the blue block) |
+(put the left pink pyramid on the blue block) |
+(put the red cube on the grey cube) |
+(pick up green block put it on blue block) |
+(pick up red block put it on grey block) |
+(pick up prism put it on green block nearest to the left) |
+(place the red pyramid to the right of the blue pyramid) |
+(place the pyramid on the red tower to the right of the green block) |
+(pick up blue block put it in back left corner) |
+(drop the pyramid) |
+(place the green block on the red block) |
+(place the grey cube on the white cube) |
+(place the grey block on the blue block) |
+(place the red block on the grey block) |
+(place the red block on the top left corner) |
+(pick up red block put it in top left corner) |
+(pick up yellow pyramid put it on blue tower) |
+(pick up yellow block put it on yellow blue tower) |
+(pick up grey block put it on single blue block) |
+(pick up red pyramid put it on cyan block) |
+(pick up green block put it on the blue block) |
+(pick up one green block put it on red block) |
+(pick up cyan pyramid put it on red cube) |
+(pick up blue block put it on red blue tower on left edge) |
+(pick up grey block put it on blue block) |
+(pick up the green cube and place it on top of the tower standing in the top left corner of the board) |
+(pick up the yellow cube and place it on top of the blue cube nearest to the top left corner) |
+(pick up the red cube and place it on top of the grey one) |
+(pick up the blue cube and place it one cell right of the green cube) |
+(pick up the pink pyramid and place it in the bottom left corner of the board) |
+(pick up the yellow cube and place it in the top left corner) |
+(pick up the gray cube and place it on top of the green one) |
+(pick up the cyan pyramid standing in the bottom right corner and place it on top of the red cube) |
+(pick up the red pyramid and place it on top of the red cube) |
+(pick up the gray cube and place on top of the tower nearest to the left edge) |
+(pick up the cyan pyramid nearest to the right edge) |
+(pick up the red cube and place it on top of the pink one) |
+(pick up the green cube nearest to the top right corner and place on top of the tower nearest to the top left corner) |
+(move the blue cube on top of the red one) |
+(pick up the pyramid nearest to the top right corner and place it on top of the yellow cube) |
+(move the cyan pyramid in the top right corner of the board) |
+(pick up the green cube nearest to the bottom edge) |
+(pick up the blue cube standing in the top left corner and place over the red cube nearest to the top edge) |
+(move the red cube on top of the blue one) |
+(pick up the green pyramid nearest to the right edge and move it one cell back) |
+(move the yellow cube in the bottom left corner of the board) |
+(pick up the green cube nearest to the top right corner and place it in the bottom right corner) |
+(pick up the red cube nearest to the bottom edge and place it on top of the green cube) |
+(pick up the gray cube nearest to the top right corner and place it in the bottom left corner) |
+(drop the red cube on top of the yellow one) |
+(pick up the red cube nearest to the right edge and place on top of the white cube nearest to the center of the board) |
+(pick up the red pyramid and place it on top of the cyan cube) |
+(put the yellow cube on top of the red one) |
+(move the cyan pyramid on top of the cyan cube) |
+(pick up the red cube nearest to the top edge and place it on the cyan cube nearest to the bottom edge) |
+(move the white cube nearest to the right edge and place it in the bottom left corner) |
+(move the red pyramid on top of the blue cube nearest to the bottom left corner) |
+(move the red cube nearest to the top right corner in the top right corner) |
+(pick up the white cube nearest to the top edge and place it one cell to the right of the bottom left corner) |
+(pick up the white cube and place it over the gray one) |
+(pick up the blue cube standing on a yellow tower and place it on top of the cyan cube nearest to the top edge) |
+(move the blue cube on top of the yellow one) |
+(pick up the gray cube and place it in the top right corner) |
+(move the blue pyramid on top of the green cube nearest to the right edge) |
+(pick up the green cube nearest to the bottom edge and place it on the yellow cube nearest to the bottom right corner) |
+(pick up the red cube and place it in the top right corner) |
+(pick up the red pyramid nearest to the top left corner) |
+(pick up the blue cube and place it over the white one) |
+(move the red pyramid on top of the single green cube);

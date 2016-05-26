@@ -1,0 +1,459 @@
+Language model created by QuickLM on Thu Feb 11 11:02:35 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 19 sentences and 124 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=124
+ngram 2=166
+ngram 3=150
+
+\1-grams:
+-1.2964 </s> -0.3010
+-1.2964 <s> -0.2599
+-2.5752 a -0.2999
+-2.5752 about -0.2999
+-2.5752 adventures -0.2964
+-2.5752 all -0.2999
+-2.5752 an -0.2999
+-1.9731 and -0.2857
+-2.5752 antelope -0.2785
+-2.5752 approach -0.2999
+-2.5752 arboreal -0.2999
+-2.2742 are -0.2987
+-2.5752 arrival -0.2976
+-2.5752 arriving -0.2999
+-2.5752 at -0.2999
+-2.5752 before -0.2999
+-2.5752 being -0.2999
+-2.5752 block -0.2999
+-2.5752 blouses -0.2785
+-2.5752 borrow -0.2999
+-2.5752 box -0.2999
+-2.5752 bugle -0.2999
+-2.5752 bungalow -0.2987
+-2.5752 butcher -0.2999
+-2.5752 can -0.2999
+-2.5752 children -0.2999
+-2.5752 classrooms -0.2976
+-2.5752 coincided -0.2999
+-2.5752 consists -0.2976
+-2.5752 contains -0.2999
+-2.5752 convenient -0.2976
+-2.5752 daphne's -0.2999
+-2.5752 decorate -0.2999
+-2.5752 did -0.2987
+-2.5752 drop -0.2999
+-2.5752 elderly -0.2999
+-2.5752 even -0.2999
+-2.5752 excluded -0.2785
+-2.5752 experience -0.2999
+-2.5752 father's -0.2999
+-2.5752 five -0.2999
+-2.5752 fog -0.2999
+-2.5752 followed -0.2999
+-2.0981 for -0.2940
+-2.5752 forms -0.2976
+-2.5752 freeway -0.2999
+-2.5752 from -0.2999
+-2.5752 garage -0.2785
+-2.5752 go -0.2999
+-2.5752 great -0.2999
+-2.5752 has -0.2999
+-2.2742 he -0.2987
+-1.9731 her -0.2964
+-2.5752 highway -0.2964
+-2.5752 holidays -0.2785
+-2.5752 home -0.2785
+-2.0981 in -0.2881
+-2.5752 it -0.2999
+-2.5752 jennifer's -0.2999
+-2.5752 kindergarten -0.2999
+-2.5752 knows -0.2999
+-2.5752 lines -0.2785
+-2.5752 lunch -0.2785
+-2.5752 matched -0.2964
+-2.5752 mean -0.2893
+-2.5752 mobile -0.2999
+-2.2742 my -0.2987
+-2.5752 near -0.2893
+-2.5752 needlepoint -0.2999
+-2.5752 nobody -0.2999
+-2.2742 not -0.2987
+-2.0981 of -0.2940
+-2.5752 often -0.2999
+-2.5752 on -0.2999
+-2.5752 one -0.2987
+-2.5752 only -0.2999
+-2.5752 out -0.2785
+-2.5752 own -0.2999
+-2.5752 partner -0.2785
+-2.5752 people -0.2987
+-2.5752 phrase -0.2999
+-2.5752 pizzerias -0.2987
+-2.5752 pleasantly -0.2999
+-2.5752 prevented -0.2999
+-2.5752 put -0.2893
+-2.5752 quick -0.2999
+-2.5752 ready -0.2976
+-2.5752 same -0.2987
+-2.5752 scared -0.2893
+-2.5752 scarf -0.2999
+-2.5752 she -0.2987
+-2.5752 shore -0.2785
+-2.5752 short -0.2964
+-2.5752 simple -0.2999
+-2.5752 simpler -0.2999
+-2.5752 situated -0.2999
+-2.5752 skirt -0.2785
+-2.5752 skirts -0.2964
+-2.5752 slash -0.2999
+-2.5752 sometimes -0.2987
+-2.5752 sound -0.2976
+-2.5752 surprisingly -0.2987
+-2.5752 swedish -0.2999
+-2.5752 symbols -0.2785
+-2.5752 sympathetically -0.2999
+-2.5752 table -0.2976
+-1.5752 the -0.2893
+-2.5752 their -0.2999
+-2.5752 them -0.2999
+-2.2742 thing -0.2761
+-2.2742 this -0.2987
+-2.5752 thought -0.2999
+-2.5752 timber -0.2785
+-2.5752 time -0.2785
+-2.5752 to -0.2999
+-2.5752 understand -0.2785
+-2.5752 vocabulary -0.2999
+-2.5752 wardrobe -0.2999
+-2.2742 was -0.2987
+-2.5752 we -0.2999
+-2.5752 with -0.2987
+-2.5752 work -0.2785
+-2.5752 yet -0.2785
+-2.5752 you -0.2999
+
+\2-grams:
+-1.5798 <s> daphne's 0.0000
+-1.5798 <s> drop 0.0000
+-1.5798 <s> elderly 0.0000
+-1.5798 <s> even 0.0000
+-1.5798 <s> her -0.2430
+-1.5798 <s> highway 0.0000
+-1.5798 <s> in -0.2218
+-1.5798 <s> kindergarten 0.0000
+-1.5798 <s> my -0.1761
+-1.5798 <s> not -0.1761
+-1.5798 <s> one 0.0000
+-1.5798 <s> pizzerias 0.0000
+-1.5798 <s> put 0.0000
+-1.5798 <s> she 0.0000
+-1.5798 <s> sometimes 0.0000
+-1.1027 <s> the -0.2304
+-1.5798 <s> this -0.1761
+-0.3010 a simple 0.0000
+-0.3010 about it 0.0000
+-0.3010 adventures and -0.2430
+-0.3010 all holidays 0.0000
+-0.3010 an arboreal 0.0000
+-0.9031 and blouses 0.0000
+-0.9031 and freeway 0.0000
+-0.9031 and the -0.2788
+-0.9031 and to 0.0000
+-0.3010 antelope </s> -0.3010
+-0.3010 approach did 0.0000
+-0.3010 arboreal phrase 0.0000
+-0.6021 are convenient 0.0000
+-0.6021 are often 0.0000
+-0.3010 arrival of -0.2218
+-0.3010 arriving on 0.0000
+-0.3010 at home 0.0000
+-0.3010 before you 0.0000
+-0.3010 being at 0.0000
+-0.3010 block table 0.0000
+-0.3010 blouses </s> -0.3010
+-0.3010 borrow an 0.0000
+-0.3010 box before 0.0000
+-0.3010 bugle scared 0.0000
+-0.3010 bungalow was -0.1761
+-0.3010 butcher block 0.0000
+-0.3010 can sympathetically 0.0000
+-0.3010 children decorate 0.0000
+-0.3010 classrooms for -0.2218
+-0.3010 coincided with 0.0000
+-0.3010 consists of -0.2218
+-0.3010 contains symbols 0.0000
+-0.3010 convenient for -0.2218
+-0.3010 daphne's swedish 0.0000
+-0.3010 decorate their 0.0000
+-0.3010 did not -0.1761
+-0.3010 drop five 0.0000
+-0.3010 elderly people 0.0000
+-0.3010 even a 0.0000
+-0.3010 excluded </s> -0.3010
+-0.3010 experience has 0.0000
+-0.3010 father's being 0.0000
+-0.3010 five forms 0.0000
+-0.3010 fog prevented 0.0000
+-0.3010 followed simpler 0.0000
+-0.7782 for all 0.0000
+-0.7782 for her -0.2430
+-0.7782 for quick 0.0000
+-0.3010 forms in -0.1249
+-0.3010 freeway mean 0.0000
+-0.3010 from arriving 0.0000
+-0.3010 garage </s> -0.3010
+-0.3010 go out 0.0000
+-0.3010 great adventures 0.0000
+-0.3010 has followed 0.0000
+-0.6021 he coincided 0.0000
+-0.6021 he thought 0.0000
+-0.9031 her great 0.0000
+-0.9031 her mobile 0.0000
+-0.9031 her skirt 0.0000
+-0.9031 her wardrobe 0.0000
+-0.3010 highway and -0.2430
+-0.3010 holidays </s> -0.3010
+-0.3010 home </s> -0.3010
+-0.7782 in short 0.0000
+-0.4771 in the -0.2553
+-0.3010 it yet 0.0000
+-0.3010 jennifer's bugle 0.0000
+-0.3010 kindergarten children 0.0000
+-0.3010 knows about 0.0000
+-0.3010 lines </s> -0.3010
+-0.3010 lunch </s> -0.3010
+-0.3010 matched her -0.2430
+-0.3010 mean the -0.2788
+-0.3010 mobile partner 0.0000
+-0.6021 my father's 0.0000
+-0.6021 my own 0.0000
+-0.3010 near the -0.2788
+-0.3010 needlepoint scarf 0.0000
+-0.3010 nobody knows 0.0000
+-0.6021 not surprisingly 0.0000
+-0.6021 not work 0.0000
+-0.7782 of her -0.2430
+-0.7782 of jennifer's 0.0000
+-0.7782 of only 0.0000
+-0.3010 often excluded 0.0000
+-0.3010 on time 0.0000
+-0.3010 one thing -0.1761
+-0.3010 only skirts 0.0000
+-0.3010 out </s> -0.3010
+-0.3010 own experience 0.0000
+-0.3010 partner </s> -0.3010
+-0.3010 people are -0.1761
+-0.3010 phrase slash 0.0000
+-0.3010 pizzerias are -0.1761
+-0.3010 pleasantly situated 0.0000
+-0.3010 prevented them 0.0000
+-0.3010 put the -0.2788
+-0.3010 quick lunch 0.0000
+-0.3010 ready for -0.2218
+-0.3010 same thing -0.1761
+-0.3010 scared the -0.2788
+-0.3010 scarf matched 0.0000
+-0.3010 she was -0.1761
+-0.3010 shore </s> -0.3010
+-0.3010 short and -0.2430
+-0.3010 simple vocabulary 0.0000
+-0.3010 simpler lines 0.0000
+-0.3010 situated near 0.0000
+-0.3010 skirt </s> -0.3010
+-0.3010 skirts and -0.2430
+-0.3010 slash timber 0.0000
+-0.3010 sometimes he -0.1761
+-0.3010 sound of -0.2218
+-0.3010 surprisingly this -0.1761
+-0.3010 swedish needlepoint 0.0000
+-0.3010 symbols </s> -0.3010
+-0.3010 sympathetically understand 0.0000
+-0.3010 table in -0.1249
+-1.3010 the antelope 0.0000
+-1.3010 the arrival 0.0000
+-1.3010 the box 0.0000
+-1.3010 the bungalow 0.0000
+-1.3010 the butcher 0.0000
+-1.3010 the fog 0.0000
+-1.3010 the garage 0.0000
+-1.3010 the same 0.0000
+-1.3010 the shore 0.0000
+-1.3010 the sound 0.0000
+-0.3010 their classrooms 0.0000
+-0.3010 them from 0.0000
+-0.6021 thing </s> -0.3010
+-0.6021 thing he -0.1761
+-0.6021 this approach 0.0000
+-0.6021 this we 0.0000
+-0.3010 thought nobody 0.0000
+-0.3010 timber </s> -0.3010
+-0.3010 time </s> -0.3010
+-0.3010 to borrow 0.0000
+-0.3010 understand </s> -0.3010
+-0.3010 vocabulary contains 0.0000
+-0.3010 wardrobe consists 0.0000
+-0.6021 was pleasantly 0.0000
+-0.6021 was ready 0.0000
+-0.3010 we can 0.0000
+-0.3010 with my -0.1761
+-0.3010 work </s> -0.3010
+-0.3010 yet </s> -0.3010
+-0.3010 you go 0.0000
+
+\3-grams:
+-0.3010 <s> daphne's swedish
+-0.3010 <s> drop five
+-0.3010 <s> elderly people
+-0.3010 <s> even a
+-0.3010 <s> her wardrobe
+-0.3010 <s> highway and
+-0.3010 <s> in short
+-0.3010 <s> kindergarten children
+-0.3010 <s> my own
+-0.3010 <s> not surprisingly
+-0.3010 <s> one thing
+-0.3010 <s> pizzerias are
+-0.3010 <s> put the
+-0.3010 <s> she was
+-0.3010 <s> sometimes he
+-0.7782 <s> the bungalow
+-0.7782 <s> the fog
+-0.7782 <s> the sound
+-0.3010 <s> this we
+-0.3010 a simple vocabulary
+-0.3010 about it yet
+-0.3010 adventures and the
+-0.3010 all holidays </s>
+-0.3010 an arboreal phrase
+-0.3010 and blouses </s>
+-0.3010 and freeway mean
+-0.3010 and the arrival
+-0.3010 and to borrow
+-0.3010 approach did not
+-0.3010 arboreal phrase slash
+-0.3010 are convenient for
+-0.3010 are often excluded
+-0.3010 arrival of her
+-0.3010 arriving on time
+-0.3010 at home </s>
+-0.3010 before you go
+-0.3010 being at home
+-0.3010 block table in
+-0.3010 borrow an arboreal
+-0.3010 box before you
+-0.3010 bugle scared the
+-0.3010 bungalow was pleasantly
+-0.3010 butcher block table
+-0.3010 can sympathetically understand
+-0.3010 children decorate their
+-0.3010 classrooms for all
+-0.3010 coincided with my
+-0.3010 consists of only
+-0.3010 contains symbols </s>
+-0.3010 convenient for quick
+-0.3010 daphne's swedish needlepoint
+-0.3010 decorate their classrooms
+-0.3010 did not work
+-0.3010 drop five forms
+-0.3010 elderly people are
+-0.3010 even a simple
+-0.3010 experience has followed
+-0.3010 father's being at
+-0.3010 five forms in
+-0.3010 fog prevented them
+-0.3010 followed simpler lines
+-0.3010 for all holidays
+-0.3010 for her great
+-0.3010 for quick lunch
+-0.3010 forms in the
+-0.3010 freeway mean the
+-0.3010 from arriving on
+-0.3010 go out </s>
+-0.3010 great adventures and
+-0.3010 has followed simpler
+-0.3010 he coincided with
+-0.3010 he thought nobody
+-0.3010 her great adventures
+-0.3010 her mobile partner
+-0.3010 her skirt </s>
+-0.3010 her wardrobe consists
+-0.3010 highway and freeway
+-0.3010 in short and
+-0.6021 in the box
+-0.6021 in the garage
+-0.3010 it yet </s>
+-0.3010 jennifer's bugle scared
+-0.3010 kindergarten children decorate
+-0.3010 knows about it
+-0.3010 matched her skirt
+-0.3010 mean the same
+-0.3010 mobile partner </s>
+-0.3010 my father's being
+-0.3010 my own experience
+-0.3010 near the shore
+-0.3010 needlepoint scarf matched
+-0.3010 nobody knows about
+-0.3010 not surprisingly this
+-0.3010 not work </s>
+-0.3010 of her mobile
+-0.3010 of jennifer's bugle
+-0.3010 of only skirts
+-0.3010 often excluded </s>
+-0.3010 on time </s>
+-0.3010 one thing he
+-0.3010 only skirts and
+-0.3010 own experience has
+-0.3010 people are often
+-0.3010 phrase slash timber
+-0.3010 pizzerias are convenient
+-0.3010 pleasantly situated near
+-0.3010 prevented them from
+-0.3010 put the butcher
+-0.3010 quick lunch </s>
+-0.3010 ready for her
+-0.3010 same thing </s>
+-0.3010 scared the antelope
+-0.3010 scarf matched her
+-0.3010 she was ready
+-0.3010 short and to
+-0.3010 simple vocabulary contains
+-0.3010 simpler lines </s>
+-0.3010 situated near the
+-0.3010 skirts and blouses
+-0.3010 slash timber </s>
+-0.3010 sometimes he coincided
+-0.3010 sound of jennifer's
+-0.3010 surprisingly this approach
+-0.3010 swedish needlepoint scarf
+-0.3010 sympathetically understand </s>
+-0.3010 table in the
+-0.3010 the antelope </s>
+-0.3010 the arrival of
+-0.3010 the box before
+-0.3010 the bungalow was
+-0.3010 the butcher block
+-0.3010 the fog prevented
+-0.3010 the garage </s>
+-0.3010 the same thing
+-0.3010 the shore </s>
+-0.3010 the sound of
+-0.3010 their classrooms for
+-0.3010 them from arriving
+-0.3010 thing he thought
+-0.3010 this approach did
+-0.3010 this we can
+-0.3010 thought nobody knows
+-0.3010 to borrow an
+-0.3010 vocabulary contains symbols
+-0.3010 wardrobe consists of
+-0.3010 was pleasantly situated
+-0.3010 was ready for
+-0.3010 we can sympathetically
+-0.3010 with my father's
+-0.3010 you go out
+
+\end\

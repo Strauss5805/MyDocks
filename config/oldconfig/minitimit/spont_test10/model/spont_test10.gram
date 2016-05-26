@@ -1,0 +1,16 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for WTM
+ */
+
+grammar scenario;
+
+public <utterance> = (hey robot stop it right now) |
+(robot halt) |
+(yes this is right) |
+(the object which you have chosen is the correct one) |
+(right) |
+(this is right) |
+(robot you are doing it good keep i doing) |
+(robot this is good waht you are doing is right);

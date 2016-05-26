@@ -1,0 +1,17 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for WTM
+ */
+
+grammar scenario;
+
+public <utterance> = (object to my left) |
+(robot show me the pen) |
+(show me the object on my left) |
+(there is a dice on the left) |
+(please stop) |
+(robot stop) |
+(can you please stop there) |
+(stop yourself) |
+(robot stop stop what you are doing);

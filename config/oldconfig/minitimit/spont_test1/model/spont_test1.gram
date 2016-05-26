@@ -1,0 +1,18 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for WTM
+ */
+
+grammar scenario;
+
+public <utterance> = (there is something at your back) |
+(you can find the wall behind you) |
+(there is a door in the back) |
+(there is something in the back) |
+(i think someone is following me can you please look at my back) |
+(the door is in your back) |
+(apple is on the back please pick it up) |
+(please clean this table) |
+(please clean the table) |
+(clean the table there);

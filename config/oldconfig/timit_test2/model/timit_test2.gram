@@ -1,0 +1,27 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for WTM
+ */
+
+grammar scenario;
+
+public <utterance> = (i'd ride the subway but i haven't enough change) |
+(the clumsy customer spilled some expensive perfume) |
+(indeed it is possible to separate electron paramagnetic from nuclear effects) |
+(grandmother outgrew her upbringing in petticoats) |
+(please dig my potatoes up before frost) |
+(no return address whatsoever) |
+(greg buys fresh milk each weekday morning) |
+(the nearest synagogue may not be within walking distance) |
+(he always seemed to have money in his pocket) |
+(allow leeway here but rationalize all errors) |
+(as such it was beyond politics and had no need of justification by a message) |
+(catastrophic economic cutbacks neglect the poor) |
+(agricultural products are unevenly distributed) |
+(a carriage crunched by its dim lights filtering through the gloom) |
+(lori's costume needed black gloves to be completely elegant) |
+(to further his prestige he occasionally reads the wall street journal) |
+(why yell or worry over silly items) |
+(we always thought we would die with our boots on) |
+(they make us conformists look good);

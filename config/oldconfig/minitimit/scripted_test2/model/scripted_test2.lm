@@ -1,0 +1,233 @@
+Language model created by QuickLM on Thu Feb 11 12:28:38 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 29 sentences and 38 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=38
+ngram 2=81
+ngram 3=95
+
+\1-grams:
+-1.0939 </s> -0.3010
+-1.0939 <s> -0.2606
+-2.0792 apple -0.2526
+-2.5563 at -0.2986
+-1.9542 ball -0.2526
+-2.0792 banana -0.2593
+-2.2553 be -0.2974
+-2.5563 body -0.2998
+-2.2553 bring -0.2900
+-2.2553 can -0.2986
+-1.6021 close -0.2876
+-1.9542 color -0.2962
+-2.5563 desk -0.2646
+-2.0792 dice -0.2526
+-2.5563 down -0.2646
+-2.5563 find -0.2606
+-2.2553 floor -0.2646
+-2.2553 go -0.2876
+-2.2553 green -0.2646
+-1.9542 has -0.2962
+-2.2553 head -0.2986
+-2.5563 help -0.2646
+-2.2553 i -0.2526
+-2.5563 left -0.2646
+-2.5563 look -0.2998
+-1.0512 nao -0.1409
+-2.2553 orange -0.2646
+-1.7782 oximeter -0.2444
+-2.2553 patient -0.2646
+-1.9542 phone -0.2444
+-2.0792 pick -0.2566
+-2.5563 push -0.2974
+-2.5563 right -0.2646
+-2.5563 show -0.2986
+-2.5563 sit -0.2998
+-2.5563 straight -0.2646
+-1.5149 to -0.2218
+-2.0792 turn -0.2974
+
+\2-grams:
+-0.3010 <s> nao -0.0389
+-0.4771 apple </s> -0.3010
+-0.7782 apple close 0.0000
+-0.3010 at patient 0.0000
+-0.9031 ball </s> -0.3010
+-0.4260 ball close 0.0000
+-0.7782 banana </s> -0.3010
+-0.4771 banana has 0.0000
+-0.3010 be pick -0.1249
+-0.3010 body left 0.0000
+-0.6021 bring dice -0.1249
+-0.6021 bring oximeter -0.1761
+-0.3010 can be 0.0000
+-0.3010 close to -0.0726
+-0.6021 color green 0.0000
+-0.6021 color orange 0.0000
+-0.3010 desk </s> -0.3010
+-0.4771 dice </s> -0.3010
+-0.7782 dice close 0.0000
+-0.3010 down </s> -0.3010
+-0.3010 find nao -0.2872
+-0.3010 floor </s> -0.3010
+-0.3010 go to -0.2596
+-0.3010 green </s> -0.3010
+-0.3010 has color 0.0000
+-0.6021 head right 0.0000
+-0.6021 head straight 0.0000
+-0.3010 help </s> -0.3010
+-0.6021 i </s> -0.3010
+-0.6021 i close 0.0000
+-0.3010 left </s> -0.3010
+-0.3010 look at 0.0000
+-1.5051 nao </s> -0.3010
+-1.8062 nao apple -0.2218
+-1.3291 nao ball -0.0969
+-1.5051 nao banana -0.1249
+-1.5051 nao bring 0.0000
+-1.8062 nao close 0.0000
+-1.8062 nao dice -0.2218
+-1.8062 nao find 0.0000
+-1.5051 nao go 0.0000
+-1.8062 nao help 0.0000
+-1.8062 nao i -0.1761
+-1.8062 nao look 0.0000
+-1.8062 nao nao -0.2942
+-1.3291 nao oximeter -0.1761
+-1.3291 nao phone -0.0969
+-1.8062 nao pick -0.2218
+-1.8062 nao push 0.0000
+-1.8062 nao show 0.0000
+-1.8062 nao sit 0.0000
+-1.3291 nao turn 0.0000
+-0.3010 orange </s> -0.3010
+-0.6021 oximeter </s> -0.3010
+-1.0792 oximeter can 0.0000
+-1.0792 oximeter close 0.0000
+-1.0792 oximeter has 0.0000
+-0.3010 patient </s> -0.3010
+-0.9031 phone </s> -0.3010
+-0.9031 phone can 0.0000
+-0.9031 phone close 0.0000
+-0.9031 phone has 0.0000
+-0.4771 pick </s> -0.3010
+-0.7782 pick oximeter -0.1761
+-0.3010 push apple -0.1249
+-0.3010 right </s> -0.3010
+-0.3010 show i -0.1761
+-0.3010 sit down 0.0000
+-0.3010 straight </s> -0.3010
+-1.3424 to apple -0.1249
+-1.3424 to ball -0.2430
+-1.3424 to banana -0.2218
+-1.3424 to desk 0.0000
+-1.3424 to dice -0.1249
+-1.0414 to floor 0.0000
+-1.3424 to nao -0.2872
+-1.3424 to oximeter -0.1761
+-1.3424 to patient 0.0000
+-1.3424 to phone -0.2430
+-0.7782 turn body 0.0000
+-0.4771 turn head 0.0000
+
+\3-grams:
+-1.7634 <s> nao apple
+-1.2863 <s> nao ball
+-1.4624 <s> nao banana
+-1.4624 <s> nao bring
+-1.7634 <s> nao dice
+-1.7634 <s> nao find
+-1.4624 <s> nao go
+-1.7634 <s> nao help
+-1.7634 <s> nao i
+-1.7634 <s> nao look
+-1.7634 <s> nao nao
+-1.2863 <s> nao oximeter
+-1.2863 <s> nao phone
+-1.7634 <s> nao pick
+-1.7634 <s> nao push
+-1.7634 <s> nao show
+-1.7634 <s> nao sit
+-1.2863 <s> nao turn
+-0.3010 apple close to
+-0.3010 at patient </s>
+-0.3010 ball close to
+-0.3010 banana has color
+-0.3010 be pick </s>
+-0.3010 body left </s>
+-0.3010 bring dice </s>
+-0.3010 bring oximeter </s>
+-0.3010 can be pick
+-1.2553 close to apple
+-1.2553 close to desk
+-1.2553 close to dice
+-0.9542 close to floor
+-1.2553 close to nao
+-1.2553 close to oximeter
+-1.2553 close to patient
+-1.2553 close to phone
+-0.3010 color green </s>
+-0.3010 color orange </s>
+-0.3010 dice close to
+-0.3010 find nao </s>
+-0.6021 go to ball
+-0.6021 go to banana
+-0.6021 has color green
+-0.6021 has color orange
+-0.3010 head right </s>
+-0.3010 head straight </s>
+-0.3010 i close to
+-0.3010 look at patient
+-0.3010 nao apple close
+-0.3010 nao ball close
+-0.3010 nao banana has
+-0.6021 nao bring dice
+-0.6021 nao bring oximeter
+-0.3010 nao close to
+-0.3010 nao dice close
+-0.3010 nao find nao
+-0.3010 nao go to
+-0.3010 nao help </s>
+-0.3010 nao i close
+-0.3010 nao look at
+-0.3010 nao nao close
+-0.7782 nao oximeter can
+-0.7782 nao oximeter close
+-0.7782 nao oximeter has
+-0.7782 nao phone can
+-0.7782 nao phone close
+-0.7782 nao phone has
+-0.3010 nao pick oximeter
+-0.3010 nao push apple
+-0.3010 nao show i
+-0.3010 nao sit down
+-0.7782 nao turn body
+-0.4771 nao turn head
+-0.3010 oximeter can be
+-0.3010 oximeter close to
+-0.3010 oximeter has color
+-0.3010 phone can be
+-0.3010 phone close to
+-0.3010 phone has color
+-0.3010 pick oximeter </s>
+-0.3010 push apple </s>
+-0.3010 show i </s>
+-0.3010 sit down </s>
+-0.3010 to apple </s>
+-0.3010 to ball </s>
+-0.3010 to banana </s>
+-0.3010 to desk </s>
+-0.3010 to dice </s>
+-0.3010 to floor </s>
+-0.3010 to nao </s>
+-0.3010 to oximeter </s>
+-0.3010 to patient </s>
+-0.3010 to phone </s>
+-0.3010 turn body left
+-0.6021 turn head right
+-0.6021 turn head straight
+
+\end\

@@ -1,0 +1,27 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for WTM
+ */
+
+grammar scenario;
+
+public <utterance> = (and what eyes they were) |
+(youngsters love common candy as treats) |
+(it's a streamlined rifle fast and well made) |
+(within the larger social system are the structural and functional subsystems) |
+(jeff thought you argued in favor of a centrifuge purchase) |
+(but the ships are very slow now and we don't get so many sailors any more) |
+(he stole a dime from a beggar) |
+(before thursday's exam review every formula) |
+(the prospect of cutting back spending is an unpleasant one for any governor) |
+(american newspaper reviewers like to call his plays nihilistic) |
+(they enjoy it when i audition) |
+(john cleans shellfish for a living) |
+(but in this one section we welcomed auditors) |
+(he will allow a rare lie) |
+(a few years later the dome fell in) |
+(right now may not be the best time for business mergers) |
+(withdraw all phony accusations at once) |
+(cory and trish played tag with beach balls for hours) |
+(lot of people will roam the streets in costumes and masks and having a ball);

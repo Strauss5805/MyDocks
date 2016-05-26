@@ -1,0 +1,12 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for WTM
+ */
+
+grammar scenario;
+
+public <utterance> = (should she wake him) |
+(while he was in custody his wife divorced him) |
+(his shoulder felt as if it were broken) |
+(only lawyers love millionaires);

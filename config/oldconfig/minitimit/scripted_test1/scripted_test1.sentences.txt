@@ -1,0 +1,29 @@
+nao phone close to floor
+nao oximeter has color orange
+nao phone can be push
+nao drop banana
+nao apple has color green
+nao push banana
+nao i close to patient
+nao patient close to phone
+nao oximeter close to apple
+nao patient close to home
+nao patient close to i
+nao oximeter can be push
+nao dice close to nao
+nao ball close to sofa
+nao dice has color red
+nao ball close to wall
+nao come here
+nao oximeter close to home
+nao go to oximeter
+nao i close to apple
+incorrect
+nao ball close to phone
+nao oximeter has color red
+correct
+nao where is ball
+nao dice close to home
+nao drop phone
+nao show patient
+yes

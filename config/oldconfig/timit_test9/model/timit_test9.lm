@@ -1,0 +1,478 @@
+Language model created by QuickLM on Thu Feb 11 11:02:37 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 20 sentences and 129 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=129
+ngram 2=174
+ngram 3=156
+
+\1-grams:
+-1.2923 </s> -0.3010
+-1.2923 <s> -0.2665
+-2.2923 a -0.2988
+-2.5933 ability -0.2988
+-2.5933 add -0.2943
+-2.5933 after -0.2999
+-2.5933 alice's -0.2999
+-2.5933 ambulance -0.2999
+-2.5933 an -0.2999
+-2.5933 and -0.2999
+-2.5933 annoying -0.2999
+-2.1162 are -0.2921
+-2.5933 arm -0.2966
+-1.9912 as -0.2955
+-2.5933 assistance -0.2783
+-2.5933 audits -0.2783
+-2.5933 avoid -0.2999
+-2.5933 away -0.2783
+-2.5933 based -0.2999
+-2.5933 birth -0.2999
+-2.5933 bob -0.2999
+-2.5933 brief -0.2999
+-2.5933 by -0.2977
+-2.5933 call -0.2999
+-2.5933 can -0.2783
+-2.5933 carry -0.2988
+-2.5933 case -0.2783
+-2.5933 chief -0.2999
+-2.5933 coleslaw -0.2999
+-2.5933 control -0.2783
+-2.5933 cutting -0.2999
+-2.5933 day -0.2783
+-2.5933 destroy -0.2999
+-2.5933 development -0.2977
+-2.5933 do -0.2999
+-2.5933 each -0.2999
+-2.5933 electrical -0.2977
+-2.5933 electricity -0.2999
+-2.5933 every -0.2999
+-2.5933 extensive -0.2999
+-2.5933 feels -0.2977
+-2.5933 file -0.2999
+-2.5933 for -0.2999
+-2.1162 forces -0.2748
+-2.5933 general -0.2966
+-2.5933 grades -0.2999
+-2.5933 grows -0.2988
+-2.5933 had -0.2999
+-2.5933 has -0.2999
+-2.5933 he -0.2999
+-2.5933 hierarchies -0.2783
+-2.5933 high -0.2966
+-2.5933 higher -0.2988
+-2.5933 i -0.2999
+-1.9912 in -0.2909
+-2.5933 interest -0.2966
+-2.5933 into -0.2988
+-2.5933 investigation -0.2783
+-2.5933 is -0.2999
+-2.5933 latent -0.2977
+-2.5933 less -0.2977
+-2.5933 living -0.2999
+-2.5933 lower -0.2977
+-2.5933 magnetic -0.2977
+-2.5933 magnetism -0.2783
+-2.5933 meat -0.2999
+-2.2923 meats -0.2932
+-2.5933 medical -0.2999
+-2.5933 medieval -0.2999
+-2.5933 military -0.2999
+-2.5933 mirage -0.2783
+-2.2923 more -0.2988
+-2.5933 murals -0.2783
+-2.5933 my -0.2999
+-2.5933 nancy's -0.2783
+-2.5933 noise -0.2999
+-2.5933 not -0.2999
+-2.5933 noteworthy -0.2783
+-2.5933 oasis -0.2977
+-2.5933 of -0.2999
+-2.5933 oil -0.2783
+-2.5933 on -0.2999
+-2.5933 one -0.2999
+-2.2923 or -0.2988
+-2.5933 organizations -0.2999
+-2.5933 over -0.2943
+-2.5933 papered -0.2999
+-2.5933 parenthood -0.2999
+-2.5933 planned -0.2999
+-2.5933 problem -0.2999
+-2.5933 proceeding -0.2999
+-2.5933 processing -0.2999
+-2.5933 project -0.2999
+-2.5933 promote -0.2999
+-2.5933 puncturing -0.2988
+-2.5933 radiation -0.2999
+-2.5933 radiosterilization -0.2999
+-2.5933 received -0.2999
+-2.5933 related -0.2988
+-2.5933 resides -0.2966
+-2.5933 room -0.2999
+-2.5933 serve -0.2943
+-2.5933 services -0.2783
+-2.5933 slapped -0.2999
+-2.5933 slowly -0.2783
+-2.5933 society -0.2977
+-2.5933 supervision -0.2999
+-2.5933 swing -0.2988
+-2.5933 test -0.2999
+-2.1162 than -0.2955
+-2.1162 that -0.2977
+-1.8151 the -0.2943
+-2.5933 their -0.2999
+-2.5933 them -0.2783
+-2.5933 there -0.2977
+-2.5933 they -0.2999
+-2.5933 thighs -0.2783
+-2.2923 to -0.2988
+-2.5933 too -0.2999
+-2.1162 was -0.2966
+-2.5933 we -0.2988
+-2.2923 were -0.2977
+-2.5933 where -0.2988
+-2.5933 while -0.2999
+-2.5933 without -0.2999
+-2.5933 work -0.2999
+-2.5933 would -0.2999
+-2.2923 you -0.2988
+-2.2923 your -0.2988
+
+\2-grams:
+-1.6021 <s> alice's 0.0000
+-1.6021 <s> are -0.2218
+-1.6021 <s> bob 0.0000
+-1.6021 <s> by 0.0000
+-1.6021 <s> call 0.0000
+-1.6021 <s> chief 0.0000
+-1.6021 <s> destroy 0.0000
+-1.6021 <s> do 0.0000
+-1.6021 <s> he 0.0000
+-1.6021 <s> meats -0.1761
+-1.6021 <s> medieval 0.0000
+-1.6021 <s> planned 0.0000
+-1.6021 <s> project 0.0000
+-1.6021 <s> serve 0.0000
+-1.6021 <s> swing 0.0000
+-1.6021 <s> that -0.2218
+-1.6021 <s> the -0.2632
+-1.6021 <s> there 0.0000
+-1.6021 <s> they 0.0000
+-1.6021 <s> where 0.0000
+-0.6021 a brief 0.0000
+-0.6021 a mirage 0.0000
+-0.3010 ability to -0.1761
+-0.3010 add the -0.2632
+-0.3010 after i 0.0000
+-0.3010 alice's ability 0.0000
+-0.3010 ambulance for 0.0000
+-0.3010 an ambulance 0.0000
+-0.3010 and less 0.0000
+-0.3010 annoying each 0.0000
+-0.7782 are as -0.2430
+-0.7782 are more -0.1761
+-0.7782 are your -0.1761
+-0.3010 arm as -0.2430
+-0.9031 as electrical 0.0000
+-0.9031 as general 0.0000
+-0.9031 as high 0.0000
+-0.9031 as you -0.1761
+-0.3010 assistance </s> -0.3010
+-0.3010 audits </s> -0.3010
+-0.3010 avoid puncturing 0.0000
+-0.3010 away </s> -0.3010
+-0.3010 based on 0.0000
+-0.3010 birth control 0.0000
+-0.3010 bob papered 0.0000
+-0.3010 brief case 0.0000
+-0.3010 by that -0.2218
+-0.3010 call an 0.0000
+-0.3010 can </s> -0.3010
+-0.3010 carry a -0.1761
+-0.3010 case </s> -0.3010
+-0.3010 chief interest 0.0000
+-0.3010 coleslaw after 0.0000
+-0.3010 control </s> -0.3010
+-0.3010 cutting into 0.0000
+-0.3010 day </s> -0.3010
+-0.3010 destroy every 0.0000
+-0.3010 development was -0.2218
+-0.3010 do avoid 0.0000
+-0.3010 each day 0.0000
+-0.3010 electrical forces -0.2218
+-0.3010 electricity and 0.0000
+-0.3010 every file 0.0000
+-0.3010 extensive investigation 0.0000
+-0.3010 feels that -0.2218
+-0.3010 file related 0.0000
+-0.3010 for medical 0.0000
+-0.7782 forces </s> -0.3010
+-0.4771 forces are -0.1249
+-0.3010 general as -0.2430
+-0.3010 grades higher 0.0000
+-0.3010 grows more -0.1761
+-0.3010 had slapped 0.0000
+-0.3010 has received 0.0000
+-0.3010 he would 0.0000
+-0.3010 hierarchies </s> -0.3010
+-0.3010 high as -0.2430
+-0.3010 higher or -0.1761
+-0.3010 i add 0.0000
+-0.9031 in electricity 0.0000
+-0.9031 in magnetism 0.0000
+-0.9031 in radiosterilization 0.0000
+-0.9031 in the -0.2632
+-0.3010 interest in -0.2430
+-0.3010 into meats -0.1761
+-0.3010 investigation </s> -0.3010
+-0.3010 is noteworthy 0.0000
+-0.3010 latent than -0.1249
+-0.3010 less than -0.1249
+-0.3010 living room 0.0000
+-0.3010 lower than -0.2218
+-0.3010 magnetic forces -0.1249
+-0.3010 magnetism </s> -0.3010
+-0.3010 meat has 0.0000
+-0.6021 meats test 0.0000
+-0.6021 meats the -0.2632
+-0.3010 medical assistance 0.0000
+-0.3010 medieval society 0.0000
+-0.3010 military services 0.0000
+-0.3010 mirage </s> -0.3010
+-0.6021 more annoying 0.0000
+-0.6021 more latent 0.0000
+-0.3010 murals </s> -0.3010
+-0.3010 my audits 0.0000
+-0.3010 nancy's </s> -0.3010
+-0.3010 noise problem 0.0000
+-0.3010 not carry 0.0000
+-0.3010 noteworthy </s> -0.3010
+-0.3010 oasis was -0.2218
+-0.3010 of meat 0.0000
+-0.3010 oil </s> -0.3010
+-0.3010 on hierarchies 0.0000
+-0.3010 one feels 0.0000
+-0.6021 or cutting 0.0000
+-0.6021 or lower 0.0000
+-0.3010 organizations promote 0.0000
+-0.3010 over the -0.2632
+-0.3010 papered over 0.0000
+-0.3010 parenthood organizations 0.0000
+-0.3010 planned parenthood 0.0000
+-0.3010 problem grows 0.0000
+-0.3010 proceeding too 0.0000
+-0.3010 processing of 0.0000
+-0.3010 project development 0.0000
+-0.3010 promote birth 0.0000
+-0.3010 puncturing or -0.1761
+-0.3010 radiation processing 0.0000
+-0.3010 radiosterilization resides 0.0000
+-0.3010 received extensive 0.0000
+-0.3010 related to -0.1761
+-0.3010 resides in -0.2430
+-0.3010 room murals 0.0000
+-0.3010 serve the -0.2632
+-0.3010 services </s> -0.3010
+-0.3010 slapped their 0.0000
+-0.3010 slowly </s> -0.3010
+-0.3010 society was -0.2218
+-0.3010 supervision is 0.0000
+-0.3010 swing your -0.1761
+-0.3010 test them 0.0000
+-0.4771 than in -0.1761
+-0.7782 than nancy's 0.0000
+-0.7782 that magnetic 0.0000
+-0.7782 that noise 0.0000
+-0.7782 that one 0.0000
+-1.0792 the coleslaw 0.0000
+-1.0792 the living 0.0000
+-1.0792 the military 0.0000
+-1.0792 the oasis 0.0000
+-1.0792 the oil 0.0000
+-1.0792 the radiation 0.0000
+-0.3010 their thighs 0.0000
+-0.3010 them </s> -0.3010
+-0.3010 there forces -0.1249
+-0.3010 they had 0.0000
+-0.3010 thighs </s> -0.3010
+-0.6021 to my 0.0000
+-0.6021 to work 0.0000
+-0.3010 too slowly 0.0000
+-0.7782 was a -0.1761
+-0.7782 was based 0.0000
+-0.7782 was proceeding 0.0000
+-0.3010 we were -0.1761
+-0.6021 were away 0.0000
+-0.6021 were you -0.1761
+-0.3010 where were -0.1761
+-0.3010 while we 0.0000
+-0.3010 without supervision 0.0000
+-0.3010 work without 0.0000
+-0.3010 would not 0.0000
+-0.6021 you can 0.0000
+-0.6021 you while 0.0000
+-0.6021 your arm 0.0000
+-0.6021 your grades 0.0000
+
+\3-grams:
+-0.3010 <s> alice's ability
+-0.3010 <s> are your
+-0.3010 <s> bob papered
+-0.3010 <s> by that
+-0.3010 <s> call an
+-0.3010 <s> chief interest
+-0.3010 <s> destroy every
+-0.3010 <s> do avoid
+-0.3010 <s> he would
+-0.3010 <s> meats the
+-0.3010 <s> medieval society
+-0.3010 <s> planned parenthood
+-0.3010 <s> project development
+-0.3010 <s> serve the
+-0.3010 <s> swing your
+-0.3010 <s> that noise
+-0.3010 <s> the oasis
+-0.3010 <s> there forces
+-0.3010 <s> they had
+-0.3010 <s> where were
+-0.3010 a brief case
+-0.3010 a mirage </s>
+-0.3010 ability to work
+-0.3010 add the oil
+-0.3010 after i add
+-0.3010 alice's ability to
+-0.3010 ambulance for medical
+-0.3010 an ambulance for
+-0.3010 and less than
+-0.3010 annoying each day
+-0.3010 are as general
+-0.3010 are more latent
+-0.3010 are your grades
+-0.3010 arm as high
+-0.3010 as electrical forces
+-0.3010 as general as
+-0.3010 as high as
+-0.3010 as you can
+-0.3010 avoid puncturing or
+-0.3010 based on hierarchies
+-0.3010 birth control </s>
+-0.3010 bob papered over
+-0.3010 brief case </s>
+-0.3010 by that one
+-0.3010 call an ambulance
+-0.3010 carry a brief
+-0.3010 chief interest in
+-0.3010 coleslaw after i
+-0.3010 cutting into meats
+-0.3010 destroy every file
+-0.3010 development was proceeding
+-0.3010 do avoid puncturing
+-0.3010 each day </s>
+-0.3010 electrical forces </s>
+-0.3010 electricity and less
+-0.3010 every file related
+-0.3010 extensive investigation </s>
+-0.3010 feels that magnetic
+-0.3010 file related to
+-0.3010 for medical assistance
+-0.6021 forces are as
+-0.6021 forces are more
+-0.3010 general as electrical
+-0.3010 grades higher or
+-0.3010 grows more annoying
+-0.3010 had slapped their
+-0.3010 has received extensive
+-0.3010 he would not
+-0.3010 high as you
+-0.3010 higher or lower
+-0.3010 i add the
+-0.3010 in electricity and
+-0.3010 in magnetism </s>
+-0.3010 in radiosterilization resides
+-0.3010 in the military
+-0.3010 interest in radiosterilization
+-0.3010 into meats test
+-0.3010 is noteworthy </s>
+-0.3010 latent than in
+-0.3010 less than in
+-0.3010 living room murals
+-0.3010 lower than nancy's
+-0.3010 magnetic forces are
+-0.3010 meat has received
+-0.3010 meats test them
+-0.3010 meats the radiation
+-0.3010 medical assistance </s>
+-0.3010 medieval society was
+-0.3010 military services </s>
+-0.3010 more annoying each
+-0.3010 more latent than
+-0.3010 my audits </s>
+-0.3010 noise problem grows
+-0.3010 not carry a
+-0.3010 oasis was a
+-0.3010 of meat has
+-0.3010 on hierarchies </s>
+-0.3010 one feels that
+-0.3010 or cutting into
+-0.3010 or lower than
+-0.3010 organizations promote birth
+-0.3010 over the living
+-0.3010 papered over the
+-0.3010 parenthood organizations promote
+-0.3010 planned parenthood organizations
+-0.3010 problem grows more
+-0.3010 proceeding too slowly
+-0.3010 processing of meat
+-0.3010 project development was
+-0.3010 promote birth control
+-0.3010 puncturing or cutting
+-0.3010 radiation processing of
+-0.3010 radiosterilization resides in
+-0.3010 received extensive investigation
+-0.3010 related to my
+-0.3010 resides in the
+-0.3010 room murals </s>
+-0.3010 serve the coleslaw
+-0.3010 slapped their thighs
+-0.3010 society was based
+-0.3010 supervision is noteworthy
+-0.3010 swing your arm
+-0.3010 test them </s>
+-0.6021 than in electricity
+-0.6021 than in magnetism
+-0.3010 than nancy's </s>
+-0.3010 that magnetic forces
+-0.3010 that noise problem
+-0.3010 that one feels
+-0.3010 the coleslaw after
+-0.3010 the living room
+-0.3010 the military services
+-0.3010 the oasis was
+-0.3010 the oil </s>
+-0.3010 the radiation processing
+-0.3010 their thighs </s>
+-0.3010 there forces are
+-0.3010 they had slapped
+-0.3010 to my audits
+-0.3010 to work without
+-0.3010 too slowly </s>
+-0.3010 was a mirage
+-0.3010 was based on
+-0.3010 was proceeding too
+-0.3010 we were away
+-0.3010 were away </s>
+-0.3010 were you while
+-0.3010 where were you
+-0.3010 while we were
+-0.3010 without supervision is
+-0.3010 work without supervision
+-0.3010 would not carry
+-0.3010 you can </s>
+-0.3010 you while we
+-0.3010 your arm as
+-0.3010 your grades higher
+
+\end\

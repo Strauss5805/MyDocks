@@ -1,0 +1,113 @@
+Language model created by QuickLM on Thu Feb 11 12:04:02 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 9 sentences and 23 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=23
+ngram 2=36
+ngram 3=35
+
+\1-grams:
+-1.0950 </s> -0.3010
+-1.0950 <s> -0.2156
+-1.7482 apple -0.2341
+-1.2041 down -0.2561
+-2.0492 help -0.2971
+-2.0492 i -0.2971
+-1.7482 it -0.2730
+-2.0492 lay -0.2730
+-2.0492 me -0.2932
+-2.0492 now -0.2646
+-1.5721 object -0.2341
+-1.7482 pick -0.2932
+-2.0492 please -0.2971
+-1.4472 put -0.2771
+-2.0492 robot -0.2852
+-2.0492 smartphone -0.2646
+-2.0492 that -0.2892
+-1.5721 the -0.2892
+-2.0492 this -0.2892
+-2.0492 to -0.2852
+-1.7482 up -0.2892
+-2.0492 want -0.2971
+-2.0492 you -0.2971
+
+\2-grams:
+-1.2553 <s> down -0.1091
+-1.2553 <s> help 0.0000
+-1.2553 <s> i 0.0000
+-1.2553 <s> object -0.1249
+-1.2553 <s> pick 0.0000
+-1.2553 <s> please 0.0000
+-0.9542 <s> put -0.0969
+-1.2553 <s> robot 0.0000
+-0.6021 apple </s> -0.3010
+-0.6021 apple down -0.1091
+-0.4472 down </s> -0.3010
+-1.1461 down now 0.0000
+-1.1461 down this 0.0000
+-0.3010 help me 0.0000
+-0.3010 i want 0.0000
+-0.3010 it down -0.1091
+-0.3010 lay down -0.2688
+-0.3010 me pick 0.0000
+-0.3010 now </s> -0.3010
+-0.7782 object </s> -0.3010
+-0.4771 object down -0.0580
+-0.3010 pick up 0.0000
+-0.3010 please lay 0.0000
+-0.6021 put it 0.0000
+-0.9031 put that 0.0000
+-0.9031 put the -0.1249
+-0.3010 robot put -0.1761
+-0.3010 smartphone </s> -0.3010
+-0.3010 that object -0.1249
+-0.4771 the apple 0.0000
+-0.7782 the smartphone 0.0000
+-0.3010 this object -0.2218
+-0.3010 to put -0.2430
+-0.3010 up the 0.0000
+-0.3010 want you 0.0000
+-0.3010 you to 0.0000
+
+\3-grams:
+-0.3010 <s> down </s>
+-0.3010 <s> help me
+-0.3010 <s> i want
+-0.3010 <s> object down
+-0.3010 <s> pick up
+-0.3010 <s> please lay
+-0.6021 <s> put it
+-0.6021 <s> put the
+-0.3010 <s> robot put
+-0.3010 apple down </s>
+-0.3010 down now </s>
+-0.3010 down this object
+-0.3010 help me pick
+-0.3010 i want you
+-0.3010 it down </s>
+-0.3010 lay down this
+-0.3010 me pick up
+-0.6021 object down </s>
+-0.6021 object down now
+-0.3010 pick up the
+-0.3010 please lay down
+-0.3010 put it down
+-0.3010 put that object
+-0.3010 put the apple
+-0.3010 robot put it
+-0.3010 that object down
+-0.6021 the apple </s>
+-0.6021 the apple down
+-0.3010 the smartphone </s>
+-0.3010 this object </s>
+-0.3010 to put that
+-0.6021 up the apple
+-0.6021 up the smartphone
+-0.3010 want you to
+-0.3010 you to put
+
+\end\

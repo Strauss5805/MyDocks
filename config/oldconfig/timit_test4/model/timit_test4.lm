@@ -1,0 +1,481 @@
+Language model created by QuickLM on Thu Feb 11 11:02:34 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 19 sentences and 128 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=128
+ngram 2=175
+ngram 3=159
+
+\1-grams:
+-1.3167 </s> -0.3010
+-1.3167 <s> -0.2642
+-1.9934 a -0.2966
+-2.5955 abdomen -0.2999
+-2.5955 abruptly -0.2999
+-2.5955 always -0.2999
+-1.9934 and -0.2955
+-2.1184 are -0.2921
+-2.5955 at -0.2865
+-2.5955 augmented -0.2966
+-2.5955 authorities -0.2999
+-2.5955 back -0.2796
+-2.5955 beautiful -0.2796
+-2.5955 bones -0.2966
+-2.5955 books -0.2977
+-2.5955 bounded -0.2966
+-2.5955 breakdown -0.2988
+-1.9934 by -0.2830
+-2.5955 calcium -0.2999
+-2.5955 carpet -0.2988
+-2.5955 cat's -0.2999
+-2.5955 cattle -0.2796
+-2.5955 causeway -0.2999
+-2.5955 charlie's -0.2988
+-2.5955 cheap -0.2999
+-2.2945 cleaners -0.2966
+-2.5955 cliff -0.2966
+-2.5955 cloth -0.2999
+-2.5955 coincided -0.2999
+-2.5955 dew -0.2999
+-2.2945 dirty -0.2988
+-2.5955 dishes -0.2796
+-2.5955 do -0.2999
+-2.5955 don't -0.2999
+-2.5955 dozen -0.2999
+-2.5955 each -0.2999
+-2.5955 earn -0.2999
+-2.5955 ears -0.2796
+-2.5955 ended -0.2999
+-2.5955 fallen -0.2999
+-2.5955 fences -0.2966
+-2.5955 first -0.2999
+-2.1184 for -0.2977
+-2.5955 glistened -0.2999
+-2.5955 gone -0.2966
+-2.5955 good -0.2977
+-2.5955 grazing -0.2999
+-2.5955 had -0.2999
+-2.5955 hard -0.2796
+-2.5955 harmonize -0.2999
+-2.2945 he -0.2955
+-2.5955 heating -0.2999
+-2.5955 however -0.2865
+-2.5955 hurts -0.2999
+-2.5955 husbandry -0.2966
+-2.5955 in -0.2865
+-2.5955 income -0.2999
+-2.5955 into -0.2966
+-2.5955 is -0.2999
+-2.5955 jane -0.2999
+-2.2945 job -0.2921
+-2.5955 litter -0.2999
+-2.5955 loss -0.2999
+-2.5955 lunchroom -0.2999
+-2.5955 luxurious -0.2999
+-2.5955 made -0.2988
+-2.5955 makes -0.2999
+-2.5955 marvelously -0.2796
+-2.5955 massage -0.2796
+-2.5955 may -0.2999
+-2.5955 me -0.2796
+-2.5955 meow -0.2999
+-2.5955 money -0.2966
+-2.5955 more -0.2999
+-2.5955 morning -0.2999
+-2.5955 muscular -0.2999
+-2.5955 musicians -0.2999
+-2.5955 my -0.2999
+-2.5955 now -0.2865
+-2.5955 objects -0.2999
+-2.2945 of -0.2955
+-2.5955 oldsters -0.2977
+-2.5955 on -0.2865
+-2.5955 oriental -0.2999
+-2.5955 our -0.2999
+-2.5955 part -0.2796
+-2.5955 pewter -0.2977
+-2.5955 please -0.2999
+-2.5955 prime -0.2999
+-2.5955 rail -0.2999
+-2.5955 remained -0.2999
+-2.5955 rug -0.2796
+-2.5955 run -0.2865
+-2.5955 say -0.2999
+-2.5955 schnooks -0.2796
+-2.5955 several -0.2999
+-2.5955 shampooed -0.2999
+-2.5955 shore -0.2796
+-2.5955 snake -0.2999
+-2.5955 soft -0.2988
+-2.5955 soothed -0.2966
+-2.5955 spider -0.2999
+-2.5955 stockings -0.2999
+-2.5955 stranded -0.2796
+-2.5955 strong -0.2796
+-2.5955 sun -0.2796
+-2.5955 suppers -0.2796
+-2.5955 system -0.2999
+-2.5955 table -0.2999
+-2.5955 take -0.2999
+-2.5955 target -0.2796
+-2.5955 teeth -0.2999
+-2.5955 that -0.2999
+-1.4816 the -0.2842
+-2.5955 there -0.2999
+-2.5955 they're -0.2999
+-2.5955 this -0.2988
+-2.5955 those -0.2999
+-2.5955 time -0.2999
+-2.5955 to -0.2865
+-2.5955 untimely -0.2999
+-1.9934 was -0.2966
+-2.5955 web -0.2999
+-2.5955 were -0.2999
+-2.5955 with -0.2865
+-2.5955 working -0.2999
+-2.5955 worn -0.2796
+-2.5955 your -0.2999
+
+\2-grams:
+-1.5798 <s> a -0.2430
+-1.5798 <s> authorities 0.0000
+-1.5798 <s> books 0.0000
+-1.5798 <s> calcium 0.0000
+-1.5798 <s> cheap 0.0000
+-1.5798 <s> cliff 0.0000
+-1.5798 <s> don't 0.0000
+-1.5798 <s> each 0.0000
+-1.5798 <s> he -0.1761
+-1.5798 <s> however 0.0000
+-1.5798 <s> husbandry 0.0000
+-1.5798 <s> jane 0.0000
+-1.5798 <s> objects 0.0000
+-1.5798 <s> please 0.0000
+-0.9777 <s> the -0.2285
+-1.5798 <s> those 0.0000
+-0.9031 a heating 0.0000
+-0.9031 a muscular 0.0000
+-0.9031 a prime 0.0000
+-0.9031 a soft 0.0000
+-0.3010 abdomen is 0.0000
+-0.3010 abruptly at 0.0000
+-0.3010 always hurts 0.0000
+-0.9031 and he -0.1761
+-0.9031 and now 0.0000
+-0.9031 and teeth 0.0000
+-0.9031 and there 0.0000
+-0.7782 are a -0.2430
+-0.7782 are beautiful 0.0000
+-0.7782 are for -0.2218
+-0.3010 at the -0.2840
+-0.3010 augmented by -0.2430
+-0.3010 authorities say 0.0000
+-0.3010 back </s> -0.3010
+-0.3010 beautiful </s> -0.3010
+-0.3010 bones and -0.2430
+-0.3010 books are -0.2218
+-0.3010 bounded by -0.2430
+-0.3010 breakdown of -0.1761
+-0.9031 by several 0.0000
+-0.9031 by snake 0.0000
+-0.9031 by the -0.2840
+-0.9031 by working 0.0000
+-0.3010 calcium makes 0.0000
+-0.3010 carpet cleaners -0.1761
+-0.3010 cat's meow 0.0000
+-0.3010 cattle </s> -0.3010
+-0.3010 causeway ended 0.0000
+-0.3010 charlie's dirty -0.1761
+-0.3010 cheap stockings 0.0000
+-0.6021 cleaners for -0.2218
+-0.6021 cleaners shampooed 0.0000
+-0.3010 cliff was -0.2430
+-0.3010 cloth to 0.0000
+-0.3010 coincided with 0.0000
+-0.3010 dew on 0.0000
+-0.6021 dirty dishes 0.0000
+-0.6021 dirty table 0.0000
+-0.3010 dishes </s> -0.3010
+-0.3010 do charlie's 0.0000
+-0.3010 don't do 0.0000
+-0.3010 dozen lunchroom 0.0000
+-0.3010 each untimely 0.0000
+-0.3010 earn more 0.0000
+-0.3010 ears </s> -0.3010
+-0.3010 ended abruptly 0.0000
+-0.3010 fallen into 0.0000
+-0.3010 fences and -0.2430
+-0.3010 first time 0.0000
+-0.7782 for me 0.0000
+-0.7782 for schnooks 0.0000
+-0.7782 for your 0.0000
+-0.3010 glistened in 0.0000
+-0.3010 gone and -0.2430
+-0.3010 good for -0.2218
+-0.3010 grazing cattle 0.0000
+-0.3010 had fallen 0.0000
+-0.3010 hard </s> -0.3010
+-0.3010 harmonize marvelously 0.0000
+-0.6021 he had 0.0000
+-0.6021 he was -0.2430
+-0.3010 heating system 0.0000
+-0.3010 however the -0.2840
+-0.3010 hurts my 0.0000
+-0.3010 husbandry was -0.2430
+-0.3010 in the -0.2840
+-0.3010 income loss 0.0000
+-0.3010 into a -0.2430
+-0.3010 is good 0.0000
+-0.3010 jane may 0.0000
+-0.6021 job and -0.2430
+-0.6021 job was -0.2430
+-0.3010 litter remained 0.0000
+-0.3010 loss coincided 0.0000
+-0.3010 lunchroom suppers 0.0000
+-0.3010 luxurious massage 0.0000
+-0.3010 made of -0.1761
+-0.3010 makes bones 0.0000
+-0.3010 marvelously </s> -0.3010
+-0.3010 massage </s> -0.3010
+-0.3010 may earn 0.0000
+-0.3010 me </s> -0.3010
+-0.3010 meow always 0.0000
+-0.3010 money by -0.2430
+-0.3010 more money 0.0000
+-0.3010 morning dew 0.0000
+-0.3010 muscular abdomen 0.0000
+-0.3010 musicians harmonize 0.0000
+-0.3010 my ears 0.0000
+-0.3010 now the -0.2840
+-0.3010 objects made 0.0000
+-0.6021 of a -0.2430
+-0.6021 of pewter 0.0000
+-0.3010 oldsters are -0.2218
+-0.3010 on the -0.2840
+-0.3010 oriental rug 0.0000
+-0.3010 our oriental 0.0000
+-0.3010 part </s> -0.3010
+-0.3010 pewter are -0.2218
+-0.3010 please take 0.0000
+-0.3010 prime target 0.0000
+-0.3010 rail fences 0.0000
+-0.3010 remained augmented 0.0000
+-0.3010 rug </s> -0.3010
+-0.3010 run the -0.2840
+-0.3010 say that 0.0000
+-0.3010 schnooks </s> -0.3010
+-0.3010 several dozen 0.0000
+-0.3010 shampooed our 0.0000
+-0.3010 shore </s> -0.3010
+-0.3010 snake rail 0.0000
+-0.3010 soft job -0.1761
+-0.3010 soothed by -0.2430
+-0.3010 spider web 0.0000
+-0.3010 stockings run 0.0000
+-0.3010 stranded </s> -0.3010
+-0.3010 strong </s> -0.3010
+-0.3010 sun </s> -0.3010
+-0.3010 suppers </s> -0.3010
+-0.3010 system part 0.0000
+-0.3010 table cloth 0.0000
+-0.3010 take this 0.0000
+-0.3010 target </s> -0.3010
+-0.3010 teeth strong 0.0000
+-0.3010 that oldsters 0.0000
+-1.4150 the breakdown 0.0000
+-1.4150 the carpet 0.0000
+-1.4150 the cat's 0.0000
+-1.4150 the causeway 0.0000
+-1.4150 the cleaners -0.1761
+-1.4150 the first 0.0000
+-1.4150 the job -0.1761
+-1.4150 the litter 0.0000
+-1.4150 the luxurious 0.0000
+-1.4150 the morning 0.0000
+-1.4150 the shore 0.0000
+-1.4150 the spider 0.0000
+-1.4150 the sun 0.0000
+-0.3010 there were 0.0000
+-0.3010 they're worn 0.0000
+-0.3010 this dirty -0.1761
+-0.3010 those musicians 0.0000
+-0.3010 time they're 0.0000
+-0.3010 to the -0.2840
+-0.3010 untimely income 0.0000
+-0.9031 was bounded 0.0000
+-0.9031 was gone 0.0000
+-0.9031 was soothed 0.0000
+-0.9031 was stranded 0.0000
+-0.3010 web glistened 0.0000
+-0.3010 were grazing 0.0000
+-0.3010 with the -0.2840
+-0.3010 working hard 0.0000
+-0.3010 worn </s> -0.3010
+-0.3010 your back 0.0000
+
+\3-grams:
+-0.3010 <s> a muscular
+-0.3010 <s> authorities say
+-0.3010 <s> books are
+-0.3010 <s> calcium makes
+-0.3010 <s> cheap stockings
+-0.3010 <s> cliff was
+-0.3010 <s> don't do
+-0.3010 <s> each untimely
+-0.3010 <s> he had
+-0.3010 <s> however the
+-0.3010 <s> husbandry was
+-0.3010 <s> jane may
+-0.3010 <s> objects made
+-0.3010 <s> please take
+-0.9031 <s> the carpet
+-0.9031 <s> the cat's
+-0.9031 <s> the causeway
+-0.9031 <s> the morning
+-0.3010 <s> those musicians
+-0.3010 a heating system
+-0.3010 a muscular abdomen
+-0.3010 a prime target
+-0.3010 a soft job
+-0.3010 abdomen is good
+-0.3010 abruptly at the
+-0.3010 always hurts my
+-0.3010 and he was
+-0.3010 and now the
+-0.3010 and teeth strong
+-0.3010 and there were
+-0.3010 are a prime
+-0.3010 are beautiful </s>
+-0.3010 are for schnooks
+-0.3010 at the shore
+-0.3010 augmented by several
+-0.3010 authorities say that
+-0.3010 bones and teeth
+-0.3010 books are for
+-0.3010 bounded by snake
+-0.3010 breakdown of a
+-0.3010 by several dozen
+-0.3010 by snake rail
+-0.3010 by the luxurious
+-0.3010 by working hard
+-0.3010 calcium makes bones
+-0.3010 carpet cleaners shampooed
+-0.3010 cat's meow always
+-0.3010 causeway ended abruptly
+-0.3010 charlie's dirty dishes
+-0.3010 cheap stockings run
+-0.3010 cleaners for me
+-0.3010 cleaners shampooed our
+-0.3010 cliff was soothed
+-0.3010 cloth to the
+-0.3010 coincided with the
+-0.3010 dew on the
+-0.3010 dirty dishes </s>
+-0.3010 dirty table cloth
+-0.3010 do charlie's dirty
+-0.3010 don't do charlie's
+-0.3010 dozen lunchroom suppers
+-0.3010 each untimely income
+-0.3010 earn more money
+-0.3010 ended abruptly at
+-0.3010 fallen into a
+-0.3010 fences and there
+-0.3010 first time they're
+-0.3010 for me </s>
+-0.3010 for schnooks </s>
+-0.3010 for your back
+-0.3010 glistened in the
+-0.3010 gone and he
+-0.3010 good for your
+-0.3010 grazing cattle </s>
+-0.3010 had fallen into
+-0.3010 harmonize marvelously </s>
+-0.3010 he had fallen
+-0.3010 he was stranded
+-0.3010 heating system part
+-0.3010 however the litter
+-0.3010 hurts my ears
+-0.3010 husbandry was bounded
+-0.3010 in the sun
+-0.3010 income loss coincided
+-0.3010 into a soft
+-0.3010 is good for
+-0.3010 jane may earn
+-0.3010 job and now
+-0.3010 job was gone
+-0.3010 litter remained augmented
+-0.3010 loss coincided with
+-0.3010 lunchroom suppers </s>
+-0.3010 luxurious massage </s>
+-0.3010 made of pewter
+-0.3010 makes bones and
+-0.3010 may earn more
+-0.3010 meow always hurts
+-0.3010 money by working
+-0.3010 more money by
+-0.3010 morning dew on
+-0.3010 muscular abdomen is
+-0.3010 musicians harmonize marvelously
+-0.3010 my ears </s>
+-0.3010 now the job
+-0.3010 objects made of
+-0.3010 of a heating
+-0.3010 of pewter are
+-0.3010 oldsters are a
+-0.3010 on the spider
+-0.3010 oriental rug </s>
+-0.3010 our oriental rug
+-0.3010 pewter are beautiful
+-0.3010 please take this
+-0.3010 prime target </s>
+-0.3010 rail fences and
+-0.3010 remained augmented by
+-0.3010 run the first
+-0.3010 say that oldsters
+-0.3010 several dozen lunchroom
+-0.3010 shampooed our oriental
+-0.3010 snake rail fences
+-0.3010 soft job and
+-0.3010 soothed by the
+-0.3010 spider web glistened
+-0.3010 stockings run the
+-0.3010 system part </s>
+-0.3010 table cloth to
+-0.3010 take this dirty
+-0.3010 teeth strong </s>
+-0.3010 that oldsters are
+-0.3010 the breakdown of
+-0.3010 the carpet cleaners
+-0.3010 the cat's meow
+-0.3010 the causeway ended
+-0.3010 the cleaners for
+-0.3010 the first time
+-0.3010 the job was
+-0.3010 the litter remained
+-0.3010 the luxurious massage
+-0.3010 the morning dew
+-0.3010 the shore </s>
+-0.3010 the spider web
+-0.3010 the sun </s>
+-0.3010 there were grazing
+-0.3010 they're worn </s>
+-0.3010 this dirty table
+-0.3010 those musicians harmonize
+-0.3010 time they're worn
+-0.3010 to the cleaners
+-0.3010 untimely income loss
+-0.3010 was bounded by
+-0.3010 was gone and
+-0.3010 was soothed by
+-0.3010 was stranded </s>
+-0.3010 web glistened in
+-0.3010 were grazing cattle
+-0.3010 with the breakdown
+-0.3010 working hard </s>
+-0.3010 your back </s>
+
+\end\

@@ -1,0 +1,116 @@
+Language model created by QuickLM on Thu Feb 11 12:04:01 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 9 sentences and 23 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=23
+ngram 2=37
+ngram 3=37
+
+\1-grams:
+-1.1980 </s> -0.3010
+-1.1980 <s> -0.2315
+-2.1523 am -0.2980
+-2.1523 an -0.2980
+-2.1523 apple -0.2886
+-1.4533 clean -0.2791
+-1.8513 door -0.2693
+-1.5502 front -0.2886
+-2.1523 help -0.2949
+-2.1523 i -0.2980
+-1.5502 in -0.2886
+-1.6752 is -0.2855
+-1.8513 me -0.2560
+-2.1523 object -0.2918
+-1.5502 of -0.2855
+-1.8513 please -0.2855
+-1.6752 robot -0.2758
+-2.1523 standing -0.2886
+-1.4533 table -0.2693
+-1.3072 the -0.2758
+-2.1523 there -0.2918
+-2.1523 up -0.2726
+-1.6752 you -0.2726
+
+\2-grams:
+-1.2553 <s> clean 0.0000
+-1.2553 <s> door -0.1761
+-1.2553 <s> help 0.0000
+-1.2553 <s> please 0.0000
+-0.7782 <s> robot 0.0000
+-1.2553 <s> the -0.2688
+-1.2553 <s> there 0.0000
+-0.3010 am standing 0.0000
+-0.3010 an apple 0.0000
+-0.3010 apple in 0.0000
+-0.3010 clean the -0.1091
+-0.6021 door is -0.1249
+-0.6021 door the -0.2688
+-0.3010 front of 0.0000
+-0.3010 help me -0.1761
+-0.3010 i am 0.0000
+-0.3010 in front 0.0000
+-0.7782 is an 0.0000
+-0.4771 is in 0.0000
+-0.6021 me </s> -0.3010
+-0.6021 me clean 0.0000
+-0.3010 object is -0.1249
+-0.9031 of me -0.1761
+-0.4260 of you 0.0000
+-0.3010 please clean 0.0000
+-0.7782 robot clean 0.0000
+-0.7782 robot i 0.0000
+-0.7782 robot please 0.0000
+-0.3010 standing in 0.0000
+-0.3979 table </s> -0.3010
+-1.0000 table up 0.0000
+-1.1461 the door -0.1761
+-1.1461 the object 0.0000
+-0.4472 the table 0.0000
+-0.3010 there is -0.2218
+-0.3010 up </s> -0.3010
+-0.3010 you </s> -0.3010
+
+\3-grams:
+-0.3010 <s> clean the
+-0.3010 <s> door the
+-0.3010 <s> help me
+-0.3010 <s> please clean
+-0.7782 <s> robot clean
+-0.7782 <s> robot i
+-0.7782 <s> robot please
+-0.3010 <s> the door
+-0.3010 <s> there is
+-0.3010 am standing in
+-0.3010 an apple in
+-0.3010 apple in front
+-0.3010 clean the table
+-0.3010 door is in
+-0.3010 door the object
+-0.9031 front of me
+-0.4260 front of you
+-0.3010 help me clean
+-0.3010 i am standing
+-0.3010 in front of
+-0.3010 is an apple
+-0.3010 is in front
+-0.3010 me clean the
+-0.3010 object is in
+-0.3010 of me </s>
+-0.3010 of you </s>
+-0.3010 please clean the
+-0.3010 robot clean the
+-0.3010 robot i am
+-0.3010 robot please clean
+-0.3010 standing in front
+-0.3010 table up </s>
+-0.3010 the door is
+-0.3010 the object is
+-0.3979 the table </s>
+-1.0000 the table up
+-0.3010 there is an
+
+\end\

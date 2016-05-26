@@ -1,0 +1,13 @@
+;;;;;;;;;;
+timit8.rounded_in_percent_with_empty_results;;;;;;;;;;
+Approach;Language Weight;Word Insertion Probability;Ratio;Accuracy;WER;Sentence Accuracy;Substitutions;Insertions;Deletions;Empty Results;SER;Average Time
+Google;;;;87.013;13.636;47.368;18;1;2;0;52.632;-489
+Google Sentence List;;;;6.494;98.701;0.0;103;8;41;0;100.0;304
+Google Word List;;;;46.753;53.896;0.0;80;1;2;0;100.0;25
+Google Phoneme Unigram;0.2;0.5;0.4;22.727;115.584;0.0;116;59;3;0;100.0;1898
+Google Phoneme Bi-Gram;2.35;4.35;0.54;4.545;97.403;0.0;93;3;54;0;100.0;7296
+Google Phoneme FlatTri-Gram;1.9;5.0;0.38;4.545;105.844;0.0;122;16;25;0;100.0;363208
+Google Phoneme LexTri-Gram;0.95;1.4;0.679;4.545;98.701;0.0;89;5;58;0;100.0;1417
+Sphinx Bi-Gram;10.5;0.7;15.0;23.377;85.065;0.0;92;13;26;0;100.0;25160
+Sphinx Tri-Gram;10.5;0.7;15.0;24.026;84.416;0.0;93;13;24;0;100.0;22571
+Sphinx Sentence List;;;;1.948;100.649;0.0;104;4;47;0;100.0;349

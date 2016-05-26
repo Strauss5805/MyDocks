@@ -1,0 +1,30 @@
+nao find apple
+nao follow i
+nao oximeter has color blue
+nao apple close to phone
+nao apple has color yellow
+nao oximeter close to desk
+nao banana close to sofa
+nao phone has color purple
+nao phone has color red
+nao go to apple
+nao dice has color blue
+nao which color has phone
+nao i close to nao
+nao nao close to desk
+nao phone close to oximeter
+nao banana close to wall
+nao nao close to i
+nao i close to ball
+nao nao close to floor
+nao what can phone
+nao where is i
+nao ball has color blue
+nao phone has color yellow
+nao find phone
+nao nao close to sofa
+nao drop ball
+nao dice has color green
+nao nao close to nao
+nao banana close to desk
+nao push oximeter

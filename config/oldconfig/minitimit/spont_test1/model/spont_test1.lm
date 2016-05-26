@@ -1,0 +1,168 @@
+Language model created by QuickLM on Thu Feb 11 12:04:01 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 10 sentences and 33 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=33
+ngram 2=58
+ngram 3=58
+
+\1-grams:
+-1.2355 </s> -0.3010
+-1.2355 <s> -0.2387
+-2.2355 a -0.2960
+-2.2355 apple -0.2856
+-1.9345 at -0.2934
+-1.4574 back -0.2642
+-2.2355 behind -0.2934
+-1.9345 can -0.2908
+-1.7584 clean -0.2803
+-1.9345 door -0.2777
+-2.2355 find -0.2830
+-2.2355 following -0.2985
+-2.2355 i -0.2985
+-1.7584 in -0.2777
+-1.4574 is -0.2803
+-2.2355 it -0.2985
+-2.2355 look -0.2960
+-2.2355 me -0.2960
+-2.2355 my -0.2856
+-2.2355 on -0.2830
+-2.2355 pick -0.2985
+-1.6335 please -0.2882
+-2.2355 someone -0.2856
+-1.9345 something -0.2882
+-1.7584 table -0.2642
+-1.3904 the -0.2696
+-1.6335 there -0.2586
+-2.2355 think -0.2985
+-2.2355 this -0.2934
+-2.2355 up -0.2750
+-2.2355 wall -0.2985
+-1.7584 you -0.2586
+-1.9345 your -0.2856
+
+\2-grams:
+-1.3010 <s> apple 0.0000
+-1.3010 <s> clean -0.1249
+-1.3010 <s> i 0.0000
+-1.0000 <s> please -0.1761
+-1.3010 <s> the -0.2688
+-0.8239 <s> there -0.0969
+-1.3010 <s> you -0.2218
+-0.3010 a door -0.1761
+-0.3010 apple is -0.2632
+-0.6021 at my 0.0000
+-0.6021 at your 0.0000
+-0.3802 back </s> -0.3010
+-1.0792 back please -0.2430
+-0.3010 behind you -0.2218
+-0.6021 can find 0.0000
+-0.6021 can you -0.2218
+-0.4771 clean the -0.2341
+-0.7782 clean this 0.0000
+-0.6021 door in -0.1249
+-0.6021 door is -0.2632
+-0.3010 find the -0.2688
+-0.3010 following me 0.0000
+-0.3010 i think 0.0000
+-0.4771 in the -0.1963
+-0.7782 in your 0.0000
+-1.0792 is a 0.0000
+-1.0792 is following 0.0000
+-1.0792 is in -0.2218
+-1.0792 is on 0.0000
+-0.7782 is something 0.0000
+-0.3010 it up 0.0000
+-0.3010 look at -0.1761
+-0.3010 me can -0.1761
+-0.3010 my back -0.0669
+-0.3010 on the -0.1963
+-0.3010 pick it 0.0000
+-0.6021 please clean 0.0000
+-0.9031 please look 0.0000
+-0.9031 please pick 0.0000
+-0.3010 someone is -0.2632
+-0.6021 something at -0.1761
+-0.6021 something in -0.1249
+-0.4771 table </s> -0.3010
+-0.7782 table there -0.2430
+-0.6690 the back 0.0000
+-1.1461 the door -0.1761
+-0.8451 the table 0.0000
+-1.1461 the wall 0.0000
+-0.9031 there </s> -0.3010
+-0.4260 there is -0.1761
+-0.3010 think someone 0.0000
+-0.3010 this table -0.1249
+-0.3010 up </s> -0.3010
+-0.3010 wall behind 0.0000
+-0.7782 you </s> -0.3010
+-0.7782 you can -0.1761
+-0.7782 you please -0.2430
+-0.3010 your back -0.0669
+
+\3-grams:
+-0.3010 <s> apple is
+-0.3010 <s> clean the
+-0.3010 <s> i think
+-0.3010 <s> please clean
+-0.3010 <s> the door
+-0.3010 <s> there is
+-0.3010 <s> you can
+-0.3010 a door in
+-0.3010 apple is on
+-0.3010 at my back
+-0.3010 at your back
+-0.3010 back please pick
+-0.3010 behind you </s>
+-0.3010 can find the
+-0.3010 can you please
+-0.3010 clean the table
+-0.3010 clean this table
+-0.3010 door in the
+-0.3010 door is in
+-0.3010 find the wall
+-0.3010 following me can
+-0.3010 i think someone
+-0.3010 in the back
+-0.3010 in your back
+-0.3010 is a door
+-0.3010 is following me
+-0.3010 is in your
+-0.3010 is on the
+-0.6021 is something at
+-0.6021 is something in
+-0.3010 it up </s>
+-0.3010 look at my
+-0.3010 me can you
+-0.3010 my back </s>
+-0.3010 on the back
+-0.3010 pick it up
+-0.6021 please clean the
+-0.6021 please clean this
+-0.3010 please look at
+-0.3010 please pick it
+-0.3010 someone is following
+-0.3010 something at your
+-0.3010 something in the
+-0.3010 table there </s>
+-0.4771 the back </s>
+-0.7782 the back please
+-0.3010 the door is
+-0.6021 the table </s>
+-0.6021 the table there
+-0.3010 the wall behind
+-0.7782 there is a
+-0.4771 there is something
+-0.3010 think someone is
+-0.3010 this table </s>
+-0.3010 wall behind you
+-0.3010 you can find
+-0.3010 you please look
+-0.3010 your back </s>
+
+\end\

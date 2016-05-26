@@ -1,0 +1,38 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for WTM
+ */
+
+grammar scenario;
+
+public <utterance> = (nao ball can be push) |
+(nao banana can be push) |
+(nao drop oximeter) |
+(nao dice close to desk) |
+(nao follow patient) |
+(nao bring banana) |
+(nao which color has apple) |
+(nao find oximeter) |
+(nao go to phone) |
+(nao drop dice) |
+(nao oximeter close to sofa) |
+(nao patient close to wall) |
+(nao oximeter close to wall) |
+(nao patient close to sofa) |
+(nao ball close to home) |
+(nao dice can be push) |
+(nao find patient) |
+(nao i close to dice) |
+(nao apple has color purple) |
+(nao walk two) |
+(nao oximeter close to banana) |
+(nao dice close to sofa) |
+(nao ball has color red) |
+(nao phone close to chair) |
+(nao dice close to wall) |
+(nao dice has color purple) |
+(nao oximeter close to patient) |
+(nao banana close to banana) |
+(nao patient close to desk) |
+(nao dice has color yellow);

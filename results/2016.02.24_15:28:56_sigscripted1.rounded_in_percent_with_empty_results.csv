@@ -1,0 +1,13 @@
+;;;;;;;;;;
+sigscripted1.rounded_in_percent_with_empty_results;;;;;;;;;;
+Approach;Language Weight;Word Insertion Probability;Ratio;Accuracy;WER;Sentence Accuracy;Substitutions;Insertions;Deletions;Empty Results;SER;Average Time
+Google;;;;54.545;46.281;10.345;44;1;11;0;89.655;-50218069692
+Google Sentence List;;;;72.727;27.273;0.0;31;0;2;0;100.0;131
+Google Word List;;;;67.769;33.884;17.241;27;2;12;0;82.759;13
+Google Phoneme Unigram;0.2;0.5;0.4;55.372;57.025;10.345;53;15;1;0;89.655;71
+Google Phoneme Bi-Gram;2.35;4.35;0.54;75.207;27.273;31.034;18;3;12;0;68.966;102
+Google Phoneme FlatTri-Gram;1.9;5.0;0.38;80.992;22.314;41.379;21;4;2;0;58.621;250
+Google Phoneme LexTri-Gram;0.95;1.4;0.679;71.074;30.579;34.483;25;2;10;0;65.517;505
+Sphinx Bi-Gram;10.5;0.7;15.0;0.0;0.0;0.0;0;0;0;0;100.0;0
+Sphinx Tri-Gram;10.5;0.7;15.0;0.0;0.0;0.0;0;0;0;0;100.0;0
+Sphinx Sentence List;;;;69.421;33.884;0.0;34;4;3;0;100.0;270

@@ -1,0 +1,17 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for WTM
+ */
+
+grammar scenario;
+
+public <utterance> = (go to left) |
+(i want you to go left right now) |
+(please go left) |
+(robot my laptop is at my home) |
+(the kitchen is at home) |
+(at home) |
+(look robot there is somethin at home) |
+(robot i think something is at home can you please take it out) |
+(smartphone is at home);

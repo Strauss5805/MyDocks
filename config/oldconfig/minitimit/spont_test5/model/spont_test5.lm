@@ -1,0 +1,147 @@
+Language model created by QuickLM on Thu Feb 11 12:04:02 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 10 sentences and 30 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=30
+ngram 2=48
+ngram 3=50
+
+\1-grams:
+-1.2253 </s> -0.3010
+-1.2253 <s> -0.2341
+-1.9243 a -0.2958
+-2.2253 apple -0.2771
+-2.2253 around -0.2744
+-2.2253 correct -0.2744
+-2.2253 done -0.2771
+-2.2253 have -0.2984
+-1.9243 i -0.2958
+-1.2711 is -0.2632
+-1.2711 left -0.2661
+-1.9243 my -0.2771
+-2.2253 not -0.2984
+-1.4472 on -0.2798
+-2.2253 pen -0.2852
+-2.2253 robot -0.2958
+-2.2253 screen -0.2771
+-2.2253 side -0.2744
+-1.7482 something -0.2604
+-2.2253 table -0.2852
+-1.3802 the -0.2716
+-1.6232 there -0.2771
+-1.9243 think -0.2906
+-2.2253 this -0.2771
+-2.2253 to -0.2958
+-2.2253 towards -0.2958
+-2.2253 turn -0.2771
+-2.2253 what -0.2984
+-2.2253 wrong -0.2744
+-2.2253 you -0.2984
+
+\2-grams:
+-1.3010 <s> i 0.0000
+-1.3010 <s> left -0.1249
+-1.3010 <s> robot 0.0000
+-1.0000 <s> the -0.2341
+-0.6990 <s> there 0.0000
+-1.3010 <s> this 0.0000
+-0.6021 a pen 0.0000
+-0.6021 a table 0.0000
+-0.3010 apple is -0.2499
+-0.3010 around </s> -0.3010
+-0.3010 correct </s> -0.3010
+-0.3010 done is -0.2762
+-0.3010 have done 0.0000
+-0.3010 i think 0.0000
+-0.9542 is a 0.0000
+-1.2553 is not 0.0000
+-0.9542 is on -0.0669
+-0.9542 is something -0.1249
+-1.2553 is towards 0.0000
+-1.2553 is wrong 0.0000
+-0.4771 left </s> -0.3010
+-1.2553 left around 0.0000
+-1.2553 left side 0.0000
+-1.2553 left turn 0.0000
+-0.3010 my left -0.1249
+-0.3010 not correct 0.0000
+-0.3802 on the -0.1091
+-1.0792 on to 0.0000
+-0.3010 pen on -0.0669
+-0.3010 robot i 0.0000
+-0.3010 screen is -0.2499
+-0.3010 side </s> -0.3010
+-0.7782 something is -0.2762
+-0.4771 something on 0.0000
+-0.3010 table on -0.0669
+-1.1461 the apple 0.0000
+-0.4472 the left -0.0458
+-1.1461 the screen 0.0000
+-0.3010 there is -0.1919
+-0.6021 think something -0.2218
+-0.6021 think what 0.0000
+-0.3010 this is -0.2762
+-0.3010 to my 0.0000
+-0.3010 towards my 0.0000
+-0.3010 turn left -0.2762
+-0.3010 what you 0.0000
+-0.3010 wrong </s> -0.3010
+-0.3010 you have 0.0000
+
+\3-grams:
+-0.3010 <s> i think
+-0.3010 <s> left </s>
+-0.3010 <s> robot i
+-0.6021 <s> the apple
+-0.6021 <s> the screen
+-0.3010 <s> there is
+-0.3010 <s> this is
+-0.3010 a pen on
+-0.3010 a table on
+-0.3010 apple is on
+-0.3010 done is not
+-0.3010 have done is
+-0.6021 i think something
+-0.6021 i think what
+-0.6021 is a pen
+-0.6021 is a table
+-0.3010 is not correct
+-0.3010 is on the
+-0.3010 is something on
+-0.3010 is towards my
+-0.3010 is wrong </s>
+-0.3010 left around </s>
+-0.3010 left side </s>
+-0.3010 left turn left
+-0.3010 my left </s>
+-0.3010 not correct </s>
+-0.3010 on the left
+-0.3010 on to my
+-0.3010 pen on the
+-0.3010 robot i think
+-0.3010 screen is on
+-0.3010 something is towards
+-0.6021 something on the
+-0.6021 something on to
+-0.3010 table on the
+-0.3010 the apple is
+-0.5229 the left </s>
+-1.0000 the left side
+-1.0000 the left turn
+-0.3010 the screen is
+-0.6021 there is a
+-0.6021 there is something
+-0.3010 think something is
+-0.3010 think what you
+-0.3010 this is wrong
+-0.3010 to my left
+-0.3010 towards my left
+-0.3010 turn left around
+-0.3010 what you have
+-0.3010 you have done
+
+\end\

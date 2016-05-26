@@ -1,0 +1,28 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for WTM
+ */
+
+grammar scenario;
+
+public <utterance> = (some of these speculations may have some merit others are somewhat ambiguous) |
+(why buy oil when you always use mine) |
+(a boring novel is a superb sleeping pill) |
+(should she wake him) |
+(you saw them always together those years) |
+(but such cases were in the past unusual) |
+(michael colored the bedroom wall with crayons) |
+(help greg to pick a peck of potatoes) |
+(they own a big house in the remote countryside) |
+(visually these approximated what he was feeling within himself) |
+(the misquote was retracted with an apology) |
+(shaving cream is a popular item on halloween) |
+(laugh dance and sing if fortune smiles upon you) |
+(rector was often curious often tempted to ask questions but he never did) |
+(tradition requires parental approval for under age marriage) |
+(the cranberry bog gets very pretty in autumn) |
+(few rural areas are protected by zoning) |
+(it's healthier to cook without sugar) |
+(brown eyes eyebrow mustache) |
+(mom strongly dislikes appetizers);

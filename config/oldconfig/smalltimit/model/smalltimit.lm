@@ -1,0 +1,97 @@
+Language model created by QuickLM on Thu Jan 21 18:20:55 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 4 sentences and 25 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=25
+ngram 2=28
+ngram 3=25
+
+\1-grams:
+-1.2175 </s> -0.3010
+-1.2175 <s> -0.2668
+-1.8195 as -0.2944
+-1.8195 broken -0.2739
+-1.8195 custody -0.2877
+-1.8195 divorced -0.2877
+-1.8195 felt -0.2944
+-1.8195 he -0.2944
+-1.5185 him -0.2739
+-1.5185 his -0.2877
+-1.8195 if -0.2944
+-1.8195 in -0.2944
+-1.8195 it -0.2944
+-1.8195 lawyers -0.2944
+-1.8195 love -0.2944
+-1.8195 millionaires -0.2739
+-1.8195 only -0.2944
+-1.8195 she -0.2944
+-1.8195 should -0.2944
+-1.8195 shoulder -0.2944
+-1.8195 wake -0.2877
+-1.8195 was -0.2944
+-1.8195 were -0.2944
+-1.8195 while -0.2944
+-1.8195 wife -0.2944
+
+\2-grams:
+-0.9031 <s> his -0.1761
+-0.9031 <s> only 0.0000
+-0.9031 <s> should 0.0000
+-0.9031 <s> while 0.0000
+-0.3010 as if 0.0000
+-0.3010 broken </s> -0.3010
+-0.3010 custody his -0.1761
+-0.3010 divorced him 0.0000
+-0.3010 felt as 0.0000
+-0.3010 he was 0.0000
+-0.3010 him </s> -0.3010
+-0.6021 his shoulder 0.0000
+-0.6021 his wife 0.0000
+-0.3010 if it 0.0000
+-0.3010 in custody 0.0000
+-0.3010 it were 0.0000
+-0.3010 lawyers love 0.0000
+-0.3010 love millionaires 0.0000
+-0.3010 millionaires </s> -0.3010
+-0.3010 only lawyers 0.0000
+-0.3010 she wake 0.0000
+-0.3010 should she 0.0000
+-0.3010 shoulder felt 0.0000
+-0.3010 wake him 0.0000
+-0.3010 was in 0.0000
+-0.3010 were broken 0.0000
+-0.3010 while he 0.0000
+-0.3010 wife divorced 0.0000
+
+\3-grams:
+-0.3010 <s> his shoulder
+-0.3010 <s> only lawyers
+-0.3010 <s> should she
+-0.3010 <s> while he
+-0.3010 as if it
+-0.3010 custody his wife
+-0.3010 divorced him </s>
+-0.3010 felt as if
+-0.3010 he was in
+-0.3010 his shoulder felt
+-0.3010 his wife divorced
+-0.3010 if it were
+-0.3010 in custody his
+-0.3010 it were broken
+-0.3010 lawyers love millionaires
+-0.3010 love millionaires </s>
+-0.3010 only lawyers love
+-0.3010 she wake him
+-0.3010 should she wake
+-0.3010 shoulder felt as
+-0.3010 wake him </s>
+-0.3010 was in custody
+-0.3010 were broken </s>
+-0.3010 while he was
+-0.3010 wife divorced him
+
+\end\

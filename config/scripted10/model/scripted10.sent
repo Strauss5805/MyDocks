@@ -1,0 +1,266 @@
+<s> nao phone close to floor </s>
+<s> nao oximeter has color orange </s>
+<s> nao phone can be push </s>
+<s> nao drop banana </s>
+<s> nao apple has color green </s>
+<s> nao push banana </s>
+<s> nao i close to patient </s>
+<s> nao patient close to phone </s>
+<s> nao oximeter close to apple </s>
+<s> nao patient close to home </s>
+<s> nao patient close to i </s>
+<s> nao oximeter can be push </s>
+<s> nao dice close to nao </s>
+<s> nao ball close to sofa </s>
+<s> nao dice has color red </s>
+<s> nao ball close to wall </s>
+<s> nao come here </s>
+<s> nao oximeter close to home </s>
+<s> nao go to oximeter </s>
+<s> nao i close to apple </s>
+<s> incorrect </s>
+<s> nao ball close to phone </s>
+<s> nao oximeter has color red </s>
+<s> correct </s>
+<s> nao where is ball </s>
+<s> nao dice close to home </s>
+<s> nao drop phone </s>
+<s> nao show patient </s>
+<s> yes </s>
+<s> nao apple close to dice </s>
+<s> nao banana has color orange </s>
+<s> nao dice close to phone </s>
+<s> nao go to ball </s>
+<s> nao ball close to desk </s>
+<s> nao show i </s>
+<s> nao sit down </s>
+<s> nao oximeter close to floor </s>
+<s> nao find nao </s>
+<s> nao phone can be pick </s>
+<s> nao turn head straight </s>
+<s> nao i close to floor </s>
+<s> nao banana has color green </s>
+<s> nao turn head right </s>
+<s> nao bring oximeter </s>
+<s> nao go to banana </s>
+<s> nao phone close to apple </s>
+<s> nao push apple </s>
+<s> nao turn body left </s>
+<s> nao oximeter can be pick </s>
+<s> nao ball close to patient </s>
+<s> nao oximeter has color green </s>
+<s> nao bring dice </s>
+<s> nao look at patient </s>
+<s> nao pick oximeter </s>
+<s> nao help </s>
+<s> nao ball close to nao </s>
+<s> nao phone has color orange </s>
+<s> nao nao close to oximeter </s>
+<s> nao dice can be drop </s>
+<s> nao ball close to ball </s>
+<s> nao banana close to i </s>
+<s> nao where is nao </s>
+<s> nao which color has ball </s>
+<s> nao reset </s>
+<s> nao banana can be drop </s>
+<s> nao ball can be drop </s>
+<s> nao where is patient </s>
+<s> nao walk one </s>
+<s> nao pick dice </s>
+<s> nao where is phone </s>
+<s> nao what can oximeter </s>
+<s> nao phone close to dice </s>
+<s> nao where is oximeter </s>
+<s> nao i close to i </s>
+<s> nao dice has color orange </s>
+<s> nao which color has dice </s>
+<s> nao phone close to phone </s>
+<s> nao push phone </s>
+<s> nao show nao </s>
+<s> nao banana has color blue </s>
+<s> nao pick ball </s>
+<s> nao patient close to floor </s>
+<s> nao apple has color orange </s>
+<s> nao dice close to oximeter </s>
+<s> nao phone close to ball </s>
+<s> nao apple close to chair </s>
+<s> nao dice close to banana </s>
+<s> nao apple close to desk </s>
+<s> nao go to nao </s>
+<s> nao show banana </s>
+<s> nao ball close to dice </s>
+<s> wrong </s>
+<s> nao i close to home </s>
+<s> nao ball close to floor </s>
+<s> nao turn body right </s>
+<s> nao where is apple </s>
+<s> nao bring ball </s>
+<s> nao apple close to wall </s>
+<s> nao nao close to patient </s>
+<s> well done </s>
+<s> nao abort </s>
+<s> nao apple close to sofa </s>
+<s> nao dice close to floor </s>
+<s> nao ball has color purple </s>
+<s> nao apple close to ball </s>
+<s> nao apple can be drop </s>
+<s> nao apple has color blue </s>
+<s> nao oximeter close to phone </s>
+<s> nao go to dice </s>
+<s> nao ball has color green </s>
+<s> nao ball close to oximeter </s>
+<s> nao i close to phone </s>
+<s> nao banana close to home </s>
+<s> nao i close to banana </s>
+<s> nao banana close to oximeter </s>
+<s> nao banana close to chair </s>
+<s> nao ball close to i </s>
+<s> nao patient close to patient </s>
+<s> nao phone close to i </s>
+<s> nao patient close to apple </s>
+<s> nao where is dice </s>
+<s> nao ball has color yellow </s>
+<s> nao phone close to desk </s>
+<s> nao follow nao </s>
+<s> nao apple close to nao </s>
+<s> nao oximeter close to oximeter </s>
+<s> nao nao close to home </s>
+<s> nao dice close to apple </s>
+<s> nao banana has color red </s>
+<s> nao find banana </s>
+<s> nao phone close to sofa </s>
+<s> nao ball close to apple </s>
+<s> nao phone close to wall </s>
+<s> nao drop apple </s>
+<s> nao nao close to chair </s>
+<s> nao phone close to banana </s>
+<s> nao what can ball </s>
+<s> nao find i </s>
+<s> nao banana can be pick </s>
+<s> nao ball can be pick </s>
+<s> nao find ball </s>
+<s> nao show oximeter </s>
+<s> nao banana close to dice </s>
+<s> nao patient close to oximeter </s>
+<s> nao show phone </s>
+<s> nao bring apple </s>
+<s> nao nao close to phone </s>
+<s> nao turn head left </s>
+<s> nao phone close to patient </s>
+<s> nao look at banana </s>
+<s> nao apple close to i </s>
+<s> nao dice close to ball </s>
+<s> nao dice can be pick </s>
+<s> nao patient close to ball </s>
+<s> nao pick phone </s>
+<s> nao look at ball </s>
+<s> nao show ball </s>
+<s> nao i close to chair </s>
+<s> no </s>
+<s> nao oximeter can be drop </s>
+<s> nao nao close to dice </s>
+<s> nao ball has color orange </s>
+<s> nao oximeter close to chair </s>
+<s> nao oximeter close to ball </s>
+<s> nao turn body straight </s>
+<s> nao look at apple </s>
+<s> nao apple close to banana </s>
+<s> nao nao close to banana </s>
+<s> nao phone can be drop </s>
+<s> nao banana close to phone </s>
+<s> nao phone has color blue </s>
+<s> nao push dice </s>
+<s> nao i close to oximeter </s>
+<s> nao walk three </s>
+<s> nao what can apple </s>
+<s> nao banana close to patient </s>
+<s> nao ball can be push </s>
+<s> nao banana can be push </s>
+<s> nao drop oximeter </s>
+<s> nao dice close to desk </s>
+<s> nao follow patient </s>
+<s> nao bring banana </s>
+<s> nao which color has apple </s>
+<s> nao find oximeter </s>
+<s> nao go to phone </s>
+<s> nao drop dice </s>
+<s> nao oximeter close to sofa </s>
+<s> nao patient close to wall </s>
+<s> nao oximeter close to wall </s>
+<s> nao patient close to sofa </s>
+<s> nao ball close to home </s>
+<s> nao dice can be push </s>
+<s> nao find patient </s>
+<s> nao i close to dice </s>
+<s> nao apple has color purple </s>
+<s> nao walk two </s>
+<s> nao oximeter close to banana </s>
+<s> nao dice close to sofa </s>
+<s> nao ball has color red </s>
+<s> nao phone close to chair </s>
+<s> nao dice close to wall </s>
+<s> nao dice has color purple </s>
+<s> nao oximeter close to patient </s>
+<s> nao banana close to banana </s>
+<s> nao patient close to desk </s>
+<s> nao dice has color yellow </s>
+<s> nao find apple </s>
+<s> nao follow i </s>
+<s> nao oximeter has color blue </s>
+<s> nao apple close to phone </s>
+<s> nao apple has color yellow </s>
+<s> nao oximeter close to desk </s>
+<s> nao banana close to sofa </s>
+<s> nao phone has color purple </s>
+<s> nao phone has color red </s>
+<s> nao go to apple </s>
+<s> nao dice has color blue </s>
+<s> nao which color has phone </s>
+<s> nao i close to nao </s>
+<s> nao nao close to desk </s>
+<s> nao phone close to oximeter </s>
+<s> nao banana close to wall </s>
+<s> nao nao close to i </s>
+<s> nao i close to ball </s>
+<s> nao nao close to floor </s>
+<s> nao what can phone </s>
+<s> nao where is i </s>
+<s> nao ball has color blue </s>
+<s> nao phone has color yellow </s>
+<s> nao find phone </s>
+<s> nao nao close to sofa </s>
+<s> nao drop ball </s>
+<s> nao dice has color green </s>
+<s> nao nao close to nao </s>
+<s> nao banana close to desk </s>
+<s> nao push oximeter </s>
+<s> nao apple close to apple </s>
+<s> nao nao close to wall </s>
+<s> nao patient close to nao </s>
+<s> nao look at oximeter </s>
+<s> nao apple can be pick </s>
+<s> nao banana close to floor </s>
+<s> nao phone close to home </s>
+<s> nao banana has color yellow </s>
+<s> nao where is banana </s>
+<s> nao nao close to apple </s>
+<s> nao i close to desk </s>
+<s> nao shut down </s>
+<s> nao phone has color green </s>
+<s> nao bring phone </s>
+<s> nao banana close to nao </s>
+<s> nao go to i </s>
+<s> nao which color has banana </s>
+<s> nao push ball </s>
+<s> nao phone close to nao </s>
+<s> nao go to patient </s>
+<s> nao apple has color red </s>
+<s> nao patient close to banana </s>
+<s> nao ball close to chair </s>
+<s> nao oximeter close to nao </s>
+<s> nao patient close to dice </s>
+<s> nao look at dice </s>
+<s> nao dice close to chair </s>
+<s> nao show dice </s>
+<s> nao show apple </s>
+<s> nao nao close to ball </s>

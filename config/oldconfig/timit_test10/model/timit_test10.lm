@@ -1,0 +1,474 @@
+Language model created by QuickLM on Thu Feb 11 11:02:38 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 20 sentences and 130 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=130
+ngram 2=171
+ngram 3=154
+
+\1-grams:
+-1.2878 </s> -0.3010
+-1.2878 <s> -0.2649
+-1.8899 a -0.2954
+-2.5888 age -0.2999
+-2.2878 always -0.2988
+-2.5888 ambiguous -0.2780
+-2.5888 an -0.2999
+-2.5888 and -0.2999
+-2.5888 apology -0.2780
+-2.5888 appetizers -0.2780
+-2.5888 approval -0.2999
+-2.5888 approximated -0.2999
+-2.2878 are -0.2988
+-2.5888 areas -0.2988
+-2.5888 ask -0.2999
+-2.5888 autumn -0.2780
+-2.5888 bedroom -0.2999
+-2.5888 big -0.2999
+-2.5888 bog -0.2999
+-2.5888 boring -0.2999
+-2.5888 brown -0.2999
+-2.2878 but -0.2977
+-2.5888 buy -0.2999
+-2.5888 by -0.2999
+-2.5888 cases -0.2999
+-2.5888 colored -0.2954
+-2.5888 cook -0.2999
+-2.5888 countryside -0.2780
+-2.5888 cranberry -0.2999
+-2.5888 crayons -0.2780
+-2.5888 cream -0.2988
+-2.5888 curious -0.2988
+-2.5888 dance -0.2999
+-2.5888 did -0.2780
+-2.5888 dislikes -0.2999
+-2.5888 eyebrow -0.2999
+-2.5888 eyes -0.2999
+-2.5888 feeling -0.2999
+-2.5888 few -0.2999
+-2.5888 for -0.2999
+-2.5888 fortune -0.2999
+-2.5888 gets -0.2999
+-2.5888 greg -0.2977
+-2.5888 halloween -0.2780
+-2.5888 have -0.2988
+-2.2878 he -0.2965
+-2.5888 healthier -0.2977
+-2.5888 help -0.2999
+-2.5888 him -0.2780
+-2.5888 himself -0.2780
+-2.5888 house -0.2977
+-2.5888 if -0.2999
+-2.1117 in -0.2943
+-2.2878 is -0.2954
+-2.5888 it's -0.2999
+-2.5888 item -0.2999
+-2.5888 laugh -0.2999
+-2.5888 marriage -0.2780
+-2.5888 may -0.2999
+-2.5888 merit -0.2999
+-2.5888 michael -0.2999
+-2.5888 mine -0.2780
+-2.5888 misquote -0.2977
+-2.5888 mom -0.2999
+-2.5888 mustache -0.2780
+-2.5888 never -0.2999
+-2.5888 novel -0.2988
+-2.2878 of -0.2977
+-2.2878 often -0.2988
+-2.5888 oil -0.2999
+-2.5888 on -0.2999
+-2.5888 others -0.2988
+-2.5888 own -0.2954
+-2.5888 parental -0.2999
+-2.5888 past -0.2999
+-2.5888 peck -0.2988
+-2.5888 pick -0.2954
+-2.5888 pill -0.2780
+-2.5888 popular -0.2999
+-2.5888 potatoes -0.2780
+-2.5888 pretty -0.2977
+-2.5888 protected -0.2999
+-2.5888 questions -0.2988
+-2.5888 rector -0.2977
+-2.5888 remote -0.2999
+-2.5888 requires -0.2999
+-2.5888 retracted -0.2988
+-2.5888 rural -0.2999
+-2.5888 saw -0.2999
+-2.5888 shaving -0.2999
+-2.5888 she -0.2999
+-2.5888 should -0.2999
+-2.5888 sing -0.2999
+-2.5888 sleeping -0.2999
+-2.5888 smiles -0.2999
+-2.2878 some -0.2977
+-2.5888 somewhat -0.2999
+-2.5888 speculations -0.2999
+-2.5888 strongly -0.2999
+-2.5888 such -0.2999
+-2.5888 sugar -0.2780
+-2.5888 superb -0.2999
+-2.5888 tempted -0.2977
+-1.8899 the -0.2954
+-2.5888 them -0.2988
+-2.2878 these -0.2988
+-2.5888 they -0.2999
+-2.5888 those -0.2999
+-2.1117 to -0.2977
+-2.5888 together -0.2999
+-2.5888 tradition -0.2999
+-2.5888 under -0.2999
+-2.5888 unusual -0.2780
+-2.5888 upon -0.2977
+-2.5888 use -0.2999
+-2.5888 very -0.2999
+-2.5888 visually -0.2988
+-2.5888 wake -0.2999
+-2.5888 wall -0.2988
+-2.1117 was -0.2965
+-2.5888 were -0.2977
+-2.5888 what -0.2988
+-2.5888 when -0.2977
+-2.5888 why -0.2999
+-2.2878 with -0.2988
+-2.5888 within -0.2999
+-2.5888 without -0.2999
+-2.5888 years -0.2780
+-2.1117 you -0.2745
+-2.5888 zoning -0.2780
+
+\2-grams:
+-1.6021 <s> a -0.2553
+-1.6021 <s> brown 0.0000
+-1.6021 <s> but -0.1761
+-1.6021 <s> few 0.0000
+-1.6021 <s> help 0.0000
+-1.6021 <s> it's 0.0000
+-1.6021 <s> laugh 0.0000
+-1.6021 <s> michael 0.0000
+-1.6021 <s> mom 0.0000
+-1.6021 <s> rector 0.0000
+-1.6021 <s> shaving 0.0000
+-1.6021 <s> should 0.0000
+-1.6021 <s> some -0.1761
+-1.3010 <s> the -0.2041
+-1.6021 <s> they 0.0000
+-1.6021 <s> tradition 0.0000
+-1.6021 <s> visually 0.0000
+-1.6021 <s> why 0.0000
+-1.6021 <s> you -0.2218
+-1.0000 a big 0.0000
+-1.0000 a boring 0.0000
+-1.0000 a peck 0.0000
+-1.0000 a popular 0.0000
+-1.0000 a superb 0.0000
+-0.3010 age marriage 0.0000
+-0.6021 always together 0.0000
+-0.6021 always use 0.0000
+-0.3010 ambiguous </s> -0.3010
+-0.3010 an apology 0.0000
+-0.3010 and sing 0.0000
+-0.3010 apology </s> -0.3010
+-0.3010 appetizers </s> -0.3010
+-0.3010 approval for 0.0000
+-0.3010 approximated what 0.0000
+-0.6021 are protected 0.0000
+-0.6021 are somewhat 0.0000
+-0.3010 areas are -0.1761
+-0.3010 ask questions 0.0000
+-0.3010 autumn </s> -0.3010
+-0.3010 bedroom wall 0.0000
+-0.3010 big house 0.0000
+-0.3010 bog gets 0.0000
+-0.3010 boring novel 0.0000
+-0.3010 brown eyes 0.0000
+-0.6021 but he -0.1761
+-0.6021 but such 0.0000
+-0.3010 buy oil 0.0000
+-0.3010 by zoning 0.0000
+-0.3010 cases were 0.0000
+-0.3010 colored the -0.2553
+-0.3010 cook without 0.0000
+-0.3010 countryside </s> -0.3010
+-0.3010 cranberry bog 0.0000
+-0.3010 crayons </s> -0.3010
+-0.3010 cream is 0.0000
+-0.3010 curious often -0.1761
+-0.3010 dance and 0.0000
+-0.3010 did </s> -0.3010
+-0.3010 dislikes appetizers 0.0000
+-0.3010 eyebrow mustache 0.0000
+-0.3010 eyes eyebrow 0.0000
+-0.3010 feeling within 0.0000
+-0.3010 few rural 0.0000
+-0.3010 for under 0.0000
+-0.3010 fortune smiles 0.0000
+-0.3010 gets very 0.0000
+-0.3010 greg to -0.2218
+-0.3010 halloween </s> -0.3010
+-0.3010 have some -0.1761
+-0.6021 he never 0.0000
+-0.6021 he was -0.2218
+-0.3010 healthier to -0.2218
+-0.3010 help greg 0.0000
+-0.3010 him </s> -0.3010
+-0.3010 himself </s> -0.3010
+-0.3010 house in -0.1249
+-0.3010 if fortune 0.0000
+-0.7782 in autumn 0.0000
+-0.4771 in the -0.2041
+-0.3010 is a -0.2041
+-0.3010 it's healthier 0.0000
+-0.3010 item on 0.0000
+-0.3010 laugh dance 0.0000
+-0.3010 marriage </s> -0.3010
+-0.3010 may have 0.0000
+-0.3010 merit others 0.0000
+-0.3010 michael colored 0.0000
+-0.3010 mine </s> -0.3010
+-0.3010 misquote was -0.2218
+-0.3010 mom strongly 0.0000
+-0.3010 mustache </s> -0.3010
+-0.3010 never did 0.0000
+-0.3010 novel is 0.0000
+-0.6021 of potatoes 0.0000
+-0.6021 of these -0.1761
+-0.6021 often curious 0.0000
+-0.6021 often tempted 0.0000
+-0.3010 oil when 0.0000
+-0.3010 on halloween 0.0000
+-0.3010 others are -0.1761
+-0.3010 own a -0.2553
+-0.3010 parental approval 0.0000
+-0.3010 past unusual 0.0000
+-0.3010 peck of -0.1761
+-0.3010 pick a -0.2553
+-0.3010 pill </s> -0.3010
+-0.3010 popular item 0.0000
+-0.3010 potatoes </s> -0.3010
+-0.3010 pretty in -0.2218
+-0.3010 protected by 0.0000
+-0.3010 questions but -0.1761
+-0.3010 rector was -0.2218
+-0.3010 remote countryside 0.0000
+-0.3010 requires parental 0.0000
+-0.3010 retracted with -0.1761
+-0.3010 rural areas 0.0000
+-0.3010 saw them 0.0000
+-0.3010 shaving cream 0.0000
+-0.3010 she wake 0.0000
+-0.3010 should she 0.0000
+-0.3010 sing if 0.0000
+-0.3010 sleeping pill 0.0000
+-0.3010 smiles upon 0.0000
+-0.6021 some merit 0.0000
+-0.6021 some of -0.1761
+-0.3010 somewhat ambiguous 0.0000
+-0.3010 speculations may 0.0000
+-0.3010 strongly dislikes 0.0000
+-0.3010 such cases 0.0000
+-0.3010 sugar </s> -0.3010
+-0.3010 superb sleeping 0.0000
+-0.3010 tempted to -0.2218
+-1.0000 the bedroom 0.0000
+-1.0000 the cranberry 0.0000
+-1.0000 the misquote 0.0000
+-1.0000 the past 0.0000
+-1.0000 the remote 0.0000
+-0.3010 them always -0.1761
+-0.6021 these approximated 0.0000
+-0.6021 these speculations 0.0000
+-0.3010 they own 0.0000
+-0.3010 those years 0.0000
+-0.7782 to ask 0.0000
+-0.7782 to cook 0.0000
+-0.7782 to pick 0.0000
+-0.3010 together those 0.0000
+-0.3010 tradition requires 0.0000
+-0.3010 under age 0.0000
+-0.3010 unusual </s> -0.3010
+-0.3010 upon you -0.2218
+-0.3010 use mine 0.0000
+-0.3010 very pretty 0.0000
+-0.3010 visually these -0.1761
+-0.3010 wake him 0.0000
+-0.3010 wall with -0.1761
+-0.7782 was feeling 0.0000
+-0.7782 was often -0.1761
+-0.7782 was retracted 0.0000
+-0.3010 were in -0.1249
+-0.3010 what he -0.1761
+-0.3010 when you -0.2218
+-0.3010 why buy 0.0000
+-0.6021 with an 0.0000
+-0.6021 with crayons 0.0000
+-0.3010 within himself 0.0000
+-0.3010 without sugar 0.0000
+-0.3010 years </s> -0.3010
+-0.7782 you </s> -0.3010
+-0.7782 you always -0.1761
+-0.7782 you saw 0.0000
+-0.3010 zoning </s> -0.3010
+
+\3-grams:
+-0.3010 <s> a boring
+-0.3010 <s> brown eyes
+-0.3010 <s> but such
+-0.3010 <s> few rural
+-0.3010 <s> help greg
+-0.3010 <s> it's healthier
+-0.3010 <s> laugh dance
+-0.3010 <s> michael colored
+-0.3010 <s> mom strongly
+-0.3010 <s> rector was
+-0.3010 <s> shaving cream
+-0.3010 <s> should she
+-0.3010 <s> some of
+-0.6021 <s> the cranberry
+-0.6021 <s> the misquote
+-0.3010 <s> they own
+-0.3010 <s> tradition requires
+-0.3010 <s> visually these
+-0.3010 <s> why buy
+-0.3010 <s> you saw
+-0.3010 a big house
+-0.3010 a boring novel
+-0.3010 a peck of
+-0.3010 a popular item
+-0.3010 a superb sleeping
+-0.3010 age marriage </s>
+-0.3010 always together those
+-0.3010 always use mine
+-0.3010 an apology </s>
+-0.3010 and sing if
+-0.3010 approval for under
+-0.3010 approximated what he
+-0.3010 are protected by
+-0.3010 are somewhat ambiguous
+-0.3010 areas are protected
+-0.3010 ask questions but
+-0.3010 bedroom wall with
+-0.3010 big house in
+-0.3010 bog gets very
+-0.3010 boring novel is
+-0.3010 brown eyes eyebrow
+-0.3010 but he never
+-0.3010 but such cases
+-0.3010 buy oil when
+-0.3010 by zoning </s>
+-0.3010 cases were in
+-0.3010 colored the bedroom
+-0.3010 cook without sugar
+-0.3010 cranberry bog gets
+-0.3010 cream is a
+-0.3010 curious often tempted
+-0.3010 dance and sing
+-0.3010 dislikes appetizers </s>
+-0.3010 eyebrow mustache </s>
+-0.3010 eyes eyebrow mustache
+-0.3010 feeling within himself
+-0.3010 few rural areas
+-0.3010 for under age
+-0.3010 fortune smiles upon
+-0.3010 gets very pretty
+-0.3010 greg to pick
+-0.3010 have some merit
+-0.3010 he never did
+-0.3010 he was feeling
+-0.3010 healthier to cook
+-0.3010 help greg to
+-0.3010 house in the
+-0.3010 if fortune smiles
+-0.3010 in autumn </s>
+-0.6021 in the past
+-0.6021 in the remote
+-0.6021 is a popular
+-0.6021 is a superb
+-0.3010 it's healthier to
+-0.3010 item on halloween
+-0.3010 laugh dance and
+-0.3010 may have some
+-0.3010 merit others are
+-0.3010 michael colored the
+-0.3010 misquote was retracted
+-0.3010 mom strongly dislikes
+-0.3010 never did </s>
+-0.3010 novel is a
+-0.3010 of potatoes </s>
+-0.3010 of these speculations
+-0.3010 often curious often
+-0.3010 often tempted to
+-0.3010 oil when you
+-0.3010 on halloween </s>
+-0.3010 others are somewhat
+-0.3010 own a big
+-0.3010 parental approval for
+-0.3010 past unusual </s>
+-0.3010 peck of potatoes
+-0.3010 pick a peck
+-0.3010 popular item on
+-0.3010 pretty in autumn
+-0.3010 protected by zoning
+-0.3010 questions but he
+-0.3010 rector was often
+-0.3010 remote countryside </s>
+-0.3010 requires parental approval
+-0.3010 retracted with an
+-0.3010 rural areas are
+-0.3010 saw them always
+-0.3010 shaving cream is
+-0.3010 she wake him
+-0.3010 should she wake
+-0.3010 sing if fortune
+-0.3010 sleeping pill </s>
+-0.3010 smiles upon you
+-0.3010 some merit others
+-0.3010 some of these
+-0.3010 somewhat ambiguous </s>
+-0.3010 speculations may have
+-0.3010 strongly dislikes appetizers
+-0.3010 such cases were
+-0.3010 superb sleeping pill
+-0.3010 tempted to ask
+-0.3010 the bedroom wall
+-0.3010 the cranberry bog
+-0.3010 the misquote was
+-0.3010 the past unusual
+-0.3010 the remote countryside
+-0.3010 them always together
+-0.3010 these approximated what
+-0.3010 these speculations may
+-0.3010 they own a
+-0.3010 those years </s>
+-0.3010 to ask questions
+-0.3010 to cook without
+-0.3010 to pick a
+-0.3010 together those years
+-0.3010 tradition requires parental
+-0.3010 under age marriage
+-0.3010 upon you </s>
+-0.3010 use mine </s>
+-0.3010 very pretty in
+-0.3010 visually these approximated
+-0.3010 wake him </s>
+-0.3010 wall with crayons
+-0.3010 was feeling within
+-0.3010 was often curious
+-0.3010 was retracted with
+-0.3010 were in the
+-0.3010 what he was
+-0.3010 when you always
+-0.3010 why buy oil
+-0.3010 with an apology
+-0.3010 with crayons </s>
+-0.3010 within himself </s>
+-0.3010 without sugar </s>
+-0.3010 you always use
+-0.3010 you saw them
+
+\end\

@@ -1,0 +1,497 @@
+Language model created by QuickLM on Thu Feb 11 11:02:36 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 19 sentences and 131 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=131
+ngram 2=181
+ngram 3=166
+
+\1-grams:
+-1.3319 </s> -0.3010
+-1.3319 <s> -0.2667
+-1.7656 a -0.2935
+-2.6107 along -0.3000
+-2.6107 aluminum -0.3000
+-2.6107 ambled -0.3000
+-2.6107 an -0.3000
+-1.9117 and -0.2935
+-2.6107 ankle -0.2968
+-2.6107 anything -0.2989
+-2.1335 are -0.2978
+-2.6107 arm -0.2803
+-2.6107 as -0.2935
+-2.6107 at -0.3000
+-2.6107 avoid -0.3000
+-2.6107 barb -0.3000
+-2.6107 basketball -0.2989
+-1.9117 be -0.2957
+-2.3096 big -0.2989
+-2.6107 bonfire -0.2803
+-2.6107 brief -0.3000
+-2.6107 burn -0.2968
+-2.6107 burned -0.3000
+-2.6107 came -0.3000
+-2.3096 can -0.2946
+-2.6107 captured -0.2968
+-2.6107 carrying -0.2935
+-2.6107 chablis -0.2803
+-2.6107 children -0.3000
+-2.6107 contagious -0.3000
+-2.6107 day -0.3000
+-2.6107 december -0.2957
+-2.6107 diseases -0.2803
+-2.6107 don't -0.3000
+-2.6107 done -0.3000
+-2.6107 driving -0.3000
+-2.6107 eating -0.3000
+-2.6107 eight -0.3000
+-2.6107 employment -0.2803
+-2.6107 entertaining -0.3000
+-2.6107 excited -0.2957
+-2.6107 exposure -0.2978
+-2.6107 eyes -0.3000
+-2.6107 farm -0.3000
+-2.6107 farmyard -0.2803
+-2.6107 felt -0.2935
+-2.6107 field -0.3000
+-2.6107 flimsy -0.2803
+-2.6107 folded -0.3000
+-2.3096 for -0.2978
+-2.6107 galoshes -0.2978
+-2.6107 gives -0.3000
+-2.6107 goat -0.3000
+-2.6107 guns -0.3000
+-2.3096 has -0.2792
+-2.6107 hated -0.2989
+-2.6107 have -0.3000
+-2.1335 he -0.2968
+-2.6107 her -0.3000
+-2.6107 himself -0.3000
+-2.1335 his -0.2978
+-2.6107 huge -0.3000
+-2.6107 identify -0.3000
+-2.6107 idly -0.3000
+-2.6107 if -0.2957
+-2.0086 in -0.2903
+-2.6107 increases -0.3000
+-2.6107 is -0.3000
+-2.6107 january -0.2978
+-2.6107 leaves -0.2968
+-2.6107 lessons -0.2968
+-2.6107 looking -0.2989
+-2.6107 miami -0.2803
+-2.6107 miraculously -0.2803
+-2.6107 months -0.2978
+-2.6107 must -0.2957
+-2.6107 never -0.3000
+-2.6107 nice -0.3000
+-2.6107 nightly -0.3000
+-2.6107 of -0.3000
+-2.6107 often -0.2957
+-2.0086 on -0.2913
+-2.6107 one -0.3000
+-2.6107 paid -0.2803
+-2.6107 pam -0.3000
+-2.6107 paper -0.2957
+-2.6107 paw -0.2803
+-2.6107 position -0.2803
+-2.6107 pretty -0.3000
+-2.6107 rent -0.3000
+-2.6107 rented -0.2957
+-2.6107 rubbed -0.2978
+-2.6107 seattle -0.2803
+-2.6107 second -0.3000
+-2.6107 she -0.3000
+-2.6107 shirtsleeve -0.2957
+-2.6107 should -0.3000
+-2.6107 silverware -0.2989
+-2.6107 sleepily -0.3000
+-2.6107 slipped -0.2957
+-2.6107 slope -0.2803
+-2.6107 soon -0.2935
+-2.6107 spend -0.2968
+-2.6107 spinach -0.3000
+-2.6107 sport -0.2803
+-2.6107 sprained -0.3000
+-2.6107 steep -0.3000
+-2.6107 stick -0.2803
+-2.6107 strength -0.3000
+-1.9117 the -0.2957
+-2.6107 through -0.2957
+-2.6107 thursdays -0.2803
+-2.1335 to -0.2935
+-2.6107 twelfth -0.3000
+-2.6107 twilight -0.2968
+-2.6107 twitched -0.2978
+-2.6107 umbrella -0.3000
+-2.6107 upper -0.3000
+-2.6107 us -0.2989
+-2.6107 useful -0.2968
+-2.6107 very -0.3000
+-2.6107 walking -0.3000
+-2.6107 we'll -0.3000
+-2.6107 weatherproof -0.3000
+-2.6107 were -0.3000
+-2.3096 which -0.2968
+-2.6107 with -0.3000
+-2.6107 woman -0.3000
+-2.6107 you -0.3000
+-2.6107 young -0.3000
+-2.6107 yourself -0.2803
+
+\2-grams:
+-1.2788 <s> a -0.1963
+-1.5798 <s> aluminum 0.0000
+-1.5798 <s> are -0.2218
+-1.5798 <s> at 0.0000
+-1.5798 <s> barb 0.0000
+-1.5798 <s> basketball 0.0000
+-1.5798 <s> be -0.2553
+-1.5798 <s> december 0.0000
+-1.5798 <s> eating 0.0000
+-1.5798 <s> eight 0.0000
+-1.2788 <s> he -0.1249
+-1.5798 <s> if 0.0000
+-1.5798 <s> pam 0.0000
+-1.5798 <s> pretty 0.0000
+-1.5798 <s> she 0.0000
+-1.5798 <s> weatherproof 0.0000
+-1.5798 <s> young 0.0000
+-0.8451 a big 0.0000
+-1.1461 a brief 0.0000
+-1.1461 a folded 0.0000
+-1.1461 a second 0.0000
+-1.1461 a walking 0.0000
+-1.1461 a woman 0.0000
+-0.3010 along carrying 0.0000
+-0.3010 aluminum silverware 0.0000
+-0.3010 ambled through 0.0000
+-0.3010 an entertaining 0.0000
+-1.0000 and don't 0.0000
+-1.0000 and he -0.2218
+-1.0000 and january 0.0000
+-1.0000 and leaves 0.0000
+-1.0000 and sprained 0.0000
+-0.3010 ankle on -0.1761
+-0.3010 anything for -0.1761
+-0.7782 are nice 0.0000
+-0.7782 are very 0.0000
+-0.7782 are you 0.0000
+-0.3010 arm </s> -0.3010
+-0.3010 as a -0.2688
+-0.3010 at twilight 0.0000
+-0.3010 avoid exposure 0.0000
+-0.3010 barb burned 0.0000
+-0.3010 basketball can -0.1761
+-1.0000 be an 0.0000
+-1.0000 be excited 0.0000
+-1.0000 be flimsy 0.0000
+-1.0000 be hated 0.0000
+-1.0000 be paid 0.0000
+-0.6021 big bonfire 0.0000
+-0.6021 big goat 0.0000
+-0.3010 bonfire </s> -0.3010
+-0.3010 brief burn 0.0000
+-0.3010 burn on -0.2430
+-0.3010 burned paper 0.0000
+-0.3010 came along 0.0000
+-0.6021 can be -0.2553
+-0.6021 can often 0.0000
+-0.3010 captured in -0.2430
+-0.3010 carrying a -0.2688
+-0.3010 chablis </s> -0.3010
+-0.3010 children should 0.0000
+-0.3010 contagious diseases 0.0000
+-0.3010 day we'll 0.0000
+-0.3010 december and -0.2553
+-0.3010 diseases </s> -0.3010
+-0.3010 don't identify 0.0000
+-0.3010 done anything 0.0000
+-0.3010 driving lessons 0.0000
+-0.3010 eating spinach 0.0000
+-0.3010 eight field 0.0000
+-0.3010 employment </s> -0.3010
+-0.3010 entertaining sport 0.0000
+-0.3010 excited and -0.2553
+-0.3010 exposure to -0.2218
+-0.3010 eyes sleepily 0.0000
+-0.3010 farm is 0.0000
+-0.3010 farmyard </s> -0.3010
+-0.3010 felt a -0.2688
+-0.3010 field guns 0.0000
+-0.3010 flimsy </s> -0.3010
+-0.3010 folded umbrella 0.0000
+-0.6021 for employment 0.0000
+-0.6021 for which -0.1761
+-0.3010 galoshes are -0.2218
+-0.3010 gives driving 0.0000
+-0.3010 goat idly 0.0000
+-0.3010 guns were 0.0000
+-0.6021 has </s> -0.3010
+-0.6021 has never 0.0000
+-0.3010 hated which -0.1761
+-0.3010 have chablis 0.0000
+-0.7782 he felt 0.0000
+-0.7782 he has -0.1761
+-0.7782 he rubbed 0.0000
+-0.3010 her ankle 0.0000
+-0.3010 himself done 0.0000
+-0.7782 his eyes 0.0000
+-0.7782 his shirtsleeve 0.0000
+-0.7782 his upper 0.0000
+-0.3010 huge paw 0.0000
+-0.3010 identify yourself 0.0000
+-0.3010 idly ambled 0.0000
+-0.3010 if the -0.2553
+-0.9031 in a -0.2341
+-0.9031 in miami 0.0000
+-0.9031 in position 0.0000
+-0.9031 in seattle 0.0000
+-0.3010 increases strength 0.0000
+-0.3010 is rented 0.0000
+-0.3010 january are -0.2218
+-0.3010 leaves in -0.2430
+-0.3010 lessons on -0.2430
+-0.3010 looking for -0.1761
+-0.3010 miami </s> -0.3010
+-0.3010 miraculously </s> -0.3010
+-0.3010 months to -0.2218
+-0.3010 must be -0.2553
+-0.3010 never himself 0.0000
+-0.3010 nice months 0.0000
+-0.3010 nightly increases 0.0000
+-0.3010 of us 0.0000
+-0.3010 often be -0.2553
+-0.9031 on his -0.2218
+-0.6021 on the -0.2041
+-0.9031 on thursdays 0.0000
+-0.3010 one huge 0.0000
+-0.3010 paid </s> -0.3010
+-0.3010 pam gives 0.0000
+-0.3010 paper and -0.2553
+-0.3010 paw </s> -0.3010
+-0.3010 position </s> -0.3010
+-0.3010 pretty soon 0.0000
+-0.3010 rent must 0.0000
+-0.3010 rented the -0.2553
+-0.3010 rubbed his -0.2218
+-0.3010 seattle </s> -0.3010
+-0.3010 second twitched 0.0000
+-0.3010 she slipped 0.0000
+-0.3010 shirtsleeve and -0.2553
+-0.3010 should avoid 0.0000
+-0.3010 silverware can -0.1761
+-0.3010 sleepily with 0.0000
+-0.3010 slipped and -0.2553
+-0.3010 slope </s> -0.3010
+-0.3010 soon a -0.2688
+-0.3010 spend in -0.2430
+-0.3010 spinach nightly 0.0000
+-0.3010 sport </s> -0.3010
+-0.3010 sprained her 0.0000
+-0.3010 steep slope 0.0000
+-0.3010 stick </s> -0.3010
+-0.3010 strength miraculously 0.0000
+-1.0000 the farm 0.0000
+-1.0000 the farmyard 0.0000
+-1.0000 the rent 0.0000
+-1.0000 the steep 0.0000
+-1.0000 the twelfth 0.0000
+-0.3010 through the -0.2553
+-0.3010 thursdays </s> -0.3010
+-0.7782 to be -0.2553
+-0.7782 to contagious 0.0000
+-0.7782 to spend 0.0000
+-0.3010 twelfth day 0.0000
+-0.3010 twilight on -0.1761
+-0.3010 twitched his -0.2218
+-0.3010 umbrella as 0.0000
+-0.3010 upper arm 0.0000
+-0.3010 us has -0.1761
+-0.3010 useful in -0.2430
+-0.3010 very useful 0.0000
+-0.3010 walking stick 0.0000
+-0.3010 we'll have 0.0000
+-0.3010 weatherproof galoshes 0.0000
+-0.3010 were captured 0.0000
+-0.6021 which of 0.0000
+-0.6021 which to -0.2218
+-0.3010 with one 0.0000
+-0.3010 woman came 0.0000
+-0.3010 you looking 0.0000
+-0.3010 young children 0.0000
+-0.3010 yourself </s> -0.3010
+
+\3-grams:
+-0.6021 <s> a big
+-0.6021 <s> a second
+-0.3010 <s> aluminum silverware
+-0.3010 <s> are you
+-0.3010 <s> at twilight
+-0.3010 <s> barb burned
+-0.3010 <s> basketball can
+-0.3010 <s> be excited
+-0.3010 <s> december and
+-0.3010 <s> eating spinach
+-0.3010 <s> eight field
+-0.6021 <s> he has
+-0.6021 <s> he rubbed
+-0.3010 <s> if the
+-0.3010 <s> pam gives
+-0.3010 <s> pretty soon
+-0.3010 <s> she slipped
+-0.3010 <s> weatherproof galoshes
+-0.3010 <s> young children
+-0.6021 a big bonfire
+-0.6021 a big goat
+-0.3010 a brief burn
+-0.3010 a folded umbrella
+-0.3010 a second twitched
+-0.3010 a walking stick
+-0.3010 a woman came
+-0.3010 along carrying a
+-0.3010 aluminum silverware can
+-0.3010 ambled through the
+-0.3010 an entertaining sport
+-0.3010 and don't identify
+-0.3010 and he felt
+-0.3010 and january are
+-0.3010 and leaves in
+-0.3010 and sprained her
+-0.3010 ankle on the
+-0.3010 anything for which
+-0.3010 are nice months
+-0.3010 are very useful
+-0.3010 are you looking
+-0.3010 as a walking
+-0.3010 at twilight on
+-0.3010 avoid exposure to
+-0.3010 barb burned paper
+-0.3010 basketball can be
+-0.3010 be an entertaining
+-0.3010 be excited and
+-0.3010 be flimsy </s>
+-0.3010 be hated which
+-0.3010 be paid </s>
+-0.3010 big bonfire </s>
+-0.3010 big goat idly
+-0.3010 brief burn on
+-0.3010 burn on his
+-0.3010 burned paper and
+-0.3010 came along carrying
+-0.3010 can be an
+-0.3010 can often be
+-0.3010 captured in position
+-0.3010 carrying a folded
+-0.3010 children should avoid
+-0.3010 contagious diseases </s>
+-0.3010 day we'll have
+-0.3010 december and january
+-0.3010 don't identify yourself
+-0.3010 done anything for
+-0.3010 driving lessons on
+-0.3010 eating spinach nightly
+-0.3010 eight field guns
+-0.3010 entertaining sport </s>
+-0.3010 excited and don't
+-0.3010 exposure to contagious
+-0.3010 eyes sleepily with
+-0.3010 farm is rented
+-0.3010 felt a brief
+-0.3010 field guns were
+-0.3010 folded umbrella as
+-0.3010 for employment </s>
+-0.3010 for which to
+-0.3010 galoshes are very
+-0.3010 gives driving lessons
+-0.3010 goat idly ambled
+-0.3010 guns were captured
+-0.3010 has never himself
+-0.3010 hated which of
+-0.3010 have chablis </s>
+-0.3010 he felt a
+-0.3010 he has never
+-0.3010 he rubbed his
+-0.3010 her ankle on
+-0.3010 himself done anything
+-0.3010 his eyes sleepily
+-0.3010 his shirtsleeve and
+-0.3010 his upper arm
+-0.3010 huge paw </s>
+-0.3010 identify yourself </s>
+-0.3010 idly ambled through
+-0.3010 if the farm
+-0.3010 in a big
+-0.3010 in miami </s>
+-0.3010 in position </s>
+-0.3010 in seattle </s>
+-0.3010 increases strength miraculously
+-0.3010 is rented the
+-0.3010 january are nice
+-0.3010 leaves in a
+-0.3010 lessons on thursdays
+-0.3010 looking for employment
+-0.3010 months to spend
+-0.3010 must be paid
+-0.3010 never himself done
+-0.3010 nice months to
+-0.3010 nightly increases strength
+-0.3010 of us has
+-0.3010 often be flimsy
+-0.3010 on his upper
+-0.6021 on the steep
+-0.6021 on the twelfth
+-0.3010 on thursdays </s>
+-0.3010 one huge paw
+-0.3010 pam gives driving
+-0.3010 paper and leaves
+-0.3010 pretty soon a
+-0.3010 rent must be
+-0.3010 rented the rent
+-0.3010 rubbed his eyes
+-0.3010 second twitched his
+-0.3010 she slipped and
+-0.3010 shirtsleeve and he
+-0.3010 should avoid exposure
+-0.3010 silverware can often
+-0.3010 sleepily with one
+-0.3010 slipped and sprained
+-0.3010 soon a woman
+-0.3010 spend in miami
+-0.3010 spinach nightly increases
+-0.3010 sprained her ankle
+-0.3010 steep slope </s>
+-0.3010 strength miraculously </s>
+-0.3010 the farm is
+-0.3010 the farmyard </s>
+-0.3010 the rent must
+-0.3010 the steep slope
+-0.3010 the twelfth day
+-0.3010 through the farmyard
+-0.3010 to be hated
+-0.3010 to contagious diseases
+-0.3010 to spend in
+-0.3010 twelfth day we'll
+-0.3010 twilight on the
+-0.3010 twitched his shirtsleeve
+-0.3010 umbrella as a
+-0.3010 upper arm </s>
+-0.3010 us has </s>
+-0.3010 useful in seattle
+-0.3010 very useful in
+-0.3010 walking stick </s>
+-0.3010 we'll have chablis
+-0.3010 weatherproof galoshes are
+-0.3010 were captured in
+-0.3010 which of us
+-0.3010 which to be
+-0.3010 with one huge
+-0.3010 woman came along
+-0.3010 you looking for
+-0.3010 young children should
+
+\end\

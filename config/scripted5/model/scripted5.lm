@@ -1,0 +1,605 @@
+Language model created by QuickLM on Sat Jan 30 16:36:11 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 266 sentences and 69 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=69
+ngram 2=214
+ngram 3=303
+
+\1-grams:
+-1.1066 </s> -0.3010
+-1.1066 <s> -0.2618
+-3.5315 abort -0.2657
+-1.9517 apple -0.2400
+-2.5772 at -0.2210
+-1.9517 ball -0.2400
+-1.9404 banana -0.2400
+-2.3274 be -0.2968
+-2.7533 blue -0.2657
+-3.0544 body -0.3001
+-2.8325 bring -0.2752
+-2.2093 can -0.2731
+-2.6284 chair -0.2657
+-1.4559 close -0.2844
+-1.9294 color -0.2915
+-3.5315 come -0.3009
+-3.5315 correct -0.2657
+-2.6284 desk -0.2657
+-1.9187 dice -0.2400
+-3.5315 done -0.2657
+-3.2304 down -0.2657
+-2.4901 drop -0.2376
+-2.7533 find -0.2367
+-2.5772 floor -0.2657
+-3.2304 follow -0.2942
+-2.5772 go -0.2844
+-2.7533 green -0.2657
+-1.9294 has -0.2645
+-3.0544 head -0.3001
+-3.5315 help -0.2657
+-3.5315 here -0.2657
+-2.6284 home -0.2657
+-2.1001 i -0.2488
+-3.5315 incorrect -0.2657
+-2.6284 is -0.2273
+-3.2304 left -0.2657
+-2.5772 look -0.2999
+-1.0766 nao -0.1382
+-3.5315 no -0.2657
+-3.5315 one -0.2657
+-2.7533 orange -0.2657
+-1.9294 oximeter -0.2400
+-2.1165 patient -0.2488
+-1.9517 phone -0.2400
+-2.5315 pick -0.2319
+-2.7533 purple -0.2657
+-2.4523 push -0.2319
+-2.8325 red -0.2657
+-3.5315 reset -0.2657
+-3.0544 right -0.2657
+-2.6864 show -0.2328
+-3.5315 shut -0.3008
+-3.5315 sit -0.3008
+-2.6284 sofa -0.2657
+-3.5315 stop -0.2657
+-3.2304 straight -0.2657
+-3.5315 three -0.2657
+-1.4243 to -0.2134
+-2.7533 turn -0.3003
+-3.5315 two -0.2657
+-3.0544 walk -0.3006
+-2.6284 wall -0.2657
+-3.5315 well -0.3009
+-2.8325 what -0.2983
+-2.6284 where -0.3000
+-2.7533 which -0.2959
+-3.5315 wrong -0.2657
+-2.8325 yellow -0.2657
+-3.5315 yes -0.2657
+
+\2-grams:
+-2.7259 <s> correct 0.0000
+-2.7259 <s> incorrect 0.0000
+-0.3126 <s> nao -0.0379
+-2.7259 <s> no 0.0000
+-2.7259 <s> right 0.0000
+-2.7259 <s> well 0.0000
+-2.7259 <s> wrong 0.0000
+-2.7259 <s> yes 0.0000
+-0.3010 abort </s> -0.3010
+-0.7047 apple </s> -0.3010
+-1.4037 apple can -0.0928
+-0.7347 apple close 0.0000
+-1.1027 apple has -0.0607
+-1.2553 at apple -0.2055
+-1.2553 at ball -0.1836
+-1.2553 at banana -0.1871
+-1.2553 at dice -0.1934
+-1.2553 at i -0.1919
+-1.2553 at nao -0.2910
+-1.2553 at oximeter -0.1973
+-1.2553 at patient -0.1648
+-1.2553 at phone -0.1761
+-0.6255 ball </s> -0.3010
+-1.5798 ball can -0.0928
+-0.7669 ball close 0.0000
+-1.1818 ball has -0.0607
+-0.6368 banana </s> -0.3010
+-1.5911 banana can -0.0928
+-0.7460 banana close 0.0000
+-1.1931 banana has -0.0607
+-0.7270 be drop -0.1627
+-0.9031 be pick -0.2041
+-0.7270 be push -0.1761
+-0.3010 blue </s> -0.3010
+-0.7782 body left 0.0000
+-0.7782 body right 0.0000
+-0.7782 body straight 0.0000
+-1.0000 bring ball -0.1836
+-1.0000 bring banana -0.1871
+-1.0000 bring dice -0.1934
+-1.0000 bring oximeter -0.1973
+-1.0000 bring phone -0.1761
+-1.6232 can apple -0.2055
+-1.6232 can banana -0.1871
+-0.4191 can be 0.0000
+-1.6232 can dice -0.1934
+-1.6232 can oximeter -0.1973
+-1.6232 can phone -0.1761
+-0.3010 chair </s> -0.3010
+-0.3010 close to 0.0000
+-1.1249 color blue 0.0000
+-1.1249 color green 0.0000
+-1.1249 color has -0.2672
+-1.1249 color orange 0.0000
+-1.1249 color purple 0.0000
+-1.2041 color red 0.0000
+-1.2041 color yellow 0.0000
+-0.3010 come here 0.0000
+-0.3010 correct </s> -0.3010
+-0.3010 desk </s> -0.3010
+-0.6585 dice </s> -0.3010
+-1.4367 dice can -0.0928
+-0.7677 dice close 0.0000
+-1.1357 dice has -0.0607
+-0.3010 done </s> -0.3010
+-0.3010 down </s> -0.3010
+-0.5643 drop </s> -0.3010
+-1.3424 drop ball -0.1836
+-1.3424 drop banana -0.1871
+-1.3424 drop dice -0.1934
+-1.3424 drop oximeter -0.1973
+-1.3424 drop phone -0.1761
+-1.0792 find apple -0.2055
+-1.0792 find dice -0.1934
+-1.0792 find nao -0.2910
+-1.0792 find oximeter -0.1973
+-1.0792 find patient -0.1648
+-1.0792 find phone -0.1761
+-0.3010 floor </s> -0.3010
+-0.6021 follow i -0.1919
+-0.6021 follow patient -0.1648
+-0.3010 go to -0.1408
+-0.3010 green </s> -0.3010
+-1.9031 has apple -0.2055
+-1.9031 has ball -0.1836
+-1.9031 has banana -0.1871
+-0.3716 has color -0.0607
+-1.9031 has dice -0.1934
+-1.9031 has oximeter -0.1973
+-1.9031 has phone -0.1761
+-0.7782 head left 0.0000
+-0.7782 head right 0.0000
+-0.7782 head straight 0.0000
+-0.3010 help </s> -0.3010
+-0.3010 here </s> -0.3010
+-0.3010 home </s> -0.3010
+-0.6532 i </s> -0.3010
+-0.5563 i close 0.0000
+-0.3010 incorrect </s> -0.3010
+-1.2041 is apple -0.2055
+-1.2041 is ball -0.1836
+-1.2041 is banana -0.1871
+-1.2041 is i -0.1919
+-1.2041 is nao -0.2910
+-1.2041 is oximeter -0.1973
+-1.2041 is patient -0.1648
+-1.2041 is phone -0.1761
+-0.3010 left </s> -0.3010
+-0.3010 look at 0.0000
+-1.6419 nao </s> -0.3010
+-2.7559 nao abort 0.0000
+-1.3941 nao apple -0.1445
+-1.4548 nao ball -0.1684
+-1.4337 nao banana -0.1648
+-2.0569 nao bring 0.0000
+-1.6419 nao close 0.0000
+-2.7559 nao come 0.0000
+-1.3941 nao dice -0.1581
+-2.0569 nao drop -0.1891
+-1.9777 nao find 0.0000
+-2.4548 nao follow 0.0000
+-1.8016 nao go 0.0000
+-2.7559 nao help 0.0000
+-1.5798 nao i -0.1597
+-1.8016 nao look 0.0000
+-1.6419 nao nao -0.2910
+-1.3941 nao oximeter -0.1538
+-1.6767 nao patient -0.1871
+-1.4771 nao phone -0.1761
+-1.9777 nao pick -0.1461
+-1.9777 nao push -0.1761
+-2.7559 nao reset 0.0000
+-1.9108 nao show -0.0000
+-2.7559 nao shut 0.0000
+-2.7559 nao sit 0.0000
+-2.7559 nao stop 0.0000
+-1.9777 nao turn 0.0000
+-2.2788 nao walk 0.0000
+-2.0569 nao what 0.0000
+-1.8528 nao where 0.0000
+-1.9777 nao which 0.0000
+-0.3010 no </s> -0.3010
+-0.3010 one </s> -0.3010
+-0.3010 orange </s> -0.3010
+-0.6726 oximeter </s> -0.3010
+-1.4260 oximeter can -0.0928
+-0.7570 oximeter close 0.0000
+-1.1249 oximeter has -0.0607
+-0.5699 patient </s> -0.3010
+-0.6368 patient close 0.0000
+-0.6021 phone </s> -0.3010
+-1.4037 phone can -0.0928
+-0.8808 phone close 0.0000
+-1.1027 phone has -0.0607
+-0.6990 pick </s> -0.3010
+-1.3010 pick apple -0.2055
+-1.3010 pick ball -0.1836
+-1.3010 pick banana -0.1871
+-1.3010 pick dice -0.1934
+-1.3010 pick oximeter -0.1973
+-1.3010 pick phone -0.1761
+-0.3010 purple </s> -0.3010
+-0.6021 push </s> -0.3010
+-1.3802 push apple -0.2055
+-1.3802 push ball -0.1836
+-1.3802 push banana -0.1871
+-1.3802 push dice -0.1934
+-1.3802 push oximeter -0.1973
+-1.3802 push phone -0.1761
+-0.3010 red </s> -0.3010
+-0.3010 reset </s> -0.3010
+-0.3010 right </s> -0.3010
+-1.1461 show apple -0.2055
+-1.1461 show ball -0.1836
+-1.1461 show banana -0.1871
+-1.1461 show dice -0.1934
+-1.1461 show i -0.1919
+-1.1461 show nao -0.2910
+-1.1461 show patient -0.1648
+-0.3010 shut down 0.0000
+-0.3010 sit down 0.0000
+-0.3010 sofa </s> -0.3010
+-0.3010 stop </s> -0.3010
+-0.3010 straight </s> -0.3010
+-0.3010 three </s> -0.3010
+-1.5631 to apple -0.2055
+-1.4082 to ball -0.1836
+-1.4540 to banana -0.1871
+-1.5051 to chair 0.0000
+-1.5051 to desk 0.0000
+-1.4540 to dice -0.1934
+-1.4540 to floor 0.0000
+-1.5051 to home 0.0000
+-1.5051 to i -0.1919
+-1.4540 to nao -0.2910
+-1.5051 to oximeter -0.1973
+-1.4540 to patient -0.1648
+-1.4082 to phone -0.1761
+-1.5051 to sofa 0.0000
+-1.5051 to wall 0.0000
+-0.6021 turn body 0.0000
+-0.6021 turn head 0.0000
+-0.3010 two </s> -0.3010
+-0.7782 walk one 0.0000
+-0.7782 walk three 0.0000
+-0.7782 walk two 0.0000
+-0.3010 wall </s> -0.3010
+-0.3010 well done 0.0000
+-0.3010 what can -0.2460
+-0.3010 where is 0.0000
+-0.3010 which color -0.2672
+-0.3010 wrong </s> -0.3010
+-0.3010 yellow </s> -0.3010
+-0.3010 yes </s> -0.3010
+
+\3-grams:
+-0.3010 <s> correct </s>
+-0.3010 <s> incorrect </s>
+-2.7143 <s> nao abort
+-1.3526 <s> nao apple
+-1.4133 <s> nao ball
+-1.3921 <s> nao banana
+-2.0154 <s> nao bring
+-2.7143 <s> nao come
+-1.3526 <s> nao dice
+-2.0154 <s> nao drop
+-1.9362 <s> nao find
+-2.4133 <s> nao follow
+-1.7601 <s> nao go
+-2.7143 <s> nao help
+-1.5382 <s> nao i
+-1.7601 <s> nao look
+-1.6004 <s> nao nao
+-1.3526 <s> nao oximeter
+-1.6351 <s> nao patient
+-1.4356 <s> nao phone
+-1.9362 <s> nao pick
+-1.9362 <s> nao push
+-2.7143 <s> nao reset
+-1.8692 <s> nao show
+-2.7143 <s> nao shut
+-2.7143 <s> nao sit
+-2.7143 <s> nao stop
+-1.9362 <s> nao turn
+-2.2372 <s> nao walk
+-2.0154 <s> nao what
+-1.8112 <s> nao where
+-1.9362 <s> nao which
+-0.3010 <s> no </s>
+-0.3010 <s> right </s>
+-0.3010 <s> well done
+-0.3010 <s> wrong </s>
+-0.3010 <s> yes </s>
+-0.3010 apple can be
+-0.3010 apple close to
+-0.3010 apple has color
+-0.3010 at apple </s>
+-0.3010 at ball </s>
+-0.3010 at banana </s>
+-0.3010 at dice </s>
+-0.3010 at i </s>
+-0.3010 at nao </s>
+-0.3010 at oximeter </s>
+-0.3010 at patient </s>
+-0.3010 at phone </s>
+-0.3010 ball can be
+-0.3010 ball close to
+-0.3010 ball has color
+-0.3010 banana can be
+-0.3010 banana close to
+-0.3010 banana has color
+-0.3010 be drop </s>
+-0.3010 be pick </s>
+-0.3010 be push </s>
+-0.3010 body left </s>
+-0.3010 body right </s>
+-0.3010 body straight </s>
+-0.3010 bring ball </s>
+-0.3010 bring banana </s>
+-0.3010 bring dice </s>
+-0.3010 bring oximeter </s>
+-0.3010 bring phone </s>
+-0.3010 can apple </s>
+-0.3010 can banana </s>
+-0.7270 can be drop
+-0.9031 can be pick
+-0.7270 can be push
+-0.3010 can dice </s>
+-0.3010 can oximeter </s>
+-0.3010 can phone </s>
+-1.5984 close to apple
+-1.4223 close to ball
+-1.4735 close to banana
+-1.4735 close to chair
+-1.4735 close to desk
+-1.4735 close to dice
+-1.4223 close to floor
+-1.4735 close to home
+-1.5315 close to i
+-1.4735 close to nao
+-1.5315 close to oximeter
+-1.4735 close to patient
+-1.4223 close to phone
+-1.4735 close to sofa
+-1.4735 close to wall
+-0.3010 color blue </s>
+-0.3010 color green </s>
+-1.0792 color has apple
+-1.0792 color has ball
+-1.0792 color has banana
+-1.0792 color has dice
+-1.0792 color has oximeter
+-1.0792 color has phone
+-0.3010 color orange </s>
+-0.3010 color purple </s>
+-0.3010 color red </s>
+-0.3010 color yellow </s>
+-0.3010 come here </s>
+-0.3010 dice can be
+-0.3010 dice close to
+-0.3010 dice has color
+-0.3010 drop ball </s>
+-0.3010 drop banana </s>
+-0.3010 drop dice </s>
+-0.3010 drop oximeter </s>
+-0.3010 drop phone </s>
+-0.3010 find apple </s>
+-0.3010 find dice </s>
+-0.3010 find nao </s>
+-0.3010 find oximeter </s>
+-0.3010 find patient </s>
+-0.3010 find phone </s>
+-0.3010 follow i </s>
+-0.3010 follow patient </s>
+-1.2553 go to apple
+-1.2553 go to ball
+-1.2553 go to banana
+-1.2553 go to dice
+-1.2553 go to i
+-1.2553 go to nao
+-1.2553 go to oximeter
+-1.2553 go to patient
+-1.2553 go to phone
+-0.3010 has apple </s>
+-0.3010 has ball </s>
+-0.3010 has banana </s>
+-1.0544 has color blue
+-1.0544 has color green
+-1.0544 has color orange
+-1.0544 has color purple
+-1.1335 has color red
+-1.1335 has color yellow
+-0.3010 has dice </s>
+-0.3010 has oximeter </s>
+-0.3010 has phone </s>
+-0.3010 head left </s>
+-0.3010 head right </s>
+-0.3010 head straight </s>
+-0.3010 i close to
+-0.3010 is apple </s>
+-0.3010 is ball </s>
+-0.3010 is banana </s>
+-0.3010 is i </s>
+-0.3010 is nao </s>
+-0.3010 is oximeter </s>
+-0.3010 is patient </s>
+-0.3010 is phone </s>
+-1.2553 look at apple
+-1.2553 look at ball
+-1.2553 look at banana
+-1.2553 look at dice
+-1.2553 look at i
+-1.2553 look at nao
+-1.2553 look at oximeter
+-1.2553 look at patient
+-1.2553 look at phone
+-0.3010 nao abort </s>
+-1.1856 nao apple can
+-0.5166 nao apple close
+-0.8846 nao apple has
+-1.3010 nao ball can
+-0.4881 nao ball close
+-0.9031 nao ball has
+-1.3222 nao banana can
+-0.4771 nao banana close
+-0.9243 nao banana has
+-1.0000 nao bring ball
+-1.0000 nao bring banana
+-1.0000 nao bring dice
+-1.0000 nao bring oximeter
+-1.0000 nao bring phone
+-0.3010 nao close to
+-0.3010 nao come here
+-1.1856 nao dice can
+-0.5166 nao dice close
+-0.8846 nao dice has
+-1.0000 nao drop ball
+-1.0000 nao drop banana
+-1.0000 nao drop dice
+-1.0000 nao drop oximeter
+-1.0000 nao drop phone
+-1.0792 nao find apple
+-1.0792 nao find dice
+-1.0792 nao find nao
+-1.0792 nao find oximeter
+-1.0792 nao find patient
+-1.0792 nao find phone
+-0.6021 nao follow i
+-0.6021 nao follow patient
+-0.3010 nao go to
+-0.3010 nao help </s>
+-0.3010 nao i close
+-0.3010 nao look at
+-0.3010 nao nao close
+-1.1856 nao oximeter can
+-0.5166 nao oximeter close
+-0.8846 nao oximeter has
+-0.3010 nao patient close
+-1.1027 nao phone can
+-0.5798 nao phone close
+-0.8016 nao phone has
+-1.0792 nao pick apple
+-1.0792 nao pick ball
+-1.0792 nao pick banana
+-1.0792 nao pick dice
+-1.0792 nao pick oximeter
+-1.0792 nao pick phone
+-1.0792 nao push apple
+-1.0792 nao push ball
+-1.0792 nao push banana
+-1.0792 nao push dice
+-1.0792 nao push oximeter
+-1.0792 nao push phone
+-0.3010 nao reset </s>
+-1.1461 nao show apple
+-1.1461 nao show ball
+-1.1461 nao show banana
+-1.1461 nao show dice
+-1.1461 nao show i
+-1.1461 nao show nao
+-1.1461 nao show patient
+-0.3010 nao shut down
+-0.3010 nao sit down
+-0.3010 nao stop </s>
+-0.6021 nao turn body
+-0.6021 nao turn head
+-0.7782 nao walk one
+-0.7782 nao walk three
+-0.7782 nao walk two
+-0.3010 nao what can
+-0.3010 nao where is
+-0.3010 nao which color
+-0.3010 oximeter can be
+-0.3010 oximeter close to
+-0.3010 oximeter has color
+-0.3010 patient close to
+-0.3010 phone can be
+-0.3010 phone close to
+-0.3010 phone has color
+-0.3010 pick apple </s>
+-0.3010 pick ball </s>
+-0.3010 pick banana </s>
+-0.3010 pick dice </s>
+-0.3010 pick oximeter </s>
+-0.3010 pick phone </s>
+-0.3010 push apple </s>
+-0.3010 push ball </s>
+-0.3010 push banana </s>
+-0.3010 push dice </s>
+-0.3010 push oximeter </s>
+-0.3010 push phone </s>
+-0.3010 show apple </s>
+-0.3010 show ball </s>
+-0.3010 show banana </s>
+-0.3010 show dice </s>
+-0.3010 show i </s>
+-0.3010 show nao </s>
+-0.3010 show patient </s>
+-0.3010 shut down </s>
+-0.3010 sit down </s>
+-0.3010 to apple </s>
+-0.3010 to ball </s>
+-0.3010 to banana </s>
+-0.3010 to chair </s>
+-0.3010 to desk </s>
+-0.3010 to dice </s>
+-0.3010 to floor </s>
+-0.3010 to home </s>
+-0.3010 to i </s>
+-0.3010 to nao </s>
+-0.3010 to oximeter </s>
+-0.3010 to patient </s>
+-0.3010 to phone </s>
+-0.3010 to sofa </s>
+-0.3010 to wall </s>
+-0.7782 turn body left
+-0.7782 turn body right
+-0.7782 turn body straight
+-0.7782 turn head left
+-0.7782 turn head right
+-0.7782 turn head straight
+-0.3010 walk one </s>
+-0.3010 walk three </s>
+-0.3010 walk two </s>
+-0.3010 well done </s>
+-1.0000 what can apple
+-1.0000 what can banana
+-1.0000 what can dice
+-1.0000 what can oximeter
+-1.0000 what can phone
+-1.2041 where is apple
+-1.2041 where is ball
+-1.2041 where is banana
+-1.2041 where is i
+-1.2041 where is nao
+-1.2041 where is oximeter
+-1.2041 where is patient
+-1.2041 where is phone
+-0.3010 which color has
+
+\end\

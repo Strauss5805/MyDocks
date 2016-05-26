@@ -1,0 +1,488 @@
+Language model created by QuickLM on Thu Feb 11 11:02:32 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 19 sentences and 139 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=139
+ngram 2=174
+ngram 3=156
+
+\1-grams:
+-1.3101 </s> -0.3010
+-1.3101 <s> -0.2661
+-2.2878 a -0.2988
+-2.5888 address -0.2999
+-2.5888 agricultural -0.2999
+-2.5888 all -0.2999
+-2.5888 allow -0.2999
+-2.2878 always -0.2988
+-2.5888 and -0.2999
+-2.5888 are -0.2999
+-2.5888 as -0.2999
+-2.2878 be -0.2988
+-2.5888 before -0.2999
+-2.5888 beyond -0.2999
+-2.5888 black -0.2999
+-2.5888 boots -0.2999
+-2.2878 but -0.2988
+-2.5888 buys -0.2999
+-2.2878 by -0.2977
+-2.5888 carriage -0.2999
+-2.5888 catastrophic -0.2999
+-2.5888 change -0.2792
+-2.5888 clumsy -0.2999
+-2.5888 completely -0.2999
+-2.5888 conformists -0.2999
+-2.5888 costume -0.2999
+-2.5888 crunched -0.2988
+-2.5888 customer -0.2999
+-2.5888 cutbacks -0.2999
+-2.5888 die -0.2999
+-2.5888 dig -0.2999
+-2.5888 dim -0.2999
+-2.5888 distance -0.2792
+-2.5888 distributed -0.2792
+-2.5888 each -0.2999
+-2.5888 economic -0.2999
+-2.5888 effects -0.2792
+-2.5888 electron -0.2999
+-2.5888 elegant -0.2792
+-2.5888 enough -0.2999
+-2.5888 errors -0.2792
+-2.5888 expensive -0.2999
+-2.5888 filtering -0.2999
+-2.5888 fresh -0.2999
+-2.5888 from -0.2999
+-2.5888 frost -0.2792
+-2.5888 further -0.2988
+-2.5888 gloom -0.2792
+-2.5888 gloves -0.2965
+-2.5888 good -0.2792
+-2.5888 grandmother -0.2999
+-2.5888 greg -0.2999
+-2.5888 had -0.2988
+-2.5888 have -0.2999
+-2.5888 haven't -0.2999
+-2.2878 he -0.2977
+-2.5888 her -0.2999
+-2.5888 here -0.2988
+-2.2878 his -0.2988
+-2.5888 i -0.2999
+-2.5888 i'd -0.2999
+-2.2878 in -0.2977
+-2.5888 indeed -0.2988
+-2.5888 is -0.2999
+-2.2878 it -0.2988
+-2.5888 items -0.2792
+-2.5888 its -0.2999
+-2.5888 journal -0.2792
+-2.5888 justification -0.2988
+-2.5888 leeway -0.2999
+-2.5888 lights -0.2999
+-2.5888 look -0.2999
+-2.5888 lori's -0.2999
+-2.5888 make -0.2999
+-2.5888 may -0.2999
+-2.5888 message -0.2792
+-2.5888 milk -0.2999
+-2.5888 money -0.2988
+-2.5888 morning -0.2792
+-2.5888 my -0.2999
+-2.5888 nearest -0.2999
+-2.5888 need -0.2999
+-2.5888 needed -0.2999
+-2.5888 neglect -0.2943
+-2.2878 no -0.2988
+-2.5888 not -0.2988
+-2.5888 nuclear -0.2999
+-2.5888 occasionally -0.2999
+-2.5888 of -0.2999
+-2.5888 on -0.2792
+-2.5888 or -0.2999
+-2.5888 our -0.2999
+-2.5888 outgrew -0.2999
+-2.5888 over -0.2999
+-2.5888 paramagnetic -0.2999
+-2.5888 perfume -0.2792
+-2.5888 petticoats -0.2792
+-2.5888 please -0.2999
+-2.5888 pocket -0.2792
+-2.5888 politics -0.2999
+-2.5888 poor -0.2792
+-2.5888 possible -0.2965
+-2.5888 potatoes -0.2999
+-2.5888 prestige -0.2988
+-2.5888 products -0.2999
+-2.5888 rationalize -0.2999
+-2.5888 reads -0.2943
+-2.5888 return -0.2999
+-2.5888 ride -0.2943
+-2.5888 seemed -0.2965
+-2.5888 separate -0.2999
+-2.5888 silly -0.2999
+-2.5888 some -0.2999
+-2.5888 spilled -0.2999
+-2.5888 street -0.2999
+-2.5888 subway -0.2988
+-2.5888 such -0.2988
+-2.5888 synagogue -0.2999
+-1.8107 the -0.2943
+-2.5888 they -0.2999
+-2.5888 thought -0.2988
+-2.5888 through -0.2943
+-1.9868 to -0.2954
+-2.5888 unevenly -0.2999
+-2.5888 up -0.2999
+-2.5888 upbringing -0.2988
+-2.5888 us -0.2999
+-2.5888 walking -0.2999
+-2.5888 wall -0.2999
+-2.5888 was -0.2999
+-2.2878 we -0.2977
+-2.5888 weekday -0.2999
+-2.5888 whatsoever -0.2792
+-2.5888 why -0.2999
+-2.5888 with -0.2999
+-2.5888 within -0.2999
+-2.5888 worry -0.2999
+-2.5888 would -0.2999
+-2.5888 yell -0.2999
+
+\2-grams:
+-1.5798 <s> a -0.1761
+-1.5798 <s> agricultural 0.0000
+-1.5798 <s> allow 0.0000
+-1.5798 <s> as 0.0000
+-1.5798 <s> catastrophic 0.0000
+-1.5798 <s> grandmother 0.0000
+-1.5798 <s> greg 0.0000
+-1.5798 <s> he -0.1761
+-1.5798 <s> i'd 0.0000
+-1.5798 <s> indeed 0.0000
+-1.5798 <s> lori's 0.0000
+-1.5798 <s> no -0.1761
+-1.5798 <s> please 0.0000
+-1.2788 <s> the -0.2218
+-1.5798 <s> they 0.0000
+-1.5798 <s> to -0.2430
+-1.5798 <s> we -0.1761
+-1.5798 <s> why 0.0000
+-0.6021 a carriage 0.0000
+-0.6021 a message 0.0000
+-0.3010 address whatsoever 0.0000
+-0.3010 agricultural products 0.0000
+-0.3010 all errors 0.0000
+-0.3010 allow leeway 0.0000
+-0.6021 always seemed 0.0000
+-0.6021 always thought 0.0000
+-0.3010 and had 0.0000
+-0.3010 are unevenly 0.0000
+-0.3010 as such 0.0000
+-0.6021 be completely 0.0000
+-0.6021 be within 0.0000
+-0.3010 before frost 0.0000
+-0.3010 beyond politics 0.0000
+-0.3010 black gloves 0.0000
+-0.3010 boots on 0.0000
+-0.6021 but i 0.0000
+-0.6021 but rationalize 0.0000
+-0.3010 buys fresh 0.0000
+-0.6021 by a -0.1761
+-0.6021 by its 0.0000
+-0.3010 carriage crunched 0.0000
+-0.3010 catastrophic economic 0.0000
+-0.3010 change </s> -0.3010
+-0.3010 clumsy customer 0.0000
+-0.3010 completely elegant 0.0000
+-0.3010 conformists look 0.0000
+-0.3010 costume needed 0.0000
+-0.3010 crunched by -0.1761
+-0.3010 customer spilled 0.0000
+-0.3010 cutbacks neglect 0.0000
+-0.3010 die with 0.0000
+-0.3010 dig my 0.0000
+-0.3010 dim lights 0.0000
+-0.3010 distance </s> -0.3010
+-0.3010 distributed </s> -0.3010
+-0.3010 each weekday 0.0000
+-0.3010 economic cutbacks 0.0000
+-0.3010 effects </s> -0.3010
+-0.3010 electron paramagnetic 0.0000
+-0.3010 elegant </s> -0.3010
+-0.3010 enough change 0.0000
+-0.3010 errors </s> -0.3010
+-0.3010 expensive perfume 0.0000
+-0.3010 filtering through 0.0000
+-0.3010 fresh milk 0.0000
+-0.3010 from nuclear 0.0000
+-0.3010 frost </s> -0.3010
+-0.3010 further his -0.1761
+-0.3010 gloom </s> -0.3010
+-0.3010 gloves to -0.2430
+-0.3010 good </s> -0.3010
+-0.3010 grandmother outgrew 0.0000
+-0.3010 greg buys 0.0000
+-0.3010 had no -0.1761
+-0.3010 have money 0.0000
+-0.3010 haven't enough 0.0000
+-0.6021 he always -0.1761
+-0.6021 he occasionally 0.0000
+-0.3010 her upbringing 0.0000
+-0.3010 here but -0.1761
+-0.6021 his pocket 0.0000
+-0.6021 his prestige 0.0000
+-0.3010 i haven't 0.0000
+-0.3010 i'd ride 0.0000
+-0.6021 in his -0.1761
+-0.6021 in petticoats 0.0000
+-0.3010 indeed it -0.1761
+-0.3010 is possible 0.0000
+-0.6021 it is 0.0000
+-0.6021 it was 0.0000
+-0.3010 items </s> -0.3010
+-0.3010 its dim 0.0000
+-0.3010 journal </s> -0.3010
+-0.3010 justification by -0.1761
+-0.3010 leeway here 0.0000
+-0.3010 lights filtering 0.0000
+-0.3010 look good 0.0000
+-0.3010 lori's costume 0.0000
+-0.3010 make us 0.0000
+-0.3010 may not 0.0000
+-0.3010 message </s> -0.3010
+-0.3010 milk each 0.0000
+-0.3010 money in -0.1761
+-0.3010 morning </s> -0.3010
+-0.3010 my potatoes 0.0000
+-0.3010 nearest synagogue 0.0000
+-0.3010 need of 0.0000
+-0.3010 needed black 0.0000
+-0.3010 neglect the -0.2632
+-0.6021 no need 0.0000
+-0.6021 no return 0.0000
+-0.3010 not be -0.1761
+-0.3010 nuclear effects 0.0000
+-0.3010 occasionally reads 0.0000
+-0.3010 of justification 0.0000
+-0.3010 on </s> -0.3010
+-0.3010 or worry 0.0000
+-0.3010 our boots 0.0000
+-0.3010 outgrew her 0.0000
+-0.3010 over silly 0.0000
+-0.3010 paramagnetic from 0.0000
+-0.3010 perfume </s> -0.3010
+-0.3010 petticoats </s> -0.3010
+-0.3010 please dig 0.0000
+-0.3010 pocket </s> -0.3010
+-0.3010 politics and 0.0000
+-0.3010 poor </s> -0.3010
+-0.3010 possible to -0.2430
+-0.3010 potatoes up 0.0000
+-0.3010 prestige he -0.1761
+-0.3010 products are 0.0000
+-0.3010 rationalize all 0.0000
+-0.3010 reads the -0.2632
+-0.3010 return address 0.0000
+-0.3010 ride the -0.2632
+-0.3010 seemed to -0.2430
+-0.3010 separate electron 0.0000
+-0.3010 silly items 0.0000
+-0.3010 some expensive 0.0000
+-0.3010 spilled some 0.0000
+-0.3010 street journal 0.0000
+-0.3010 subway but -0.1761
+-0.3010 such it -0.1761
+-0.3010 synagogue may 0.0000
+-1.0792 the clumsy 0.0000
+-1.0792 the gloom 0.0000
+-1.0792 the nearest 0.0000
+-1.0792 the poor 0.0000
+-1.0792 the subway 0.0000
+-1.0792 the wall 0.0000
+-0.3010 they make 0.0000
+-0.3010 thought we -0.1761
+-0.3010 through the -0.2632
+-0.9031 to be -0.1761
+-0.9031 to further 0.0000
+-0.9031 to have 0.0000
+-0.9031 to separate 0.0000
+-0.3010 unevenly distributed 0.0000
+-0.3010 up before 0.0000
+-0.3010 upbringing in -0.1761
+-0.3010 us conformists 0.0000
+-0.3010 walking distance 0.0000
+-0.3010 wall street 0.0000
+-0.3010 was beyond 0.0000
+-0.6021 we always -0.1761
+-0.6021 we would 0.0000
+-0.3010 weekday morning 0.0000
+-0.3010 whatsoever </s> -0.3010
+-0.3010 why yell 0.0000
+-0.3010 with our 0.0000
+-0.3010 within walking 0.0000
+-0.3010 worry over 0.0000
+-0.3010 would die 0.0000
+-0.3010 yell or 0.0000
+
+\3-grams:
+-0.3010 <s> a carriage
+-0.3010 <s> agricultural products
+-0.3010 <s> allow leeway
+-0.3010 <s> as such
+-0.3010 <s> catastrophic economic
+-0.3010 <s> grandmother outgrew
+-0.3010 <s> greg buys
+-0.3010 <s> he always
+-0.3010 <s> i'd ride
+-0.3010 <s> indeed it
+-0.3010 <s> lori's costume
+-0.3010 <s> no return
+-0.3010 <s> please dig
+-0.6021 <s> the clumsy
+-0.6021 <s> the nearest
+-0.3010 <s> they make
+-0.3010 <s> to further
+-0.3010 <s> we always
+-0.3010 <s> why yell
+-0.3010 a carriage crunched
+-0.3010 a message </s>
+-0.3010 address whatsoever </s>
+-0.3010 agricultural products are
+-0.3010 all errors </s>
+-0.3010 allow leeway here
+-0.3010 always seemed to
+-0.3010 always thought we
+-0.3010 and had no
+-0.3010 are unevenly distributed
+-0.3010 as such it
+-0.3010 be completely elegant
+-0.3010 be within walking
+-0.3010 before frost </s>
+-0.3010 beyond politics and
+-0.3010 black gloves to
+-0.3010 boots on </s>
+-0.3010 but i haven't
+-0.3010 but rationalize all
+-0.3010 buys fresh milk
+-0.3010 by a message
+-0.3010 by its dim
+-0.3010 carriage crunched by
+-0.3010 catastrophic economic cutbacks
+-0.3010 clumsy customer spilled
+-0.3010 completely elegant </s>
+-0.3010 conformists look good
+-0.3010 costume needed black
+-0.3010 crunched by its
+-0.3010 customer spilled some
+-0.3010 cutbacks neglect the
+-0.3010 die with our
+-0.3010 dig my potatoes
+-0.3010 dim lights filtering
+-0.3010 each weekday morning
+-0.3010 economic cutbacks neglect
+-0.3010 electron paramagnetic from
+-0.3010 enough change </s>
+-0.3010 expensive perfume </s>
+-0.3010 filtering through the
+-0.3010 fresh milk each
+-0.3010 from nuclear effects
+-0.3010 further his prestige
+-0.3010 gloves to be
+-0.3010 grandmother outgrew her
+-0.3010 greg buys fresh
+-0.3010 had no need
+-0.3010 have money in
+-0.3010 haven't enough change
+-0.3010 he always seemed
+-0.3010 he occasionally reads
+-0.3010 her upbringing in
+-0.3010 here but rationalize
+-0.3010 his pocket </s>
+-0.3010 his prestige he
+-0.3010 i haven't enough
+-0.3010 i'd ride the
+-0.3010 in his pocket
+-0.3010 in petticoats </s>
+-0.3010 indeed it is
+-0.3010 is possible to
+-0.3010 it is possible
+-0.3010 it was beyond
+-0.3010 its dim lights
+-0.3010 justification by a
+-0.3010 leeway here but
+-0.3010 lights filtering through
+-0.3010 look good </s>
+-0.3010 lori's costume needed
+-0.3010 make us conformists
+-0.3010 may not be
+-0.3010 milk each weekday
+-0.3010 money in his
+-0.3010 my potatoes up
+-0.3010 nearest synagogue may
+-0.3010 need of justification
+-0.3010 needed black gloves
+-0.3010 neglect the poor
+-0.3010 no need of
+-0.3010 no return address
+-0.3010 not be within
+-0.3010 nuclear effects </s>
+-0.3010 occasionally reads the
+-0.3010 of justification by
+-0.3010 or worry over
+-0.3010 our boots on
+-0.3010 outgrew her upbringing
+-0.3010 over silly items
+-0.3010 paramagnetic from nuclear
+-0.3010 please dig my
+-0.3010 politics and had
+-0.3010 possible to separate
+-0.3010 potatoes up before
+-0.3010 prestige he occasionally
+-0.3010 products are unevenly
+-0.3010 rationalize all errors
+-0.3010 reads the wall
+-0.3010 return address whatsoever
+-0.3010 ride the subway
+-0.3010 seemed to have
+-0.3010 separate electron paramagnetic
+-0.3010 silly items </s>
+-0.3010 some expensive perfume
+-0.3010 spilled some expensive
+-0.3010 street journal </s>
+-0.3010 subway but i
+-0.3010 such it was
+-0.3010 synagogue may not
+-0.3010 the clumsy customer
+-0.3010 the gloom </s>
+-0.3010 the nearest synagogue
+-0.3010 the poor </s>
+-0.3010 the subway but
+-0.3010 the wall street
+-0.3010 they make us
+-0.3010 thought we would
+-0.3010 through the gloom
+-0.3010 to be completely
+-0.3010 to further his
+-0.3010 to have money
+-0.3010 to separate electron
+-0.3010 unevenly distributed </s>
+-0.3010 up before frost
+-0.3010 upbringing in petticoats
+-0.3010 us conformists look
+-0.3010 walking distance </s>
+-0.3010 wall street journal
+-0.3010 was beyond politics
+-0.3010 we always thought
+-0.3010 we would die
+-0.3010 weekday morning </s>
+-0.3010 why yell or
+-0.3010 with our boots
+-0.3010 within walking distance
+-0.3010 worry over silly
+-0.3010 would die with
+-0.3010 yell or worry
+
+\end\

@@ -1,0 +1,470 @@
+Language model created by QuickLM on Thu Feb 11 11:02:33 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 19 sentences and 127 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=127
+ngram 2=170
+ngram 3=154
+
+\1-grams:
+-1.3056 </s> -0.3010
+-1.3056 <s> -0.2533
+-1.8854 a -0.2953
+-2.5843 accomplished -0.2999
+-2.5843 account -0.2790
+-2.5843 aches -0.2999
+-2.5843 all -0.2825
+-2.2833 and -0.2988
+-2.5843 answer -0.2790
+-2.5843 artificial -0.2999
+-2.5843 artists -0.2999
+-2.5843 as -0.2953
+-2.5843 at -0.2988
+-2.5843 authorized -0.2825
+-2.5843 bargains -0.2999
+-2.5843 barometric -0.2999
+-2.5843 be -0.2999
+-2.5843 become -0.2999
+-2.5843 beg -0.2999
+-2.5843 began -0.2988
+-2.5843 boat's -0.2999
+-2.5843 bowl -0.2790
+-2.5843 boy -0.2999
+-2.5843 buff -0.2790
+-2.5843 buy -0.2999
+-2.5843 by -0.2825
+-2.5843 ceramic -0.2999
+-2.5843 changes -0.2790
+-2.5843 chosen -0.2999
+-2.5843 clay -0.2999
+-2.5843 combine -0.2999
+-2.5843 come -0.2999
+-2.5843 development -0.2790
+-2.5843 don't -0.2999
+-2.5843 eat -0.2999
+-2.5843 enough -0.2999
+-2.5843 expense -0.2999
+-2.5843 experts -0.2999
+-2.5843 few -0.2999
+-2.5843 fish -0.2999
+-2.2833 for -0.2988
+-2.5843 frantically -0.2976
+-2.5843 from -0.2825
+-2.5843 gallon -0.2976
+-2.5843 gas -0.2790
+-2.5843 gave -0.2953
+-2.5843 geese -0.2790
+-2.5843 generals -0.2790
+-2.5843 guard -0.2988
+-2.5843 guess -0.2825
+-2.5843 hand -0.2999
+-2.5843 hard -0.2999
+-2.5843 he -0.2999
+-2.5843 heave -0.2976
+-2.2833 her -0.2988
+-2.5843 honey -0.2790
+-2.5843 hook -0.2790
+-2.5843 i'd -0.2999
+-2.2833 in -0.2942
+-2.5843 increasing -0.2999
+-2.5843 industry -0.2999
+-2.5843 inevitable -0.2790
+-2.5843 ingredients -0.2988
+-2.5843 intelligence -0.2999
+-2.5843 is -0.2988
+-2.5843 knowingly -0.2790
+-2.5843 lake -0.2790
+-2.5843 large -0.2999
+-2.5843 laugh -0.2988
+-2.5843 leap -0.2999
+-2.5843 looked -0.2999
+-2.5843 many -0.2999
+-2.5843 materials -0.2999
+-2.5843 modeling -0.2999
+-2.5843 most -0.2999
+-2.5843 negotiations -0.2825
+-2.5843 new -0.2999
+-2.5843 not -0.2999
+-2.5843 obtain -0.2999
+-2.1072 of -0.2802
+-2.1072 on -0.2814
+-2.5843 one -0.2999
+-2.5843 only -0.2825
+-2.5843 or -0.2999
+-2.5843 overcharged -0.2790
+-2.5843 pond -0.2988
+-2.5843 popularity -0.2790
+-2.5843 pressure -0.2999
+-2.5843 product -0.2999
+-2.5843 put -0.2825
+-2.5843 question -0.2999
+-2.5843 rather -0.2999
+-2.5843 real -0.2790
+-2.5843 red -0.2999
+-2.5843 right -0.2999
+-2.5843 rob -0.2999
+-2.5843 ropes -0.2825
+-2.5843 sat -0.2999
+-2.5843 shoes -0.2999
+-2.5843 short -0.2999
+-2.5843 single -0.2999
+-2.5843 sketched -0.2825
+-2.2833 small -0.2988
+-2.5843 stray -0.2999
+-2.5843 surface -0.2976
+-2.5843 tempo -0.2976
+-2.5843 than -0.2999
+-2.5843 that -0.2999
+-1.3802 the -0.2825
+-2.5843 these -0.2999
+-2.5843 this -0.2999
+-2.5843 those -0.2999
+-2.2833 to -0.2988
+-2.5843 trend -0.2999
+-2.5843 union -0.2790
+-2.5843 unit -0.2999
+-2.5843 unlimited -0.2999
+-2.5843 unstuck -0.2790
+-2.5843 wage -0.2999
+-2.5843 was -0.2999
+-2.5843 whenever -0.2825
+-2.5843 white -0.2999
+-2.5843 who -0.2999
+-2.5843 will -0.2999
+-2.5843 with -0.2953
+-2.5843 worm -0.2976
+-2.5843 you -0.2999
+
+\2-grams:
+-1.5798 <s> a -0.2553
+-1.5798 <s> artificial 0.0000
+-1.5798 <s> beg 0.0000
+-1.5798 <s> combine 0.0000
+-1.5798 <s> guess 0.0000
+-1.5798 <s> he 0.0000
+-1.5798 <s> heave 0.0000
+-1.5798 <s> her -0.1761
+-1.5798 <s> i'd 0.0000
+-1.5798 <s> in -0.1761
+-1.5798 <s> increasing 0.0000
+-1.5798 <s> materials 0.0000
+-1.5798 <s> only 0.0000
+-1.5798 <s> rob 0.0000
+-1.2788 <s> the -0.2583
+-1.5798 <s> to -0.1761
+-1.5798 <s> who 0.0000
+-1.5798 <s> you 0.0000
+-1.0000 a chosen 0.0000
+-1.0000 a large 0.0000
+-1.0000 a short 0.0000
+-1.0000 a single 0.0000
+-1.0000 a unit 0.0000
+-0.3010 accomplished artists 0.0000
+-0.3010 account </s> -0.3010
+-0.3010 aches whenever 0.0000
+-0.3010 all the -0.2872
+-0.6021 and looked 0.0000
+-0.6021 and sketched 0.0000
+-0.3010 answer </s> -0.3010
+-0.3010 artificial intelligence 0.0000
+-0.3010 artists obtain 0.0000
+-0.3010 as a -0.2553
+-0.3010 at her -0.1761
+-0.3010 authorized the -0.2872
+-0.3010 bargains as 0.0000
+-0.3010 barometric pressure 0.0000
+-0.3010 be overcharged 0.0000
+-0.3010 become generals 0.0000
+-0.3010 beg that 0.0000
+-0.3010 began to -0.1761
+-0.3010 boat's come 0.0000
+-0.3010 bowl </s> -0.3010
+-0.3010 boy put 0.0000
+-0.3010 buff </s> -0.3010
+-0.3010 buy these 0.0000
+-0.3010 by the -0.2872
+-0.3010 ceramic modeling 0.0000
+-0.3010 changes </s> -0.3010
+-0.3010 chosen few 0.0000
+-0.3010 clay red 0.0000
+-0.3010 combine all 0.0000
+-0.3010 come unstuck 0.0000
+-0.3010 development </s> -0.3010
+-0.3010 don't eat 0.0000
+-0.3010 eat enough 0.0000
+-0.3010 enough honey 0.0000
+-0.3010 expense account 0.0000
+-0.3010 experts this 0.0000
+-0.3010 few will 0.0000
+-0.3010 fish began 0.0000
+-0.6021 for one 0.0000
+-0.6021 for real 0.0000
+-0.3010 frantically on -0.1249
+-0.3010 from the -0.2872
+-0.3010 gallon of -0.2218
+-0.3010 gas </s> -0.3010
+-0.3010 gave a -0.2553
+-0.3010 geese </s> -0.3010
+-0.3010 generals </s> -0.3010
+-0.3010 guard for -0.1761
+-0.3010 guess the -0.2872
+-0.3010 hand aches 0.0000
+-0.3010 hard laugh 0.0000
+-0.3010 he gave 0.0000
+-0.3010 heave on -0.2218
+-0.6021 her knowingly 0.0000
+-0.6021 her right 0.0000
+-0.3010 honey </s> -0.3010
+-0.3010 hook </s> -0.3010
+-0.3010 i'd rather 0.0000
+-0.6021 in a -0.2553
+-0.6021 in wage 0.0000
+-0.3010 increasing tempo 0.0000
+-0.3010 industry bargains 0.0000
+-0.3010 inevitable </s> -0.3010
+-0.3010 ingredients in -0.1761
+-0.3010 intelligence is 0.0000
+-0.3010 is for -0.1761
+-0.3010 knowingly </s> -0.3010
+-0.3010 lake </s> -0.3010
+-0.3010 large bowl 0.0000
+-0.3010 laugh and -0.1761
+-0.3010 leap frantically 0.0000
+-0.3010 looked at 0.0000
+-0.3010 many experts 0.0000
+-0.3010 materials ceramic 0.0000
+-0.3010 modeling clay 0.0000
+-0.3010 most accomplished 0.0000
+-0.3010 negotiations the -0.2872
+-0.3010 new product 0.0000
+-0.3010 not buy 0.0000
+-0.3010 obtain popularity 0.0000
+-0.7782 of gas 0.0000
+-0.7782 of new 0.0000
+-0.7782 of the -0.2730
+-0.4771 on the -0.2730
+-0.7782 on those 0.0000
+-0.3010 one gallon 0.0000
+-0.3010 only the -0.2872
+-0.3010 or buff 0.0000
+-0.3010 overcharged </s> -0.3010
+-0.3010 pond and -0.1761
+-0.3010 popularity </s> -0.3010
+-0.3010 pressure changes 0.0000
+-0.3010 product development 0.0000
+-0.3010 put the -0.2872
+-0.3010 question from 0.0000
+-0.3010 rather not 0.0000
+-0.3010 real </s> -0.3010
+-0.3010 red white 0.0000
+-0.3010 right hand 0.0000
+-0.3010 rob sat 0.0000
+-0.3010 ropes the -0.2872
+-0.3010 sat by 0.0000
+-0.3010 shoes than 0.0000
+-0.3010 short hard 0.0000
+-0.3010 single union 0.0000
+-0.3010 sketched the -0.2872
+-0.6021 small boy 0.0000
+-0.6021 small lake 0.0000
+-0.3010 stray geese 0.0000
+-0.3010 surface of -0.2218
+-0.3010 tempo of -0.2218
+-0.3010 than be 0.0000
+-0.3010 that guard 0.0000
+-1.5051 the answer 0.0000
+-1.5051 the barometric 0.0000
+-1.5051 the boat's 0.0000
+-1.5051 the fish 0.0000
+-1.5051 the hook 0.0000
+-1.5051 the industry 0.0000
+-1.5051 the ingredients 0.0000
+-1.5051 the most 0.0000
+-1.5051 the pond 0.0000
+-1.5051 the question 0.0000
+-1.2041 the small 0.0000
+-1.5051 the stray 0.0000
+-1.5051 the surface 0.0000
+-1.5051 the unlimited 0.0000
+-1.5051 the worm 0.0000
+-0.3010 these shoes 0.0000
+-0.3010 this trend 0.0000
+-0.3010 those ropes 0.0000
+-0.6021 to leap 0.0000
+-0.6021 to many 0.0000
+-0.3010 trend was 0.0000
+-0.3010 union </s> -0.3010
+-0.3010 unit with 0.0000
+-0.3010 unlimited expense 0.0000
+-0.3010 unstuck </s> -0.3010
+-0.3010 wage negotiations 0.0000
+-0.3010 was inevitable 0.0000
+-0.3010 whenever the -0.2872
+-0.3010 white or 0.0000
+-0.3010 who authorized 0.0000
+-0.3010 will become 0.0000
+-0.3010 with a -0.2553
+-0.3010 worm on -0.1249
+-0.3010 you don't 0.0000
+
+\3-grams:
+-0.3010 <s> a chosen
+-0.3010 <s> artificial intelligence
+-0.3010 <s> beg that
+-0.3010 <s> combine all
+-0.3010 <s> guess the
+-0.3010 <s> he gave
+-0.3010 <s> heave on
+-0.3010 <s> her right
+-0.3010 <s> i'd rather
+-0.3010 <s> in wage
+-0.3010 <s> increasing tempo
+-0.3010 <s> materials ceramic
+-0.3010 <s> only the
+-0.3010 <s> rob sat
+-0.6021 <s> the fish
+-0.6021 <s> the small
+-0.3010 <s> to many
+-0.3010 <s> who authorized
+-0.3010 <s> you don't
+-0.3010 a chosen few
+-0.3010 a large bowl
+-0.3010 a short hard
+-0.3010 a single union
+-0.3010 a unit with
+-0.3010 accomplished artists obtain
+-0.3010 aches whenever the
+-0.3010 all the ingredients
+-0.3010 and looked at
+-0.3010 and sketched the
+-0.3010 artificial intelligence is
+-0.3010 artists obtain popularity
+-0.3010 as a unit
+-0.3010 at her knowingly
+-0.3010 authorized the unlimited
+-0.3010 bargains as a
+-0.3010 barometric pressure changes
+-0.3010 be overcharged </s>
+-0.3010 become generals </s>
+-0.3010 beg that guard
+-0.3010 began to leap
+-0.3010 boat's come unstuck
+-0.3010 boy put the
+-0.3010 buy these shoes
+-0.3010 by the pond
+-0.3010 ceramic modeling clay
+-0.3010 chosen few will
+-0.3010 clay red white
+-0.3010 combine all the
+-0.3010 come unstuck </s>
+-0.3010 don't eat enough
+-0.3010 eat enough honey
+-0.3010 enough honey </s>
+-0.3010 expense account </s>
+-0.3010 experts this trend
+-0.3010 few will become
+-0.3010 fish began to
+-0.3010 for one gallon
+-0.3010 for real </s>
+-0.3010 frantically on the
+-0.3010 from the answer
+-0.3010 gallon of gas
+-0.3010 gave a short
+-0.3010 guard for one
+-0.3010 guess the question
+-0.3010 hand aches whenever
+-0.3010 hard laugh and
+-0.3010 he gave a
+-0.3010 heave on those
+-0.3010 her knowingly </s>
+-0.3010 her right hand
+-0.3010 i'd rather not
+-0.3010 in a large
+-0.3010 in wage negotiations
+-0.3010 increasing tempo of
+-0.3010 industry bargains as
+-0.3010 ingredients in a
+-0.3010 intelligence is for
+-0.3010 is for real
+-0.3010 large bowl </s>
+-0.3010 laugh and looked
+-0.3010 leap frantically on
+-0.3010 looked at her
+-0.3010 many experts this
+-0.3010 materials ceramic modeling
+-0.3010 modeling clay red
+-0.3010 most accomplished artists
+-0.3010 negotiations the industry
+-0.3010 new product development
+-0.3010 not buy these
+-0.3010 obtain popularity </s>
+-0.3010 of gas </s>
+-0.3010 of new product
+-0.3010 of the small
+-0.6021 on the hook
+-0.6021 on the surface
+-0.3010 on those ropes
+-0.3010 one gallon of
+-0.3010 only the most
+-0.3010 or buff </s>
+-0.3010 pond and sketched
+-0.3010 pressure changes </s>
+-0.3010 product development </s>
+-0.3010 put the worm
+-0.3010 question from the
+-0.3010 rather not buy
+-0.3010 red white or
+-0.3010 right hand aches
+-0.3010 rob sat by
+-0.3010 ropes the boat's
+-0.3010 sat by the
+-0.3010 shoes than be
+-0.3010 short hard laugh
+-0.3010 single union </s>
+-0.3010 sketched the stray
+-0.3010 small boy put
+-0.3010 small lake </s>
+-0.3010 stray geese </s>
+-0.3010 surface of the
+-0.3010 tempo of new
+-0.3010 than be overcharged
+-0.3010 that guard for
+-0.3010 the answer </s>
+-0.3010 the barometric pressure
+-0.3010 the boat's come
+-0.3010 the fish began
+-0.3010 the hook </s>
+-0.3010 the industry bargains
+-0.3010 the ingredients in
+-0.3010 the most accomplished
+-0.3010 the pond and
+-0.3010 the question from
+-0.6021 the small boy
+-0.6021 the small lake
+-0.3010 the stray geese
+-0.3010 the surface of
+-0.3010 the unlimited expense
+-0.3010 the worm on
+-0.3010 these shoes than
+-0.3010 this trend was
+-0.3010 those ropes the
+-0.3010 to leap frantically
+-0.3010 to many experts
+-0.3010 trend was inevitable
+-0.3010 unit with a
+-0.3010 unlimited expense account
+-0.3010 wage negotiations the
+-0.3010 was inevitable </s>
+-0.3010 whenever the barometric
+-0.3010 white or buff
+-0.3010 who authorized the
+-0.3010 will become generals
+-0.3010 with a single
+-0.3010 worm on the
+-0.3010 you don't eat
+
+\end\

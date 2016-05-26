@@ -1,0 +1,28 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for WTM
+ */
+
+grammar scenario;
+
+public <utterance> = (medieval society was based on hierarchies) |
+(there forces are more latent than in electricity and less than in magnetism) |
+(bob papered over the living room murals) |
+(they had slapped their thighs) |
+(chief interest in radiosterilization resides in the military services) |
+(alice's ability to work without supervision is noteworthy) |
+(where were you while we were away) |
+(destroy every file related to my audits) |
+(meats the radiation processing of meat has received extensive investigation) |
+(that noise problem grows more annoying each day) |
+(project development was proceeding too slowly) |
+(serve the coleslaw after i add the oil) |
+(are your grades higher or lower than nancy's) |
+(by that one feels that magnetic forces are as general as electrical forces) |
+(he would not carry a brief case) |
+(the oasis was a mirage) |
+(call an ambulance for medical assistance) |
+(do avoid puncturing or cutting into meats test them) |
+(planned parenthood organizations promote birth control) |
+(swing your arm as high as you can);

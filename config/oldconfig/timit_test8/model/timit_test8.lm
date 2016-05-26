@@ -1,0 +1,471 @@
+Language model created by QuickLM on Thu Feb 11 11:02:36 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 19 sentences and 128 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=128
+ngram 2=170
+ngram 3=154
+
+\1-grams:
+-1.3056 </s> -0.3010
+-1.3056 <s> -0.2694
+-1.9823 a -0.2965
+-2.5843 after -0.2999
+-2.5843 and -0.2965
+-2.5843 are -0.2988
+-2.5843 around -0.2942
+-2.5843 astrophysics -0.2790
+-2.5843 be -0.2999
+-2.5843 best -0.2999
+-2.5843 black -0.2999
+-2.5843 bleachers -0.2790
+-2.5843 bowl -0.2976
+-2.5843 bread -0.2790
+-2.5843 brochure -0.2976
+-2.5843 but -0.2976
+-2.5843 buyer -0.2790
+-2.5843 can -0.2999
+-2.5843 chair -0.2999
+-2.5843 charge -0.2999
+-2.5843 cigarette -0.2790
+-2.5843 come -0.2999
+-2.5843 controlled -0.2942
+-2.5843 diagnosed -0.2999
+-2.5843 diagram -0.2999
+-2.5843 dig -0.2976
+-2.5843 do -0.2999
+-2.5843 endurance -0.2790
+-2.5843 extra -0.2999
+-2.5843 fairy -0.2999
+-2.5843 fan -0.2790
+-2.5843 fancy -0.2999
+-2.5843 fashion -0.2988
+-2.5843 fell -0.2988
+-2.5843 fleecy -0.2999
+-2.5843 flies -0.2999
+-2.1072 for -0.2976
+-2.5843 forces -0.2999
+-2.5843 forgot -0.2976
+-2.2833 from -0.2930
+-2.5843 garbage -0.2790
+-2.5843 generous -0.2999
+-2.5843 get -0.2999
+-2.5843 glow -0.2976
+-2.5843 good -0.2976
+-2.5843 hats -0.2999
+-2.1072 he -0.2976
+-2.5843 his -0.2999
+-2.5843 hostages -0.2988
+-2.5843 how -0.2999
+-2.2833 if -0.2965
+-2.5843 in -0.2999
+-2.5843 informative -0.2976
+-2.1072 is -0.2953
+-2.5843 it -0.2988
+-2.5843 kidnappers -0.2790
+-2.5843 laboratory -0.2999
+-2.5843 learn -0.2976
+-2.5843 lentils -0.2999
+-2.5843 lily -0.2790
+-2.5843 makes -0.2999
+-2.5843 may -0.2999
+-2.5843 money -0.2976
+-2.5843 mopped -0.2999
+-2.5843 more -0.2999
+-2.5843 much -0.2999
+-2.5843 need -0.2976
+-2.5843 no -0.2999
+-2.1072 of -0.2942
+-2.5843 only -0.2999
+-2.2833 out -0.2754
+-2.5843 overalls -0.2790
+-2.5843 palm -0.2999
+-2.5843 particularly -0.2999
+-2.5843 patiently -0.2790
+-2.5843 people -0.2988
+-2.5843 problem -0.2999
+-2.5843 problems -0.2790
+-2.5843 props -0.2988
+-2.5843 prospective -0.2999
+-2.5843 pulsing -0.2999
+-2.5843 ralph -0.2999
+-2.5843 refused -0.2999
+-2.5843 rescue -0.2999
+-2.5843 robin -0.2999
+-2.5843 roger's -0.2988
+-2.5843 said -0.2999
+-2.5843 say -0.2976
+-2.5843 sense -0.2999
+-2.5843 she -0.2999
+-2.5843 solve -0.2999
+-2.5843 special -0.2999
+-2.5843 stepladders -0.2965
+-2.5843 stopwatch -0.2988
+-2.5843 straw -0.2999
+-2.5843 study -0.2790
+-2.5843 such -0.2999
+-2.5843 swarmed -0.2999
+-2.5843 tablecloths -0.2790
+-2.5843 task -0.2999
+-2.1072 that -0.2953
+-1.8062 the -0.2930
+-2.5843 their -0.2999
+-2.5843 there -0.2999
+-2.5843 thick -0.2999
+-2.2833 this -0.2988
+-2.1072 to -0.2976
+-2.2833 tooth -0.2988
+-2.5843 treatment -0.2790
+-2.5843 two -0.2999
+-2.5843 warm -0.2999
+-2.5843 was -0.2999
+-2.5843 way -0.2976
+-2.1072 we -0.2976
+-2.5843 wear -0.2965
+-2.5843 welfare -0.2790
+-2.2833 were -0.2988
+-2.5843 when -0.2999
+-2.5843 which -0.2976
+-2.5843 why -0.2999
+-2.5843 will -0.2999
+-2.5843 without -0.2999
+-2.5843 woolen -0.2999
+-2.5843 wore -0.2999
+-2.5843 would -0.2999
+-2.5843 year -0.2790
+-2.5843 yellow -0.2999
+-2.5843 your -0.2999
+
+\2-grams:
+-1.5798 <s> do 0.0000
+-1.5798 <s> flies 0.0000
+-1.5798 <s> how 0.0000
+-1.5798 <s> if -0.1761
+-1.5798 <s> laboratory 0.0000
+-1.5798 <s> ralph 0.0000
+-1.5798 <s> she 0.0000
+-1.5798 <s> special 0.0000
+-1.5798 <s> straw 0.0000
+-1.5798 <s> that -0.2218
+-1.1027 <s> the -0.1761
+-1.5798 <s> their 0.0000
+-1.5798 <s> this -0.1761
+-1.2788 <s> we -0.1249
+-1.5798 <s> why 0.0000
+-1.5798 <s> will 0.0000
+-0.9031 a chair 0.0000
+-0.9031 a cigarette 0.0000
+-0.9031 a palm 0.0000
+-0.9031 a yellow 0.0000
+-0.3010 after much 0.0000
+-0.3010 and a -0.2430
+-0.3010 are out -0.1761
+-0.3010 around the -0.2632
+-0.3010 astrophysics </s> -0.3010
+-0.3010 be no 0.0000
+-0.3010 best way 0.0000
+-0.3010 black bread 0.0000
+-0.3010 bleachers </s> -0.3010
+-0.3010 bowl of -0.2218
+-0.3010 bread </s> -0.3010
+-0.3010 brochure is -0.2218
+-0.3010 but that -0.2218
+-0.3010 buyer </s> -0.3010
+-0.3010 can get 0.0000
+-0.3010 chair and 0.0000
+-0.3010 charge money 0.0000
+-0.3010 cigarette </s> -0.3010
+-0.3010 come when 0.0000
+-0.3010 controlled the -0.2632
+-0.3010 diagnosed but 0.0000
+-0.3010 diagram makes 0.0000
+-0.3010 dig he -0.2218
+-0.3010 do without 0.0000
+-0.3010 endurance </s> -0.3010
+-0.3010 extra problems 0.0000
+-0.3010 fairy forgot 0.0000
+-0.3010 fan </s> -0.3010
+-0.3010 fancy tablecloths 0.0000
+-0.3010 fashion this -0.1761
+-0.3010 fell out -0.1761
+-0.3010 fleecy woolen 0.0000
+-0.3010 flies swarmed 0.0000
+-0.7782 for prospective 0.0000
+-0.7782 for such 0.0000
+-0.7782 for welfare 0.0000
+-0.3010 forces rescue 0.0000
+-0.3010 forgot to -0.2218
+-0.6021 from kidnappers 0.0000
+-0.6021 from the -0.2632
+-0.3010 garbage </s> -0.3010
+-0.3010 generous there 0.0000
+-0.3010 get it 0.0000
+-0.3010 glow of -0.2218
+-0.3010 good is -0.2218
+-0.3010 hats are 0.0000
+-0.7782 he mopped 0.0000
+-0.7782 he refused 0.0000
+-0.7782 he said 0.0000
+-0.3010 his problem 0.0000
+-0.3010 hostages from -0.1761
+-0.3010 how good 0.0000
+-0.6021 if people 0.0000
+-0.6021 if we -0.2218
+-0.3010 in which 0.0000
+-0.3010 informative for -0.2218
+-0.7782 is particularly 0.0000
+-0.7782 is to -0.2218
+-0.7782 is your 0.0000
+-0.3010 it if -0.1761
+-0.3010 kidnappers </s> -0.3010
+-0.3010 laboratory astrophysics 0.0000
+-0.3010 learn is -0.2218
+-0.3010 lentils in 0.0000
+-0.3010 lily </s> -0.3010
+-0.3010 makes sense 0.0000
+-0.3010 may say 0.0000
+-0.3010 money for -0.2218
+-0.3010 mopped thick 0.0000
+-0.3010 more generous 0.0000
+-0.3010 much study 0.0000
+-0.3010 need for -0.2218
+-0.3010 no need 0.0000
+-0.7782 of a -0.2430
+-0.7782 of fashion 0.0000
+-0.7782 of lentils 0.0000
+-0.3010 only after 0.0000
+-0.6021 out </s> -0.3010
+-0.6021 out of -0.2218
+-0.3010 overalls </s> -0.3010
+-0.3010 palm fan 0.0000
+-0.3010 particularly informative 0.0000
+-0.3010 patiently </s> -0.3010
+-0.3010 people were -0.1761
+-0.3010 problem was 0.0000
+-0.3010 problems </s> -0.3010
+-0.3010 props were -0.1761
+-0.3010 prospective buyer 0.0000
+-0.3010 pulsing glow 0.0000
+-0.3010 ralph controlled 0.0000
+-0.3010 refused treatment 0.0000
+-0.3010 rescue hostages 0.0000
+-0.3010 robin wear 0.0000
+-0.3010 roger's tooth -0.1761
+-0.3010 said patiently 0.0000
+-0.3010 say that -0.2218
+-0.3010 sense only 0.0000
+-0.3010 she wore 0.0000
+-0.3010 solve extra 0.0000
+-0.3010 special task 0.0000
+-0.3010 stepladders a -0.2430
+-0.3010 stopwatch from -0.1761
+-0.3010 straw hats 0.0000
+-0.3010 study </s> -0.3010
+-0.3010 such garbage 0.0000
+-0.3010 swarmed around 0.0000
+-0.3010 tablecloths </s> -0.3010
+-0.3010 task forces 0.0000
+-0.7782 that diagram 0.0000
+-0.7782 that he -0.2218
+-0.7782 that his 0.0000
+-1.0792 the best 0.0000
+-1.0792 the bleachers 0.0000
+-1.0792 the bowl 0.0000
+-1.0792 the pulsing 0.0000
+-1.0792 the stopwatch 0.0000
+-1.0792 the tooth -0.1761
+-0.3010 their props 0.0000
+-0.3010 there would 0.0000
+-0.3010 thick black 0.0000
+-0.6021 this brochure 0.0000
+-0.6021 this year 0.0000
+-0.7782 to come 0.0000
+-0.7782 to learn 0.0000
+-0.7782 to solve 0.0000
+-0.6021 tooth fairy 0.0000
+-0.6021 tooth fell 0.0000
+-0.3010 treatment </s> -0.3010
+-0.3010 two stepladders 0.0000
+-0.3010 warm fleecy 0.0000
+-0.3010 was diagnosed 0.0000
+-0.3010 way to -0.2218
+-0.7782 we can 0.0000
+-0.7782 we dig 0.0000
+-0.7782 we may 0.0000
+-0.3010 wear a -0.2430
+-0.3010 welfare </s> -0.3010
+-0.6021 were more 0.0000
+-0.6021 were two 0.0000
+-0.3010 when roger's 0.0000
+-0.3010 which he -0.2218
+-0.3010 why charge 0.0000
+-0.3010 will robin 0.0000
+-0.3010 without fancy 0.0000
+-0.3010 woolen overalls 0.0000
+-0.3010 wore warm 0.0000
+-0.3010 would be 0.0000
+-0.3010 year </s> -0.3010
+-0.3010 yellow lily 0.0000
+-0.3010 your endurance 0.0000
+
+\3-grams:
+-0.3010 <s> do without
+-0.3010 <s> flies swarmed
+-0.3010 <s> how good
+-0.3010 <s> if people
+-0.3010 <s> laboratory astrophysics
+-0.3010 <s> ralph controlled
+-0.3010 <s> she wore
+-0.3010 <s> special task
+-0.3010 <s> straw hats
+-0.3010 <s> that diagram
+-0.7782 <s> the best
+-0.7782 <s> the pulsing
+-0.7782 <s> the tooth
+-0.3010 <s> their props
+-0.3010 <s> this brochure
+-0.6021 <s> we can
+-0.6021 <s> we may
+-0.3010 <s> why charge
+-0.3010 <s> will robin
+-0.3010 a chair and
+-0.3010 a cigarette </s>
+-0.3010 a palm fan
+-0.3010 a yellow lily
+-0.3010 after much study
+-0.3010 and a palm
+-0.3010 are out of
+-0.3010 around the bowl
+-0.3010 be no need
+-0.3010 best way to
+-0.3010 black bread </s>
+-0.3010 bowl of lentils
+-0.3010 brochure is particularly
+-0.3010 but that he
+-0.3010 can get it
+-0.3010 chair and a
+-0.3010 charge money for
+-0.3010 come when roger's
+-0.3010 controlled the stopwatch
+-0.3010 diagnosed but that
+-0.3010 diagram makes sense
+-0.3010 dig he said
+-0.3010 do without fancy
+-0.3010 extra problems </s>
+-0.3010 fairy forgot to
+-0.3010 fancy tablecloths </s>
+-0.3010 fashion this year
+-0.3010 fell out </s>
+-0.3010 fleecy woolen overalls
+-0.3010 flies swarmed around
+-0.3010 for prospective buyer
+-0.3010 for such garbage
+-0.3010 for welfare </s>
+-0.3010 forces rescue hostages
+-0.3010 forgot to come
+-0.3010 from kidnappers </s>
+-0.3010 from the bleachers
+-0.3010 generous there would
+-0.3010 get it if
+-0.3010 glow of a
+-0.3010 good is your
+-0.3010 hats are out
+-0.3010 he mopped thick
+-0.3010 he refused treatment
+-0.3010 he said patiently
+-0.3010 his problem was
+-0.3010 hostages from kidnappers
+-0.3010 how good is
+-0.3010 if people were
+-0.3010 if we dig
+-0.3010 in which he
+-0.3010 informative for prospective
+-0.3010 is particularly informative
+-0.3010 is to solve
+-0.3010 is your endurance
+-0.3010 it if we
+-0.3010 laboratory astrophysics </s>
+-0.3010 learn is to
+-0.3010 lentils in which
+-0.3010 makes sense only
+-0.3010 may say that
+-0.3010 money for such
+-0.3010 mopped thick black
+-0.3010 more generous there
+-0.3010 much study </s>
+-0.3010 need for welfare
+-0.3010 no need for
+-0.3010 of a cigarette
+-0.3010 of fashion this
+-0.3010 of lentils in
+-0.3010 only after much
+-0.3010 out of fashion
+-0.3010 palm fan </s>
+-0.3010 particularly informative for
+-0.3010 people were more
+-0.3010 problem was diagnosed
+-0.3010 props were two
+-0.3010 prospective buyer </s>
+-0.3010 pulsing glow of
+-0.3010 ralph controlled the
+-0.3010 refused treatment </s>
+-0.3010 rescue hostages from
+-0.3010 robin wear a
+-0.3010 roger's tooth fell
+-0.3010 said patiently </s>
+-0.3010 say that his
+-0.3010 sense only after
+-0.3010 she wore warm
+-0.3010 solve extra problems
+-0.3010 special task forces
+-0.3010 stepladders a chair
+-0.3010 stopwatch from the
+-0.3010 straw hats are
+-0.3010 such garbage </s>
+-0.3010 swarmed around the
+-0.3010 task forces rescue
+-0.3010 that diagram makes
+-0.3010 that he refused
+-0.3010 that his problem
+-0.3010 the best way
+-0.3010 the bleachers </s>
+-0.3010 the bowl of
+-0.3010 the pulsing glow
+-0.3010 the stopwatch from
+-0.3010 the tooth fairy
+-0.3010 their props were
+-0.3010 there would be
+-0.3010 thick black bread
+-0.3010 this brochure is
+-0.3010 this year </s>
+-0.3010 to come when
+-0.3010 to learn is
+-0.3010 to solve extra
+-0.3010 tooth fairy forgot
+-0.3010 tooth fell out
+-0.3010 two stepladders a
+-0.3010 warm fleecy woolen
+-0.3010 was diagnosed but
+-0.3010 way to learn
+-0.3010 we can get
+-0.3010 we dig he
+-0.3010 we may say
+-0.3010 wear a yellow
+-0.3010 were more generous
+-0.3010 were two stepladders
+-0.3010 when roger's tooth
+-0.3010 which he mopped
+-0.3010 why charge money
+-0.3010 will robin wear
+-0.3010 without fancy tablecloths
+-0.3010 woolen overalls </s>
+-0.3010 wore warm fleecy
+-0.3010 would be no
+-0.3010 yellow lily </s>
+-0.3010 your endurance </s>
+
+\end\

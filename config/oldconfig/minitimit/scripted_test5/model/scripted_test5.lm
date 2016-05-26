@@ -1,0 +1,218 @@
+Language model created by QuickLM on Thu Feb 11 12:28:39 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 30 sentences and 33 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=33
+ngram 2=75
+ngram 3=91
+
+\1-grams:
+-1.1072 </s> -0.3010
+-1.1072 <s> -0.2608
+-1.8062 apple -0.2456
+-1.8062 ball -0.2391
+-1.8854 banana -0.2391
+-2.2833 be -0.2988
+-2.5843 bring -0.2942
+-2.1072 can -0.2919
+-2.5843 chair -0.2657
+-1.3802 close -0.2825
+-2.2833 color -0.2988
+-2.5843 desk -0.2657
+-2.1072 dice -0.2456
+-2.5843 drop -0.2942
+-2.1072 find -0.2849
+-2.5843 follow -0.2608
+-2.2833 has -0.2988
+-2.5843 home -0.2657
+-2.1072 i -0.2657
+-2.5843 is -0.2976
+-1.0529 nao -0.1317
+-1.9823 oximeter -0.2456
+-1.9823 patient -0.2456
+-1.8062 phone -0.2456
+-2.2833 pick -0.2657
+-2.5843 red -0.2657
+-2.2833 show -0.2896
+-2.5843 sofa -0.2657
+-1.3802 to -0.2218
+-2.5843 wall -0.2657
+-2.5843 what -0.2976
+-2.5843 where -0.2999
+-2.5843 yellow -0.2657
+
+\2-grams:
+-0.3010 <s> nao -0.0483
+-0.3802 apple </s> -0.3010
+-1.0792 apple close 0.0000
+-0.7782 ball </s> -0.3010
+-1.0792 ball can -0.1249
+-0.7782 ball close 0.0000
+-1.0792 ball has 0.0000
+-0.6990 banana </s> -0.3010
+-1.0000 banana can -0.1249
+-1.0000 banana close 0.0000
+-1.0000 banana has 0.0000
+-0.3010 be pick 0.0000
+-0.3010 bring apple -0.0669
+-0.7782 can ball -0.2218
+-0.4771 can be 0.0000
+-0.3010 chair </s> -0.3010
+-0.3010 close to 0.0000
+-0.6021 color red 0.0000
+-0.6021 color yellow 0.0000
+-0.3010 desk </s> -0.3010
+-0.4771 dice </s> -0.3010
+-0.7782 dice close 0.0000
+-0.3010 drop apple -0.0669
+-0.7782 find ball -0.2218
+-0.7782 find banana -0.2041
+-0.7782 find i 0.0000
+-0.3010 follow nao -0.2881
+-0.3010 has color 0.0000
+-0.3010 home </s> -0.3010
+-0.3010 i </s> -0.3010
+-0.3010 is dice -0.1249
+-1.5315 nao </s> -0.3010
+-1.8325 nao apple -0.2632
+-1.2304 nao ball -0.1249
+-1.3554 nao banana -0.1461
+-1.8325 nao bring 0.0000
+-1.5315 nao close 0.0000
+-1.8325 nao dice -0.2218
+-1.8325 nao drop 0.0000
+-1.3554 nao find 0.0000
+-1.8325 nao follow 0.0000
+-1.5315 nao nao -0.2881
+-1.8325 nao oximeter -0.2430
+-1.3554 nao patient -0.0969
+-1.1335 nao phone -0.0669
+-1.5315 nao show 0.0000
+-1.8325 nao what 0.0000
+-1.8325 nao where 0.0000
+-0.4260 oximeter </s> -0.3010
+-0.9031 oximeter close 0.0000
+-0.9031 patient </s> -0.3010
+-0.4260 patient close 0.0000
+-1.0792 phone </s> -0.3010
+-0.3802 phone close 0.0000
+-0.3010 pick </s> -0.3010
+-0.3010 red </s> -0.3010
+-0.6021 show oximeter -0.0969
+-0.6021 show phone -0.2632
+-0.3010 sofa </s> -0.3010
+-1.0280 to apple -0.0669
+-1.5051 to banana -0.2041
+-1.5051 to chair 0.0000
+-1.5051 to desk 0.0000
+-1.5051 to dice -0.1249
+-1.5051 to home 0.0000
+-1.2041 to i 0.0000
+-1.5051 to nao -0.2881
+-1.2041 to oximeter -0.0969
+-1.5051 to patient -0.2430
+-1.5051 to sofa 0.0000
+-1.5051 to wall 0.0000
+-0.3010 wall </s> -0.3010
+-0.3010 what can -0.2218
+-0.3010 where is 0.0000
+-0.3010 yellow </s> -0.3010
+
+\3-grams:
+-1.7782 <s> nao apple
+-1.1761 <s> nao ball
+-1.3010 <s> nao banana
+-1.7782 <s> nao bring
+-1.7782 <s> nao dice
+-1.7782 <s> nao drop
+-1.3010 <s> nao find
+-1.7782 <s> nao follow
+-1.4771 <s> nao nao
+-1.7782 <s> nao oximeter
+-1.3010 <s> nao patient
+-1.0792 <s> nao phone
+-1.4771 <s> nao show
+-1.7782 <s> nao what
+-1.7782 <s> nao where
+-0.3010 apple close to
+-0.3010 ball can be
+-0.3010 ball close to
+-0.3010 ball has color
+-0.3010 banana can be
+-0.3010 banana close to
+-0.3010 banana has color
+-0.3010 be pick </s>
+-0.3010 bring apple </s>
+-0.3010 can ball </s>
+-0.3010 can be pick
+-1.0280 close to apple
+-1.5051 close to banana
+-1.5051 close to chair
+-1.5051 close to desk
+-1.5051 close to dice
+-1.5051 close to home
+-1.2041 close to i
+-1.5051 close to nao
+-1.2041 close to oximeter
+-1.5051 close to patient
+-1.5051 close to sofa
+-1.5051 close to wall
+-0.3010 color red </s>
+-0.3010 color yellow </s>
+-0.3010 dice close to
+-0.3010 drop apple </s>
+-0.3010 find ball </s>
+-0.3010 find banana </s>
+-0.3010 find i </s>
+-0.3010 follow nao </s>
+-0.6021 has color red
+-0.6021 has color yellow
+-0.3010 is dice </s>
+-0.3010 nao apple close
+-0.9031 nao ball can
+-0.6021 nao ball close
+-0.9031 nao ball has
+-0.7782 nao banana can
+-0.7782 nao banana close
+-0.7782 nao banana has
+-0.3010 nao bring apple
+-0.3010 nao close to
+-0.3010 nao dice close
+-0.3010 nao drop apple
+-0.7782 nao find ball
+-0.7782 nao find banana
+-0.7782 nao find i
+-0.3010 nao follow nao
+-0.3010 nao nao close
+-0.3010 nao oximeter close
+-0.3010 nao patient close
+-0.3010 nao phone close
+-0.6021 nao show oximeter
+-0.6021 nao show phone
+-0.3010 nao what can
+-0.3010 nao where is
+-0.3010 oximeter close to
+-0.3010 patient close to
+-0.3010 phone close to
+-0.3010 show oximeter </s>
+-0.3010 show phone </s>
+-0.3010 to apple </s>
+-0.3010 to banana </s>
+-0.3010 to chair </s>
+-0.3010 to desk </s>
+-0.3010 to dice </s>
+-0.3010 to home </s>
+-0.3010 to i </s>
+-0.3010 to nao </s>
+-0.3010 to oximeter </s>
+-0.3010 to patient </s>
+-0.3010 to sofa </s>
+-0.3010 to wall </s>
+-0.3010 what can ball
+-0.3010 where is dice
+
+\end\

@@ -1,0 +1,471 @@
+Language model created by QuickLM on Thu Feb 11 11:02:32 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 19 sentences and 129 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=129
+ngram 2=169
+ngram 3=154
+
+\1-grams:
+-1.3056 </s> -0.3010
+-1.3056 <s> -0.2620
+-2.2833 a -0.2976
+-2.5843 acropolis -0.2999
+-2.5843 after -0.2907
+-2.5843 aglow -0.2790
+-2.5843 all -0.2999
+-2.5843 alligators -0.2988
+-2.5843 am -0.2790
+-2.2833 and -0.2988
+-2.5843 anti -0.2999
+-2.5843 any -0.2999
+-2.2833 are -0.2988
+-2.5843 arrange -0.2988
+-2.5843 as -0.2988
+-2.2833 at -0.2988
+-2.5843 backward -0.2790
+-2.5843 be -0.2999
+-2.5843 began -0.2999
+-2.5843 bones -0.2988
+-2.2833 bright -0.2988
+-2.5843 broken -0.2790
+-2.5843 buy -0.2999
+-2.5843 by -0.2907
+-2.5843 carol -0.2999
+-2.5843 cashmere -0.2999
+-2.5843 comes -0.2999
+-2.5843 corduroy -0.2999
+-2.5843 cornered -0.2988
+-2.5843 custody -0.2953
+-2.5843 days -0.2999
+-2.5843 depicts -0.2907
+-2.5843 did -0.2999
+-2.5843 divorced -0.2999
+-2.5843 downpour -0.2790
+-2.5843 drug -0.2790
+-2.5843 drunk -0.2965
+-2.5843 emblem -0.2999
+-2.5843 expected -0.2999
+-2.5843 fail -0.2790
+-2.5843 felt -0.2999
+-2.5843 flood -0.2790
+-2.2833 for -0.2976
+-2.5843 glowed -0.2999
+-2.5843 got -0.2999
+-2.5843 government -0.2999
+-2.5843 gunman -0.2999
+-2.5843 gunpoint -0.2988
+-2.2833 have -0.2976
+-1.9823 he -0.2953
+-2.5843 her -0.2999
+-2.5843 him -0.2790
+-1.8854 his -0.2953
+-2.5843 hours -0.2790
+-2.5843 how -0.2965
+-2.5843 i -0.2999
+-2.2833 if -0.2988
+-2.5843 iguanas -0.2988
+-2.5843 in -0.2999
+-2.5843 increased -0.2999
+-2.5843 infective -0.2999
+-2.5843 is -0.2999
+-2.5843 it -0.2999
+-2.5843 jewel -0.2988
+-2.5843 just -0.2999
+-2.5843 kept -0.2953
+-2.5843 lawyers -0.2999
+-2.5843 lest -0.2953
+-2.5843 lighted -0.2999
+-2.5843 love -0.2999
+-2.5843 man -0.2988
+-2.5843 may -0.2999
+-2.5843 meeting -0.2988
+-2.5843 military -0.2999
+-2.5843 milk -0.2999
+-2.5843 millionaires -0.2790
+-2.2833 no -0.2896
+-2.5843 not -0.2999
+-2.5843 obey -0.2999
+-2.5843 ocean -0.2790
+-2.5843 of -0.2988
+-2.5843 only -0.2999
+-2.5843 orders -0.2790
+-2.5843 overalls -0.2790
+-2.5843 overlooked -0.2907
+-2.5843 personnel -0.2988
+-2.5843 piece -0.2999
+-2.5843 production -0.2999
+-2.5843 properties -0.2999
+-2.5843 reconsidered -0.2790
+-2.5843 red -0.2999
+-2.5843 reptiles -0.2790
+-2.5843 said -0.2999
+-2.5843 salvation -0.2999
+-2.5843 sharks -0.2988
+-2.2833 she -0.2988
+-2.5843 should -0.2999
+-2.5843 shoulder -0.2999
+-2.5843 shrimp -0.2999
+-2.5843 six -0.2999
+-2.5843 steve -0.2999
+-2.5843 stranger -0.2790
+-2.5843 swam -0.2999
+-2.5843 sweater -0.2790
+-2.5843 than -0.2999
+-1.6301 the -0.2907
+-2.5843 thinner -0.2999
+-2.2833 this -0.2988
+-2.5843 three -0.2999
+-2.5843 through -0.2907
+-2.5843 tied -0.2999
+-2.5843 to -0.2999
+-2.5843 tomorrow -0.2988
+-2.5843 trembled -0.2999
+-2.5843 tropical -0.2999
+-2.5843 two -0.2790
+-2.5843 up -0.2999
+-2.5843 victim -0.2999
+-2.5843 viewpoint -0.2999
+-2.2833 was -0.2988
+-2.5843 were -0.2999
+-2.5843 while -0.2965
+-2.5843 wife -0.2999
+-2.5843 windows -0.2999
+-2.5843 with -0.2988
+-2.5843 wondered -0.2999
+-2.5843 wore -0.2988
+-2.5843 work -0.2999
+-2.5843 you -0.2999
+
+\2-grams:
+-1.5798 <s> did 0.0000
+-1.5798 <s> he -0.2430
+-1.2788 <s> his -0.2041
+-1.5798 <s> if -0.1761
+-1.5798 <s> iguanas 0.0000
+-1.5798 <s> lighted 0.0000
+-1.5798 <s> military 0.0000
+-1.5798 <s> milk 0.0000
+-1.5798 <s> no -0.1761
+-1.5798 <s> only 0.0000
+-1.5798 <s> salvation 0.0000
+-1.2788 <s> she 0.0000
+-1.5798 <s> steve 0.0000
+-1.1027 <s> the -0.2218
+-1.5798 <s> while 0.0000
+-0.6021 a bright -0.1761
+-0.6021 a meeting 0.0000
+-0.3010 acropolis all 0.0000
+-0.3010 after the -0.2762
+-0.3010 aglow </s> -0.3010
+-0.3010 all aglow 0.0000
+-0.3010 alligators are -0.1761
+-0.3010 am </s> -0.3010
+-0.6021 and alligators 0.0000
+-0.6021 and shrimp 0.0000
+-0.3010 anti infective 0.0000
+-0.3010 any corduroy 0.0000
+-0.6021 are expected 0.0000
+-0.6021 are tropical 0.0000
+-0.3010 arrange for -0.1761
+-0.3010 as if -0.1761
+-0.6021 at gunpoint 0.0000
+-0.6021 at two 0.0000
+-0.3010 backward </s> -0.3010
+-0.3010 be increased 0.0000
+-0.3010 began just 0.0000
+-0.3010 bones and -0.1761
+-0.6021 bright red 0.0000
+-0.6021 bright through 0.0000
+-0.3010 broken </s> -0.3010
+-0.3010 buy any 0.0000
+-0.3010 by the -0.2762
+-0.3010 carol comes 0.0000
+-0.3010 cashmere sweater 0.0000
+-0.3010 comes tomorrow 0.0000
+-0.3010 corduroy overalls 0.0000
+-0.3010 cornered at -0.1761
+-0.3010 custody his -0.2553
+-0.3010 days after 0.0000
+-0.3010 depicts the -0.2762
+-0.3010 did you 0.0000
+-0.3010 divorced him 0.0000
+-0.3010 downpour </s> -0.3010
+-0.3010 drug </s> -0.3010
+-0.3010 drunk he -0.2430
+-0.3010 emblem depicts 0.0000
+-0.3010 expected to 0.0000
+-0.3010 fail </s> -0.3010
+-0.3010 felt as 0.0000
+-0.3010 flood </s> -0.3010
+-0.6021 for a -0.1761
+-0.6021 for three 0.0000
+-0.3010 glowed jewel 0.0000
+-0.3010 got tied 0.0000
+-0.3010 government orders 0.0000
+-0.3010 gunman kept 0.0000
+-0.3010 gunpoint for -0.1761
+-0.6021 have her 0.0000
+-0.6021 have no -0.1761
+-0.9031 he got 0.0000
+-0.9031 he trembled 0.0000
+-0.9031 he was -0.1761
+-0.9031 he wondered 0.0000
+-0.3010 her arrange 0.0000
+-0.3010 him </s> -0.3010
+-1.0000 his piece 0.0000
+-1.0000 his shoulder 0.0000
+-1.0000 his victim 0.0000
+-1.0000 his wife 0.0000
+-1.0000 his work 0.0000
+-0.3010 hours </s> -0.3010
+-0.3010 how he -0.2430
+-0.3010 i am 0.0000
+-0.6021 if carol 0.0000
+-0.6021 if it 0.0000
+-0.3010 iguanas and -0.1761
+-0.3010 in custody 0.0000
+-0.3010 increased by 0.0000
+-0.3010 infective properties 0.0000
+-0.3010 is thinner 0.0000
+-0.3010 it were 0.0000
+-0.3010 jewel bright -0.1761
+-0.3010 just six 0.0000
+-0.3010 kept his -0.2553
+-0.3010 lawyers love 0.0000
+-0.3010 lest his -0.2553
+-0.3010 lighted windows 0.0000
+-0.3010 love millionaires 0.0000
+-0.3010 man was -0.1761
+-0.3010 may be 0.0000
+-0.3010 meeting at -0.1761
+-0.3010 military personnel 0.0000
+-0.3010 milk production 0.0000
+-0.3010 millionaires </s> -0.3010
+-0.6021 no bones 0.0000
+-0.6021 no the -0.2762
+-0.3010 not drunk 0.0000
+-0.3010 obey government 0.0000
+-0.3010 ocean </s> -0.3010
+-0.3010 of this -0.1761
+-0.3010 only lawyers 0.0000
+-0.3010 orders </s> -0.3010
+-0.3010 overalls </s> -0.3010
+-0.3010 overlooked the -0.2762
+-0.3010 personnel are -0.1761
+-0.3010 piece should 0.0000
+-0.3010 production may 0.0000
+-0.3010 properties of 0.0000
+-0.3010 reconsidered </s> -0.3010
+-0.3010 red cashmere 0.0000
+-0.3010 reptiles </s> -0.3010
+-0.3010 said sharks 0.0000
+-0.3010 salvation reconsidered 0.0000
+-0.3010 sharks have -0.1761
+-0.6021 she is 0.0000
+-0.6021 she said 0.0000
+-0.3010 should fail 0.0000
+-0.3010 shoulder felt 0.0000
+-0.3010 shrimp swam 0.0000
+-0.3010 six days 0.0000
+-0.3010 steve wore 0.0000
+-0.3010 stranger </s> -0.3010
+-0.3010 swam backward 0.0000
+-0.3010 sweater </s> -0.3010
+-0.3010 than i 0.0000
+-1.2553 the acropolis 0.0000
+-1.2553 the anti 0.0000
+-1.2553 the downpour 0.0000
+-1.2553 the emblem 0.0000
+-1.2553 the flood 0.0000
+-1.2553 the gunman 0.0000
+-1.2553 the man 0.0000
+-1.2553 the ocean 0.0000
+-1.2553 the viewpoint 0.0000
+-0.3010 thinner than 0.0000
+-0.6021 this drug 0.0000
+-0.6021 this stranger 0.0000
+-0.3010 three hours 0.0000
+-0.3010 through the -0.2762
+-0.3010 tied up 0.0000
+-0.3010 to obey 0.0000
+-0.3010 tomorrow have -0.1761
+-0.3010 trembled lest 0.0000
+-0.3010 tropical reptiles 0.0000
+-0.3010 two </s> -0.3010
+-0.3010 up with 0.0000
+-0.3010 victim cornered 0.0000
+-0.3010 viewpoint overlooked 0.0000
+-0.6021 was in 0.0000
+-0.6021 was not 0.0000
+-0.3010 were broken 0.0000
+-0.3010 while he -0.2430
+-0.3010 wife divorced 0.0000
+-0.3010 windows glowed 0.0000
+-0.3010 with this -0.1761
+-0.3010 wondered how 0.0000
+-0.3010 wore a -0.1761
+-0.3010 work began 0.0000
+-0.3010 you buy 0.0000
+
+\3-grams:
+-0.3010 <s> did you
+-0.3010 <s> he trembled
+-0.6021 <s> his shoulder
+-0.6021 <s> his work
+-0.3010 <s> if carol
+-0.3010 <s> iguanas and
+-0.3010 <s> lighted windows
+-0.3010 <s> military personnel
+-0.3010 <s> milk production
+-0.3010 <s> no the
+-0.3010 <s> only lawyers
+-0.3010 <s> salvation reconsidered
+-0.6021 <s> she is
+-0.6021 <s> she said
+-0.3010 <s> steve wore
+-0.7782 <s> the emblem
+-0.7782 <s> the gunman
+-0.7782 <s> the viewpoint
+-0.3010 <s> while he
+-0.3010 a bright red
+-0.3010 a meeting at
+-0.3010 acropolis all aglow
+-0.3010 after the flood
+-0.3010 all aglow </s>
+-0.3010 alligators are tropical
+-0.3010 and alligators are
+-0.3010 and shrimp swam
+-0.3010 anti infective properties
+-0.3010 any corduroy overalls
+-0.3010 are expected to
+-0.3010 are tropical reptiles
+-0.3010 arrange for a
+-0.3010 as if it
+-0.3010 at gunpoint for
+-0.3010 at two </s>
+-0.3010 be increased by
+-0.3010 began just six
+-0.3010 bones and shrimp
+-0.3010 bright red cashmere
+-0.3010 bright through the
+-0.3010 buy any corduroy
+-0.3010 by the anti
+-0.3010 carol comes tomorrow
+-0.3010 cashmere sweater </s>
+-0.3010 comes tomorrow have
+-0.3010 corduroy overalls </s>
+-0.3010 cornered at gunpoint
+-0.3010 custody his wife
+-0.3010 days after the
+-0.3010 depicts the acropolis
+-0.3010 did you buy
+-0.3010 divorced him </s>
+-0.3010 drunk he wondered
+-0.3010 emblem depicts the
+-0.3010 expected to obey
+-0.3010 felt as if
+-0.3010 for a meeting
+-0.3010 for three hours
+-0.3010 glowed jewel bright
+-0.3010 got tied up
+-0.3010 government orders </s>
+-0.3010 gunman kept his
+-0.3010 gunpoint for three
+-0.3010 have her arrange
+-0.3010 have no bones
+-0.3010 he got tied
+-0.3010 he trembled lest
+-0.3010 he was in
+-0.3010 he wondered how
+-0.3010 her arrange for
+-0.3010 his piece should
+-0.3010 his shoulder felt
+-0.3010 his victim cornered
+-0.3010 his wife divorced
+-0.3010 his work began
+-0.3010 how he got
+-0.3010 i am </s>
+-0.3010 if carol comes
+-0.3010 if it were
+-0.3010 iguanas and alligators
+-0.3010 in custody his
+-0.3010 increased by the
+-0.3010 infective properties of
+-0.3010 is thinner than
+-0.3010 it were broken
+-0.3010 jewel bright through
+-0.3010 just six days
+-0.3010 kept his victim
+-0.3010 lawyers love millionaires
+-0.3010 lest his piece
+-0.3010 lighted windows glowed
+-0.3010 love millionaires </s>
+-0.3010 man was not
+-0.3010 may be increased
+-0.3010 meeting at two
+-0.3010 military personnel are
+-0.3010 milk production may
+-0.3010 no bones and
+-0.3010 no the man
+-0.3010 not drunk he
+-0.3010 obey government orders
+-0.3010 of this drug
+-0.3010 only lawyers love
+-0.3010 overlooked the ocean
+-0.3010 personnel are expected
+-0.3010 piece should fail
+-0.3010 production may be
+-0.3010 properties of this
+-0.3010 red cashmere sweater
+-0.3010 said sharks have
+-0.3010 salvation reconsidered </s>
+-0.3010 sharks have no
+-0.3010 she is thinner
+-0.3010 she said sharks
+-0.3010 should fail </s>
+-0.3010 shoulder felt as
+-0.3010 shrimp swam backward
+-0.3010 six days after
+-0.3010 steve wore a
+-0.3010 swam backward </s>
+-0.3010 than i am
+-0.3010 the acropolis all
+-0.3010 the anti infective
+-0.3010 the downpour </s>
+-0.3010 the emblem depicts
+-0.3010 the flood </s>
+-0.3010 the gunman kept
+-0.3010 the man was
+-0.3010 the ocean </s>
+-0.3010 the viewpoint overlooked
+-0.3010 thinner than i
+-0.3010 this drug </s>
+-0.3010 this stranger </s>
+-0.3010 three hours </s>
+-0.3010 through the downpour
+-0.3010 tied up with
+-0.3010 to obey government
+-0.3010 tomorrow have her
+-0.3010 trembled lest his
+-0.3010 tropical reptiles </s>
+-0.3010 up with this
+-0.3010 victim cornered at
+-0.3010 viewpoint overlooked the
+-0.3010 was in custody
+-0.3010 was not drunk
+-0.3010 were broken </s>
+-0.3010 while he was
+-0.3010 wife divorced him
+-0.3010 windows glowed jewel
+-0.3010 with this stranger
+-0.3010 wondered how he
+-0.3010 wore a bright
+-0.3010 work began just
+-0.3010 you buy any
+
+\end\

@@ -1,0 +1,274 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for WTM
+ */
+
+grammar scenario;
+
+public <utterance> = (nao phone close to floor) |
+(nao oximeter has color orange) |
+(nao phone can be push) |
+(nao drop banana) |
+(nao apple has color green) |
+(nao push banana) |
+(nao i close to patient) |
+(nao patient close to phone) |
+(nao oximeter close to apple) |
+(nao patient close to home) |
+(nao patient close to i) |
+(nao oximeter can be push) |
+(nao dice close to nao) |
+(nao ball close to sofa) |
+(nao dice has color red) |
+(nao ball close to wall) |
+(nao come here) |
+(nao oximeter close to home) |
+(nao go to oximeter) |
+(nao i close to apple) |
+(incorrect) |
+(nao ball close to phone) |
+(nao oximeter has color red) |
+(correct) |
+(nao where is ball) |
+(nao dice close to home) |
+(nao drop phone) |
+(nao show patient) |
+(yes) |
+(nao apple close to dice) |
+(nao banana has color orange) |
+(nao dice close to phone) |
+(nao go to ball) |
+(nao ball close to desk) |
+(nao show i) |
+(nao sit down) |
+(nao oximeter close to floor) |
+(nao find nao) |
+(nao phone can be pick) |
+(nao turn head straight) |
+(nao i close to floor) |
+(nao banana has color green) |
+(nao turn head right) |
+(nao bring oximeter) |
+(nao go to banana) |
+(nao phone close to apple) |
+(nao push apple) |
+(nao turn body left) |
+(nao oximeter can be pick) |
+(nao ball close to patient) |
+(nao oximeter has color green) |
+(nao bring dice) |
+(nao look at patient) |
+(nao pick oximeter) |
+(nao help) |
+(nao ball close to nao) |
+(nao phone has color orange) |
+(nao nao close to oximeter) |
+(nao dice can be drop) |
+(nao ball close to ball) |
+(nao banana close to i) |
+(nao where is nao) |
+(nao which color has ball) |
+(nao reset) |
+(nao banana can be drop) |
+(nao ball can be drop) |
+(nao where is patient) |
+(nao walk one) |
+(nao pick dice) |
+(nao where is phone) |
+(nao what can oximeter) |
+(nao phone close to dice) |
+(nao where is oximeter) |
+(nao i close to i) |
+(nao dice has color orange) |
+(nao which color has dice) |
+(nao phone close to phone) |
+(nao push phone) |
+(nao show nao) |
+(nao banana has color blue) |
+(nao pick ball) |
+(nao patient close to floor) |
+(nao apple has color orange) |
+(nao dice close to oximeter) |
+(nao phone close to ball) |
+(nao apple close to chair) |
+(nao dice close to banana) |
+(nao apple close to desk) |
+(nao go to nao) |
+(nao show banana) |
+(nao ball close to dice) |
+(wrong) |
+(nao i close to home) |
+(nao ball close to floor) |
+(nao turn body right) |
+(nao where is apple) |
+(nao bring ball) |
+(nao apple close to wall) |
+(nao nao close to patient) |
+(well done) |
+(nao abort) |
+(nao apple close to sofa) |
+(nao dice close to floor) |
+(nao ball has color purple) |
+(nao apple close to ball) |
+(nao apple can be drop) |
+(nao apple has color blue) |
+(nao oximeter close to phone) |
+(nao go to dice) |
+(nao ball has color green) |
+(nao ball close to oximeter) |
+(nao i close to phone) |
+(nao banana close to home) |
+(nao i close to banana) |
+(nao banana close to oximeter) |
+(nao banana close to chair) |
+(nao ball close to i) |
+(nao patient close to patient) |
+(nao phone close to i) |
+(nao patient close to apple) |
+(nao where is dice) |
+(nao ball has color yellow) |
+(nao phone close to desk) |
+(nao follow nao) |
+(nao apple close to nao) |
+(nao oximeter close to oximeter) |
+(nao nao close to home) |
+(nao dice close to apple) |
+(nao banana has color red) |
+(nao find banana) |
+(nao phone close to sofa) |
+(nao ball close to apple) |
+(nao phone close to wall) |
+(nao drop apple) |
+(nao nao close to chair) |
+(nao phone close to banana) |
+(nao what can ball) |
+(nao find i) |
+(nao banana can be pick) |
+(nao ball can be pick) |
+(nao find ball) |
+(nao show oximeter) |
+(nao banana close to dice) |
+(nao patient close to oximeter) |
+(nao show phone) |
+(nao bring apple) |
+(nao nao close to phone) |
+(nao turn head left) |
+(nao phone close to patient) |
+(nao look at banana) |
+(nao apple close to i) |
+(nao dice close to ball) |
+(nao dice can be pick) |
+(nao patient close to ball) |
+(nao pick phone) |
+(nao look at ball) |
+(nao show ball) |
+(nao i close to chair) |
+(no) |
+(nao oximeter can be drop) |
+(nao nao close to dice) |
+(nao ball has color orange) |
+(nao oximeter close to chair) |
+(nao oximeter close to ball) |
+(nao turn body straight) |
+(nao look at apple) |
+(nao apple close to banana) |
+(nao nao close to banana) |
+(nao phone can be drop) |
+(nao banana close to phone) |
+(nao phone has color blue) |
+(nao push dice) |
+(nao i close to oximeter) |
+(nao walk three) |
+(nao what can apple) |
+(nao banana close to patient) |
+(nao ball can be push) |
+(nao banana can be push) |
+(nao drop oximeter) |
+(nao dice close to desk) |
+(nao follow patient) |
+(nao bring banana) |
+(nao which color has apple) |
+(nao find oximeter) |
+(nao go to phone) |
+(nao drop dice) |
+(nao oximeter close to sofa) |
+(nao patient close to wall) |
+(nao oximeter close to wall) |
+(nao patient close to sofa) |
+(nao ball close to home) |
+(nao dice can be push) |
+(nao find patient) |
+(nao i close to dice) |
+(nao apple has color purple) |
+(nao walk two) |
+(nao oximeter close to banana) |
+(nao dice close to sofa) |
+(nao ball has color red) |
+(nao phone close to chair) |
+(nao dice close to wall) |
+(nao dice has color purple) |
+(nao oximeter close to patient) |
+(nao banana close to banana) |
+(nao patient close to desk) |
+(nao dice has color yellow) |
+(nao find apple) |
+(nao follow i) |
+(nao oximeter has color blue) |
+(nao apple close to phone) |
+(nao apple has color yellow) |
+(nao oximeter close to desk) |
+(nao banana close to sofa) |
+(nao phone has color purple) |
+(nao phone has color red) |
+(nao go to apple) |
+(nao dice has color blue) |
+(nao which color has phone) |
+(nao i close to nao) |
+(nao nao close to desk) |
+(nao phone close to oximeter) |
+(nao banana close to wall) |
+(nao nao close to i) |
+(nao i close to ball) |
+(nao nao close to floor) |
+(nao what can phone) |
+(nao where is i) |
+(nao ball has color blue) |
+(nao phone has color yellow) |
+(nao find phone) |
+(nao nao close to sofa) |
+(nao drop ball) |
+(nao dice has color green) |
+(nao nao close to nao) |
+(nao banana close to desk) |
+(nao push oximeter) |
+(nao apple close to oximeter) |
+(nao oximeter close to dice) |
+(nao banana has color purple) |
+(nao what can banana) |
+(nao which color has oximeter) |
+(nao patient close to chair) |
+(nao i close to wall) |
+(nao oximeter has color purple) |
+(nao i close to sofa) |
+(nao dice close to dice) |
+(nao look at nao) |
+(nao banana close to apple) |
+(nao pick banana) |
+(nao what can dice) |
+(nao dice close to patient) |
+(nao oximeter has color yellow) |
+(nao stop) |
+(nao pick apple) |
+(nao apple can be push) |
+(nao oximeter close to i) |
+(nao ball close to banana) |
+(nao apple close to home) |
+(nao find dice) |
+(nao apple close to patient) |
+(nao banana close to ball) |
+(nao look at phone) |
+(nao dice close to i) |
+(nao apple close to floor) |
+(right) |
+(nao look at i);

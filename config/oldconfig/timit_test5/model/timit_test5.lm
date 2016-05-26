@@ -1,0 +1,503 @@
+Language model created by QuickLM on Thu Feb 11 11:02:34 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 19 sentences and 133 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=133
+ngram 2=184
+ngram 3=167
+
+\1-grams:
+-1.3340 </s> -0.3010
+-1.3340 <s> -0.2576
+-1.7097 a -0.2925
+-2.6128 accusations -0.3000
+-2.6128 all -0.3000
+-2.6128 allow -0.2925
+-2.6128 american -0.3000
+-2.6128 an -0.3000
+-1.7677 and -0.2925
+-2.3118 any -0.2989
+-2.3118 are -0.2925
+-2.6128 argued -0.2968
+-2.6128 as -0.3000
+-2.6128 at -0.3000
+-2.6128 audition -0.2804
+-2.6128 auditors -0.2804
+-2.6128 back -0.3000
+-2.6128 ball -0.2804
+-2.6128 balls -0.2968
+-2.6128 be -0.2936
+-2.6128 beach -0.3000
+-2.6128 before -0.3000
+-2.6128 beggar -0.2804
+-2.6128 best -0.3000
+-2.6128 business -0.3000
+-2.3118 but -0.2892
+-2.6128 call -0.3000
+-2.6128 candy -0.3000
+-2.6128 centrifuge -0.3000
+-2.6128 cleans -0.3000
+-2.6128 common -0.3000
+-2.6128 cory -0.2936
+-2.6128 costumes -0.2936
+-2.6128 cutting -0.3000
+-2.6128 dime -0.3000
+-2.6128 dome -0.3000
+-2.6128 don't -0.3000
+-2.6128 enjoy -0.3000
+-2.6128 every -0.3000
+-2.6128 exam -0.3000
+-2.6128 eyes -0.2989
+-2.6128 fast -0.2936
+-2.6128 favor -0.2978
+-2.6128 fell -0.2968
+-2.6128 few -0.3000
+-2.0107 for -0.2881
+-2.6128 formula -0.2804
+-2.6128 from -0.2925
+-2.6128 functional -0.3000
+-2.6128 get -0.3000
+-2.6128 governor -0.2804
+-2.6128 having -0.2925
+-2.3118 he -0.2978
+-2.6128 his -0.3000
+-2.6128 hours -0.2804
+-2.6128 i -0.3000
+-2.0107 in -0.2771
+-2.6128 is -0.3000
+-2.6128 it -0.3000
+-2.6128 it's -0.2925
+-2.6128 jeff -0.3000
+-2.6128 john -0.3000
+-2.6128 larger -0.3000
+-2.6128 later -0.2936
+-2.6128 lie -0.2804
+-2.6128 like -0.3000
+-2.6128 living -0.2804
+-2.6128 lot -0.2978
+-2.6128 love -0.3000
+-2.6128 made -0.2804
+-2.6128 many -0.3000
+-2.6128 masks -0.2936
+-2.6128 may -0.3000
+-2.6128 mergers -0.2804
+-2.6128 more -0.2804
+-2.6128 newspaper -0.3000
+-2.6128 nihilistic -0.2804
+-2.6128 not -0.3000
+-2.3118 now -0.2925
+-2.1357 of -0.2903
+-2.6128 once -0.2804
+-2.3118 one -0.2957
+-2.6128 people -0.2989
+-2.6128 phony -0.3000
+-2.6128 played -0.3000
+-2.6128 plays -0.3000
+-2.6128 prospect -0.2978
+-2.6128 purchase -0.2804
+-2.6128 rare -0.3000
+-2.6128 review -0.3000
+-2.6128 reviewers -0.3000
+-2.6128 rifle -0.3000
+-2.6128 right -0.2989
+-2.6128 roam -0.2936
+-2.6128 sailors -0.2989
+-2.6128 section -0.2989
+-2.6128 shellfish -0.2968
+-2.6128 ships -0.2989
+-2.6128 slow -0.2989
+-2.6128 so -0.3000
+-2.6128 social -0.3000
+-2.6128 spending -0.3000
+-2.6128 stole -0.2925
+-2.6128 streamlined -0.3000
+-2.6128 streets -0.2968
+-2.6128 structural -0.2936
+-2.6128 subsystems -0.2804
+-2.6128 system -0.2989
+-2.6128 tag -0.3000
+-1.7677 the -0.2936
+-2.3118 they -0.2989
+-2.6128 this -0.2989
+-2.6128 thought -0.3000
+-2.6128 thursday's -0.3000
+-2.6128 time -0.2968
+-2.6128 to -0.3000
+-2.6128 treats -0.2804
+-2.6128 trish -0.3000
+-2.6128 unpleasant -0.2989
+-2.6128 very -0.3000
+-2.3118 we -0.2989
+-2.6128 welcomed -0.3000
+-2.6128 well -0.3000
+-2.6128 were -0.2804
+-2.6128 what -0.3000
+-2.6128 when -0.3000
+-2.3118 will -0.2989
+-2.6128 with -0.3000
+-2.6128 withdraw -0.3000
+-2.6128 within -0.2936
+-2.6128 years -0.3000
+-2.6128 you -0.3000
+-2.6128 youngsters -0.3000
+
+\2-grams:
+-1.5798 <s> a -0.2730
+-1.5798 <s> american 0.0000
+-1.5798 <s> and -0.2688
+-1.5798 <s> before 0.0000
+-1.2788 <s> but 0.0000
+-1.5798 <s> cory 0.0000
+-1.2788 <s> he 0.0000
+-1.5798 <s> it's 0.0000
+-1.5798 <s> jeff 0.0000
+-1.5798 <s> john 0.0000
+-1.5798 <s> lot 0.0000
+-1.5798 <s> right 0.0000
+-1.5798 <s> the -0.2688
+-1.5798 <s> they -0.1761
+-1.5798 <s> withdraw 0.0000
+-1.5798 <s> within 0.0000
+-1.5798 <s> youngsters 0.0000
+-1.2041 a ball 0.0000
+-1.2041 a beggar 0.0000
+-1.2041 a centrifuge 0.0000
+-1.2041 a dime 0.0000
+-1.2041 a few 0.0000
+-1.2041 a living 0.0000
+-1.2041 a rare 0.0000
+-1.2041 a streamlined 0.0000
+-0.3010 accusations at 0.0000
+-0.3010 all phony 0.0000
+-0.3010 allow a -0.2730
+-0.3010 american newspaper 0.0000
+-0.3010 an unpleasant 0.0000
+-1.1461 and functional 0.0000
+-1.1461 and having 0.0000
+-1.1461 and masks 0.0000
+-1.1461 and trish 0.0000
+-1.1461 and we -0.1761
+-1.1461 and well 0.0000
+-1.1461 and what 0.0000
+-0.6021 any governor 0.0000
+-0.6021 any more 0.0000
+-0.6021 are the -0.2688
+-0.6021 are very 0.0000
+-0.3010 argued in -0.2430
+-0.3010 as treats 0.0000
+-0.3010 at once 0.0000
+-0.3010 audition </s> -0.3010
+-0.3010 auditors </s> -0.3010
+-0.3010 back spending 0.0000
+-0.3010 ball </s> -0.3010
+-0.3010 balls for -0.2430
+-0.3010 be the -0.2688
+-0.3010 beach balls 0.0000
+-0.3010 before thursday's 0.0000
+-0.3010 beggar </s> -0.3010
+-0.3010 best time 0.0000
+-0.3010 business mergers 0.0000
+-0.6021 but in -0.2430
+-0.6021 but the -0.2688
+-0.3010 call his 0.0000
+-0.3010 candy as 0.0000
+-0.3010 centrifuge purchase 0.0000
+-0.3010 cleans shellfish 0.0000
+-0.3010 common candy 0.0000
+-0.3010 cory and -0.2688
+-0.3010 costumes and -0.2688
+-0.3010 cutting back 0.0000
+-0.3010 dime from 0.0000
+-0.3010 dome fell 0.0000
+-0.3010 don't get 0.0000
+-0.3010 enjoy it 0.0000
+-0.3010 every formula 0.0000
+-0.3010 exam review 0.0000
+-0.3010 eyes they -0.1761
+-0.3010 fast and -0.2688
+-0.3010 favor of -0.2218
+-0.3010 fell in -0.2430
+-0.3010 few years 0.0000
+-0.9031 for a -0.2730
+-0.9031 for any -0.1761
+-0.9031 for business 0.0000
+-0.9031 for hours 0.0000
+-0.3010 formula </s> -0.3010
+-0.3010 from a -0.2730
+-0.3010 functional subsystems 0.0000
+-0.3010 get so 0.0000
+-0.3010 governor </s> -0.3010
+-0.3010 having a -0.2730
+-0.6021 he stole 0.0000
+-0.6021 he will -0.1761
+-0.3010 his plays 0.0000
+-0.3010 hours </s> -0.3010
+-0.3010 i audition 0.0000
+-0.9031 in </s> -0.3010
+-0.9031 in costumes 0.0000
+-0.9031 in favor 0.0000
+-0.9031 in this 0.0000
+-0.3010 is an 0.0000
+-0.3010 it when 0.0000
+-0.3010 it's a -0.2730
+-0.3010 jeff thought 0.0000
+-0.3010 john cleans 0.0000
+-0.3010 larger social 0.0000
+-0.3010 later the -0.2688
+-0.3010 lie </s> -0.3010
+-0.3010 like to 0.0000
+-0.3010 living </s> -0.3010
+-0.3010 lot of -0.2218
+-0.3010 love common 0.0000
+-0.3010 made </s> -0.3010
+-0.3010 many sailors 0.0000
+-0.3010 masks and -0.2688
+-0.3010 may not 0.0000
+-0.3010 mergers </s> -0.3010
+-0.3010 more </s> -0.3010
+-0.3010 newspaper reviewers 0.0000
+-0.3010 nihilistic </s> -0.3010
+-0.3010 not be 0.0000
+-0.6021 now and -0.2688
+-0.6021 now may 0.0000
+-0.7782 of a -0.2730
+-0.7782 of cutting 0.0000
+-0.7782 of people 0.0000
+-0.3010 once </s> -0.3010
+-0.6021 one for -0.2430
+-0.6021 one section 0.0000
+-0.3010 people will -0.1761
+-0.3010 phony accusations 0.0000
+-0.3010 played tag 0.0000
+-0.3010 plays nihilistic 0.0000
+-0.3010 prospect of -0.2218
+-0.3010 purchase </s> -0.3010
+-0.3010 rare lie 0.0000
+-0.3010 review every 0.0000
+-0.3010 reviewers like 0.0000
+-0.3010 rifle fast 0.0000
+-0.3010 right now -0.1761
+-0.3010 roam the -0.2688
+-0.3010 sailors any -0.1761
+-0.3010 section we -0.1761
+-0.3010 shellfish for -0.2430
+-0.3010 ships are -0.1761
+-0.3010 slow now -0.1761
+-0.3010 so many 0.0000
+-0.3010 social system 0.0000
+-0.3010 spending is 0.0000
+-0.3010 stole a -0.2730
+-0.3010 streamlined rifle 0.0000
+-0.3010 streets in -0.2430
+-0.3010 structural and -0.2688
+-0.3010 subsystems </s> -0.3010
+-0.3010 system are -0.1761
+-0.3010 tag with 0.0000
+-1.1461 the best 0.0000
+-1.1461 the dome 0.0000
+-1.1461 the larger 0.0000
+-1.1461 the prospect 0.0000
+-1.1461 the ships 0.0000
+-1.1461 the streets 0.0000
+-1.1461 the structural 0.0000
+-0.6021 they enjoy 0.0000
+-0.6021 they were 0.0000
+-0.3010 this one -0.1761
+-0.3010 thought you 0.0000
+-0.3010 thursday's exam 0.0000
+-0.3010 time for -0.2430
+-0.3010 to call 0.0000
+-0.3010 treats </s> -0.3010
+-0.3010 trish played 0.0000
+-0.3010 unpleasant one -0.1761
+-0.3010 very slow 0.0000
+-0.6021 we don't 0.0000
+-0.6021 we welcomed 0.0000
+-0.3010 welcomed auditors 0.0000
+-0.3010 well made 0.0000
+-0.3010 were </s> -0.3010
+-0.3010 what eyes 0.0000
+-0.3010 when i 0.0000
+-0.6021 will allow 0.0000
+-0.6021 will roam 0.0000
+-0.3010 with beach 0.0000
+-0.3010 withdraw all 0.0000
+-0.3010 within the -0.2688
+-0.3010 years later 0.0000
+-0.3010 you argued 0.0000
+-0.3010 youngsters love 0.0000
+
+\3-grams:
+-0.3010 <s> a few
+-0.3010 <s> american newspaper
+-0.3010 <s> and what
+-0.3010 <s> before thursday's
+-0.6021 <s> but in
+-0.6021 <s> but the
+-0.3010 <s> cory and
+-0.6021 <s> he stole
+-0.6021 <s> he will
+-0.3010 <s> it's a
+-0.3010 <s> jeff thought
+-0.3010 <s> john cleans
+-0.3010 <s> lot of
+-0.3010 <s> right now
+-0.3010 <s> the prospect
+-0.3010 <s> they enjoy
+-0.3010 <s> withdraw all
+-0.3010 <s> within the
+-0.3010 <s> youngsters love
+-0.3010 a ball </s>
+-0.3010 a beggar </s>
+-0.3010 a centrifuge purchase
+-0.3010 a dime from
+-0.3010 a few years
+-0.3010 a living </s>
+-0.3010 a rare lie
+-0.3010 a streamlined rifle
+-0.3010 accusations at once
+-0.3010 all phony accusations
+-0.3010 allow a rare
+-0.3010 american newspaper reviewers
+-0.3010 an unpleasant one
+-0.3010 and functional subsystems
+-0.3010 and having a
+-0.3010 and masks and
+-0.3010 and trish played
+-0.3010 and we don't
+-0.3010 and well made
+-0.3010 and what eyes
+-0.3010 any governor </s>
+-0.3010 any more </s>
+-0.3010 are the structural
+-0.3010 are very slow
+-0.3010 argued in favor
+-0.3010 as treats </s>
+-0.3010 at once </s>
+-0.3010 back spending is
+-0.3010 balls for hours
+-0.3010 be the best
+-0.3010 beach balls for
+-0.3010 before thursday's exam
+-0.3010 best time for
+-0.3010 business mergers </s>
+-0.3010 but in this
+-0.3010 but the ships
+-0.3010 call his plays
+-0.3010 candy as treats
+-0.3010 centrifuge purchase </s>
+-0.3010 cleans shellfish for
+-0.3010 common candy as
+-0.3010 cory and trish
+-0.3010 costumes and masks
+-0.3010 cutting back spending
+-0.3010 dime from a
+-0.3010 dome fell in
+-0.3010 don't get so
+-0.3010 enjoy it when
+-0.3010 every formula </s>
+-0.3010 exam review every
+-0.3010 eyes they were
+-0.3010 fast and well
+-0.3010 favor of a
+-0.3010 fell in </s>
+-0.3010 few years later
+-0.3010 for a living
+-0.3010 for any governor
+-0.3010 for business mergers
+-0.3010 for hours </s>
+-0.3010 from a beggar
+-0.3010 functional subsystems </s>
+-0.3010 get so many
+-0.3010 having a ball
+-0.3010 he stole a
+-0.3010 he will allow
+-0.3010 his plays nihilistic
+-0.3010 i audition </s>
+-0.3010 in costumes and
+-0.3010 in favor of
+-0.3010 in this one
+-0.3010 is an unpleasant
+-0.3010 it when i
+-0.3010 it's a streamlined
+-0.3010 jeff thought you
+-0.3010 john cleans shellfish
+-0.3010 larger social system
+-0.3010 later the dome
+-0.3010 like to call
+-0.3010 lot of people
+-0.3010 love common candy
+-0.3010 many sailors any
+-0.3010 masks and having
+-0.3010 may not be
+-0.3010 newspaper reviewers like
+-0.3010 not be the
+-0.3010 now and we
+-0.3010 now may not
+-0.3010 of a centrifuge
+-0.3010 of cutting back
+-0.3010 of people will
+-0.3010 one for any
+-0.3010 one section we
+-0.3010 people will roam
+-0.3010 phony accusations at
+-0.3010 played tag with
+-0.3010 plays nihilistic </s>
+-0.3010 prospect of cutting
+-0.3010 rare lie </s>
+-0.3010 review every formula
+-0.3010 reviewers like to
+-0.3010 rifle fast and
+-0.3010 right now may
+-0.3010 roam the streets
+-0.3010 sailors any more
+-0.3010 section we welcomed
+-0.3010 shellfish for a
+-0.3010 ships are very
+-0.3010 slow now and
+-0.3010 so many sailors
+-0.3010 social system are
+-0.3010 spending is an
+-0.3010 stole a dime
+-0.3010 streamlined rifle fast
+-0.3010 streets in costumes
+-0.3010 structural and functional
+-0.3010 system are the
+-0.3010 tag with beach
+-0.3010 the best time
+-0.3010 the dome fell
+-0.3010 the larger social
+-0.3010 the prospect of
+-0.3010 the ships are
+-0.3010 the streets in
+-0.3010 the structural and
+-0.3010 they enjoy it
+-0.3010 they were </s>
+-0.3010 this one section
+-0.3010 thought you argued
+-0.3010 thursday's exam review
+-0.3010 time for business
+-0.3010 to call his
+-0.3010 trish played tag
+-0.3010 unpleasant one for
+-0.3010 very slow now
+-0.3010 we don't get
+-0.3010 we welcomed auditors
+-0.3010 welcomed auditors </s>
+-0.3010 well made </s>
+-0.3010 what eyes they
+-0.3010 when i audition
+-0.3010 will allow a
+-0.3010 will roam the
+-0.3010 with beach balls
+-0.3010 withdraw all phony
+-0.3010 within the larger
+-0.3010 years later the
+-0.3010 you argued in
+-0.3010 youngsters love common
+
+\end\

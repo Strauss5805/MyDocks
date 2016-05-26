@@ -1,0 +1,125 @@
+Language model created by QuickLM on Thu Feb 11 12:04:02 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 9 sentences and 22 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=22
+ngram 2=42
+ngram 3=42
+
+\1-grams:
+-1.1530 </s> -0.3010
+-1.1530 <s> -0.2232
+-2.1072 approaching -0.2942
+-2.1072 banana -0.2872
+-1.6301 front -0.2620
+-1.5051 go -0.2657
+-1.8062 in -0.2730
+-1.5051 is -0.2730
+-1.3291 left -0.2657
+-1.8062 me -0.2620
+-2.1072 move -0.2872
+-1.8062 of -0.2907
+-2.1072 ok -0.2872
+-1.8062 please -0.2837
+-1.8062 robot -0.2837
+-2.1072 side -0.2694
+-2.1072 somethin -0.2872
+-1.8062 something -0.2802
+-1.4082 the -0.2657
+-2.1072 there -0.2872
+-1.5051 to -0.2620
+-2.1072 you -0.2694
+
+\2-grams:
+-1.2553 <s> go -0.2430
+-1.2553 <s> left -0.0669
+-1.2553 <s> ok 0.0000
+-0.9542 <s> please 0.0000
+-0.9542 <s> robot 0.0000
+-1.2553 <s> the -0.2553
+-1.2553 <s> there 0.0000
+-0.3010 approaching me -0.1761
+-0.3010 banana is -0.2430
+-0.7782 front </s> -0.3010
+-0.4771 front of 0.0000
+-0.9031 go left -0.0669
+-0.4260 go to 0.0000
+-0.6021 in front -0.1249
+-0.6021 in the -0.2553
+-0.9031 is approaching 0.0000
+-0.9031 is front -0.1249
+-0.9031 is in -0.1761
+-0.9031 is something -0.1761
+-0.3802 left </s> -0.3010
+-1.0792 left side 0.0000
+-0.6021 me </s> -0.3010
+-0.6021 me something -0.1761
+-0.3010 move to -0.0969
+-0.6021 of me -0.1761
+-0.6021 of you 0.0000
+-0.3010 ok go -0.0969
+-0.6021 please go -0.0969
+-0.6021 please move 0.0000
+-0.6021 robot go -0.0969
+-0.6021 robot somethin 0.0000
+-0.3010 side </s> -0.3010
+-0.3010 somethin is -0.2430
+-0.6021 something in -0.1761
+-0.6021 something is -0.2430
+-1.0000 the banana 0.0000
+-1.0000 the front -0.2218
+-0.5229 the left 0.0000
+-0.3010 there is -0.2430
+-0.9031 to left -0.0669
+-0.4260 to the -0.1461
+-0.3010 you </s> -0.3010
+
+\3-grams:
+-0.3010 <s> go left
+-0.3010 <s> left </s>
+-0.3010 <s> ok go
+-0.6021 <s> please go
+-0.6021 <s> please move
+-0.6021 <s> robot go
+-0.6021 <s> robot somethin
+-0.3010 <s> the banana
+-0.3010 <s> there is
+-0.3010 approaching me </s>
+-0.3010 banana is in
+-0.6021 front of me
+-0.6021 front of you
+-0.3010 go left </s>
+-0.7782 go to left
+-0.4771 go to the
+-0.3010 in front of
+-0.3010 in the front
+-0.3010 is approaching me
+-0.3010 is front of
+-0.3010 is in front
+-0.3010 is something in
+-0.3010 left side </s>
+-0.3010 me something is
+-0.3010 move to the
+-0.3010 of me something
+-0.3010 of you </s>
+-0.3010 ok go to
+-0.3010 please go to
+-0.3010 please move to
+-0.3010 robot go to
+-0.3010 robot somethin is
+-0.3010 somethin is front
+-0.3010 something in the
+-0.3010 something is approaching
+-0.3010 the banana is
+-0.3010 the front </s>
+-0.4771 the left </s>
+-0.7782 the left side
+-0.3010 there is something
+-0.3010 to left </s>
+-0.3010 to the left
+
+\end\

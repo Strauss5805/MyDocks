@@ -22,18 +22,28 @@
 package PostProcessor;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import Data.Result;
+import Data.TokenGraphDumper;
+import Data.Visualizer;
 import Frontend.PhoneFrontEnd;
 import Phoneme.PhonemeContainer;
 import Phoneme.PhonemeCreator;
+import PostProcessor.SphinxBased.LexTreeLinguist;
 import Recognizer.StandardRecognizer;
 import edu.cmu.sphinx.decoder.search.Token;
+import edu.cmu.sphinx.linguist.dictionary.Dictionary;
+import edu.cmu.sphinx.linguist.util.LinguistDumper;
 import edu.cmu.sphinx.recognizer.Recognizer;
+import edu.cmu.sphinx.result.Lattice;
+import edu.cmu.sphinx.result.LatticeOptimizer;
+import edu.cmu.sphinx.result.Sausage;
+import edu.cmu.sphinx.result.SausageMaker;
 import edu.cmu.sphinx.util.props.ConfigurationManager;
 import edu.cmu.sphinx.util.props.PropertyException;
 
@@ -86,9 +96,9 @@ public class SphinxBasedPostProcessor implements StandardRecognizer
         referenceRecognizer = -1;
 
         //ACTUNG DIE GEHÖREN EIG AUF 0
-        if (languageWeight != -10)
+        if (languageWeight != 0)
             cm.setGlobalProperty("languageWeight", languageWeight + "");
-        if (wordInsertionProbability != -10)
+        if (wordInsertionProbability != 0)
             cm.setGlobalProperty("wordInsertionProbability",
                     wordInsertionProbability + "");
         
@@ -154,6 +164,70 @@ public class SphinxBasedPostProcessor implements StandardRecognizer
         edu.cmu.sphinx.result.Result result;
         while ((result = recognizer.recognize()) != null)
         {
+            
+//          LexTreeLinguist odfl = (LexTreeLinguist) cm.lookup("lexTreeLinguist");
+//          LinguistDumper ld = new LinguistDumper("bla.blub",odfl);
+//          ld.run();
+//          System.out.println(odfl.getSearchGraph().getInitialState());
+//          
+//          TokenGraphDumper tgd = new TokenGraphDumper(result);
+//          tgd.dumpGDL(result.getBestFinalResultNoFiller(), "graph.gdl");
+//          Runtime rt = Runtime.getRuntime();
+//          try {
+//              try {
+//                  Thread.sleep(2000);
+//              } catch (InterruptedException e) {
+//                  // TODO Auto-generated catch block
+//                  e.printStackTrace();
+//              } 
+//              rt.exec("graph-easy --as=dot graph.gdl --output=graph.dot");
+//              try {
+//                  Thread.sleep(1000);
+//              } catch (InterruptedException e) {
+//                  // TODO Auto-generated catch block
+//                  e.printStackTrace();
+//              } 
+//              rt.exec("dot -Tpng graph.dot -o graph.png");
+//              try {
+//                  Thread.sleep(4000);
+//              } catch (InterruptedException e) {
+//                  // TODO Auto-generated catch block
+//                  e.printStackTrace();
+//              } 
+//              new Visualizer().start(); 
+//          } catch (IOException e) {
+//              // TODO Auto-generated catch block
+//              e.printStackTrace();
+//          }
+//
+//          Dictionary dic = (Dictionary) cm.lookup("dictionary");
+//          try {
+//              dic.allocate();
+//          } catch (IOException e) {
+//              // TODO Auto-generated catch block
+//              e.printStackTrace();
+//          }
+//          System.out.println(dic);
+//
+//          Lattice lat;
+//          try {
+//              //lat = GDLLatticeFactory.getLattice("graph.gdl", dic);
+//              lat = new Lattice(result);
+//              LatticeOptimizer lo = new LatticeOptimizer(lat);
+//              lo.optimize();
+//              lat.dumpDot("lattice.dot","Search Graph");
+//              lat.dumpAISee("lattice.gdl","Search Graph");
+//
+//              SausageMaker sm = new SausageMaker();
+//              Sausage ss = sm.makeSausage();
+//
+//              ss.dumpAISee("sausage.gdl", "Sausage");
+//          } catch (Exception e) {
+//              // TODO Auto-generated catch block
+//              e.printStackTrace();
+//          }
+            
+//           ___________________________________________________________________
             if (r == null) r = new Result();
 
             String refPhoneme = "";

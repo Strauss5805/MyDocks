@@ -1,0 +1,128 @@
+Language model created by QuickLM on Thu Feb 11 12:04:03 CET 2016
+Copyright (c) 1996-2002
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 8 sentences and 26 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=26
+ngram 2=42
+ngram 3=41
+
+\1-grams:
+-1.1833 </s> -0.3010
+-1.1833 <s> -0.2400
+-1.7853 are -0.2902
+-2.0864 chosen -0.2829
+-2.0864 correct -0.2975
+-1.6092 doing -0.2441
+-1.7853 good -0.2939
+-2.0864 halt -0.2716
+-2.0864 have -0.2975
+-2.0864 hey -0.2866
+-2.0864 i -0.2902
+-1.3874 is -0.2677
+-1.7853 it -0.2754
+-2.0864 keep -0.2975
+-2.0864 now -0.2716
+-2.0864 object -0.2975
+-2.0864 one -0.2716
+-1.3874 right -0.2677
+-1.4843 robot -0.2716
+-2.0864 stop -0.2939
+-1.7853 the -0.2939
+-1.6092 this -0.2829
+-2.0864 waht -0.2902
+-2.0864 which -0.2902
+-2.0864 yes -0.2902
+-1.6092 you -0.2902
+
+\2-grams:
+-1.2041 <s> hey 0.0000
+-1.2041 <s> right -0.0792
+-0.7270 <s> robot -0.0969
+-1.2041 <s> the -0.1761
+-1.2041 <s> this 0.0000
+-1.2041 <s> yes 0.0000
+-0.3010 are doing -0.1249
+-0.3010 chosen is -0.2553
+-0.3010 correct one 0.0000
+-0.7782 doing </s> -0.3010
+-0.7782 doing is -0.1461
+-0.7782 doing it -0.1761
+-0.6021 good keep 0.0000
+-0.6021 good waht 0.0000
+-0.3010 halt </s> -0.3010
+-0.3010 have chosen 0.0000
+-0.3010 hey robot -0.2430
+-0.3010 i doing -0.2218
+-1.0000 is good -0.1761
+-0.5229 is right -0.0792
+-1.0000 is the -0.1761
+-0.6021 it good -0.1761
+-0.6021 it right -0.2553
+-0.3010 keep i 0.0000
+-0.3010 now </s> -0.3010
+-0.3010 object which 0.0000
+-0.3010 one </s> -0.3010
+-0.3979 right </s> -0.3010
+-1.0000 right now 0.0000
+-0.9031 robot halt 0.0000
+-0.9031 robot stop 0.0000
+-0.9031 robot this 0.0000
+-0.9031 robot you -0.1249
+-0.3010 stop it -0.1761
+-0.6021 the correct 0.0000
+-0.6021 the object 0.0000
+-0.3010 this is -0.0792
+-0.3010 waht you -0.1249
+-0.3010 which you -0.2218
+-0.3010 yes this 0.0000
+-0.4771 you are 0.0000
+-0.7782 you have 0.0000
+
+\3-grams:
+-0.3010 <s> hey robot
+-0.3010 <s> right </s>
+-0.7782 <s> robot halt
+-0.7782 <s> robot this
+-0.7782 <s> robot you
+-0.3010 <s> the object
+-0.3010 <s> this is
+-0.3010 <s> yes this
+-0.6021 are doing is
+-0.6021 are doing it
+-0.3010 chosen is the
+-0.3010 correct one </s>
+-0.3010 doing is right
+-0.3010 doing it good
+-0.3010 good keep i
+-0.3010 good waht you
+-0.3010 have chosen is
+-0.3010 hey robot stop
+-0.3010 i doing </s>
+-0.3010 is good waht
+-0.3010 is right </s>
+-0.3010 is the correct
+-0.3010 it good keep
+-0.3010 it right now
+-0.3010 keep i doing
+-0.3010 object which you
+-0.3010 right now </s>
+-0.3010 robot halt </s>
+-0.3010 robot stop it
+-0.3010 robot this is
+-0.3010 robot you are
+-0.3010 stop it right
+-0.3010 the correct one
+-0.3010 the object which
+-0.7782 this is good
+-0.4771 this is right
+-0.3010 waht you are
+-0.3010 which you have
+-0.3010 yes this is
+-0.3010 you are doing
+-0.3010 you have chosen
+
+\end\
